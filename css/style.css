@@ -88,9 +88,13 @@ nav img {
   margin-bottom: 20px;
 }
 
+/*---------------------------
+ SubView
+---------------------------*/
 .section02 {
   width: 100%;
   padding-bottom: 50px;
+  margin-bottom: 110px;
   position: relative;
 }
 .section02 .subView {
@@ -129,6 +133,66 @@ nav img {
 }
 .section02 .subViewBg div img {
   width: 100%;
+}
+
+/*---------------------------
+ セクション3 自由研究ツールの特徴
+---------------------------*/
+.section03 {
+  width: 100%;
+  position: relative;
+}
+.section03 h1 {
+  width: 616px;
+  height: 48px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index: 10;
+}
+.section03 .featureContent {
+  width: 100%;
+  background: #eef8ff;
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  z-index: 1;
+}
+.section03 .featureContent ul {
+  margin: 84px 150px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.roundFrame {
+  width: 212px;
+  height: 212px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featureText {
+  width: 212px;
+}
+.featureText h3 {
+  font-size: 24px;
+  color: #2c2c2c;
+  font-weight: bold;
+  margin: 24px 0px 16px;
+}
+.featureText p {
+  font-size: 18px;
+  color: #2c2c2c;
+}
+.section03 .featureContent .annotationText {
+  margin: 0px 150px 60px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

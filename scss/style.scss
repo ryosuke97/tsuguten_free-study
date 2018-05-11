@@ -90,9 +90,13 @@ header {
 	}
 }
 
+/*---------------------------
+ SubView
+---------------------------*/
 .section02 {
 	width: 100%;
 	padding-bottom: 50px;
+	margin-bottom: 110px;
 	position: relative;
 	.subView {
 		width: 100%;
@@ -133,3 +137,62 @@ header {
 	}
 }
 
+/*---------------------------
+ セクション3 自由研究ツールの特徴
+---------------------------*/
+.section03 {
+	width: 100%;
+	position: relative;
+	h1 {
+		width: 616px;
+		height: 48px;
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		-webkit-transform: translate(-50%,0%);
+		-moz-transform: translate(-50%,0%);
+		-ms-transform: translate(-50%,0%);
+		-o-transform: translate(-50%,0%);
+		transform: translate(-50%,0%);
+		z-index: 10;
+	}
+	.featureContent {
+		width: 100%;
+		background: #eef8ff;
+		position: absolute;
+		top: 24px;
+		left: 0px;
+		z-index: 1;
+		ul {
+			margin: 84px 150px 0px;
+			display: flex;
+			justify-content: space-between;
+		}
+		@at-root .roundFrame {
+			width: 212px;
+			height: 212px;
+			background: #fff;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		@at-root .featureText {
+			width: 212px;
+			h3 {
+				font-size: 24px;
+				color: $black;
+				font-weight: bold;
+				margin: 24px 0px 16px;
+			}
+			p {
+				font-size: 18px;
+				color: $black;
+			}
+		}
+		.annotationText {
+			margin: 0px 150px 60px;
+			font-size: 16px;
+		}
+	}
+}
