@@ -8,8 +8,13 @@ $linkActive: #2b5db7;
 }
 
 /* フォント */
-.font-nomal {
+.font-small {
 	font-size: 16px;
+	color: $black;
+}
+
+.font-nomal {
+	font-size: 22px;
 	color: $black;
 }
 
@@ -22,7 +27,7 @@ body {
 ---------------------------*/
 header {
 	width: 100%;
-	height: 95px;
+	height: 15%;
 	font-size: 16px;
 	display: flex;
 	justify-content: space-between;
@@ -58,10 +63,11 @@ header {
 /*---------------------------
  MV
 ---------------------------*/
-section {
+.section01 {
 	width: 100%;
 	height: 600px;
 	position: relative;
+	margin-bottom: 80px;
 	.mvImg {
 		position: absolute;
 		right: 0px;
@@ -84,5 +90,46 @@ section {
 	}
 }
 
-
+.section02 {
+	width: 100%;
+	padding-bottom: 50px;
+	position: relative;
+	.subView {
+		width: 100%;
+		display: flex;
+		z-index: 10;
+		.leftImg {
+			width: 47%;
+			z-index: 10;
+			img {
+				width: 100%;
+				vertical-align: bottom;
+				z-index: 10;
+			}
+		}
+		.subViewText {
+			margin-left: 5%;
+			width: 35%;
+			z-index: 10;
+		}
+	}
+	.subViewBg {
+		width: 80%;
+		height: 90%;
+		background: url("../assets/pc/bg01.jpg") repeat;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		z-index: 1;
+		div {
+			width: 30%;
+			position: absolute;
+			bottom: -30px;
+			left: 650px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
 

@@ -6,8 +6,13 @@
 }
 
 /* フォント */
-.font-nomal {
+.font-small {
   font-size: 16px;
+  color: #2c2c2c;
+}
+
+.font-nomal {
+  font-size: 22px;
   color: #2c2c2c;
 }
 
@@ -20,7 +25,7 @@ body {
 ---------------------------*/
 header {
   width: 100%;
-  height: 95px;
+  height: 15%;
   font-size: 16px;
   display: flex;
   justify-content: space-between;
@@ -56,30 +61,74 @@ nav img {
 /*---------------------------
  MV
 ---------------------------*/
-section {
+.section01 {
   width: 100%;
   height: 600px;
   position: relative;
+  margin-bottom: 80px;
 }
-section .mvImg {
+.section01 .mvImg {
   position: absolute;
   right: 0px;
   top: 0px;
   z-index: 1;
 }
-section .mvImg img {
+.section01 .mvImg img {
   height: 600px;
   vertical-align: bottom;
 }
-section .mvContent {
+.section01 .mvContent {
   position: absolute;
   left: 60px;
   top: 50px;
   z-index: 10;
 }
-section .mvContent .dlBtn {
+.section01 .mvContent .dlBtn {
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.section02 {
+  width: 100%;
+  padding-bottom: 50px;
+  position: relative;
+}
+.section02 .subView {
+  width: 100%;
+  display: flex;
+  z-index: 10;
+}
+.section02 .subView .leftImg {
+  width: 47%;
+  z-index: 10;
+}
+.section02 .subView .leftImg img {
+  width: 100%;
+  vertical-align: bottom;
+  z-index: 10;
+}
+.section02 .subView .subViewText {
+  margin-left: 5%;
+  width: 35%;
+  z-index: 10;
+}
+.section02 .subViewBg {
+  width: 80%;
+  height: 90%;
+  background: url("../assets/pc/bg01.jpg") repeat;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.section02 .subViewBg div {
+  width: 30%;
+  position: absolute;
+  bottom: -30px;
+  left: 650px;
+}
+.section02 .subViewBg div img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
