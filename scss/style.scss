@@ -22,6 +22,12 @@ $blue: #2b5db7;
 .fontLarge {
 	font-size: 24px;
 }
+.fontMax {
+	font-size: 40px;
+}
+.fontBold {
+	font-weight: bold;
+}
 
 h3 {
 	font-size: 24px;
@@ -379,4 +385,70 @@ header {
 			}
 		}
 	}
+	.schedule {
+		width: 77%;
+		margin: 80px auto 0px;
+		h2 {
+			width: 50%;
+			height: 40px;
+			margin: 0px auto 60px;
+			text-align: center;
+		}
+	}
+	.l-table {
+		width:100%;
+		border-right:$blue solid 1px;
+		border-collapse: collapse;
+		thead th {
+			background:$blue;
+			color:#FFF;
+			text-align: center;
+			padding:10px 0px;
+			border-right:#FFF solid 1px;
+			border-bottom:#FFF solid 1px;
+			&:last-child {
+				border-right:$blue solid 1px;
+			}
+		}
+		tbody {
+			th {
+				background:$blue;
+				color:#FFF;
+				padding:10px 15px;
+				border-bottom:#FFF solid 1px;
+				vertical-align:top;
+			}
+			tr:last-child th {
+				border-bottom:$blue solid 1px;
+			}
+			td {
+				background:#FFF;
+				padding:10px 15px;
+				border-left:$blue solid 1px;
+				border-bottom:$blue solid 1px;
+				vertical-align:top;
+			}
+		}
+	}
+	
+	// @media screen and (max-width: 768px) {
+	// 	.l-table thead {
+	// 		display:none;
+	// 	}
+	// 	.l-table tbody th {
+	// 		display:block;
+	// 	}
+	// 	.l-table tbody td {
+	// 		display:block;
+	// 	}
+	// 	.l-table tbody td::before {
+	// 		content: attr(label);
+	// 		float: left;
+	// 		clear:both;
+	// 		font-weight:bold;
+	// 	}
+	// 	.l-table tbody td p {
+	// 		padding-left:6em;
+	// 	}
+	// }
 }

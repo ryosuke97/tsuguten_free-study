@@ -25,6 +25,14 @@
   font-size: 24px;
 }
 
+.fontMax {
+  font-size: 40px;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
 h3 {
   font-size: 24px;
   color: #2c2c2c;
@@ -352,6 +360,49 @@ nav img {
 .section05 .l-info .l-infoR img {
   width: 100%;
   margin-top: 50px;
+}
+.section05 .schedule {
+  width: 77%;
+  margin: 80px auto 0px;
+}
+.section05 .schedule h2 {
+  width: 50%;
+  height: 40px;
+  margin: 0px auto 60px;
+  text-align: center;
+}
+.section05 .l-table {
+  width: 100%;
+  border-right: #2b5db7 solid 1px;
+  border-collapse: collapse;
+}
+.section05 .l-table thead th {
+  background: #2b5db7;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0px;
+  border-right: #FFF solid 1px;
+  border-bottom: #FFF solid 1px;
+}
+.section05 .l-table thead th:last-child {
+  border-right: #2b5db7 solid 1px;
+}
+.section05 .l-table tbody th {
+  background: #2b5db7;
+  color: #FFF;
+  padding: 10px 15px;
+  border-bottom: #FFF solid 1px;
+  vertical-align: top;
+}
+.section05 .l-table tbody tr:last-child th {
+  border-bottom: #2b5db7 solid 1px;
+}
+.section05 .l-table tbody td {
+  background: #FFF;
+  padding: 10px 15px;
+  border-left: #2b5db7 solid 1px;
+  border-bottom: #2b5db7 solid 1px;
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=style.css.map */
