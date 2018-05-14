@@ -376,6 +376,10 @@ nav img {
   border-right: #2b5db7 solid 1px;
   border-collapse: collapse;
 }
+.section05 .l-table tr {
+  width: 100%;
+  height: 80px;
+}
 .section05 .l-table thead th {
   background: #2b5db7;
   color: #FFF;
@@ -388,21 +392,30 @@ nav img {
   border-right: #2b5db7 solid 1px;
 }
 .section05 .l-table tbody th {
+  height: 80px;
   background: #2b5db7;
   color: #FFF;
-  padding: 10px 15px;
   border-bottom: #FFF solid 1px;
   vertical-align: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section05 .l-table tbody tr:last-child th {
   border-bottom: #2b5db7 solid 1px;
 }
 .section05 .l-table tbody td {
   background: #FFF;
-  padding: 10px 15px;
   border-left: #2b5db7 solid 1px;
   border-bottom: #2b5db7 solid 1px;
   vertical-align: top;
+}
+.section05 .l-table tbody td p {
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
