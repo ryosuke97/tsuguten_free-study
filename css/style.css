@@ -1,23 +1,54 @@
 @charset "UTF-8";
 /* 定義 */
-/* リンクカラー */
-.link-active {
+/* フォント */
+.color-nomal {
+  color: #2c2c2c;
+}
+
+.emphasis {
   color: #2b5db7;
 }
 
-/* フォント */
-.font-small {
+.fontMin {
   font-size: 16px;
-  color: #2c2c2c;
 }
 
-.font-nomal {
+.fontSmall {
+  font-size: 18px;
+}
+
+.fontMedium {
   font-size: 22px;
+}
+
+.fontLarge {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 24px;
   color: #2c2c2c;
+  font-weight: bold;
+  margin: 24px 0px 16px;
+}
+
+/* レイアウト */
+.l-textCenter {
+  text-align: center;
+}
+
+html {
+  width: 100%;
 }
 
 body {
   width: 100%;
+}
+
+.wrapper {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1300px;
 }
 
 /*---------------------------
@@ -26,7 +57,6 @@ body {
 header {
   width: 100%;
   height: 15%;
-  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,16 +96,8 @@ nav img {
   height: 600px;
   position: relative;
   margin-bottom: 80px;
-}
-.section01 .mvImg {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  z-index: 1;
-}
-.section01 .mvImg img {
-  height: 600px;
-  vertical-align: bottom;
+  background: url("../assets/pc/img_mv.png") center right no-repeat;
+  background-size: cover;
 }
 .section01 .mvContent {
   position: absolute;
@@ -140,6 +162,7 @@ nav img {
 ---------------------------*/
 .section03 {
   width: 100%;
+  height: 792px;
   position: relative;
 }
 .section03 h1 {
@@ -180,19 +203,155 @@ nav img {
 .featureText {
   width: 212px;
 }
-.featureText h3 {
-  font-size: 24px;
-  color: #2c2c2c;
-  font-weight: bold;
-  margin: 24px 0px 16px;
-}
-.featureText p {
-  font-size: 18px;
-  color: #2c2c2c;
-}
-.section03 .featureContent .annotationText {
+.section03 .featureContent .l-annotation {
   margin: 0px 150px 60px;
-  font-size: 16px;
+}
+
+.section04 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.section04 h1 {
+  width: 517px;
+  height: 48px;
+  margin: 80px auto;
+}
+.section04 .catchCopy {
+  width: 100%;
+  height: 213px;
+  margin-left: 18%;
+}
+.section04 .textContent {
+  width: 72%;
+  height: 300px;
+  background: url("../assets/pc/bg01.jpg") repeat;
+  margin-top: 50px;
+  position: relative;
+}
+.section04 .textArea {
+  width: 450px;
+  padding-top: 40px;
+  margin-left: 12%;
+}
+.section04 .completeImg {
+  position: absolute;
+  top: 120px;
+  left: 55%;
+}
+.section04 .l-dlBtn {
+  position: absolute;
+  bottom: -30px;
+  left: 12%;
+  z-index: 10;
+}
+.section04 .l-dlBtn img {
+  vertical-align: bottom;
+}
+
+.section05 {
+  widows: 100%;
+  height: auto;
+  background: url("../assets/pc/bg04.jpg") repeat;
+  margin-top: 110px;
+  padding-top: 80px;
+  position: relative;
+}
+.section05 h1 {
+  width: 619px;
+  height: 48px;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index: 10;
+}
+.section05 .l-info {
+  width: 77%;
+  margin: 60px auto 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.section05 .l-info .l-infoL {
+  width: 47%;
+}
+.section05 .l-info .l-infoL .leftImg {
+  width: 100%;
+}
+.section05 .l-info .l-infoL .leftImg img {
+  width: 100%;
+}
+.section05 .l-info .l-infoL .benefits {
+  width: 99%;
+  height: auto;
+  border: 2px solid #ffb700;
+  margin-top: 85px;
+  position: relative;
+}
+.section05 .l-info .l-infoL .benefits h2 {
+  width: 260px;
+  height: 50px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.section05 .l-info .l-infoL .benefits h3 {
+  font-size: 1.84vw;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 55px;
+}
+.section05 .l-info .l-infoL .benefits p {
+  width: 84%;
+  font-size: 1.4vw;
+  margin: 30px auto;
+}
+.section05 .l-info .l-infoL .benefits p span {
+  font-size: 1.2vw;
+}
+.section05 .l-info .l-infoR {
+  width: 47%;
+}
+.section05 .l-info .l-infoR dl {
+  width: 100%;
+  font-size: 1.7vw;
+  display: flex;
+  margin-bottom: 30px;
+}
+.section05 .l-info .l-infoR dl:last-child {
+  margin-bottom: 0;
+}
+.section05 .l-info .l-infoR dl dt {
+  color: #fff;
+  width: 24%;
+  height: 40px;
+  margin-right: 4%;
+  background: #2b5db7;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section05 .l-info .l-infoR dl dd {
+  width: 72%;
+}
+.section05 .l-info .l-infoR dl dd span {
+  font-size: 1.4vw;
+}
+.section05 .l-info .l-infoR img {
+  width: 100%;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

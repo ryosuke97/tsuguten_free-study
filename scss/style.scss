@@ -1,25 +1,53 @@
 /* 定義 */
 $black: #2c2c2c;
-$linkActive: #2b5db7;
-
-/* リンクカラー */
-.link-active {
-	color: $linkActive;
-}
+$yellow: #ffb700;
+$blue: #2b5db7;
 
 /* フォント */
-.font-small {
-	font-size: 16px;
+.color-nomal {
 	color: $black;
 }
-
-.font-nomal {
+.emphasis {
+	color: #2b5db7;
+}
+.fontMin {
+	font-size: 16px;
+}
+.fontSmall {
+	font-size: 18px;
+}
+.fontMedium {
 	font-size: 22px;
+}
+.fontLarge {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 24px;
 	color: $black;
+	font-weight: bold;
+	margin: 24px 0px 16px;
+}
+
+/* レイアウト */
+.l-textCenter {
+	text-align: center;
+}
+
+
+html {
+	width: 100%;
 }
 
 body {
 	width: 100%;
+}
+
+.wrapper {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 1300px;
 }
 
 /*---------------------------
@@ -28,7 +56,6 @@ body {
 header {
 	width: 100%;
 	height: 15%;
-	font-size: 16px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -68,16 +95,20 @@ header {
 	height: 600px;
 	position: relative;
 	margin-bottom: 80px;
-	.mvImg {
-		position: absolute;
-		right: 0px;
-		top: 0px;
-		z-index: 1;
-		img {
-			height: 600px;
-			vertical-align: bottom;
-		}
-	}
+	background: url("../assets/pc/img_mv.png") center right no-repeat;
+	background-size: cover;
+	// .mvImg {
+	// 	width: 100%;
+	// 	height: 600px;
+	// z-index: 1;
+		// img {
+		// 	height: 600px;
+		// 	vertical-align: bottom;
+		// 	position: absolute;
+		// 	right: 0px;
+		// 	top: 0px;
+		// }
+	// }
 	.mvContent {
 		position: absolute;
 		left: 60px;
@@ -142,6 +173,7 @@ header {
 ---------------------------*/
 .section03 {
 	width: 100%;
+	height: 792px;
 	position: relative;
 	h1 {
 		width: 616px;
@@ -179,20 +211,172 @@ header {
 		}
 		@at-root .featureText {
 			width: 212px;
-			h3 {
-				font-size: 24px;
-				color: $black;
-				font-weight: bold;
-				margin: 24px 0px 16px;
+		}
+		.l-annotation {
+			margin: 0px 150px 60px;
+		}
+	}
+}
+
+// ここ以下はポジションで修正済み
+.section04 {
+	width: 100%;
+	height: auto;
+	position: relative;
+	h1 {
+		width: 517px;
+		height: 48px;
+		// position: absolute;
+		// top: 80px;
+		// left: 50%;
+		// -webkit-transform: translate(-50%,0%);
+		// -moz-transform: translate(-50%,0%);
+		// -ms-transform: translate(-50%,0%);
+		// -o-transform: translate(-50%,0%);
+		// transform: translate(-50%,0%);
+		// z-index: 10;
+		margin: 80px auto;
+	}
+	.catchCopy {
+		width: 100%;
+		height: 213px;
+		// position: absolute;
+		// top: 200px;
+		margin-left: 18%;
+	}
+	.textContent {
+		width: 72%;
+		height: 300px;
+		background: url("../assets/pc/bg01.jpg") repeat;
+		margin-top: 50px;
+		position: relative;
+		// position: absolute;
+		// top: 470px;
+		// left: 0px;
+	}
+	.textArea {
+		width: 450px;
+		padding-top: 40px;
+		margin-left: 12%;
+		// margin: 40px 0px 40px 150px;
+	}
+	.completeImg {
+		position: absolute;
+		top: 120px;
+		left: 55%;
+	}
+	.l-dlBtn {
+		position: absolute;
+		bottom: -30px;
+		left: 12%;
+		z-index: 10;
+		img {
+			vertical-align: bottom;
+		}
+	}
+}
+
+.section05 {
+	widows: 100%;
+	height: auto;
+	background: url("../assets/pc/bg04.jpg") repeat;
+	margin-top: 110px;
+	padding-top: 80px;
+	position: relative;
+	h1 {
+		width: 619px;
+		height: 48px;
+		position: absolute;
+		top: -24px;
+		left: 50%;
+		-webkit-transform: translate(-50%,0%);
+		-moz-transform: translate(-50%,0%);
+		-ms-transform: translate(-50%,0%);
+		-o-transform: translate(-50%,0%);
+		transform: translate(-50%,0%);
+		z-index: 10;
+	}
+	.l-info {
+		width: 77%;
+		margin: 60px auto 0px;
+		display: flex;
+		justify-content: space-between;
+		.l-infoL {
+			width: 47%;
+			.leftImg {
+				width: 100%;
+				img {
+					width: 100%;
+				}
 			}
-			p {
-				font-size: 18px;
-				color: $black;
+			.benefits {
+				width: 99%;
+				height: auto;
+				border: 2px solid $yellow;
+				margin-top: 85px;
+				position: relative;
+				h2 {
+					width: 260px;
+					height: 50px;
+					margin: 0 auto;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					-webkit-transform: translate(-50%,-50%);
+					-moz-transform: translate(-50%,-50%);
+					-ms-transform: translate(-50%,-50%);
+					-o-transform: translate(-50%,-50%);
+					transform: translate(-50%,-50%);
+					z-index: 10;
+				}
+				h3 {
+					font-size: 1.84vw;
+					font-weight: bold;
+					text-align: center;
+					margin-top: 55px;
+				}
+				p {
+					width: 84%;
+					font-size: 1.4vw;
+					margin: 30px auto;
+					span {
+						font-size: 1.2vw;
+					}
+				}
 			}
 		}
-		.annotationText {
-			margin: 0px 150px 60px;
-			font-size: 16px;
+		.l-infoR {
+			width: 47%;
+			dl {
+				width: 100%;
+				font-size: 1.7vw;
+				display: flex;
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				dt {
+					color: #fff;
+					width: 24%;
+					height: 40px;
+					margin-right: 4%;
+					background: $blue;
+					border-radius: 5px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				dd {
+					width: 72%;
+					span {
+						font-size: 1.4vw;
+					}
+				}
+			}
+			img {
+				width: 100%;
+				margin-top: 50px;
+			}
 		}
 	}
 }
