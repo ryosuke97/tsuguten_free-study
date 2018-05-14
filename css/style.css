@@ -45,6 +45,10 @@ h3 {
   text-align: center;
 }
 
+.l-center, .section05 .l-center {
+  margin: 0px auto;
+}
+
 html {
   width: 100%;
 }
@@ -263,7 +267,7 @@ nav img {
   height: auto;
   background: url("../assets/pc/bg04.jpg") repeat;
   margin-top: 110px;
-  padding-top: 80px;
+  padding: 80px 0px;
   position: relative;
 }
 .section05 h1 {
@@ -423,6 +427,19 @@ nav img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.section05 .l-center {
+  width: 390px;
+  height: 60px;
+  margin-top: 60px;
+}
+.section05 a {
+  width: 100%;
+  height: 60px;
+}
+.section05 a img {
+  width: 100%;
+  height: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

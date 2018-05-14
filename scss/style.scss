@@ -42,6 +42,9 @@ h3 {
 .l-textCenter {
 	text-align: center;
 }
+.l-center {
+	margin: 0px auto;
+}
 
 
 html {
@@ -290,7 +293,7 @@ header {
 	height: auto;
 	background: url("../assets/pc/bg04.jpg") repeat;
 	margin-top: 110px;
-	padding-top: 80px;
+	padding: 80px 0px;
 	position: relative;
 	h1 {
 		width: 619px;
@@ -478,4 +481,18 @@ header {
 	// 		padding-left:6em;
 	// 	}
 	// }
+	.l-center {
+		width: 390px;
+		height: 60px;
+		@extend .l-center;
+		margin-top: 60px;
+	}
+	a {
+		width: 100%;
+		height: 60px;
+		img {
+			width: 100%;
+			height: 60px;
+		}
+	}
 }
