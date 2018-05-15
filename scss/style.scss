@@ -823,6 +823,32 @@ header {
 	width: 100%;
 	margin-top: 60px;
 	h1 {
+		width: 77%;
+		padding: 10px 0px;
+		background: $yellow;
+		border-radius: 3px;
+		margin: 0px auto;
 		font-family: $mgen;
+		text-align: center;
+		color: #fff;
+		font-size: 3.0vw;
+		letter-spacing: 0.1em;
+	}
+	.l-samary {
+		width: 77%;
+		margin: 60px auto 50px;
+		display: flex;
+		justify-content: space-between;
+		.b-img-wrapper {
+			width: 47%;
+			img {
+				width: 100%;
+			}
+		}
+		p {
+			width: 47%;
+			font-size: 1.4vw;
+			line-height: 1.7;
+		}
 	}
 }
