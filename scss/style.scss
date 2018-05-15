@@ -6,6 +6,12 @@ $blue: #2b5db7;
 $lightBlue: #e0f1fe;
 
 /* フォント */
+@font-face {
+	font-family: 'mgenplus-1m-bold';
+	src:local('mgenplus-1m-bold') ,
+		url('mgenplus-1m-bold.ttf');
+}
+$mgen: "mgenplus-1m-bold";
 .color-nomal {
 	color: $black;
 }
@@ -810,5 +816,13 @@ header {
 				}
 			}
 		}
+	}
+}
+
+.section12 {
+	width: 100%;
+	margin-top: 60px;
+	h1 {
+		font-family: $mgen;
 	}
 }

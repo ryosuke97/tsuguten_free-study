@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* 定義 */
 /* フォント */
+@font-face {
+  font-family: 'mgenplus-1m-bold';
+  src: local("mgenplus-1m-bold"), url("mgenplus-1m-bold.ttf");
+}
 .color-nomal {
   color: #2c2c2c;
 }
@@ -767,6 +771,14 @@ nav img {
   position: absolute;
   top: 7px;
   left: 7px;
+}
+
+.section12 {
+  width: 100%;
+  margin-top: 60px;
+}
+.section12 h1 {
+  font-family: "mgenplus-1m-bold";
 }
 
 /*# sourceMappingURL=style.css.map */
