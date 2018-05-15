@@ -608,7 +608,6 @@ nav img {
 }
 .section09 h1 {
   width: 71%;
-  height: 48px;
   position: absolute;
   top: 0px;
   left: 50%;
@@ -618,6 +617,9 @@ nav img {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 10;
+}
+.section09 h1 img {
+  width: 100%;
 }
 .section09 .b-staff-wanted {
   width: 77%;
@@ -637,6 +639,32 @@ nav img {
 }
 .section09 .b-staff-wanted .right-box img {
   width: 100%;
+}
+
+.section10 {
+  width: 100%;
+  padding: 80px 0px;
+}
+.section10 h1, .section10 p {
+  text-align: center;
+}
+.section10 h1 {
+  width: 65%;
+  margin: 0 auto;
+}
+.section10 h1 img {
+  width: 100%;
+}
+.section10 p {
+  font-size: 22px;
+  margin-top: 50px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+.section10 .l-fund-btn {
+  display: block;
+  width: 390px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

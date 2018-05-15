@@ -651,7 +651,6 @@ header {
 	position: relative;
 	h1 {
 		width: 71%;
-		height: 48px;
 		position: absolute;
 		top: 0px;
 		left: 50%;
@@ -661,6 +660,9 @@ header {
 		-o-transform: translate(-50%,-50%);
 		transform: translate(-50%,-50%);
 		z-index: 10;
+		img {
+			width: 100%;
+		}
 	}
 	.b-staff-wanted {
 		width: 77%;
@@ -680,5 +682,31 @@ header {
 				width: 100%;
 			}
 		}
+	}
+}
+
+.section10 {
+	width: 100%;
+	padding: 80px 0px;
+	h1,p {
+		text-align: center;
+	}
+	h1 {
+		width: 65%;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+	p {
+		font-size: 22px;
+		margin-top: 50px;
+		line-height: 1.8;
+		margin-bottom: 40px;
+	}
+	.l-fund-btn {
+		display: block;
+		width: 390px;
+		margin: 0 auto;
 	}
 }
