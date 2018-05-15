@@ -523,7 +523,7 @@ nav img {
   width: 100%;
 }
 .section07 .voice .l-voice .baloon01 {
-  width: 67%;
+  width: 75%;
   height: auto;
   background: url("../assets/pc/fukidashi01.png") center center no-repeat;
   background-size: 100% auto;
@@ -531,16 +531,16 @@ nav img {
 .section07 .voice .l-voice .baloon01::before {
   content: "";
   display: block;
-  padding-top: 12%;
+  padding-top: 9%;
 }
 .section07 .voice .l-voice .baloon01 p {
   width: 88%;
   height: auto;
-  font-size: 1.9vw;
+  font-size: 2.0vw;
   margin: 0 0 0 9.5%;
 }
 .section07 .voice .l-voice .baloon02 {
-  width: 67%;
+  width: 75%;
   height: auto;
   background: url("../assets/pc/fukidashi02.png") center center no-repeat;
   background-size: 100% auto;
@@ -548,13 +548,55 @@ nav img {
 .section07 .voice .l-voice .baloon02::before {
   content: "";
   display: block;
-  padding-top: 12%;
+  padding-top: 9%;
 }
 .section07 .voice .l-voice .baloon02 p {
   width: 88%;
   height: auto;
-  font-size: 1.9vw;
+  font-size: 2.0vw;
   margin: 0 5% 0 3%;
+}
+
+.section08 {
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.section08 .entry-content {
+  display: flex;
+}
+.section08 .entry-content .left-box {
+  width: 40%;
+  height: auto;
+  margin-right: 4%;
+  position: relative;
+}
+.section08 .entry-content .left-box img {
+  width: 100%;
+}
+.section08 .entry-content .right-box {
+  width: 56%;
+  position: relative;
+}
+.section08 .entry-content .right-box h1 img {
+  width: 100%;
+  max-width: 510px;
+}
+.section08 .entry-content .right-box p {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.section08 .bg {
+  width: 77%;
+  height: 350px;
+  background: url("../assets/pc/bg01.jpg") repeat;
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

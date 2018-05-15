@@ -110,18 +110,6 @@ header {
 	margin-bottom: 80px;
 	background: url("../assets/pc/img_mv.png") center right no-repeat;
 	background-size: cover;
-	// .mvImg {
-	// 	width: 100%;
-	// 	height: 600px;
-	// z-index: 1;
-		// img {
-		// 	height: 600px;
-		// 	vertical-align: bottom;
-		// 	position: absolute;
-		// 	right: 0px;
-		// 	top: 0px;
-		// }
-	// }
 	.mvContent {
 		position: absolute;
 		left: 60px;
@@ -576,39 +564,81 @@ header {
 				width: 100%;
 			}
 			.baloon01 {
-				width: 67%;
+				width: 75%;
 				height: auto;
 				background: url("../assets/pc/fukidashi01.png") center center no-repeat;
 				background-size: 100% auto;
 				&::before {
 					content: "";
 					display: block;
-					padding-top: 12%;
+					padding-top: 9%;
 				}
 				p {
 					width: 88%;
 					height: auto;
-					font-size: 1.9vw;
+					font-size: 2.0vw;
 					margin: 0 0 0 9.5%;
 				}
 			}
 			.baloon02 {
-				width: 67%;
+				width: 75%;
 				height: auto;
 				background: url("../assets/pc/fukidashi02.png") center center no-repeat;
 				background-size: 100% auto;
 				&::before {
 					content: "";
 					display: block;
-					padding-top: 12%;
+					padding-top: 9%;
 				}
 				p {
 					width: 88%;
 					height: auto;
-					font-size: 1.9vw;
+					font-size: 2.0vw;
 					margin: 0 5% 0 3% ;
 				}
 			}
 		}
+	}
+}
+
+.section08 {
+	width: 100%;
+	height: auto;
+	margin-top: 80px;
+	position: relative;
+	padding-bottom: 50px;
+	.entry-content {
+		display: flex;
+		.left-box {
+			width: 40%;
+			height: auto;
+			margin-right: 4%;
+			position: relative;
+			img {
+				width: 100%;
+			}
+		}
+		.right-box {
+			width: 56%;
+			position: relative;
+			h1 img {
+				width: 100%;
+				max-width: 510px;
+			}
+			p {
+				width: 100%;
+				margin-top: 50px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.bg {
+		width: 77%;
+		height: 350px;
+		background: url("../assets/pc/bg01.jpg") repeat;
+		position: absolute;
+		bottom: -50px;
+		right: 0px;
+		z-index: 0;
 	}
 }
