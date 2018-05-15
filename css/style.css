@@ -479,4 +479,34 @@ nav img {
   line-height: 1.75;
 }
 
+.section07 {
+  width: 100%;
+  position: relative;
+}
+.section07 .voice {
+  width: 77%;
+  background: url("../assets/pc/bg02.jpg") repeat;
+  margin: 125px auto 0px;
+}
+.section07 .voice h1 {
+  width: 450px;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.section07 .voice .l-voice {
+  display: flex;
+  justify-content: space-between;
+}
+.section07 .voice .l-voice img {
+  width: 24%;
+}
+
 /*# sourceMappingURL=style.css.map */

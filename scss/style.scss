@@ -534,3 +534,34 @@ header {
 		}
 	}
 }
+
+.section07 {
+	width: 100%;
+	position: relative;
+	.voice {
+		width: 77%;
+		background: url("../assets/pc/bg02.jpg") repeat;
+		margin: 125px auto 0px;
+		h1 {
+			width: 450px;
+			height: 90px;
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			-moz-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			z-index: 10;
+		}
+		.l-voice {
+			display: flex;
+			justify-content: space-between;
+			img {
+				width: 24%;
+				// height: auto;
+			}
+		}
+	}
+}
