@@ -541,6 +541,7 @@ header {
 	position: relative;
 	.voice {
 		width: 77%;
+		padding: 90px 0px 40px;
 		background: url("../assets/pc/bg02.jpg") repeat;
 		margin: 125px auto 0px;
 		h1 {
@@ -557,11 +558,56 @@ header {
 			z-index: 10;
 		}
 		.l-voice {
+			width: 88%;
+			height: auto;
+			margin: 0px 6% 10px;
 			display: flex;
 			justify-content: space-between;
+			.adjust-box {
+				width: 28%;
+				height: auto;
+			}
+			.box-1x1::before {
+				content: "";
+				display: block;
+				padding-top: 0%;
+			}
 			img {
-				width: 24%;
-				// height: auto;
+				width: 100%;
+			}
+			.baloon01 {
+				width: 67%;
+				height: auto;
+				background: url("../assets/pc/fukidashi01.png") center center no-repeat;
+				background-size: 100% auto;
+				&::before {
+					content: "";
+					display: block;
+					padding-top: 12%;
+				}
+				p {
+					width: 88%;
+					height: auto;
+					font-size: 1.9vw;
+					margin: 0 0 0 9.5%;
+				}
+			}
+			.baloon02 {
+				width: 67%;
+				height: auto;
+				background: url("../assets/pc/fukidashi02.png") center center no-repeat;
+				background-size: 100% auto;
+				&::before {
+					content: "";
+					display: block;
+					padding-top: 12%;
+				}
+				p {
+					width: 88%;
+					height: auto;
+					font-size: 1.9vw;
+					margin: 0 5% 0 3% ;
+				}
 			}
 		}
 	}
