@@ -79,6 +79,10 @@ body {
 	border-spacing: 0vh;
 }
 
+section {
+	width: 100%;
+}
+
 .wrapper {
 	margin: 0px auto;
 	width: 100%;
@@ -127,7 +131,6 @@ header {
  MV
 ------------------------------------------------------------------*/
 .section01 {
-	width: 100%;
 	height: 600px;
 	position: relative;
 	margin-bottom: 80px;
@@ -149,7 +152,6 @@ header {
  SubView
 ------------------------------------------------------------------*/
 .section02 {
-	width: 100%;
 	padding-bottom: 50px;
 	margin-bottom: 110px;
 	position: relative;
@@ -167,9 +169,12 @@ header {
 			}
 		}
 		.subViewText {
-			margin-left: 5%;
-			width: 35%;
+			margin-left: 3%;
+			width: 40%;
 			z-index: 10;
+			p {
+				font-size: 20px;
+			}
 		}
 	}
 	.subViewBg {
@@ -183,8 +188,8 @@ header {
 		div {
 			width: 30%;
 			position: absolute;
-			bottom: -30px;
-			left: 650px;
+			bottom: -60px;
+			right: 5%;
 			img {
 				width: 100%;
 			}
@@ -196,7 +201,6 @@ header {
  セクション3 自由研究ツールの特徴
 ------------------------------------------------------------------*/
 .section03 {
-	width: 100%;
 	position: relative;
 	h1 {
 		position: absolute;
@@ -240,7 +244,6 @@ header {
  セクション4 自由研究完成イメージ
 ------------------------------------------------------------------*/
 .section04 {
-	width: 100%;
 	height: auto;
 	padding: 50px 0px;
 	position: relative;
@@ -288,7 +291,6 @@ header {
  セクション5 自由研究サポート教室とは
 ------------------------------------------------------------------*/
 .section05 {
-	widows: 100%;
 	height: auto;
 	background: url("../assets/pc/bg04.jpg") repeat;
 	margin-top: 110px;
@@ -492,7 +494,6 @@ header {
  セクション6 平和学習ってなに？
 ------------------------------------------------------------------*/
 .section06 {
-	width: 100%;
 	height: 600px;
 	background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
 	background-size: cover;
@@ -531,7 +532,6 @@ header {
 }
 @media all and (min-width: 1300px){
 	.section06 {
-		width: 100%;
 		height: 600px;
 		background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
 		background-size: cover;
@@ -571,7 +571,6 @@ header {
  セクション7 参加者の声
 ------------------------------------------------------------------*/
 .section07 {
-	width: 100%;
 	position: relative;
 	.voice {
 		width: 77%;
@@ -651,7 +650,6 @@ header {
  セクション8 自由研究サポート教室に参加しよう！
 ------------------------------------------------------------------*/
 .section08 {
-	width: 100%;
 	height: auto;
 	margin-top: 80px;
 	position: relative;
@@ -700,7 +698,6 @@ header {
  セクション9 自由研究サポート教室学生スタッフ募集
 ------------------------------------------------------------------*/
 .section09 {
-	width: 100%;
 	padding: 80px 0px;
 	margin-top: 150px;
 	background: $lightBlue;
@@ -745,7 +742,6 @@ header {
  セクション10 自由研究サポート教室支援のお願い
 ------------------------------------------------------------------*/
 .section10 {
-	width: 100%;
 	padding: 80px 0px;
 	h1,p {
 		text-align: center;
@@ -769,7 +765,6 @@ header {
  セクション11 自由研究ツール2018 企画・運営
 ------------------------------------------------------------------*/
 .section11 {
-	width: 100%;
 	padding: 80px 0px;
 	background: url("../assets/pc/bg04.jpg") repeat;
 	a {
@@ -872,7 +867,6 @@ header {
  セクション12 第三世代が考える ヒロシマ「  」継ぐ展
 ------------------------------------------------------------------*/
 .section12 {
-	width: 100%;
 	margin-top: 60px;
 	h1 {
 		width: 77%;
@@ -909,7 +903,6 @@ header {
  セクション13 スポンサー
 ------------------------------------------------------------------*/
 .section13 {
-	width: 100%;
 	.sponsorship {
 		width: 77%;
 		margin: 0px auto;
@@ -945,7 +938,6 @@ header {
  セクション14 コンバージョンコンテンツ
 ------------------------------------------------------------------*/
 .section14 {
-	width: 100%;
 	padding: 60px 0px;
 	background: $lightBlue;
 	.l-cv-content {
