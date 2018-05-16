@@ -243,7 +243,6 @@ header {
 /*------------------------------------------------------------------
  セクション4 自由研究完成イメージ
 ------------------------------------------------------------------*/
-// ここ以下はポジションで修正済み
 .section04 {
 	width: 100%;
 	height: auto;
@@ -268,9 +267,14 @@ header {
 		margin-left: 12%;
 	}
 	.completeImg {
+		width: 44%;
 		position: absolute;
 		top: 120px;
 		left: 55%;
+		img {
+			width: 100%;
+			max-width: 440px;
+		}
 	}
 	.l-dlBtn {
 		position: absolute;
