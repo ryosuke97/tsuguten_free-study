@@ -197,48 +197,43 @@ nav img {
 ------------------------------------------------------------------*/
 .section03 {
   width: 100%;
-  height: 792px;
   position: relative;
 }
 .section03 h1 {
-  height: 50px;
   position: absolute;
   top: 0%;
   left: 50%;
-  -webkit-transform: translate(-50%, -25%);
-  -moz-transform: translate(-50%, -25%);
-  -ms-transform: translate(-50%, -25%);
-  -o-transform: translate(-50%, -25%);
-  transform: translate(-50%, -25%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section03 .featureContent {
-  width: 100%;
+.featureContent {
+  width: 77%;
+  margin: 0px auto;
+  padding-top: 5%;
+  padding-bottom: 50px;
   background: #eef8ff;
-  position: absolute;
-  top: 24px;
-  left: 0px;
-  z-index: 1;
 }
-.section03 .featureContent ul {
-  margin: 84px 150px 0px;
+.featureContent ul {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.roundFrame {
-  width: 212px;
-  height: 212px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.featureContent ul li {
+  width: 22%;
+  font-size: 18px;
+}
+.featureContent img {
+  width: 100%;
 }
 .featureText {
-  width: 212px;
+  width: 100%;
 }
-.section03 .featureContent .l-annotation {
-  margin: 0px 150px 60px;
+.l-annotation {
+  margin: 3% 0% 0% 2%;
 }
 
 /*------------------------------------------------------------------
@@ -247,10 +242,11 @@ nav img {
 .section04 {
   width: 100%;
   height: auto;
+  padding: 50px 0px;
   position: relative;
 }
 .section04 h1 {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .section04 .catchCopy {
   width: 100%;
@@ -264,14 +260,14 @@ nav img {
   position: relative;
 }
 .section04 .textArea {
-  width: 450px;
+  width: 430px;
   padding-top: 40px;
   margin-left: 12%;
 }
 .section04 .completeImg {
-  width: 44%;
+  width: 40%;
   position: absolute;
-  top: 120px;
+  top: 150px;
   left: 55%;
 }
 .section04 .completeImg img {

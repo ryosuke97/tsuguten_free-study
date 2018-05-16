@@ -196,46 +196,41 @@ header {
 ------------------------------------------------------------------*/
 .section03 {
 	width: 100%;
-	height: 792px;
 	position: relative;
 	h1 {
-		height: 50px;
 		position: absolute;
 		top: 0%;
 		left: 50%;
-		-webkit-transform: translate(-50%,-25%);
-		-moz-transform: translate(-50%,-25%);
-		-ms-transform: translate(-50%,-25%);
-		-o-transform: translate(-50%,-25%);
-		transform: translate(-50%,-25%);
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
 		z-index: 10;
 	}
-	.featureContent {
-		width: 100%;
+	@at-root .featureContent {
+		width: 77%;
+		margin: 0px auto;
+		padding-top: 5%;
+		padding-bottom: 50px;
 		background: #eef8ff;
-		position: absolute;
-		top: 24px;
-		left: 0px;
-		z-index: 1;
 		ul {
-			margin: 84px 150px 0px;
+			width: 100%;
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
+			li {
+				width: 22%;
+				font-size: 18px;
+			}
 		}
-		@at-root .roundFrame {
-			width: 212px;
-			height: 212px;
-			background: #fff;
-			border-radius: 50%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+		img {
+			width: 100%;
 		}
 		@at-root .featureText {
-			width: 212px;
+			width: 100%;
 		}
-		.l-annotation {
-			margin: 0px 150px 60px;
+		@at-root .l-annotation {
+			margin: 3% 0% 0% 2%;
 		}
 	}
 }
@@ -246,9 +241,10 @@ header {
 .section04 {
 	width: 100%;
 	height: auto;
+	padding: 50px 0px;
 	position: relative;
 	h1 {
-		margin-bottom: 80px;
+		margin-bottom: 50px;
 	}
 	.catchCopy {
 		width: 100%;
@@ -262,14 +258,14 @@ header {
 		position: relative;
 	}
 	.textArea {
-		width: 450px;
+		width: 430px;
 		padding-top: 40px;
 		margin-left: 12%;
 	}
 	.completeImg {
-		width: 44%;
+		width: 40%;
 		position: absolute;
-		top: 120px;
+		top: 150px;
 		left: 55%;
 		img {
 			width: 100%;
