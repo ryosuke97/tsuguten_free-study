@@ -807,4 +807,75 @@ nav img {
   line-height: 1.7;
 }
 
+.section13 {
+  width: 100%;
+}
+.section13 .sponsorship {
+  width: 77%;
+  margin: 0px auto;
+  font-weight: bold;
+}
+.section13 .l-sponsorlist dl {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+.section13 .l-sponsorlist dl dt {
+  width: 10%;
+}
+.section13 .l-sponsorlist dl dd {
+  width: 90%;
+}
+.section13 .b-sns {
+  width: 77%;
+  margin: 40px auto 60px;
+}
+.section13 .b-sns ul {
+  width: 100%;
+  display: flex;
+}
+.section13 .b-sns ul li {
+  margin-right: 40px;
+}
+
+.section14 {
+  width: 100%;
+  padding: 60px 0px;
+  background: #e0f1fe;
+}
+.section14 .l-cv-content {
+  width: 64%;
+  margin: 0px auto;
+}
+.section14 .l-cv-content h1 {
+  width: 100%;
+  font-family: "mgenplus-1m-bold";
+  font-size: 32px;
+  color: #2c2c2c;
+  text-align: center;
+}
+.section14 .l-cv-content h1 span {
+  font-size: 50px;
+}
+.section14 .l-cv-content ul {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.section14 .l-cv-content ul li {
+  width: 48%;
+}
+.section14 .l-cv-content ul li img {
+  width: 100%;
+}
+
+footer {
+  font-size: 14px;
+  color: #fff;
+  padding: 30px 0px;
+  text-align: center;
+  background: #2b5db7;
+}
+
 /*# sourceMappingURL=style.css.map */

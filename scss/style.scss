@@ -852,3 +852,76 @@ header {
 		}
 	}
 }
+
+.section13 {
+	width: 100%;
+	.sponsorship {
+		width: 77%;
+		margin: 0px auto;
+		font-weight: bold;
+	}
+	.l-sponsorlist {
+		dl {
+			width: 100%;
+			display: flex;
+			margin-bottom: 30px;
+			dt {
+				width: 10%;
+			}
+			dd {
+				width: 90%;
+			}
+		}
+	}
+	.b-sns {
+		width: 77%;
+		margin: 40px auto 60px;
+		ul {
+			width: 100%;
+			display: flex;
+			li {
+				margin-right: 40px;
+			}
+		}
+	}
+}
+
+.section14 {
+	width: 100%;
+	padding: 60px 0px;
+	background: $lightBlue;
+	.l-cv-content {
+		width: 64%;
+		margin: 0px auto;
+		h1 {
+			width: 100%;
+			font-family: $mgen;
+			font-size: 32px;
+			color: $black;
+			text-align: center;
+			span {
+				font-size: 50px;
+			}
+		}
+		ul {
+			width: 100%;
+			margin-top: 40px;
+			display: flex;
+			justify-content: space-between;
+			li {
+				width: 48%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	font-size: 14px;
+	color: #fff;
+	padding: 30px 0px;
+	text-align: center;
+	background: $blue;
+}
