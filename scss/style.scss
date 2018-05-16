@@ -37,6 +37,22 @@ $mgen: "mgenplus-1m-bold";
 	font-weight: bold;
 }
 
+h1 {
+	width: 100%;
+	font-family: $mgen;
+	font-size: 50px;
+	color: $blue;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+@media all and (min-width: 1300px){
+	width: 100%;
+	font-family: $mgen;
+	font-size: 50px;
+	color: $blue;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
 h3 {
 	font-size: 24px;
 	color: $black;
@@ -183,16 +199,15 @@ header {
 	height: 792px;
 	position: relative;
 	h1 {
-		width: 616px;
-		height: 48px;
+		height: 50px;
 		position: absolute;
-		top: 0px;
+		top: 0%;
 		left: 50%;
-		-webkit-transform: translate(-50%,0%);
-		-moz-transform: translate(-50%,0%);
-		-ms-transform: translate(-50%,0%);
-		-o-transform: translate(-50%,0%);
-		transform: translate(-50%,0%);
+		-webkit-transform: translate(-50%,-25%);
+		-moz-transform: translate(-50%,-25%);
+		-ms-transform: translate(-50%,-25%);
+		-o-transform: translate(-50%,-25%);
+		transform: translate(-50%,-25%);
 		z-index: 10;
 	}
 	.featureContent {
@@ -234,24 +249,10 @@ header {
 	height: auto;
 	position: relative;
 	h1 {
-		width: 517px;
-		height: 48px;
-		// position: absolute;
-		// top: 80px;
-		// left: 50%;
-		// -webkit-transform: translate(-50%,0%);
-		// -moz-transform: translate(-50%,0%);
-		// -ms-transform: translate(-50%,0%);
-		// -o-transform: translate(-50%,0%);
-		// transform: translate(-50%,0%);
-		// z-index: 10;
-		margin: 80px auto;
+		margin-bottom: 80px;
 	}
 	.catchCopy {
 		width: 100%;
-		height: 213px;
-		// position: absolute;
-		// top: 200px;
 		margin-left: 18%;
 	}
 	.textContent {
@@ -260,15 +261,11 @@ header {
 		background: url("../assets/pc/bg01.jpg") repeat;
 		margin-top: 50px;
 		position: relative;
-		// position: absolute;
-		// top: 470px;
-		// left: 0px;
 	}
 	.textArea {
 		width: 450px;
 		padding-top: 40px;
 		margin-left: 12%;
-		// margin: 40px 0px 40px 150px;
 	}
 	.completeImg {
 		position: absolute;
@@ -297,16 +294,14 @@ header {
 	padding: 80px 0px;
 	position: relative;
 	h1 {
-		width: 619px;
-		height: 48px;
 		position: absolute;
-		top: -24px;
+		top: 0px;
 		left: 50%;
-		-webkit-transform: translate(-50%,0%);
-		-moz-transform: translate(-50%,0%);
-		-ms-transform: translate(-50%,0%);
-		-o-transform: translate(-50%,0%);
-		transform: translate(-50%,0%);
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
 		z-index: 10;
 	}
 	.l-info {
@@ -396,19 +391,14 @@ header {
 		width: 77%;
 		margin: 80px auto 0px;
 		h2 {
-			width: 50%;
-			height: 40px;
-			margin: 0px auto 60px;
+			width: 100%;
 			text-align: center;
+			margin-bottom: 40px;
 		}
 	}
 	.l-table {
 		width:100%;
 		border-right: #b2b2b2 solid 1px;
-		// tr {
-		// 	width: 100%;
-		// 	height: 80px;
-		// }
 		thead {
 			tr {
 				width: 100%;
@@ -508,17 +498,18 @@ header {
 	background-size: cover;
 	position: relative;
 	.textBg {
-		width: 485px;
-		height: 364px;
-		padding: 40px;
+		width: 42%;
+		// height: 364px;
+		padding: 2%;
 		background-color: rgba(255,255,255,0.8);
 		position: absolute;
 		top: 80px;
 		right: 10%;
 		h1 {
-			width: 477px;
-			height: 47px;
-			margin: 0 auto 5px;
+			width: 100%;
+			font-size: 4vw;
+			// height: 47px;
+			color: $black;
 			
 		}
 		svg{
@@ -533,12 +524,50 @@ header {
 			stroke-dasharray: 0.5, 20;
 		}
 		p {
+			font-size: 20px;
 			margin-top: 10px;
 			line-height: 1.75;
 		}
 	}
 }
-
+@media all and (min-width: 1300px){
+	.section06 {
+		width: 100%;
+		height: 600px;
+		background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
+		background-size: cover;
+		position: relative;
+		.textBg {
+			width: 566px;
+			padding: 40px;
+			background-color: rgba(255,255,255,0.8);
+			position: absolute;
+			top: 80px;
+			right: 10%;
+			h1 {
+				width: 100%;
+				font-size: 50px;
+				color: $black;
+			}
+			svg{
+				width: 100%;
+				height: 6px;
+			}
+			svg line{
+				fill: none;
+				stroke: $yellow;
+				stroke-width: 6;
+				stroke-linecap: round;
+				stroke-dasharray: 0.5, 20;
+			}
+			p {
+				font-size: 22px;
+				margin-top: 10px;
+				line-height: 1.75;
+			}
+		}
+	}
+}
 /*------------------------------------------------------------------
  セクション7 参加者の声
 ------------------------------------------------------------------*/
@@ -642,12 +671,15 @@ header {
 		.right-box {
 			width: 56%;
 			position: relative;
-			h1 img {
+			h1 {
 				width: 100%;
-				max-width: 510px;
+				max-width: 600px;
+				font-size: 3vw;
+				text-align: left;
 			}
 			p {
 				width: 100%;
+				max-width: 600px;
 				margin-top: 50px;
 				margin-bottom: 30px;
 			}
@@ -674,7 +706,7 @@ header {
 	background: $lightBlue;
 	position: relative;
 	h1 {
-		width: 71%;
+		// font-size: 4vw;
 		position: absolute;
 		top: 0px;
 		left: 50%;
@@ -718,13 +750,8 @@ header {
 	h1,p {
 		text-align: center;
 	}
-	h1 {
-		width: 65%;
-		margin: 0 auto;
-		img {
-			width: 100%;
-		}
-	}
+	// h1 {
+	// }
 	p {
 		font-size: 22px;
 		margin-top: 50px;
@@ -750,18 +777,15 @@ header {
 		text-decoration: underline;
 	}
 	h1 {
-		width: 46%;
-		margin: 0 auto 50px;
-		img {
-			width: 100%;
-		}
+		font-size: 40px;
+		color: $black;
 	}
 	h3 {
 		margin: 0;
 	}
 	.b-team-list {
-		width: 46%;
-		margin: 0px auto 30px;
+		width: 47%;
+		margin: 40px auto 30px;
 		display: flex;
 		p {
 			width: 20%;
@@ -770,7 +794,8 @@ header {
 			font-weight: bold;
 		}
 		ul {
-			width: 70%;
+			width: 73%;
+			color: $blue;
 			li {
 				font-size: 18px;
 			}
