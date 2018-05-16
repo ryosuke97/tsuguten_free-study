@@ -13,30 +13,6 @@
   color: #2b5db7;
 }
 
-.fontMin {
-  font-size: 16px;
-}
-
-.fontSmall {
-  font-size: 18px;
-}
-
-.fontMedium {
-  font-size: 22px;
-}
-
-.fontLarge {
-  font-size: 24px;
-}
-
-.fontMax {
-  font-size: 40px;
-}
-
-.fontBold {
-  font-weight: bold;
-}
-
 h1 {
   width: 100%;
   font-family: "mgenplus-1m-bold";
@@ -47,12 +23,14 @@ h1 {
 }
 
 @media all and (min-width: 1300px) {
-  width: 100%;
-  font-family: "mgenplus-1m-bold";
-  font-size: 50px;
-  color: #2b5db7;
-  text-align: center;
-  letter-spacing: 0.1em;
+  h1 {
+    width: 100%;
+    font-family: "mgenplus-1m-bold";
+    font-size: 40px !important;
+    color: #2b5db7;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
 }
 h3 {
   font-size: 24px;
@@ -398,6 +376,8 @@ nav img {
 }
 .section05 .schedule h2 {
   width: 100%;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -649,7 +629,7 @@ nav img {
 .section08 .entry-content .right-box h1 {
   width: 100%;
   max-width: 600px;
-  font-size: 3vw;
+  font-size: 40px;
   text-align: left;
 }
 .section08 .entry-content .right-box p {
