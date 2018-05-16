@@ -71,6 +71,7 @@ h3 {
 
 html {
 	width: 100%;
+	color: $black;
 }
 
 body {
@@ -130,7 +131,7 @@ header {
 	height: 600px;
 	position: relative;
 	margin-bottom: 80px;
-	background: url("../assets/pc/img_mv.png") center right no-repeat;
+	background: url("../assets/pc/bg_mv.png") center right no-repeat;
 	background-size: cover;
 	.mvContent {
 		position: absolute;
@@ -423,7 +424,6 @@ header {
 			}
 			th {
 				height: 80px;
-				color: $black;
 				font-weight: bold;
 				background:$lightBlue;
 				border-bottom:#b2b2b2 solid 1px;
@@ -508,7 +508,6 @@ header {
 		h1 {
 			width: 100%;
 			font-size: 4vw;
-			// height: 47px;
 			color: $black;
 			
 		}
@@ -679,6 +678,7 @@ header {
 			}
 			p {
 				width: 100%;
+				font-size: 22px;
 				max-width: 600px;
 				margin-top: 50px;
 				margin-bottom: 30px;

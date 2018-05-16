@@ -72,6 +72,7 @@ h3 {
 
 html {
   width: 100%;
+  color: #2c2c2c;
 }
 
 body {
@@ -131,7 +132,7 @@ nav img {
   height: 600px;
   position: relative;
   margin-bottom: 80px;
-  background: url("../assets/pc/img_mv.png") center right no-repeat;
+  background: url("../assets/pc/bg_mv.png") center right no-repeat;
   background-size: cover;
 }
 .section01 .mvContent {
@@ -423,7 +424,6 @@ nav img {
 }
 .section05 .l-table tbody th {
   height: 80px;
-  color: #2c2c2c;
   font-weight: bold;
   background: #e0f1fe;
   border-bottom: #b2b2b2 solid 1px;
@@ -656,6 +656,7 @@ nav img {
 }
 .section08 .entry-content .right-box p {
   width: 100%;
+  font-size: 22px;
   max-width: 600px;
   margin-top: 50px;
   margin-bottom: 30px;
