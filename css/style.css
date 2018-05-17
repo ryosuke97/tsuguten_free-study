@@ -262,40 +262,80 @@ nav img {
 .section04 h1 {
   margin-bottom: 50px;
 }
-.section04 .catchCopy {
+.section04 .catch-copy {
   width: 100%;
   margin-left: 18%;
 }
-.section04 .textContent {
+.section04 .text-content {
   width: 72%;
   height: 300px;
   background: url("../assets/pc/bg01.jpg") repeat;
   margin-top: 50px;
   position: relative;
 }
-.section04 .textArea {
+.section04 .text-area {
   width: 430px;
   padding-top: 40px;
   margin-left: 12%;
 }
-.section04 .completeImg {
+.section04 .complete-img {
   width: 40%;
   position: absolute;
   top: 150px;
   left: 55%;
 }
-.section04 .completeImg img {
+.section04 .complete-img img {
   width: 100%;
   max-width: 440px;
 }
-.section04 .l-dlBtn {
+.section04 .l-dl-btn {
   position: absolute;
   bottom: -30px;
   left: 12%;
   z-index: 10;
 }
-.section04 .l-dlBtn img {
+.section04 .l-dl-btn img {
   vertical-align: bottom;
+}
+.section04 .l-shaped-shape04 {
+  width: 8%;
+  position: absolute;
+  top: -25px;
+  left: 80%;
+  z-index: 0;
+}
+.section04 .l-shaped-shape04 img {
+  width: 100%;
+}
+.section04 .l-shaped-shape05 {
+  width: 8%;
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  z-index: 0;
+}
+.section04 .l-shaped-shape05 img {
+  width: 100%;
+}
+.section04 .l-shaped-shape06 {
+  width: 8%;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  z-index: 0;
+}
+.section04 .l-shaped-shape06 img {
+  width: 100%;
+}
+.section04 .l-parts-scissors {
+  width: 8%;
+  position: absolute;
+  top: 200px;
+  left: 42%;
+  z-index: 0;
+}
+.section04 .l-parts-scissors img {
+  width: 100%;
 }
 
 /*------------------------------------------------------------------
@@ -308,7 +348,7 @@ nav img {
   padding: 80px 0px;
   position: relative;
 }
-.section05 .l-textCenter {
+.section05 .l-text-center {
   text-align: center;
 }
 .section05 h1 {
@@ -480,6 +520,56 @@ nav img {
   width: 100%;
   height: 60px;
 }
+.section05 .l-shaped-shape07 {
+  width: 10%;
+  position: absolute;
+  top: 20px;
+  left: 3%;
+  z-index: 0;
+}
+.section05 .l-shaped-shape07 img {
+  width: 100%;
+}
+.section05 .l-parts-face {
+  width: 10%;
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  z-index: 0;
+}
+.section05 .l-parts-face img {
+  width: 100%;
+}
+.section05 .l-shaped-shape08 {
+  width: 10%;
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  z-index: 0;
+}
+.section05 .l-shaped-shape08 img {
+  width: 100%;
+}
+.section05 .l-shaped-shape09 {
+  width: 8%;
+  position: absolute;
+  top: 48%;
+  left: 3%;
+  z-index: 0;
+}
+.section05 .l-shaped-shape09 img {
+  width: 100%;
+}
+.section05 .l-shaped-shape10 {
+  width: 8%;
+  position: absolute;
+  bottom: 2%;
+  right: 3%;
+  z-index: 0;
+}
+.section05 .l-shaped-shape10 img {
+  width: 100%;
+}
 
 /*------------------------------------------------------------------
  Section06 平和学習ってなに？
@@ -635,6 +725,46 @@ nav img {
   font-size: 2.0vw;
   margin: 0 5% 0 3%;
 }
+.section07 .l-shaped-shape11 {
+  width: 12%;
+  position: absolute;
+  top: -2%;
+  left: 5%;
+  z-index: 10;
+}
+.section07 .l-shaped-shape11 img {
+  width: 100%;
+}
+.section07 .l-shaped-shape12 {
+  width: 8%;
+  position: absolute;
+  top: -2%;
+  right: 5%;
+  z-index: 10;
+}
+.section07 .l-shaped-shape12 img {
+  width: 100%;
+}
+.section07 .l-shaped-shape13 {
+  width: 8%;
+  position: absolute;
+  bottom: 22%;
+  right: 5%;
+  z-index: 10;
+}
+.section07 .l-shaped-shape13 img {
+  width: 100%;
+}
+.section07 .l-shaped-shape14 {
+  width: 6%;
+  position: absolute;
+  bottom: 0%;
+  left: 8%;
+  z-index: 10;
+}
+.section07 .l-shaped-shape14 img {
+  width: 100%;
+}
 
 /*------------------------------------------------------------------
  Section08 自由研究サポート教室に参加しよう！
@@ -683,6 +813,16 @@ nav img {
   right: 0px;
   z-index: 0;
 }
+.section08 .l-shaped-shape15 {
+  width: 6%;
+  position: absolute;
+  bottom: -20%;
+  right: 8%;
+  z-index: 10;
+}
+.section08 .l-shaped-shape15 img {
+  width: 100%;
+}
 
 /*------------------------------------------------------------------
  Section09 自由研究サポート教室学生スタッフ募集
@@ -726,12 +866,23 @@ nav img {
 .section09 .b-staff-wanted .right-box img {
   width: 100%;
 }
+.section09 .l-parts-shirt {
+  width: 10%;
+  position: absolute;
+  top: -35%;
+  left: 5%;
+  z-index: 0;
+}
+.section09 .l-parts-shirt img {
+  width: 100%;
+}
 
 /*------------------------------------------------------------------
  Section10 自由研究サポート教室支援のお願い
 ------------------------------------------------------------------*/
 .section10 {
   padding: 80px 0px;
+  position: relative;
 }
 .section10 h1, .section10 p {
   text-align: center;
@@ -747,6 +898,26 @@ nav img {
   width: 390px;
   margin: 0 auto;
 }
+.section10 .l-shaped-shape16 {
+  width: 6%;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  z-index: 0;
+}
+.section10 .l-shaped-shape16 img {
+  width: 100%;
+}
+.section10 .l-shaped-shape17 {
+  width: 10%;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  z-index: 0;
+}
+.section10 .l-shaped-shape17 img {
+  width: 100%;
+}
 
 /*------------------------------------------------------------------
  Section11 自由研究ツール2018 企画・運営
@@ -754,6 +925,7 @@ nav img {
 .section11 {
   padding: 80px 0px;
   background: url("../assets/pc/bg04.jpg") repeat;
+  position: relative;
 }
 .section11 a {
   color: #2b5db7;
@@ -849,12 +1021,43 @@ nav img {
   top: 7px;
   left: 7px;
 }
+.section11 .l-shaped-shape18 {
+  width: 8%;
+  position: absolute;
+  top: 12%;
+  right: 5%;
+  z-index: 0;
+}
+.section11 .l-shaped-shape18 img {
+  width: 100%;
+}
+.section11 .l-shaped-shape19 {
+  width: 8%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 0;
+}
+.section11 .l-shaped-shape19 img {
+  width: 100%;
+}
+.section11 .l-shaped-shape20 {
+  width: 8%;
+  position: absolute;
+  bottom: -4%;
+  left: 5%;
+  z-index: 0;
+}
+.section11 .l-shaped-shape20 img {
+  width: 100%;
+}
 
 /*------------------------------------------------------------------
  Section12 第三世代が考える ヒロシマ「  」継ぐ展
 ------------------------------------------------------------------*/
 .section12 {
   margin-top: 60px;
+  position: relative;
 }
 .section12 h1 {
   width: 77%;
@@ -885,6 +1088,16 @@ nav img {
   font-size: 1.4vw;
   line-height: 1.7;
 }
+.section12 .l-shaped-shape21 {
+  width: 10%;
+  position: absolute;
+  bottom: -30%;
+  right: 10%;
+  z-index: 0;
+}
+.section12 .l-shaped-shape21 img {
+  width: 100%;
+}
 
 /*------------------------------------------------------------------
  Section13 スポンサー
@@ -897,13 +1110,19 @@ nav img {
 .section13 .l-sponsorlist dl {
   width: 100%;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .section13 .l-sponsorlist dl dt {
   width: 10%;
 }
 .section13 .l-sponsorlist dl dd {
   width: 90%;
+}
+.section13 .l-sponsorlist dl dd a {
+  color: #2b5db7;
+}
+.section13 .l-sponsorlist p a {
+  color: #2b5db7;
 }
 .section13 .b-sns {
   width: 77%;
@@ -923,6 +1142,7 @@ nav img {
 .section14 {
   padding: 60px 0px;
   background: #e0f1fe;
+  position: relative;
 }
 .section14 .l-cv-content {
   width: 64%;
@@ -948,6 +1168,26 @@ nav img {
   width: 48%;
 }
 .section14 .l-cv-content ul li img {
+  width: 100%;
+}
+.section14 .l-shaped-shape22 {
+  width: 8%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 0;
+}
+.section14 .l-shaped-shape22 img {
+  width: 100%;
+}
+.section14 .l-shaped-shape23 {
+  width: 6%;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  z-index: 0;
+}
+.section14 .l-shaped-shape23 img {
   width: 100%;
 }
 
