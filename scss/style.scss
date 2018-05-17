@@ -1,24 +1,42 @@
-/* 定義 */
-$black: #2c2c2c;
-$lightGray: #b2b2b2;
-$yellow: #ffb700;
-$blue: #2b5db7;
-$lightBlue: #e0f1fe;
-
-/* フォント */
+/*------------------------------------------------------------------
+ Additional fonts
+------------------------------------------------------------------*/
 @font-face {
 	font-family: 'mgenplus-1m-bold';
 	src:local('mgenplus-1m-bold') ,
 		url('mgenplus-1m-bold.ttf');
 }
+
+/*------------------------------------------------------------------
+ Def
+------------------------------------------------------------------*/
+$black: #2c2c2c;
+$lightGray: #b2b2b2;
+$yellow: #ffb700;
+$blue: #2b5db7;
+$lightBlue: #e0f1fe;
 $mgen: "mgenplus-1m-bold";
-.color-nomal {
+
+/*------------------------------------------------------------------
+ Selector
+------------------------------------------------------------------*/
+html {
+	width: 100%;
 	color: $black;
 }
-.emphasis {
-	color: #2b5db7;
+body {
+	width: 100%;
+	border-spacing: 0vh;
 }
-
+section {
+	width: 100%;
+}
+.wrapper {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 1300px;
+	overflow: hidden;
+}
 h1 {
 	width: 100%;
 	font-family: $mgen;
@@ -26,6 +44,12 @@ h1 {
 	color: $blue;
 	text-align: center;
 	letter-spacing: 0.1em;
+}
+h3 {
+	font-size: 24px;
+	color: $black;
+	font-weight: bold;
+	margin: 24px 0px 16px;
 }
 @media all and (min-width: 1300px){
 	h1 {
@@ -36,42 +60,16 @@ h1 {
 		text-align: center;
 		letter-spacing: 0.1em;
 	}
-}
-h3 {
-	font-size: 24px;
-	color: $black;
-	font-weight: bold;
-	margin: 24px 0px 16px;
+	.section03 h1 {
+		font-size: 50px !important;
+	}
 }
 
-/* レイアウト */
-.l-textCenter {
-	text-align: center;
-}
-.l-center {
-	margin: 0px auto;
-}
-
-
-html {
-	width: 100%;
-	color: $black;
-}
-
-body {
-	width: 100%;
-	border-spacing: 0vh;
-}
-
-section {
-	width: 100%;
-}
-
-.wrapper {
-	margin: 0px auto;
-	width: 100%;
-	max-width: 1300px;
-	overflow: hidden;
+/*------------------------------------------------------------------
+ Util
+------------------------------------------------------------------*/
+.emphasis {
+	color: #2b5db7;
 }
 
 /*------------------------------------------------------------------
@@ -112,7 +110,7 @@ header {
 }
 
 /*------------------------------------------------------------------
- MV
+ Section01 MV
 ------------------------------------------------------------------*/
 .section01 {
 	height: 600px;
@@ -120,12 +118,12 @@ header {
 	margin-bottom: 80px;
 	background: url("../assets/pc/bg_mv.png") center right no-repeat;
 	background-size: cover;
-	.mvContent {
+	@at-root .mv-content {
 		position: absolute;
 		left: 60px;
 		top: 50px;
 		z-index: 10;
-		.dlBtn {
+		@at-root .dl-btn {
 			margin-top: 30px;
 			margin-bottom: 20px;
 		}
@@ -133,17 +131,17 @@ header {
 }
 
 /*------------------------------------------------------------------
- SubView
+ Section02 sub-view
 ------------------------------------------------------------------*/
 .section02 {
 	padding-bottom: 50px;
 	margin-bottom: 110px;
 	position: relative;
-	.subView {
+	.sub-view {
 		width: 100%;
 		display: flex;
 		z-index: 10;
-		.leftImg {
+		.left-img {
 			width: 47%;
 			z-index: 10;
 			img {
@@ -152,7 +150,7 @@ header {
 				z-index: 10;
 			}
 		}
-		.subViewText {
+		.sub-view-text {
 			margin-left: 3%;
 			width: 40%;
 			z-index: 10;
@@ -161,7 +159,7 @@ header {
 			}
 		}
 	}
-	.subViewBg {
+	.sub-viewBg {
 		width: 80%;
 		height: 90%;
 		background: url("../assets/pc/bg01.jpg") repeat;
@@ -169,7 +167,7 @@ header {
 		bottom: 0px;
 		right: 0px;
 		z-index: 1;
-		div {
+		.l-sub-view__img {
 			width: 30%;
 			position: absolute;
 			bottom: -60px;
@@ -179,16 +177,37 @@ header {
 			}
 		}
 	}
+	.l-shaped-shape01 {
+		width: 8%;
+		position: absolute;
+		top: 150px;
+		left: 90%;
+		z-index: 10;
+		img {
+			width: 100%;
+		}
+	}
+	.l-shaped-shape02 {
+		width: 10%;
+		position: absolute;
+		top: 96%;
+		left: 5%;
+		z-index: 10;
+		img {
+			width: 100%;
+		}
+	}
 }
 
 /*------------------------------------------------------------------
- セクション3 自由研究ツールの特徴
+ Section03 自由研究ツールの特徴
 ------------------------------------------------------------------*/
 .section03 {
+	padding-top: 50px;
 	position: relative;
 	h1 {
 		position: absolute;
-		top: 0%;
+		top: 6%;
 		left: 50%;
 		-webkit-transform: translate(-50%,-50%);
 		-moz-transform: translate(-50%,-50%);
@@ -222,10 +241,20 @@ header {
 			margin: 3% 0% 0% 2%;
 		}
 	}
+	.l-shaped-shape03 {
+		width: 10%;
+		position: absolute;
+		top: -25px;
+		left: 80%;
+		z-index: 0;
+		img {
+			width: 100%;
+		}
+	}
 }
 
 /*------------------------------------------------------------------
- セクション4 自由研究完成イメージ
+ Section04 自由研究完成イメージ
 ------------------------------------------------------------------*/
 .section04 {
 	height: auto;
@@ -272,7 +301,7 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション5 自由研究サポート教室とは
+ Section05 自由研究サポート教室とは
 ------------------------------------------------------------------*/
 .section05 {
 	height: auto;
@@ -280,6 +309,9 @@ header {
 	margin-top: 110px;
 	padding: 80px 0px;
 	position: relative;
+	.l-textCenter {
+		text-align: center;
+	}
 	h1 {
 		position: absolute;
 		top: 0px;
@@ -298,7 +330,7 @@ header {
 		justify-content: space-between;
 		.l-infoL {
 			width: 47%;
-			.leftImg {
+			.left-img {
 				width: 100%;
 				img {
 					width: 100%;
@@ -385,7 +417,7 @@ header {
 			margin-bottom: 40px;
 		}
 	}
-	.l-table {
+	.table {
 		width:100%;
 		border-right: #b2b2b2 solid 1px;
 		thead {
@@ -441,30 +473,29 @@ header {
 		}
 	}
 	// @media screen and (max-width: 768px) {
-	// 	.l-table thead {
+	// 	.table thead {
 	// 		display:none;
 	// 	}
-	// 	.l-table tbody th {
+	// 	.table tbody th {
 	// 		display:block;
 	// 	}
-	// 	.l-table tbody td {
+	// 	.table tbody td {
 	// 		display:block;
 	// 	}
-	// 	.l-table tbody td::before {
+	// 	.table tbody td::before {
 	// 		content: attr(label);
 	// 		float: left;
 	// 		clear:both;
 	// 		font-weight:bold;
 	// 	}
-	// 	.l-table tbody td p {
+	// 	.table tbody td p {
 	// 		padding-left:6em;
 	// 	}
 	// }
 	.l-center {
 		width: 390px;
 		height: 60px;
-		@extend .l-center;
-		margin-top: 60px;
+		margin: 60px auto;
 	}
 	a {
 		width: 100%;
@@ -477,14 +508,14 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション6 平和学習ってなに？
+ Section06 平和学習ってなに？
 ------------------------------------------------------------------*/
 .section06 {
 	height: 600px;
 	background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
 	background-size: cover;
 	position: relative;
-	.textBg {
+	.text-area {
 		width: 42%;
 		padding: 2%;
 		background-color: rgba(255,255,255,0.8);
@@ -521,7 +552,7 @@ header {
 		background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
 		background-size: cover;
 		position: relative;
-		.textBg {
+		.text-area {
 			width: 566px;
 			padding: 40px;
 			background-color: rgba(255,255,255,0.8);
@@ -553,7 +584,7 @@ header {
 	}
 }
 /*------------------------------------------------------------------
- セクション7 参加者の声
+ Section07 参加者の声
 ------------------------------------------------------------------*/
 .section07 {
 	position: relative;
@@ -632,7 +663,7 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション8 自由研究サポート教室に参加しよう！
+ Section08 自由研究サポート教室に参加しよう！
 ------------------------------------------------------------------*/
 .section08 {
 	height: auto;
@@ -680,7 +711,7 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション9 自由研究サポート教室学生スタッフ募集
+ Section09 自由研究サポート教室学生スタッフ募集
 ------------------------------------------------------------------*/
 .section09 {
 	padding: 80px 0px;
@@ -688,7 +719,6 @@ header {
 	background: $lightBlue;
 	position: relative;
 	h1 {
-		// font-size: 4vw;
 		position: absolute;
 		top: 0px;
 		left: 50%;
@@ -724,15 +754,13 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション10 自由研究サポート教室支援のお願い
+ Section10 自由研究サポート教室支援のお願い
 ------------------------------------------------------------------*/
 .section10 {
 	padding: 80px 0px;
 	h1,p {
 		text-align: center;
 	}
-	// h1 {
-	// }
 	p {
 		font-size: 22px;
 		margin-top: 50px;
@@ -747,7 +775,7 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション11 自由研究ツール2018 企画・運営
+ Section11 自由研究ツール2018 企画・運営
 ------------------------------------------------------------------*/
 .section11 {
 	padding: 80px 0px;
@@ -849,7 +877,7 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション12 第三世代が考える ヒロシマ「  」継ぐ展
+ Section12 第三世代が考える ヒロシマ「  」継ぐ展
 ------------------------------------------------------------------*/
 .section12 {
 	margin-top: 60px;
@@ -885,7 +913,7 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション13 スポンサー
+ Section13 スポンサー
 ------------------------------------------------------------------*/
 .section13 {
 	.sponsorship {
@@ -920,7 +948,7 @@ header {
 }
 
 /*------------------------------------------------------------------
- セクション14 コンバージョンコンテンツ
+ Section14 コンバージョンコンテンツ
 ------------------------------------------------------------------*/
 .section14 {
 	padding: 60px 0px;
