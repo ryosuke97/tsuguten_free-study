@@ -42,6 +42,15 @@ h1 {
   letter-spacing: 0.1em;
 }
 
+h2 {
+  width: 100%;
+  font-family: "mgenplus-1m-bold";
+  font-size: 50px;
+  color: #2b5db7;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
 h3 {
   font-size: 24px;
   color: #2c2c2c;
@@ -204,7 +213,7 @@ nav img {
   padding-top: 50px;
   position: relative;
 }
-.section03 h1 {
+.section03 h2 {
   position: absolute;
   top: 6%;
   left: 50%;
@@ -259,7 +268,7 @@ nav img {
   padding: 50px 0px;
   position: relative;
 }
-.section04 h1 {
+.section04 h2 {
   margin-bottom: 50px;
 }
 .section04 .catch-copy {
@@ -351,7 +360,7 @@ nav img {
 .section05 .l-text-center {
   text-align: center;
 }
-.section05 h1 {
+.section05 h2 {
   position: absolute;
   top: 0px;
   left: 50%;
@@ -384,7 +393,7 @@ nav img {
   margin-top: 85px;
   position: relative;
 }
-.section05 .l-info .l-infoL .benefits h2 {
+.section05 .l-info .l-infoL .benefits h3 {
   width: 260px;
   height: 50px;
   margin: 0 auto;
@@ -398,7 +407,7 @@ nav img {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section05 .l-info .l-infoL .benefits h3 {
+.section05 .l-info .l-infoL .benefits h4 {
   font-size: 1.84vw;
   font-weight: bold;
   text-align: center;
@@ -449,7 +458,7 @@ nav img {
   width: 77%;
   margin: 80px auto 0px;
 }
-.section05 .schedule h2 {
+.section05 .schedule h3 {
   width: 100%;
   font-size: 40px;
   font-weight: bold;
@@ -588,7 +597,7 @@ nav img {
   top: 80px;
   right: 10%;
 }
-.section06 .text-area h1 {
+.section06 .text-area h2 {
   width: 100%;
   font-size: 4vw;
   color: #2c2c2c;
@@ -659,7 +668,7 @@ nav img {
   background: url("../assets/pc/bg02.jpg") repeat;
   margin: 125px auto 0px;
 }
-.section07 .voice h1 {
+.section07 .voice h2 {
   width: 450px;
   height: 90px;
   position: absolute;
@@ -796,7 +805,7 @@ nav img {
   width: 56%;
   position: relative;
 }
-.section08 .entry-content .right-box h1 {
+.section08 .entry-content .right-box h2 {
   width: 100%;
   max-width: 600px;
   font-size: 40px;
@@ -838,7 +847,7 @@ nav img {
   background: #e0f1fe;
   position: relative;
 }
-.section09 h1 {
+.section09 h2 {
   position: absolute;
   top: 0px;
   left: 50%;
@@ -849,7 +858,7 @@ nav img {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section09 h1 img {
+.section09 h2 img {
   width: 100%;
 }
 .section09 .b-staff-wanted {
@@ -889,7 +898,7 @@ nav img {
   padding: 80px 0px;
   position: relative;
 }
-.section10 h1, .section10 p {
+.section10 h2, .section10 p {
   text-align: center;
 }
 .section10 p {
@@ -936,7 +945,7 @@ nav img {
   color: #2b5db7;
   text-decoration: underline;
 }
-.section11 h1 {
+.section11 h2 {
   font-size: 40px;
   color: #2c2c2c;
 }
@@ -1064,7 +1073,7 @@ nav img {
   margin-top: 60px;
   position: relative;
 }
-.section12 h1 {
+.section12 h2 {
   width: 77%;
   padding: 10px 0px;
   background: #ffb700;
@@ -1112,6 +1121,13 @@ nav img {
   margin: 0px auto;
   font-weight: bold;
 }
+.section13 .sponsorship h2 {
+  font-size: 24px;
+  color: #2c2c2c;
+  font-weight: bold;
+  text-align: left;
+  margin: 30px 0px;
+}
 .section13 .l-sponsorlist dl {
   width: 100%;
   display: flex;
@@ -1153,14 +1169,14 @@ nav img {
   width: 64%;
   margin: 0px auto;
 }
-.section14 .l-cv-content h1 {
+.section14 .l-cv-content h2 {
   width: 100%;
   font-family: "mgenplus-1m-bold";
   font-size: 32px;
   color: #2c2c2c;
   text-align: center;
 }
-.section14 .l-cv-content h1 span {
+.section14 .l-cv-content h2 span {
   font-size: 50px;
 }
 .section14 .l-cv-content ul {

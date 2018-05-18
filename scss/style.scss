@@ -45,6 +45,15 @@ h1 {
 	text-align: center;
 	letter-spacing: 0.1em;
 }
+h2 {
+	width: 100%;
+	font-family: $mgen;
+	font-size: 50px;
+	color: $blue;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
 h3 {
 	font-size: 24px;
 	color: $black;
@@ -205,7 +214,7 @@ header {
 .section03 {
 	padding-top: 50px;
 	position: relative;
-	h1 {
+	h2 {
 		position: absolute;
 		top: 6%;
 		left: 50%;
@@ -260,7 +269,7 @@ header {
 	height: auto;
 	padding: 50px 0px;
 	position: relative;
-	h1 {
+	h2 {
 		margin-bottom: 50px;
 	}
 	.catch-copy {
@@ -352,7 +361,7 @@ header {
 	.l-text-center {
 		text-align: center;
 	}
-	h1 {
+	h2 {
 		position: absolute;
 		top: 0px;
 		left: 50%;
@@ -382,7 +391,7 @@ header {
 				border: 2px solid $yellow;
 				margin-top: 85px;
 				position: relative;
-				h2 {
+				h3 {
 					width: 260px;
 					height: 50px;
 					margin: 0 auto;
@@ -396,7 +405,7 @@ header {
 					transform: translate(-50%,-50%);
 					z-index: 10;
 				}
-				h3 {
+				h4 {
 					font-size: 1.84vw;
 					font-weight: bold;
 					text-align: center;
@@ -449,7 +458,7 @@ header {
 	.schedule {
 		width: 77%;
 		margin: 80px auto 0px;
-		h2 {
+		h3 {
 			width: 100%;
 			font-size: 40px;
 			font-weight: bold;
@@ -612,7 +621,7 @@ header {
 		position: absolute;
 		top: 80px;
 		right: 10%;
-		h1 {
+		h2 {
 			width: 100%;
 			font-size: 4vw;
 			color: $black;
@@ -683,7 +692,7 @@ header {
 		padding: 90px 0px 40px;
 		background: url("../assets/pc/bg02.jpg") repeat;
 		margin: 125px auto 0px;
-		h1 {
+		h2 {
 			width: 450px;
 			height: 90px;
 			position: absolute;
@@ -823,7 +832,7 @@ header {
 		.right-box {
 			width: 56%;
 			position: relative;
-			h1 {
+			h2 {
 				width: 100%;
 				max-width: 600px;
 				font-size: 40px;
@@ -867,7 +876,7 @@ header {
 	margin-top: 150px;
 	background: $lightBlue;
 	position: relative;
-	h1 {
+	h2 {
 		position: absolute;
 		top: 0px;
 		left: 50%;
@@ -918,7 +927,7 @@ header {
 .section10 {
 	padding: 80px 0px;
 	position: relative;
-	h1,p {
+	h2,p {
 		text-align: center;
 	}
 	p {
@@ -965,7 +974,7 @@ header {
 		color: $blue;
 		text-decoration: underline;
 	}
-	h1 {
+	h2 {
 		font-size: 40px;
 		color: $black;
 	}
@@ -1093,7 +1102,7 @@ header {
 .section12 {
 	margin-top: 60px;
 	position: relative;
-	h1 {
+	h2 {
 		width: 77%;
 		padding: 10px 0px;
 		background: $yellow;
@@ -1142,6 +1151,13 @@ header {
 		width: 77%;
 		margin: 0px auto;
 		font-weight: bold;
+		h2 {
+			font-size: 24px;
+			color: $black;
+			font-weight: bold;
+			text-align: left;
+			margin: 30px 0px;
+		}
 	}
 	.l-sponsorlist {
 		dl {
@@ -1185,7 +1201,7 @@ header {
 	.l-cv-content {
 		width: 64%;
 		margin: 0px auto;
-		h1 {
+		h2 {
 			width: 100%;
 			font-family: $mgen;
 			font-size: 32px;
