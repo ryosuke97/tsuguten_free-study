@@ -12,6 +12,10 @@
 /*------------------------------------------------------------------
  Selector
 ------------------------------------------------------------------*/
+html, body {
+  height: 100%;
+}
+
 html {
   width: 100%;
   color: #2c2c2c;
@@ -119,7 +123,7 @@ nav img {
 /*------------------------------------------------------------------
  Section01 MV
 ------------------------------------------------------------------*/
-.section01 {
+.mv {
   height: 600px;
   position: relative;
   margin-bottom: 80px;
@@ -138,36 +142,37 @@ nav img {
 }
 
 /*------------------------------------------------------------------
- Section02 sub-view
+ sub-view
 ------------------------------------------------------------------*/
-.section02 {
+.l-sub-view {
+  width: 100%;
   padding-bottom: 50px;
   margin-bottom: 110px;
   position: relative;
 }
-.section02 .sub-view {
+.l-sub-view .sub-view-text-area {
   width: 100%;
   display: flex;
   z-index: 10;
 }
-.section02 .sub-view .left-img {
+.l-sub-view .sub-view-text-area .left-img {
   width: 47%;
   z-index: 10;
 }
-.section02 .sub-view .left-img img {
+.l-sub-view .sub-view-text-area .left-img img {
   width: 100%;
   vertical-align: bottom;
   z-index: 10;
 }
-.section02 .sub-view .sub-view-text {
+.l-sub-view .sub-view-text-area .sub-view-text {
   margin-left: 3%;
   width: 40%;
   z-index: 10;
 }
-.section02 .sub-view .sub-view-text p {
+.l-sub-view .sub-view-text-area .sub-view-text p {
   font-size: 20px;
 }
-.section02 .sub-viewBg {
+.l-sub-view .sub-viewBg {
   width: 80%;
   height: 90%;
   background: url("../assets/pc/bg01.jpg") repeat;
@@ -176,44 +181,44 @@ nav img {
   right: 0px;
   z-index: 1;
 }
-.section02 .sub-viewBg .l-sub-view__img {
+.l-sub-view .sub-viewBg .l-sub-view__img {
   width: 30%;
   position: absolute;
   bottom: -60px;
   right: 5%;
 }
-.section02 .sub-viewBg .l-sub-view__img img {
+.l-sub-view .sub-viewBg .l-sub-view__img img {
   width: 100%;
 }
-.section02 .l-shaped-shape01 {
+.l-sub-view .l-shaped-shape01 {
   width: 8%;
   position: absolute;
   top: 150px;
   left: 90%;
   z-index: 10;
 }
-.section02 .l-shaped-shape01 img {
+.l-sub-view .l-shaped-shape01 img {
   width: 100%;
 }
-.section02 .l-shaped-shape02 {
+.l-sub-view .l-shaped-shape02 {
   width: 10%;
   position: absolute;
   top: 96%;
   left: 5%;
   z-index: 10;
 }
-.section02 .l-shaped-shape02 img {
+.l-sub-view .l-shaped-shape02 img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section03 自由研究ツールの特徴
+ Section01 自由研究ツールの特徴
 ------------------------------------------------------------------*/
-.section03 {
+.section01 {
   padding-top: 50px;
   position: relative;
 }
-.section03 h2 {
+.section01 h2 {
   position: absolute;
   top: 6%;
   left: 50%;
@@ -249,118 +254,118 @@ nav img {
 .l-annotation {
   margin: 3% 0% 0% 2%;
 }
-.section03 .l-shaped-shape03 {
+.section01 .l-shaped-shape03 {
   width: 10%;
   position: absolute;
   top: -25px;
   left: 80%;
   z-index: 0;
 }
-.section03 .l-shaped-shape03 img {
+.section01 .l-shaped-shape03 img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section04 自由研究完成イメージ
+ Section02 自由研究完成イメージ
 ------------------------------------------------------------------*/
-.section04 {
+.section02 {
   height: auto;
   padding: 50px 0px;
   position: relative;
 }
-.section04 h2 {
+.section02 h2 {
   margin-bottom: 50px;
 }
-.section04 .catch-copy {
+.section02 .catch-copy {
   width: 100%;
   margin-left: 18%;
 }
-.section04 .text-content {
+.section02 .text-content {
   width: 72%;
   height: 300px;
   background: url("../assets/pc/bg01.jpg") repeat;
   margin-top: 50px;
   position: relative;
 }
-.section04 .text-area {
+.section02 .text-area {
   width: 430px;
   padding-top: 40px;
   margin-left: 12%;
 }
-.section04 .complete-img {
+.section02 .complete-img {
   width: 40%;
   position: absolute;
   top: 150px;
   left: 55%;
 }
-.section04 .complete-img img {
+.section02 .complete-img img {
   width: 100%;
   max-width: 440px;
 }
-.section04 .l-dl-btn {
+.section02 .l-dl-btn {
   position: absolute;
   bottom: -30px;
   left: 12%;
   z-index: 10;
 }
-.section04 .l-dl-btn img {
+.section02 .l-dl-btn img {
   vertical-align: bottom;
 }
-.section04 .l-shaped-shape04 {
+.section02 .l-shaped-shape04 {
   width: 8%;
   position: absolute;
   top: -25px;
   left: 80%;
   z-index: 0;
 }
-.section04 .l-shaped-shape04 img {
+.section02 .l-shaped-shape04 img {
   width: 100%;
 }
-.section04 .l-shaped-shape05 {
+.section02 .l-shaped-shape05 {
   width: 8%;
   position: absolute;
   top: 20px;
   left: 5%;
   z-index: 0;
 }
-.section04 .l-shaped-shape05 img {
+.section02 .l-shaped-shape05 img {
   width: 100%;
 }
-.section04 .l-shaped-shape06 {
+.section02 .l-shaped-shape06 {
   width: 8%;
   position: absolute;
   top: 40%;
   left: 3%;
   z-index: 0;
 }
-.section04 .l-shaped-shape06 img {
+.section02 .l-shaped-shape06 img {
   width: 100%;
 }
-.section04 .l-parts-scissors {
+.section02 .l-parts-scissors {
   width: 8%;
   position: absolute;
   top: 200px;
   left: 42%;
   z-index: 0;
 }
-.section04 .l-parts-scissors img {
+.section02 .l-parts-scissors img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section05 自由研究サポート教室とは
+ Section03 自由研究サポート教室とは
 ------------------------------------------------------------------*/
-.section05 {
+.section03 {
   height: auto;
   background: url("../assets/pc/bg04.jpg") repeat;
   margin-top: 110px;
   padding: 80px 0px;
   position: relative;
 }
-.section05 .l-text-center {
+.section03 .l-text-center {
   text-align: center;
 }
-.section05 h2 {
+.section03 h2 {
   position: absolute;
   top: 0px;
   left: 50%;
@@ -371,29 +376,29 @@ nav img {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section05 .l-info {
+.section03 .l-info {
   width: 77%;
   margin: 60px auto 0px;
   display: flex;
   justify-content: space-between;
 }
-.section05 .l-info .l-infoL {
+.section03 .l-info .l-infoL {
   width: 47%;
 }
-.section05 .l-info .l-infoL .left-img {
+.section03 .l-info .l-infoL .left-img {
   width: 100%;
 }
-.section05 .l-info .l-infoL .left-img img {
+.section03 .l-info .l-infoL .left-img img {
   width: 100%;
 }
-.section05 .l-info .l-infoL .benefits {
+.section03 .l-info .l-infoL .benefits {
   width: 99%;
   height: auto;
   border: 2px solid #ffb700;
   margin-top: 85px;
   position: relative;
 }
-.section05 .l-info .l-infoL .benefits h3 {
+.section03 .l-info .l-infoL .benefits h3 {
   width: 260px;
   height: 50px;
   margin: 0 auto;
@@ -407,33 +412,33 @@ nav img {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section05 .l-info .l-infoL .benefits h4 {
+.section03 .l-info .l-infoL .benefits h4 {
   font-size: 1.84vw;
   font-weight: bold;
   text-align: center;
   margin-top: 55px;
 }
-.section05 .l-info .l-infoL .benefits p {
+.section03 .l-info .l-infoL .benefits p {
   width: 84%;
   font-size: 1.4vw;
   margin: 30px auto;
 }
-.section05 .l-info .l-infoL .benefits p span {
+.section03 .l-info .l-infoL .benefits p span {
   font-size: 1.2vw;
 }
-.section05 .l-info .l-infoR {
+.section03 .l-info .l-infoR {
   width: 47%;
 }
-.section05 .l-info .l-infoR dl {
+.section03 .l-info .l-infoR dl {
   width: 100%;
   font-size: 1.7vw;
   display: flex;
   margin-bottom: 30px;
 }
-.section05 .l-info .l-infoR dl:last-child {
+.section03 .l-info .l-infoR dl:last-child {
   margin-bottom: 0;
 }
-.section05 .l-info .l-infoR dl dt {
+.section03 .l-info .l-infoR dl dt {
   color: #fff;
   width: 24%;
   height: 40px;
@@ -444,36 +449,36 @@ nav img {
   justify-content: center;
   align-items: center;
 }
-.section05 .l-info .l-infoR dl dd {
+.section03 .l-info .l-infoR dl dd {
   width: 72%;
 }
-.section05 .l-info .l-infoR dl dd span {
+.section03 .l-info .l-infoR dl dd span {
   font-size: 1.4vw;
 }
-.section05 .l-info .l-infoR img {
+.section03 .l-info .l-infoR img {
   width: 100%;
   margin-top: 50px;
 }
-.section05 .schedule {
+.section03 .schedule {
   width: 77%;
   margin: 80px auto 0px;
 }
-.section05 .schedule h3 {
+.section03 .schedule h3 {
   width: 100%;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
 }
-.section05 .table {
+.section03 .table {
   width: 100%;
   border-right: #b2b2b2 solid 1px;
 }
-.section05 .table thead tr {
+.section03 .table thead tr {
   width: 100%;
   padding: 15px 0;
 }
-.section05 .table thead th {
+.section03 .table thead th {
   background: #2b5db7;
   color: #FFF;
   text-align: center;
@@ -481,14 +486,14 @@ nav img {
   border-right: #b2b2b2 solid 1px;
   border-bottom: #b2b2b2 solid 1px;
 }
-.section05 .table thead th:last-child {
+.section03 .table thead th:last-child {
   border-right: #b2b2b2 solid 1px;
 }
-.section05 .table tbody tr {
+.section03 .table tbody tr {
   width: 100%;
   height: 80px;
 }
-.section05 .table tbody th {
+.section03 .table tbody th {
   height: 80px;
   font-weight: bold;
   background: #e0f1fe;
@@ -499,16 +504,16 @@ nav img {
   justify-content: center;
   align-items: center;
 }
-.section05 .table tbody tr:last-child th {
+.section03 .table tbody tr:last-child th {
   border-bottom: #b2b2b2 solid 1px;
 }
-.section05 .table tbody td {
+.section03 .table tbody td {
   height: 80px;
   background: #fff;
   border-left: #b2b2b2 solid 1px;
   border-bottom: #b2b2b2 solid 1px;
 }
-.section05 .table tbody td p {
+.section03 .table tbody td p {
   height: 80px;
   text-align: center;
   display: flex;
@@ -516,80 +521,80 @@ nav img {
   justify-content: center;
   align-items: center;
 }
-.section05 .l-center {
+.section03 .l-center {
   width: 390px;
   height: 60px;
   margin: 60px auto;
 }
-.section05 a {
+.section03 a {
   width: 100%;
   height: 60px;
 }
-.section05 a img {
+.section03 a img {
   width: 100%;
   height: 60px;
 }
-.section05 .l-shaped-shape07 {
+.section03 .l-shaped-shape07 {
   width: 10%;
   position: absolute;
   top: 20px;
   left: 3%;
   z-index: 0;
 }
-.section05 .l-shaped-shape07 img {
+.section03 .l-shaped-shape07 img {
   width: 100%;
 }
-.section05 .l-parts-face {
+.section03 .l-parts-face {
   width: 10%;
   position: absolute;
   top: 20px;
   right: 5%;
   z-index: 0;
 }
-.section05 .l-parts-face img {
+.section03 .l-parts-face img {
   width: 100%;
 }
-.section05 .l-shaped-shape08 {
+.section03 .l-shaped-shape08 {
   width: 10%;
   position: absolute;
   top: 15%;
   right: 3%;
   z-index: 0;
 }
-.section05 .l-shaped-shape08 img {
+.section03 .l-shaped-shape08 img {
   width: 100%;
 }
-.section05 .l-shaped-shape09 {
+.section03 .l-shaped-shape09 {
   width: 8%;
   position: absolute;
   top: 48%;
   left: 3%;
   z-index: 0;
 }
-.section05 .l-shaped-shape09 img {
+.section03 .l-shaped-shape09 img {
   width: 100%;
 }
-.section05 .l-shaped-shape10 {
+.section03 .l-shaped-shape10 {
   width: 8%;
   position: absolute;
   bottom: 2%;
   right: 3%;
   z-index: 0;
 }
-.section05 .l-shaped-shape10 img {
+.section03 .l-shaped-shape10 img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section06 平和学習ってなに？
+ Section04 平和学習ってなに？
 ------------------------------------------------------------------*/
-.section06 {
+.section04 {
   height: 600px;
   background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 }
-.section06 .text-area {
+.section04 .text-area {
   width: 42%;
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.8);
@@ -597,36 +602,36 @@ nav img {
   top: 80px;
   right: 10%;
 }
-.section06 .text-area h2 {
+.section04 .text-area h2 {
   width: 100%;
   font-size: 4vw;
   color: #2c2c2c;
 }
-.section06 .text-area svg {
+.section04 .text-area svg {
   width: 100%;
   height: 6px;
 }
-.section06 .text-area svg line {
+.section04 .text-area svg line {
   fill: none;
   stroke: #ffb700;
-  stroke-width: 6;
+  stroke-width: 6px;
   stroke-linecap: round;
-  stroke-dasharray: 0.5, 20;
+  stroke-dasharray: 0.5px, 20px;
 }
-.section06 .text-area p {
+.section04 .text-area p {
   font-size: 20px;
   margin-top: 10px;
   line-height: 1.75;
 }
 
 @media all and (min-width: 1300px) {
-  .section06 {
+  .section04 {
     height: 600px;
     background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
   }
-  .section06 .text-area {
+  .section04 .text-area {
     width: 566px;
     padding: 40px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -634,41 +639,41 @@ nav img {
     top: 80px;
     right: 10%;
   }
-  .section06 .text-area h1 {
+  .section04 .text-area h1 {
     width: 100%;
     font-size: 50px;
     color: #2c2c2c;
   }
-  .section06 .text-area svg {
+  .section04 .text-area svg {
     width: 100%;
     height: 6px;
   }
-  .section06 .text-area svg line {
+  .section04 .text-area svg line {
     fill: none;
     stroke: #ffb700;
-    stroke-width: 6;
+    stroke-width: 6px;
     stroke-linecap: round;
-    stroke-dasharray: 0.5, 20;
+    stroke-dasharray: 0.5px, 20px;
   }
-  .section06 .text-area p {
+  .section04 .text-area p {
     font-size: 22px;
     margin-top: 10px;
     line-height: 1.75;
   }
 }
 /*------------------------------------------------------------------
- Section07 参加者の声
+ Section05 参加者の声
 ------------------------------------------------------------------*/
-.section07 {
+.section05 {
   position: relative;
 }
-.section07 .voice {
+.section05 .voice {
   width: 77%;
   padding: 90px 0px 40px;
   background: url("../assets/pc/bg02.jpg") repeat;
   margin: 125px auto 0px;
 }
-.section07 .voice h2 {
+.section05 .voice h2 {
   width: 450px;
   height: 90px;
   position: absolute;
@@ -681,144 +686,144 @@ nav img {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section07 .voice .l-voice {
+.section05 .voice .l-voice {
   width: 88%;
   height: auto;
   margin: 0px 6% 10px;
   display: flex;
   justify-content: space-between;
 }
-.section07 .voice .l-voice .adjust-box {
+.section05 .voice .l-voice .adjust-box {
   width: 28%;
   height: auto;
 }
-.section07 .voice .l-voice .box-1x1::before {
+.section05 .voice .l-voice .box-1x1::before {
   content: "";
   display: block;
   padding-top: 0%;
 }
-.section07 .voice .l-voice img {
+.section05 .voice .l-voice img {
   width: 100%;
 }
-.section07 .voice .l-voice .baloon01 {
+.section05 .voice .l-voice .baloon01 {
   width: 75%;
   height: auto;
   background: url("../assets/pc/fukidashi01.png") center center no-repeat;
   background-size: 100% auto;
 }
-.section07 .voice .l-voice .baloon01::before {
+.section05 .voice .l-voice .baloon01::before {
   content: "";
   display: block;
   padding-top: 9%;
 }
-.section07 .voice .l-voice .baloon01 p {
+.section05 .voice .l-voice .baloon01 p {
   width: 88%;
   height: auto;
   font-size: 2.0vw;
   margin: 0 0 0 9.5%;
 }
-.section07 .voice .l-voice .baloon02 {
+.section05 .voice .l-voice .baloon02 {
   width: 75%;
   height: auto;
   background: url("../assets/pc/fukidashi02.png") center center no-repeat;
   background-size: 100% auto;
 }
-.section07 .voice .l-voice .baloon02::before {
+.section05 .voice .l-voice .baloon02::before {
   content: "";
   display: block;
   padding-top: 9%;
 }
-.section07 .voice .l-voice .baloon02 p {
+.section05 .voice .l-voice .baloon02 p {
   width: 88%;
   height: auto;
   font-size: 2.0vw;
   margin: 0 5% 0 3%;
 }
-.section07 .l-shaped-shape11 {
+.section05 .l-shaped-shape11 {
   width: 12%;
   position: absolute;
   top: -2%;
   left: 5%;
   z-index: 10;
 }
-.section07 .l-shaped-shape11 img {
+.section05 .l-shaped-shape11 img {
   width: 100%;
 }
-.section07 .l-shaped-shape12 {
+.section05 .l-shaped-shape12 {
   width: 8%;
   position: absolute;
   top: -2%;
   right: 5%;
   z-index: 10;
 }
-.section07 .l-shaped-shape12 img {
+.section05 .l-shaped-shape12 img {
   width: 100%;
 }
-.section07 .l-shaped-shape13 {
+.section05 .l-shaped-shape13 {
   width: 8%;
   position: absolute;
   bottom: 22%;
   right: 5%;
   z-index: 10;
 }
-.section07 .l-shaped-shape13 img {
+.section05 .l-shaped-shape13 img {
   width: 100%;
 }
-.section07 .l-shaped-shape14 {
+.section05 .l-shaped-shape14 {
   width: 6%;
   position: absolute;
   bottom: 0%;
   left: 8%;
   z-index: 10;
 }
-.section07 .l-shaped-shape14 img {
+.section05 .l-shaped-shape14 img {
   width: 100%;
 }
 
 @media all and (min-width: 1300px) {
-  .section07 .baloon01 p, .section07 .baloon02 p {
+  .section05 .baloon01 p, .section05 .baloon02 p {
     font-size: 26px !important;
   }
 }
 /*------------------------------------------------------------------
- Section08 自由研究サポート教室に参加しよう！
+ Section06 自由研究サポート教室に参加しよう！
 ------------------------------------------------------------------*/
-.section08 {
+.section06 {
   height: auto;
   margin-top: 80px;
   position: relative;
   padding-bottom: 50px;
 }
-.section08 .entry-content {
+.section06 .entry-content {
   display: flex;
 }
-.section08 .entry-content .left-box {
+.section06 .entry-content .left-box {
   width: 40%;
   height: auto;
   margin-right: 4%;
   position: relative;
 }
-.section08 .entry-content .left-box img {
+.section06 .entry-content .left-box img {
   width: 100%;
 }
-.section08 .entry-content .right-box {
+.section06 .entry-content .right-box {
   width: 56%;
   position: relative;
 }
-.section08 .entry-content .right-box h2 {
+.section06 .entry-content .right-box h2 {
   width: 100%;
   max-width: 600px;
   font-size: 40px;
   text-align: left;
 }
-.section08 .entry-content .right-box p {
+.section06 .entry-content .right-box p {
   width: 100%;
   font-size: 22px;
   max-width: 600px;
   margin-top: 50px;
   margin-bottom: 30px;
 }
-.section08 .bg {
+.section06 .bg {
   width: 77%;
   height: 350px;
   background: url("../assets/pc/bg01.jpg") repeat;
@@ -827,27 +832,27 @@ nav img {
   right: 0px;
   z-index: 0;
 }
-.section08 .l-shaped-shape15 {
+.section06 .l-shaped-shape15 {
   width: 6%;
   position: absolute;
   bottom: -20%;
   right: 8%;
   z-index: 10;
 }
-.section08 .l-shaped-shape15 img {
+.section06 .l-shaped-shape15 img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section09 自由研究サポート教室学生スタッフ募集
+ Section07 自由研究サポート教室学生スタッフ募集
 ------------------------------------------------------------------*/
-.section09 {
+.section07 {
   padding: 80px 0px;
   margin-top: 150px;
   background: #e0f1fe;
   position: relative;
 }
-.section09 h2 {
+.section07 h2 {
   position: absolute;
   top: 0px;
   left: 50%;
@@ -858,136 +863,136 @@ nav img {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section09 h2 img {
+.section07 h2 img {
   width: 100%;
 }
-.section09 .b-staff-wanted {
+.section07 .b-staff-wanted {
   width: 77%;
   margin: 0 auto;
   display: flex;
 }
-.section09 .b-staff-wanted .left-box {
+.section07 .b-staff-wanted .left-box {
   width: 48%;
   margin-right: 4%;
 }
-.section09 .b-staff-wanted .left-box p {
+.section07 .b-staff-wanted .left-box p {
   font-size: 22px;
   margin-bottom: 40px;
 }
-.section09 .b-staff-wanted .right-box {
+.section07 .b-staff-wanted .right-box {
   width: 48%;
 }
-.section09 .b-staff-wanted .right-box img {
+.section07 .b-staff-wanted .right-box img {
   width: 100%;
 }
-.section09 .l-parts-shirt {
+.section07 .l-parts-shirt {
   width: 10%;
   position: absolute;
   top: -35%;
   left: 5%;
   z-index: 0;
 }
-.section09 .l-parts-shirt img {
+.section07 .l-parts-shirt img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section10 自由研究サポート教室支援のお願い
+ Section08 自由研究サポート教室支援のお願い
 ------------------------------------------------------------------*/
-.section10 {
+.section08 {
   padding: 80px 0px;
   position: relative;
 }
-.section10 h2, .section10 p {
+.section08 h2, .section08 p {
   text-align: center;
 }
-.section10 p {
+.section08 p {
   font-size: 22px;
   margin-top: 50px;
   line-height: 1.8;
   margin-bottom: 40px;
 }
-.section10 .l-fund-btn {
+.section08 .l-fund-btn {
   display: block;
   width: 390px;
   margin: 0 auto;
 }
-.section10 .l-shaped-shape16 {
+.section08 .l-shaped-shape16 {
   width: 6%;
   position: absolute;
   top: 30%;
   left: 5%;
   z-index: 0;
 }
-.section10 .l-shaped-shape16 img {
+.section08 .l-shaped-shape16 img {
   width: 100%;
 }
-.section10 .l-shaped-shape17 {
+.section08 .l-shaped-shape17 {
   width: 10%;
   position: absolute;
   top: 70%;
   right: 5%;
   z-index: 0;
 }
-.section10 .l-shaped-shape17 img {
+.section08 .l-shaped-shape17 img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section11 自由研究ツール2018 企画・運営
+ Section09 自由研究ツール2018 企画・運営
 ------------------------------------------------------------------*/
-.section11 {
+.section09 {
   padding: 80px 0px;
   background: url("../assets/pc/bg04.jpg") repeat;
   position: relative;
 }
-.section11 a {
+.section09 a {
   color: #2b5db7;
   text-decoration: underline;
 }
-.section11 h2 {
+.section09 h2 {
   font-size: 40px;
   color: #2c2c2c;
 }
-.section11 h3 {
+.section09 h3 {
   margin: 0;
 }
-.section11 .b-team-list {
+.section09 .b-team-list {
   width: 47%;
   margin: 40px auto 30px;
   display: flex;
 }
-.section11 .b-team-list p {
+.section09 .b-team-list p {
   width: 20%;
   margin-right: 10%;
   text-align: right;
   font-weight: bold;
 }
-.section11 .b-team-list ul {
+.section09 .b-team-list ul {
   width: 73%;
   color: #2b5db7;
 }
-.section11 .b-team-list ul li {
+.section09 .b-team-list ul li {
   font-size: 18px;
 }
-.section11 .artist {
+.section09 .artist {
   width: 77%;
   margin: 100px auto 0px;
   display: flex;
 }
-.section11 .artist svg {
+.section09 .artist svg {
   width: 100%;
   height: 6px;
   margin-bottom: 5px;
 }
-.section11 .artist svg line {
+.section09 .artist svg line {
   fill: none;
   stroke: #2b5db7;
-  stroke-width: 6;
+  stroke-width: 6px;
   stroke-linecap: round;
-  stroke-dasharray: 0.5, 20;
+  stroke-dasharray: 0.5px, 20px;
 }
-.section11 .artist .artist-left {
+.section09 .artist .artist-left {
   width: 47%;
   border: #2b5db7 solid 1px;
   border-radius: 3px;
@@ -996,7 +1001,7 @@ nav img {
   padding: 30px 3%;
   position: relative;
 }
-.section11 .artist .artist-right {
+.section09 .artist .artist-right {
   width: 47%;
   border: #2b5db7 solid 1px;
   border-radius: 3px;
@@ -1004,14 +1009,14 @@ nav img {
   padding: 30px 3%;
   position: relative;
 }
-.section11 .artist .half-circle-lo__half-circle-mod {
+.section09 .artist .half-circle-lo__half-circle-mod {
   -moz-border-radius: 58px 58px 0 0;
   -webkit-border-radius: 58px 58px 0 0;
   -o-border-radius: 58px 58px 0 0;
   -ms-border-radius: 58px 58px 0 0;
   border-radius: 58px 58px 0 0;
 }
-.section11 .artist .half-circle-mod {
+.section09 .artist .half-circle-mod {
   position: absolute;
   top: -59px;
   right: 5%;
@@ -1021,59 +1026,58 @@ nav img {
   border-right: 1px solid #2b5db7;
   height: 58px;
   width: 116px;
-  behavior: url(/PIE.htc);
 }
-.section11 .artist .half-circle-mod .l-half-circle {
+.section09 .artist .half-circle-mod .l-half-circle {
   position: relative;
   width: 101px;
   height: 101px;
 }
-.section11 .artist .half-circle-mod .l-half-circle img {
+.section09 .artist .half-circle-mod .l-half-circle img {
   width: 100%;
   display: block;
   position: absolute;
   top: 7px;
   left: 7px;
 }
-.section11 .l-shaped-shape18 {
+.section09 .l-shaped-shape18 {
   width: 8%;
   position: absolute;
   top: 12%;
   right: 5%;
   z-index: 0;
 }
-.section11 .l-shaped-shape18 img {
+.section09 .l-shaped-shape18 img {
   width: 100%;
 }
-.section11 .l-shaped-shape19 {
+.section09 .l-shaped-shape19 {
   width: 8%;
   position: absolute;
   top: 20%;
   left: 5%;
   z-index: 0;
 }
-.section11 .l-shaped-shape19 img {
+.section09 .l-shaped-shape19 img {
   width: 100%;
 }
-.section11 .l-shaped-shape20 {
+.section09 .l-shaped-shape20 {
   width: 8%;
   position: absolute;
   bottom: -4%;
   left: 5%;
   z-index: 0;
 }
-.section11 .l-shaped-shape20 img {
+.section09 .l-shaped-shape20 img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section12 第三世代が考える ヒロシマ「  」継ぐ展
+ Section10 第三世代が考える ヒロシマ「  」継ぐ展
 ------------------------------------------------------------------*/
-.section12 {
+.section10 {
   margin-top: 60px;
   position: relative;
 }
-.section12 h2 {
+.section10 h2 {
   width: 77%;
   padding: 10px 0px;
   background: #ffb700;
@@ -1085,130 +1089,130 @@ nav img {
   font-size: 3.0vw;
   letter-spacing: 0.1em;
 }
-.section12 .l-samary {
+.section10 .l-samary {
   width: 77%;
   margin: 60px auto 50px;
   display: flex;
   justify-content: space-between;
 }
-.section12 .l-samary .b-img-wrapper {
+.section10 .l-samary .b-img-wrapper {
   width: 47%;
 }
-.section12 .l-samary .b-img-wrapper img {
+.section10 .l-samary .b-img-wrapper img {
   width: 100%;
 }
-.section12 .l-samary p {
+.section10 .l-samary p {
   width: 47%;
   font-size: 1.4vw;
   line-height: 1.7;
 }
-.section12 .l-shaped-shape21 {
+.section10 .l-shaped-shape21 {
   width: 10%;
   position: absolute;
   bottom: -30%;
   right: 10%;
   z-index: 0;
 }
-.section12 .l-shaped-shape21 img {
+.section10 .l-shaped-shape21 img {
   width: 100%;
 }
 
 /*------------------------------------------------------------------
- Section13 スポンサー
+ Section11 スポンサー
 ------------------------------------------------------------------*/
-.section13 .sponsorship {
+.section11 .sponsorship {
   width: 77%;
   margin: 0px auto;
   font-weight: bold;
 }
-.section13 .sponsorship h2 {
+.section11 .sponsorship h2 {
   font-size: 24px;
   color: #2c2c2c;
   font-weight: bold;
   text-align: left;
   margin: 30px 0px;
 }
-.section13 .l-sponsorlist dl {
+.section11 .l-sponsorlist dl {
   width: 100%;
   display: flex;
   margin-bottom: 20px;
 }
-.section13 .l-sponsorlist dl dt {
+.section11 .l-sponsorlist dl dt {
   width: 10%;
 }
-.section13 .l-sponsorlist dl dd {
+.section11 .l-sponsorlist dl dd {
   width: 90%;
 }
-.section13 .l-sponsorlist dl dd a {
+.section11 .l-sponsorlist dl dd a {
   color: #2b5db7;
 }
-.section13 .l-sponsorlist p a {
+.section11 .l-sponsorlist p a {
   color: #2b5db7;
 }
-.section13 .b-sns {
+.section11 .b-sns {
   width: 77%;
   margin: 40px auto 60px;
 }
-.section13 .b-sns ul {
+.section11 .b-sns ul {
   width: 100%;
   display: flex;
 }
-.section13 .b-sns ul li {
+.section11 .b-sns ul li {
   margin-right: 40px;
 }
 
 /*------------------------------------------------------------------
- Section14 コンバージョンコンテンツ
+ Section12 コンバージョンコンテンツ
 ------------------------------------------------------------------*/
-.section14 {
+.section12 {
   padding: 60px 0px;
   background: #e0f1fe;
   position: relative;
 }
-.section14 .l-cv-content {
+.section12 .l-cv-content {
   width: 64%;
   margin: 0px auto;
 }
-.section14 .l-cv-content h2 {
+.section12 .l-cv-content h2 {
   width: 100%;
   font-family: "mgenplus-1m-bold";
   font-size: 32px;
   color: #2c2c2c;
   text-align: center;
 }
-.section14 .l-cv-content h2 span {
+.section12 .l-cv-content h2 span {
   font-size: 50px;
 }
-.section14 .l-cv-content ul {
+.section12 .l-cv-content ul {
   width: 100%;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
-.section14 .l-cv-content ul li {
+.section12 .l-cv-content ul li {
   width: 48%;
 }
-.section14 .l-cv-content ul li img {
+.section12 .l-cv-content ul li img {
   width: 100%;
 }
-.section14 .l-shaped-shape22 {
+.section12 .l-shaped-shape22 {
   width: 8%;
   position: absolute;
   top: 10%;
   left: 5%;
   z-index: 0;
 }
-.section14 .l-shaped-shape22 img {
+.section12 .l-shaped-shape22 img {
   width: 100%;
 }
-.section14 .l-shaped-shape23 {
+.section12 .l-shaped-shape23 {
   width: 6%;
   position: absolute;
   top: 30%;
   right: 5%;
   z-index: 0;
 }
-.section14 .l-shaped-shape23 img {
+.section12 .l-shaped-shape23 img {
   width: 100%;
 }
 

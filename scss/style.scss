@@ -20,6 +20,9 @@ $mgen: "mgenplus-1m-bold";
 /*------------------------------------------------------------------
  Selector
 ------------------------------------------------------------------*/
+html,body {
+	height: 100%;
+}
 html {
 	width: 100%;
 	color: $black;
@@ -121,8 +124,9 @@ header {
 /*------------------------------------------------------------------
  Section01 MV
 ------------------------------------------------------------------*/
-.section01 {
+	.mv {
 	height: 600px;
+	// height: 85%;
 	position: relative;
 	margin-bottom: 80px;
 	background: url("../assets/pc/bg_mv.png") center right no-repeat;
@@ -140,13 +144,14 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section02 sub-view
+ sub-view
 ------------------------------------------------------------------*/
-.section02 {
+.l-sub-view {
+	width: 100%;
 	padding-bottom: 50px;
 	margin-bottom: 110px;
 	position: relative;
-	.sub-view {
+	.sub-view-text-area {
 		width: 100%;
 		display: flex;
 		z-index: 10;
@@ -209,9 +214,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section03 自由研究ツールの特徴
+ Section01 自由研究ツールの特徴
 ------------------------------------------------------------------*/
-.section03 {
+.section01 {
 	padding-top: 50px;
 	position: relative;
 	h2 {
@@ -263,9 +268,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section04 自由研究完成イメージ
+ Section02 自由研究完成イメージ
 ------------------------------------------------------------------*/
-.section04 {
+.section02 {
 	height: auto;
 	padding: 50px 0px;
 	position: relative;
@@ -350,9 +355,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section05 自由研究サポート教室とは
+ Section03 自由研究サポート教室とは
 ------------------------------------------------------------------*/
-.section05 {
+.section03 {
 	height: auto;
 	background: url("../assets/pc/bg04.jpg") repeat;
 	margin-top: 110px;
@@ -607,9 +612,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section06 平和学習ってなに？
+ Section04 平和学習ってなに？
 ------------------------------------------------------------------*/
-.section06 {
+.section04 {
 	height: 600px;
 	background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
 	background-size: cover;
@@ -634,9 +639,9 @@ header {
 		svg line{
 			fill: none;
 			stroke: $yellow;
-			stroke-width: 6;
+			stroke-width: 6px;
 			stroke-linecap: round;
-			stroke-dasharray: 0.5, 20;
+			stroke-dasharray: 0.5px, 20px;
 		}
 		p {
 			font-size: 20px;
@@ -646,7 +651,7 @@ header {
 	}
 }
 @media all and (min-width: 1300px){
-	.section06 {
+	.section04 {
 		height: 600px;
 		background: url("../assets/pc/img_peaceLearning.jpg") center center no-repeat;
 		background-size: cover;
@@ -670,9 +675,9 @@ header {
 			svg line{
 				fill: none;
 				stroke: $yellow;
-				stroke-width: 6;
+				stroke-width: 6px;
 				stroke-linecap: round;
-				stroke-dasharray: 0.5, 20;
+				stroke-dasharray: 0.5px, 20px;
 			}
 			p {
 				font-size: 22px;
@@ -683,9 +688,9 @@ header {
 	}
 }
 /*------------------------------------------------------------------
- Section07 参加者の声
+ Section05 参加者の声
 ------------------------------------------------------------------*/
-.section07 {
+.section05 {
 	position: relative;
 	.voice {
 		width: 77%;
@@ -801,7 +806,7 @@ header {
 	}
 }
 @media all and (min-width: 1300px){
-	.section07 {
+	.section05 {
 		.baloon01,.baloon02 {
 			p{
 				font-size: 26px !important;
@@ -811,9 +816,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section08 自由研究サポート教室に参加しよう！
+ Section06 自由研究サポート教室に参加しよう！
 ------------------------------------------------------------------*/
-.section08 {
+.section06 {
 	height: auto;
 	margin-top: 80px;
 	position: relative;
@@ -869,9 +874,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section09 自由研究サポート教室学生スタッフ募集
+ Section07 自由研究サポート教室学生スタッフ募集
 ------------------------------------------------------------------*/
-.section09 {
+.section07 {
 	padding: 80px 0px;
 	margin-top: 150px;
 	background: $lightBlue;
@@ -922,9 +927,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section10 自由研究サポート教室支援のお願い
+ Section08 自由研究サポート教室支援のお願い
 ------------------------------------------------------------------*/
-.section10 {
+.section08 {
 	padding: 80px 0px;
 	position: relative;
 	h2,p {
@@ -964,9 +969,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section11 自由研究ツール2018 企画・運営
+ Section09 自由研究ツール2018 企画・運営
 ------------------------------------------------------------------*/
-.section11 {
+.section09 {
 	padding: 80px 0px;
 	background: url("../assets/pc/bg04.jpg") repeat;
 	position: relative;
@@ -1011,9 +1016,9 @@ header {
 		svg line{
 			fill: none;
 			stroke: $blue;
-			stroke-width: 6;
+			stroke-width: 6px;
 			stroke-linecap: round;
-			stroke-dasharray: 0.5, 20;
+			stroke-dasharray: 0.5px, 20px;
 		}
 		.artist-left {
 			width: 47%;
@@ -1049,7 +1054,7 @@ header {
 			border-right: 1px solid $blue;
 			height: 58px;
 			width: 116px;
-			behavior: url(/PIE.htc);
+			// behavior: url(/PIE.htc);
 			.l-half-circle {
 				position: relative;
 				width: 101px;
@@ -1097,9 +1102,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section12 第三世代が考える ヒロシマ「  」継ぐ展
+ Section10 第三世代が考える ヒロシマ「  」継ぐ展
 ------------------------------------------------------------------*/
-.section12 {
+.section10 {
 	margin-top: 60px;
 	position: relative;
 	h2 {
@@ -1144,9 +1149,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section13 スポンサー
+ Section11 スポンサー
 ------------------------------------------------------------------*/
-.section13 {
+.section11 {
 	.sponsorship {
 		width: 77%;
 		margin: 0px auto;
@@ -1192,9 +1197,9 @@ header {
 }
 
 /*------------------------------------------------------------------
- Section14 コンバージョンコンテンツ
+ Section12 コンバージョンコンテンツ
 ------------------------------------------------------------------*/
-.section14 {
+.section12 {
 	padding: 60px 0px;
 	background: $lightBlue;
 	position: relative;
