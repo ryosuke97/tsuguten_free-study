@@ -83,7 +83,14 @@ h3 {
 .emphasis {
 	color: #2b5db7;
 }
-
+.box-s {
+	box-shadow:1px 2px 3px #000;
+	height: 100px;
+	width: 200px;
+	border-radius: 10px;
+	border: 1px solid #999;
+	padding: 20px;
+	}
 /*------------------------------------------------------------------
  Header
 ------------------------------------------------------------------*/
