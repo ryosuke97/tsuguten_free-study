@@ -129,7 +129,7 @@ header {
 	// height: 85%;
 	position: relative;
 	margin-bottom: 80px;
-	background: url("../img/2018/kenkyu/bg_mv.png") center right no-repeat;
+	background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
 	background-size: cover;
 	@at-root .mv-content {
 		position: absolute;
@@ -176,7 +176,7 @@ header {
 	.sub-viewBg {
 		width: 80%;
 		height: 90%;
-		background: url("../img/2018/kenkyu/bg01.jpg") repeat;
+		background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
 		position: absolute;
 		bottom: 0px;
 		right: 0px;
@@ -286,7 +286,7 @@ header {
 	.text-content {
 		width: 72%;
 		height: 300px;
-		background: url("../img/2018/kenkyu/bg01.jpg") repeat;
+		background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
 		margin-top: 50px;
 		position: relative;
 	}
@@ -361,7 +361,7 @@ header {
 ------------------------------------------------------------------*/
 .section03 {
 	height: auto;
-	background: url("../img/2018/kenkyu/bg04.jpg") repeat;
+	background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
 	margin-top: 110px;
 	padding: 80px 0px;
 	position: relative;
@@ -618,7 +618,7 @@ header {
 ------------------------------------------------------------------*/
 .section04 {
 	height: 600px;
-	background: url("../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
+	background: url("../../../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
 	background-size: cover;
 	position: relative;
 	.text-area {
@@ -655,7 +655,7 @@ header {
 @media all and (min-width: 1300px){
 	.section04 {
 		height: 600px;
-		background: url("../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
+		background: url("../../../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
 		background-size: cover;
 		position: relative;
 		.text-area {
@@ -697,7 +697,7 @@ header {
 	.voice {
 		width: 77%;
 		padding: 90px 0px 40px;
-		background: url("../img/2018/kenkyu/bg02.jpg") repeat;
+		background: url("../../../img/2018/kenkyu/bg02.jpg") repeat;
 		margin: 125px auto 0px;
 		h2 {
 			width: 450px;
@@ -733,7 +733,7 @@ header {
 			.baloon01 {
 				width: 75%;
 				height: auto;
-				background: url("../img/2018/kenkyu/fukidashi01.png") center center no-repeat;
+				background: url("../../../img/2018/kenkyu/fukidashi01.png") center center no-repeat;
 				background-size: 100% auto;
 				&::before {
 					content: "";
@@ -750,7 +750,7 @@ header {
 			.baloon02 {
 				width: 75%;
 				height: auto;
-				background: url("../img/2018/kenkyu/fukidashi02.png") center center no-repeat;
+				background: url("../../../img/2018/kenkyu/fukidashi02.png") center center no-repeat;
 				background-size: 100% auto;
 				&::before {
 					content: "";
@@ -857,7 +857,7 @@ header {
 	.bg {
 		width: 77%;
 		height: 350px;
-		background: url("../img/2018/kenkyu/bg01.jpg") repeat;
+		background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
 		position: absolute;
 		bottom: -50px;
 		right: 0px;
@@ -975,7 +975,7 @@ header {
 ------------------------------------------------------------------*/
 .section09 {
 	padding: 80px 0px;
-	background: url("../img/2018/kenkyu/bg04.jpg") repeat;
+	background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
 	position: relative;
 	a {
 		color: $blue;

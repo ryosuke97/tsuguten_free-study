@@ -127,7 +127,7 @@ nav img {
   height: 600px;
   position: relative;
   margin-bottom: 80px;
-  background: url("../img/2018/kenkyu/bg_mv.png") center right no-repeat;
+  background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
   background-size: cover;
 }
 .mv-content {
@@ -175,7 +175,7 @@ nav img {
 .l-sub-view .sub-viewBg {
   width: 80%;
   height: 90%;
-  background: url("../img/2018/kenkyu/bg01.jpg") repeat;
+  background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -285,7 +285,7 @@ nav img {
 .section02 .text-content {
   width: 72%;
   height: 300px;
-  background: url("../img/2018/kenkyu/bg01.jpg") repeat;
+  background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
   margin-top: 50px;
   position: relative;
 }
@@ -359,7 +359,7 @@ nav img {
 ------------------------------------------------------------------*/
 .section03 {
   height: auto;
-  background: url("../img/2018/kenkyu/bg04.jpg") repeat;
+  background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
   margin-top: 110px;
   padding: 80px 0px;
   position: relative;
@@ -592,7 +592,7 @@ nav img {
 ------------------------------------------------------------------*/
 .section04 {
   height: 600px;
-  background: url("../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
+  background: url("../../../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -629,7 +629,7 @@ nav img {
 @media all and (min-width: 1300px) {
   .section04 {
     height: 600px;
-    background: url("../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
+    background: url("../../../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
   }
@@ -672,7 +672,7 @@ nav img {
 .section05 .voice {
   width: 77%;
   padding: 90px 0px 40px;
-  background: url("../img/2018/kenkyu/bg02.jpg") repeat;
+  background: url("../../../img/2018/kenkyu/bg02.jpg") repeat;
   margin: 125px auto 0px;
 }
 .section05 .voice h2 {
@@ -710,7 +710,7 @@ nav img {
 .section05 .voice .l-voice .baloon01 {
   width: 75%;
   height: auto;
-  background: url("../img/2018/kenkyu/fukidashi01.png") center center no-repeat;
+  background: url("../../../img/2018/kenkyu/fukidashi01.png") center center no-repeat;
   background-size: 100% auto;
 }
 .section05 .voice .l-voice .baloon01::before {
@@ -727,7 +727,7 @@ nav img {
 .section05 .voice .l-voice .baloon02 {
   width: 75%;
   height: auto;
-  background: url("../img/2018/kenkyu/fukidashi02.png") center center no-repeat;
+  background: url("../../../img/2018/kenkyu/fukidashi02.png") center center no-repeat;
   background-size: 100% auto;
 }
 .section05 .voice .l-voice .baloon02::before {
@@ -828,7 +828,7 @@ nav img {
 .section06 .bg {
   width: 77%;
   height: 350px;
-  background: url("../img/2018/kenkyu/bg01.jpg") repeat;
+  background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
   position: absolute;
   bottom: -50px;
   right: 0px;
@@ -945,7 +945,7 @@ nav img {
 ------------------------------------------------------------------*/
 .section09 {
   padding: 80px 0px;
-  background: url("../img/2018/kenkyu/bg04.jpg") repeat;
+  background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
   position: relative;
 }
 .section09 a {
