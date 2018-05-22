@@ -30,11 +30,10 @@ section {
   width: 100%;
 }
 
-.wrapper {
+.wrapper, .section01 .wrapper {
   margin: 0px auto;
   width: 100%;
   max-width: 1300px;
-  overflow: hidden;
 }
 
 h1 {
@@ -63,7 +62,7 @@ h3 {
 }
 
 @media all and (min-width: 1300px) {
-  h1 {
+  h2 {
     width: 100%;
     font-family: "mgenplus-1m-bold";
     font-size: 40px !important;
@@ -72,7 +71,7 @@ h3 {
     letter-spacing: 0.1em;
   }
 
-  .section03 h1 {
+  .section03 h2 {
     font-size: 50px !important;
   }
 }
@@ -227,13 +226,16 @@ nav img {
 ------------------------------------------------------------------*/
 .section01 {
   width: 100%;
-  padding-top: 50px;
   position: relative;
   background: #eef8ff;
 }
+.section01 .wrapper {
+  padding: 30px;
+  box-sizing: border-box;
+}
 .section01 h2 {
   position: absolute;
-  top: 6%;
+  top: 0%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -652,7 +654,7 @@ nav img {
     top: 80px;
     right: 10%;
   }
-  .section04 .text-area h1 {
+  .section04 .text-area h2 {
     width: 100%;
     font-size: 50px;
     color: #2c2c2c;
@@ -1130,6 +1132,11 @@ nav img {
   width: 100%;
 }
 
+@media all and (min-width: 1300px) {
+  .l-samary p {
+    font-size: 18px !important;
+  }
+}
 /*------------------------------------------------------------------
  Section11 スポンサー
 ------------------------------------------------------------------*/
