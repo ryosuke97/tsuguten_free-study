@@ -650,9 +650,9 @@ header {
 		svg line{
 			fill: none;
 			stroke: $yellow;
-			stroke-width: 6px;
+			stroke-width: 10px;
 			stroke-linecap: round;
-			stroke-dasharray: 0.5px, 20px;
+			stroke-dasharray: 0.5px, 30px;
 		}
 		p {
 			font-size: 20px;
@@ -686,9 +686,9 @@ header {
 			svg line {
 				fill: none;
 				stroke: $yellow;
-				stroke-width: 6px;
+				stroke-width: 10px;
 				stroke-linecap: round;
-				stroke-dasharray: 0.5px, 20px;
+				stroke-dasharray: 0.5px, 30px;
 			}
 			p {
 				font-size: 22px;
@@ -1027,9 +1027,9 @@ header {
 		svg line{
 			fill: none;
 			stroke: $blue;
-			stroke-width: 6px;
+			stroke-width: 10px;
 			stroke-linecap: round;
-			stroke-dasharray: 0.5px, 20px;
+			stroke-dasharray: 0.5px, 30px;
 		}
 		.artist-left {
 			width: 47%;

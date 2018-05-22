@@ -627,9 +627,9 @@ nav img {
 .section04 .text-area svg line {
   fill: none;
   stroke: #ffb700;
-  stroke-width: 6px;
+  stroke-width: 10px;
   stroke-linecap: round;
-  stroke-dasharray: 0.5px, 20px;
+  stroke-dasharray: 0.5px, 30px;
 }
 .section04 .text-area p {
   font-size: 20px;
@@ -664,9 +664,9 @@ nav img {
   .section04 .text-area svg line {
     fill: none;
     stroke: #ffb700;
-    stroke-width: 6px;
+    stroke-width: 10px;
     stroke-linecap: round;
-    stroke-dasharray: 0.5px, 20px;
+    stroke-dasharray: 0.5px, 30px;
   }
   .section04 .text-area p {
     font-size: 22px;
@@ -1001,9 +1001,9 @@ nav img {
 .section09 .artist svg line {
   fill: none;
   stroke: #2b5db7;
-  stroke-width: 6px;
+  stroke-width: 10px;
   stroke-linecap: round;
-  stroke-dasharray: 0.5px, 20px;
+  stroke-dasharray: 0.5px, 30px;
 }
 .section09 .artist .artist-left {
   width: 47%;
