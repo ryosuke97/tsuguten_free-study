@@ -95,6 +95,36 @@ a:hover {
   padding: 20px;
 }
 
+button {
+  display: block;
+}
+
+.link-button {
+  width: 390px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 0%;
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-blue {
+  background: #2b5db7;
+  box-shadow: 0px 5px 2px #113981;
+}
+.button-blue :hover {
+  box-shadow: none;
+}
+
+.button-yellow {
+  background: #ffb700;
+  box-shadow: 0px 5px 2px #c08a00;
+}
+
 /*------------------------------------------------------------------
  Header
 ------------------------------------------------------------------*/
@@ -148,10 +178,7 @@ nav img {
   top: 50px;
   z-index: 10;
 }
-.mv-content ul {
-  margin-top: 30px;
-}
-.mv-content ul li {
+.mv-content button {
   margin-top: 20px;
 }
 

@@ -93,7 +93,39 @@ a:hover {
 	border-radius: 10px;
 	border: 1px solid #999;
 	padding: 20px;
+}
+button {
+	// width: 390px;
+	// font-size: 20px;
+	// text-decoration: none;
+	// padding: 15px 0%;
+	// border-radius: 50px;
+	// border-color: transparent;
+	display: block;
+}
+.link-button {
+	width: 390px;
+	margin-top: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 15px 0%;
+	border-radius: 50px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button-blue {
+	background: $blue;
+	box-shadow: 0px 5px 2px #113981;
+	:hover {
+		box-shadow: none;
 	}
+}
+.button-yellow {
+	background: $yellow;
+	box-shadow: 0px 5px 2px #c08a00;
+}
 /*------------------------------------------------------------------
  Header
 ------------------------------------------------------------------*/
@@ -146,12 +178,15 @@ header {
 		left: 60px;
 		top: 50px;
 		z-index: 10;
-		ul {
-			margin-top: 30px;
-			li {
-				margin-top: 20px;
-			}
+		button {
+			margin-top: 20px;
 		}
+		// ul {
+		// 	margin-top: 30px;
+		// 	li {
+		// 		margin-top: 20px;
+		// 	}
+		// }
 	}
 }
 
