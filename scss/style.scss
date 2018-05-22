@@ -63,6 +63,9 @@ h3 {
 	font-weight: bold;
 	margin: 24px 0px 16px;
 }
+a:hover {
+	text-decoration: none;
+}
 @media all and (min-width: 1300px){
 	h2 {
 		width: 100%;
@@ -992,7 +995,6 @@ header {
 	position: relative;
 	a {
 		color: $blue;
-		text-decoration: underline;
 	}
 	h2 {
 		font-size: 40px;
@@ -1277,9 +1279,12 @@ header {
  Footer
 ------------------------------------------------------------------*/
 footer {
+	width: 100%;
 	font-size: 14px;
-	color: #fff;
-	padding: 20px 0px;
-	text-align: center;
-	background: $blue;
+	.copyright {
+		color: #fff;
+		padding: 20px 0px;
+		background: $blue;
+		text-align: center;
+	}
 }
