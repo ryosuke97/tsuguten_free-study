@@ -234,7 +234,7 @@ nav img {
   background: #eef8ff;
 }
 .section01 .wrapper {
-  padding: 30px;
+  padding: 30px 30px 50px;
   box-sizing: border-box;
 }
 .section01 h2 {
@@ -253,14 +253,11 @@ nav img {
   max-width: 1300px;
   margin: 0px auto;
   padding-top: 5%;
-  padding-bottom: 50px;
-}
-.featureContent ul {
-  width: 100%;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
-.featureContent ul li {
+.featureContent section {
   width: 22%;
   font-size: 18px;
 }
@@ -269,9 +266,6 @@ nav img {
 }
 .featureText {
   width: 100%;
-}
-.l-annotation {
-  margin: 3% 0% 0%;
 }
 .section01 .l-shaped-shape03 {
   width: 10%;

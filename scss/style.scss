@@ -234,7 +234,7 @@ header {
 	background: #eef8ff;
 	.wrapper {
 		@extend .wrapper;
-		padding: 30px;
+		padding: 30px 30px 50px;
 		box-sizing: border-box;
 	}
 	h2 {
@@ -253,24 +253,18 @@ header {
 		max-width: 1300px;
 		margin: 0px auto;
 		padding-top: 5%;
-		padding-bottom: 50px;
-		ul {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			li {
-				width: 22%;
-				font-size: 18px;
-			}
+		padding-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+		section {
+			width: 22%;
+			font-size: 18px;
 		}
 		img {
 			width: 100%;
 		}
 		@at-root .featureText {
 			width: 100%;
-		}
-		@at-root .l-annotation {
-			margin: 3% 0% 0%;
 		}
 	}
 	.l-shaped-shape03 {
