@@ -115,6 +115,21 @@ button {
   box-shadow: none;
   transform: translate(0px, 2px);
 }
+.link-button__elm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.link-button__elm::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
 
 .button-blue {
   background: #2b5db7;

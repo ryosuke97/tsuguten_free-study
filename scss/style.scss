@@ -118,6 +118,21 @@ button {
 		box-shadow: none;
 		transform: translate(0px,2px);
 	}
+	&__elm {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		&::before {
+			content:"";
+			display:inline-block;
+			width:1em;
+			height:1em;
+			background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+			background-size:contain;
+			margin-right: 10px;
+		}
+	}
 }
 .button-blue {
 	background: $blue;
@@ -130,6 +145,7 @@ button {
 	background: $yellow;
 	box-shadow: 0px 5px 2px #c08a00;
 }
+
 
 /*------------------------------------------------------------------
  Header
