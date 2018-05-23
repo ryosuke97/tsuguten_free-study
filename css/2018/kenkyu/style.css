@@ -248,20 +248,23 @@ nav img {
 }
 .l-sub-view .l-shaped-shape01 {
   width: 8%;
+  height: 85px;
   position: absolute;
   top: 150px;
   left: 90%;
   z-index: 10;
-}
-.l-sub-view .l-shaped-shape01 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts01.png") no-repeat center center;
+  background-size: contain;
 }
 .l-sub-view .l-shaped-shape02 {
   width: 10%;
+  height: 143px;
   position: absolute;
   top: 96%;
   left: 5%;
   z-index: 10;
+  background: url("../../../img/2018/kenkyu/parts02.png") no-repeat center center;
+  background-size: contain;
 }
 .l-sub-view .l-shaped-shape02 img {
   width: 100%;
