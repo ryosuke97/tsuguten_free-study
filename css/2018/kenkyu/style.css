@@ -368,43 +368,43 @@ nav img {
 }
 .section02 .l-shaped-shape04 {
   width: 8%;
+  height: 91px;
   position: absolute;
   top: -25px;
   left: 80%;
   z-index: 0;
-}
-.section02 .l-shaped-shape04 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts04.png") no-repeat center center;
+  background-size: contain;
 }
 .section02 .l-shaped-shape05 {
   width: 8%;
+  height: 93px;
   position: absolute;
   top: 20px;
   left: 5%;
   z-index: 0;
-}
-.section02 .l-shaped-shape05 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts05.png") no-repeat center center;
+  background-size: contain;
 }
 .section02 .l-shaped-shape06 {
   width: 8%;
+  height: 84px;
   position: absolute;
   top: 40%;
   left: 3%;
   z-index: 0;
-}
-.section02 .l-shaped-shape06 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts06.png") no-repeat center center;
+  background-size: contain;
 }
 .section02 .l-parts-scissors {
   width: 8%;
+  height: 91px;
   position: absolute;
   top: 200px;
   left: 42%;
   z-index: 0;
-}
-.section02 .l-parts-scissors img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/icn_scissors.png") no-repeat center center;
+  background-size: contain;
 }
 
 /*------------------------------------------------------------------
