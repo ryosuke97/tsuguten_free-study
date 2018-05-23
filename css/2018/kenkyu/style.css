@@ -510,6 +510,11 @@ nav img {
 .section03 .l-info .l-infoR dl dd span {
   font-size: 1.4vw;
 }
+@media all and (min-width: 1300px) {
+  .section03 .l-info .l-infoR dl {
+    font-size: 22px;
+  }
+}
 .section03 .l-info .l-infoR img {
   width: 100%;
   margin-top: 50px;
@@ -584,53 +589,53 @@ nav img {
 }
 .section03 .l-shaped-shape07 {
   width: 10%;
+  height: 140px;
   position: absolute;
   top: 20px;
   left: 3%;
   z-index: 0;
-}
-.section03 .l-shaped-shape07 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts07.png") no-repeat center center;
+  background-size: contain;
 }
 .section03 .l-parts-face {
   width: 10%;
+  height: 141px;
   position: absolute;
   top: 20px;
   right: 5%;
   z-index: 0;
-}
-.section03 .l-parts-face img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
+  background-size: contain;
 }
 .section03 .l-shaped-shape08 {
   width: 10%;
+  height: 159px;
   position: absolute;
   top: 15%;
   right: 3%;
   z-index: 0;
-}
-.section03 .l-shaped-shape08 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts08.png") no-repeat center center;
+  background-size: contain;
 }
 .section03 .l-shaped-shape09 {
   width: 8%;
+  height: 91px;
   position: absolute;
   top: 48%;
   left: 3%;
   z-index: 0;
-}
-.section03 .l-shaped-shape09 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts09.png") no-repeat center center;
+  background-size: contain;
 }
 .section03 .l-shaped-shape10 {
   width: 8%;
+  height: 89px;
   position: absolute;
   bottom: 2%;
   right: 3%;
   z-index: 0;
-}
-.section03 .l-shaped-shape10 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts10.png") no-repeat center center;
+  background-size: contain;
 }
 
 /*------------------------------------------------------------------
