@@ -266,9 +266,6 @@ nav img {
   background: url("../../../img/2018/kenkyu/parts02.png") no-repeat center center;
   background-size: contain;
 }
-.l-sub-view .l-shaped-shape02 img {
-  width: 100%;
-}
 
 /*------------------------------------------------------------------
  Section01 自由研究ツールの特徴
@@ -314,13 +311,13 @@ nav img {
 }
 .section01 .l-shaped-shape03 {
   width: 10%;
+  height: 130px;
   position: absolute;
   top: -25px;
-  left: 80%;
+  left: 87%;
   z-index: 0;
-}
-.section01 .l-shaped-shape03 img {
-  width: 100%;
+  background: url("../../../img/2018/kenkyu/parts03.png") no-repeat center center;
+  background-size: contain;
 }
 
 /*------------------------------------------------------------------
