@@ -130,6 +130,7 @@ button {
 	background: $yellow;
 	box-shadow: 0px 5px 2px #c08a00;
 }
+
 /*------------------------------------------------------------------
  Header
 ------------------------------------------------------------------*/
@@ -566,14 +567,7 @@ header {
 				background:#fff;
 				border-left:#b2b2b2 solid 1px;
 				border-bottom:#b2b2b2 solid 1px;
-				p {
-					height: 80px;
-					text-align: center;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
+				text-align: center;
 			}
 		}
 	}

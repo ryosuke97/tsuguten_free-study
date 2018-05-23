@@ -556,14 +556,7 @@ nav img {
   background: #fff;
   border-left: #b2b2b2 solid 1px;
   border-bottom: #b2b2b2 solid 1px;
-}
-.section03 .table tbody td p {
-  height: 80px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .section03 .l-center {
   width: 390px;
