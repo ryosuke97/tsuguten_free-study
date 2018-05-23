@@ -111,6 +111,10 @@ button {
   justify-content: center;
   align-items: center;
 }
+.link-button:hover {
+  box-shadow: none;
+  transform: translate(0px, 2px);
+}
 
 .button-blue {
   background: #2b5db7;
