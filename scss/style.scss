@@ -229,66 +229,136 @@ a:hover {
 /*------------------------------------------------------------------
  Header
 ------------------------------------------------------------------*/
-header {
-	width: 100%;
-	height: 94px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	.logo {
-		width: 10%;
-		height: 95px;
-		margin: 0px 0px 0px 60px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	@at-root nav {
-		width: 65%;
-		margin: 0px 60px 0px 0px;
+// PC
+@media all and (min-width: 769px){
+	header {
+		width: 100%;
+		height: 94px;
 		display: flex;
 		justify-content: space-between;
-		ul {
-			width: 100%;
+		align-items: center;
+		.logo {
+			width: 10%;
+			height: 95px;
+			margin: 0px 0px 0px 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		@at-root nav {
+			width: 65%;
+			margin: 0px 60px 0px 0px;
 			display: flex;
 			justify-content: space-between;
-		}
-		.nav01 {
-			color: $black;
-			text-decoration: none;
-			&::before {
-				content: "";
-				display: inline-block;
-				width: 20px;
-				height: 20px;
-				margin-right: 8px;
-				background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
-				background-size: contain;
-				vertical-align: text-bottom;
+			ul {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+			.nav01 {
+				color: $black;
+				text-decoration: none;
+				&::before {
+					content: "";
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					margin-right: 8px;
+					background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
+					background-size: contain;
+					vertical-align: text-bottom;
+				}
+			}
+			.nav02 {
+				@extend .nav01;
+				&::before {
+					width: 21px;
+					height: 19px;
+					background: url(../../../img/2018/kenkyu/icn_nav02.png) center center no-repeat;
+				}
+			}
+			.nav03 {
+				@extend .nav01;
+				&::before {
+					width: 22px;
+					height: 22px;
+					background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
+				}
+			}
+			.nav04 {
+				@extend .nav01;
+				&::before {
+					width: 26px;
+					height: 22px;
+					background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
+				}
 			}
 		}
-		.nav02 {
-			@extend .nav01;
-			&::before {
-				width: 21px;
-				height: 19px;
-				background: url(../../../img/2018/kenkyu/icn_nav02.png) center center no-repeat;
-			}
+	}
+}
+// SP
+@media all and (max-width: 768px){
+	header {
+		width: 100%;
+		height: 120px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.logo {
+			width: 10%;
+			height: 95px;
+			margin: 0px 0px 0px 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
-		.nav03 {
-			@extend .nav01;
-			&::before {
-				width: 22px;
-				height: 22px;
-				background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
+		@at-root nav {
+			width: 65%;
+			margin: 0px 60px 0px 0px;
+			display: flex;
+			justify-content: space-between;
+			ul {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
 			}
-		}
-		.nav04 {
-			@extend .nav01;
-			&::before {
-				width: 26px;
-				height: 22px;
-				background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
+			.nav01 {
+				color: $black;
+				text-decoration: none;
+				&::before {
+					content: "";
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					margin-right: 8px;
+					background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
+					background-size: contain;
+					vertical-align: text-bottom;
+				}
+			}
+			.nav02 {
+				@extend .nav01;
+				&::before {
+					width: 21px;
+					height: 19px;
+					background: url(../../../img/2018/kenkyu/icn_nav02.png) center center no-repeat;
+				}
+			}
+			.nav03 {
+				@extend .nav01;
+				&::before {
+					width: 22px;
+					height: 22px;
+					background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
+				}
+			}
+			.nav04 {
+				@extend .nav01;
+				&::before {
+					width: 26px;
+					height: 22px;
+					background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
+				}
 			}
 		}
 	}
