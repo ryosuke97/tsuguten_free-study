@@ -301,6 +301,9 @@ a:hover {
 }
 // SP
 @media all and (max-width: 768px){
+	.open {
+		transform: translateY(694px);
+	}
 	header {
 		width: 100%;
 		height: 94px;
@@ -381,12 +384,21 @@ a:hover {
 			background: #fff;
 			position: absolute;
 			top: -600px;
+			transition: all .4s;
+			z-index: 100;
 			ul {
 				width: 90%;
 				height: 600px;
+				margin: 0 auto;
 				li {
 					width: 100%;
-					height: 115px;
+					height: 110px;
+					border-bottom: 1px solid $black;
+					display: flex;
+					align-items: center;
+					a {
+						text-decoration: none;
+					}
 				}
 			}
 		}

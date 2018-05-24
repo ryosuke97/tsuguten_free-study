@@ -10,17 +10,9 @@ $(function() {
       $('.menu2').toggleClass('menuclick2');
       $('.menu3').toggleClass('menuclick3');
       // ハンバーガーボタンをオーバーレイに隠れないようにする
-      $('.menu-trigger').toggleClass('zindex1000');
-      // 最初にメニューリストは隠す
-      // $('#olWorks').css({display:'none'});
-      // $('#olArtist').css({display:'none'});
-      // $('#olAbout').css({display:'none'});
-      // オーバーレイを表示する
-      $('#overlay').slideToggle(500, function() {
-        $('#olWorks').slideToggle(500);
-        $('#olArtist').delay(100).slideToggle(500);
-        $('#olAbout').delay(200).slideToggle(500);
-      });
+			$('.menu-trigger').toggleClass('zindex1000');
+			// グロナビのトグル
+			$('nav').toggleClass('open');
       overlayFlg = true;
     }
     else if (overlayFlg == true) {
@@ -28,15 +20,15 @@ $(function() {
       $('.menu1').toggleClass('menuclick1');
       $('.menu2').toggleClass('menuclick2');
       $('.menu3').toggleClass('menuclick3');
-      $('.menu-trigger').removeClass('zindex1000');
+      $('nav').removeClass('open');
       $('#overlay').fadeOut();
       overlayFlg = false;
     }
   });
 
-	$('.menu-trigger').click(function(){
+	// $('.menu-trigger').click(function(){
 		// $header.toggleClass('open');
-	});
+	// });
 
 
 /*-----------------------------------------------*/
