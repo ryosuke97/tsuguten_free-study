@@ -94,15 +94,6 @@ a:hover {
 	border: 1px solid #999;
 	padding: 20px;
 }
-button {
-	// width: 390px;
-	// font-size: 20px;
-	// text-decoration: none;
-	// padding: 15px 0%;
-	// border-radius: 50px;
-	// border-color: transparent;
-	display: block;
-}
 .link-button {
 	width: 390px;
 	margin-top: 20px;
@@ -262,12 +253,43 @@ header {
 			display: flex;
 			justify-content: space-between;
 		}
-		a {
+		.nav01 {
 			color: $black;
 			text-decoration: none;
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-right: 8px;
+				background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
+				background-size: contain;
+				vertical-align: text-bottom;
+			}
 		}
-		img {
-			margin-right: 8px;
+		.nav02 {
+			@extend .nav01;
+			&::before {
+				width: 21px;
+				height: 19px;
+				background: url(../../../img/2018/kenkyu/icn_nav02.png) center center no-repeat;
+			}
+		}
+		.nav03 {
+			@extend .nav01;
+			&::before {
+				width: 22px;
+				height: 22px;
+				background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
+			}
+		}
+		.nav04 {
+			@extend .nav01;
+			&::before {
+				width: 26px;
+				height: 22px;
+				background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
+			}
 		}
 	}
 }
