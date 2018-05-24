@@ -257,23 +257,26 @@ a:hover {
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
+				a {
+					color: $black;
+					text-decoration: none;
+					&::before {
+						content: "";
+						display: inline-block;
+						margin-right: 8px;
+						background-size: contain;
+						vertical-align: text-bottom;
+					}
+				}
 			}
 			.nav01 {
-				color: $black;
-				text-decoration: none;
 				&::before {
-					content: "";
-					display: inline-block;
 					width: 20px;
 					height: 20px;
-					margin-right: 8px;
 					background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
-					background-size: contain;
-					vertical-align: text-bottom;
 				}
 			}
 			.nav02 {
-				@extend .nav01;
 				&::before {
 					width: 21px;
 					height: 19px;
@@ -281,7 +284,6 @@ a:hover {
 				}
 			}
 			.nav03 {
-				@extend .nav01;
 				&::before {
 					width: 22px;
 					height: 22px;
@@ -289,7 +291,6 @@ a:hover {
 				}
 			}
 			.nav04 {
-				@extend .nav01;
 				&::before {
 					width: 26px;
 					height: 22px;
@@ -310,6 +311,7 @@ a:hover {
 		display: flex;
 		align-items: center;
 		position: relative;
+		z-index: 1000;
 		.title {
 			
 		}
@@ -341,7 +343,7 @@ a:hover {
 			bottom: 0px;
 			width: 100%;
 			height: 2px;
-			background-color: #2A394E;
+			background-color: $black;
 			border-radius: 2px;
 		}
 		.menu-trigger span:nth-of-type(1) {
@@ -393,11 +395,63 @@ a:hover {
 				li {
 					width: 100%;
 					height: 110px;
-					border-bottom: 1px solid $black;
+					font-size: 32px;
+					border-bottom: 1px solid $lightGray;
 					display: flex;
 					align-items: center;
+					position: relative;
 					a {
+						color: $black;
 						text-decoration: none;
+						&::before {
+							content: "";
+							display: inline-block;
+							margin-right: 20px;
+							background-size: contain;
+							vertical-align: text-bottom;
+						}
+						&::after {
+							content: '';
+							width: 20px;
+							height: 20px;
+							border: 0px;
+							border-top: solid 2px $lightGray;
+							border-right: solid 2px $lightGray;
+							-ms-transform: rotate(135deg);
+							-webkit-transform: rotate(135deg);
+							transform: rotate(135deg);
+							position: absolute;
+							top: 34%;
+							right: 5%;
+						}
+					}
+					.nav01 {
+						&::before {
+							width: 40px;
+							height: 40px;
+							background: url(../../../img/2018/kenkyu/icn_sp_nav01.png) center center no-repeat;
+						}
+					}
+					.nav02 {
+						&::before {
+							width: 40px;
+							height: 38px;
+							background: url(../../../img/2018/kenkyu/icn_sp_nav02.png) center center no-repeat;
+						}
+					}
+					.nav03 {
+						&::before {
+							width: 41px;
+							height: 41px;
+							background: url(../../../img/2018/kenkyu/icn_sp_nav03.png) center center no-repeat;
+						}
+					}
+					.nav04 {
+						&::before {
+							width: 48px;
+							height: 42px;
+							background: url(../../../img/2018/kenkyu/icn_sp_nav04.png) center center no-repeat;
+						}
 					}
 				}
 			}
@@ -772,7 +826,7 @@ a:hover {
 	}
 	.table {
 		width:100%;
-		border-right: #b2b2b2 solid 1px;
+		border-right: $lightGray solid 1px;
 		thead {
 			tr {
 				width: 100%;
@@ -783,10 +837,10 @@ a:hover {
 				color:#FFF;
 				text-align: center;
 				padding:10px 0px;
-				border-right:#b2b2b2 solid 1px;
-				border-bottom:#b2b2b2 solid 1px;
+				border-right:$lightGray solid 1px;
+				border-bottom:$lightGray solid 1px;
 				&:last-child {
-					border-right:#b2b2b2 solid 1px;
+					border-right:$lightGray solid 1px;
 				}
 			}
 		}
@@ -799,21 +853,21 @@ a:hover {
 				height: 80px;
 				font-weight: bold;
 				background:$lightBlue;
-				border-bottom:#b2b2b2 solid 1px;
-				border-left:#b2b2b2 solid 1px;
+				border-bottom:$lightGray solid 1px;
+				border-left:$lightGray solid 1px;
 				vertical-align:top;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 			}
 			tr:last-child th {
-				border-bottom:#b2b2b2 solid 1px;
+				border-bottom:$lightGray solid 1px;
 			}
 			td {
 				height: 80px;
 				background:#fff;
-				border-left:#b2b2b2 solid 1px;
-				border-bottom:#b2b2b2 solid 1px;
+				border-left:$lightGray solid 1px;
+				border-bottom:$lightGray solid 1px;
 				text-align: center;
 			}
 		}
