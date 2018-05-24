@@ -162,6 +162,62 @@ button {
   -o-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
+.link-button__elm--staff-entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.link-button__elm--staff-entry::before {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
+  background-size: contain;
+  margin-right: 7px;
+}
+.link-button__elm--staff-entry::after {
+  content: "";
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+  background-size: contain;
+  margin-left: 7px;
+}
+.link-button__elm--donation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  margin: 0px auto;
+}
+.link-button__elm--donation::before {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
+  background-size: contain;
+  margin-right: 7px;
+}
+.link-button__elm--donation::after {
+  content: "";
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
 
 .button-blue {
   background: #2b5db7;
@@ -626,14 +682,6 @@ nav img {
   height: 60px;
   margin: 60px auto;
 }
-.section03 a {
-  width: 100%;
-  height: 60px;
-}
-.section03 a img {
-  width: 100%;
-  height: 60px;
-}
 .section03 .l-shaped-shape07 {
   width: 10%;
   height: 140px;
@@ -1015,7 +1063,7 @@ nav img {
   line-height: 1.8;
   margin-bottom: 40px;
 }
-.section08 .l-fund-btn {
+.section08 .link-button {
   display: block;
   width: 390px;
   margin: 0 auto;
@@ -1277,7 +1325,8 @@ nav img {
   position: relative;
 }
 .section12 .l-cv-content {
-  width: 64%;
+  width: 100%;
+  max-width: 1300px;
   margin: 0px auto;
 }
 .section12 .l-cv-content h2 {
@@ -1294,12 +1343,18 @@ nav img {
   width: 100%;
   margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .section12 .l-cv-content ul li {
-  width: 48%;
+  width: 390px;
 }
-.section12 .l-cv-content ul li img {
+.section12 .l-cv-content ul li:first-child {
+  margin-right: 5px;
+}
+.section12 .l-cv-content ul li:last-child {
+  margin-left: 5px;
+}
+.section12 .l-cv-content ul li .link-button {
   width: 100%;
 }
 .section12 .l-shaped-shape22 {
