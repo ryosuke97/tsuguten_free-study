@@ -237,6 +237,9 @@ a:hover {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		.title {
+			display: none;
+		}
 		.logo {
 			width: 10%;
 			height: 95px;
@@ -300,10 +303,13 @@ a:hover {
 @media all and (max-width: 768px){
 	header {
 		width: 100%;
-		height: 120px;
+		height: 94px;
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		position: relative;
+		.title {
+			
+		}
 		.logo {
 			width: 10%;
 			height: 95px;
@@ -312,52 +318,75 @@ a:hover {
 			justify-content: center;
 			align-items: center;
 		}
+		.menu-trigger,
+		.menu-trigger span {
+			display: inline-block;
+			transition: all .4s;
+			box-sizing: border-box;
+		}
+		.menu-trigger {
+			position: fixed;
+			top: 25px;
+			right: 20px;
+			width: 25px;
+			height: 20px;
+			z-index: 100000;
+		}
+		.menu-trigger span {
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+			width: 100%;
+			height: 2px;
+			background-color: #2A394E;
+			border-radius: 2px;
+		}
+		.menu-trigger span:nth-of-type(1) {
+			top: 0;
+		}
+		.menu-trigger span:nth-of-type(2) {
+			top: 9px;
+		}
+		.menu-trigger span:nth-of-type(3) {
+			bottom: 0;
+		}
+		.menu-trigger span {
+			transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-webkit-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out;
+		}
+		/* クリックした後の挙動 */
+		.menuclick1 {
+			top:12px !important;
+			-o-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg); transform: rotate(45deg);
+		}
+		.menuclick2 {
+			display: none !important;
+		}
+		.menuclick3 {
+			top:12px;
+			-o-transform:rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg); transform: rotate(-45deg);
+		}
 		@at-root nav {
-			width: 65%;
-			margin: 0px 60px 0px 0px;
-			display: flex;
-			justify-content: space-between;
+			width: 100%;
+			height: 600px;
+			background: #fff;
+			position: absolute;
+			top: -600px;
 			ul {
-				width: 100%;
-				display: flex;
-				justify-content: space-between;
-			}
-			.nav01 {
-				color: $black;
-				text-decoration: none;
-				&::before {
-					content: "";
-					display: inline-block;
-					width: 20px;
-					height: 20px;
-					margin-right: 8px;
-					background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
-					background-size: contain;
-					vertical-align: text-bottom;
-				}
-			}
-			.nav02 {
-				@extend .nav01;
-				&::before {
-					width: 21px;
-					height: 19px;
-					background: url(../../../img/2018/kenkyu/icn_nav02.png) center center no-repeat;
-				}
-			}
-			.nav03 {
-				@extend .nav01;
-				&::before {
-					width: 22px;
-					height: 22px;
-					background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
-				}
-			}
-			.nav04 {
-				@extend .nav01;
-				&::before {
-					width: 26px;
-					height: 22px;
-					background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
+				width: 90%;
+				height: 600px;
+				li {
+					width: 100%;
+					height: 115px;
 				}
 			}
 		}
