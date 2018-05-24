@@ -110,25 +110,57 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .link-button:hover {
   box-shadow: none;
   transform: translate(0px, 2px);
 }
-.link-button__elm {
+.link-button__elm--dl {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.link-button__elm::before {
+.link-button__elm--dl::before {
   content: "";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.2em;
+  height: 1.2em;
   background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
   background-size: contain;
   margin-right: 10px;
+}
+.link-button__elm--entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.link-button__elm--entry::before {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+}
+.link-button__elm--entry::after {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
 }
 
 .button-blue {
