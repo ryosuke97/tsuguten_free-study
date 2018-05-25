@@ -22,9 +22,18 @@ $(function() {
       $('.menu3').toggleClass('menuclick3');
       $('nav').removeClass('open');
       $('#overlay').fadeOut();
-      overlayFlg = false;
+			overlayFlg = false;
     }
-  });
+	});
+	
+	// SP_グロナビ内メニュー押下でメニューを非表示にする
+	$('nav a').click(function() {
+		$('.menu1').toggleClass('menuclick1');
+		$('.menu2').toggleClass('menuclick2');
+		$('.menu3').toggleClass('menuclick3');
+		$('nav').removeClass('open');
+		overlayFlg = false;
+	});
 
 	// $('.menu-trigger').click(function(){
 		// $header.toggleClass('open');
