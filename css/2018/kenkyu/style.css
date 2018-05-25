@@ -87,6 +87,23 @@ a:hover {
     width: 90%;
     margin: 0 auto;
   }
+
+  h2 {
+    width: 100%;
+    font-family: "mgenplus-1m-bold";
+    font-size: 6vw;
+    color: #2b5db7;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #2c2c2c;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px 0px 16px;
+  }
 }
 /*------------------------------------------------------------------
  Util
@@ -788,59 +805,106 @@ a:hover {
 /*------------------------------------------------------------------
  Section01 自由研究ツールの特徴
 ------------------------------------------------------------------*/
-.section01 {
-  width: 100%;
-  position: relative;
-  background: #eef8ff;
+@media all and (min-width: 769px) {
+  .section01 {
+    width: 100%;
+    position: relative;
+    background: #eef8ff;
+  }
+  .section01 .wrapper {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1300px;
+    padding: 30px 30px 50px;
+    box-sizing: border-box;
+  }
+  .section01 h2 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .featureContent {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0px auto;
+    padding-top: 5%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .featureContent section {
+    width: 22%;
+    font-size: 18px;
+  }
+  .featureContent img {
+    width: 100%;
+  }
+  .featureText {
+    width: 100%;
+  }
+  .section01 .l-shaped-shape03 {
+    width: 10%;
+    height: 130px;
+    position: absolute;
+    top: -25px;
+    left: 87%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts03.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section01 .wrapper {
-  margin: 0px auto;
-  width: 100%;
-  max-width: 1300px;
-  padding: 30px 30px 50px;
-  box-sizing: border-box;
+@media all and (max-width: 768px) {
+  .section01 {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    background: #eef8ff;
+  }
+  .section01 .wrapper {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1300px;
+    padding: 5px 30px 50px;
+    box-sizing: border-box;
+  }
+  .section01 h2 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .featureContent {
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 30px;
+  }
+  .featureContent section {
+    width: 100%;
+    font-size: 18px;
+    margin: 60px auto 0px;
+    padding-bottom: 60px;
+    border-bottom: 2px dotted #b2b2b2;
+  }
+  .featureContent img {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+  }
+  .featureText {
+    width: 100%;
+  }
 }
-.section01 h2 {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.featureContent {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0px auto;
-  padding-top: 5%;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-.featureContent section {
-  width: 22%;
-  font-size: 18px;
-}
-.featureContent img {
-  width: 100%;
-}
-.featureText {
-  width: 100%;
-}
-.section01 .l-shaped-shape03 {
-  width: 10%;
-  height: 130px;
-  position: absolute;
-  top: -25px;
-  left: 87%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts03.png") no-repeat center center;
-  background-size: contain;
-}
-
 /*------------------------------------------------------------------
  Section02 自由研究完成イメージ
 ------------------------------------------------------------------*/
