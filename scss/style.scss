@@ -637,6 +637,9 @@ a:hover {
 			top: 50px;
 			z-index: 10;
 		}
+		.sp-img {
+			display: none;
+		}
 	}
 	.sp-cv {
 		display: none;
@@ -647,16 +650,32 @@ a:hover {
 	.mv {
 		height: 600px;
 		position: relative;
-		background: url("../../../img/2018/kenkyu/img_sp-mv.jpg") center right no-repeat;
+		background: url("../../../img/2018/kenkyu/img_sp-mv.png") center right no-repeat;
 		background-size: cover;
 		@at-root .mv-content {
-			position: absolute;
-			left: 60px;
-			top: 50px;
-			z-index: 10;
 			.link-button {
 				display: none;
 			}
+		}
+		h1 {
+			width: 73%;
+			height: 200px;
+			margin: 0px auto;
+			padding-top: 30px;
+			.pc-img {
+				display: none;
+			}
+			.sp-img {
+				width: 100%;
+			}
+		}
+		.sp-text {
+			width: 90%;
+			font-family: $mgenMedium;
+			font-size: 5vw;
+			color: #222;
+			text-align: center;
+			margin: 260px auto;
 		}
 	}
 	.sp-cv {
