@@ -3,8 +3,11 @@
 ------------------------------------------------------------------*/
 @font-face {
 	font-family: 'mgenplus-1m-bold';
-	src:local('mgenplus-1m-bold') ,
+	src:local('mgenplus-1m-bold'),
 		url('mgenplus-1m-bold.ttf');
+	font-family: 'mgenplus-1m-medium';
+	src:local('mgenplus-1m-medium'),
+		url('mgenplus-1m-medium.ttf')
 }
 
 /*------------------------------------------------------------------
@@ -15,7 +18,8 @@ $lightGray: #b2b2b2;
 $yellow: #ffb700;
 $blue: #2b5db7;
 $lightBlue: #e0f1fe;
-$mgen: "mgenplus-1m-bold";
+$mgenBold: "mgenplus-1m-bold";
+$mgenMedium: "mgenplus-1m-medium";
 
 /*------------------------------------------------------------------
  Selector
@@ -42,7 +46,7 @@ section {
 }
 h1 {
 	width: 100%;
-	font-family: $mgen;
+	font-family: $mgenBold;
 	font-size: 50px;
 	color: $blue;
 	text-align: center;
@@ -50,7 +54,7 @@ h1 {
 }
 h2 {
 	width: 100%;
-	font-family: $mgen;
+	font-family: $mgenBold;
 	font-size: 50px;
 	color: $blue;
 	text-align: center;
@@ -69,7 +73,7 @@ a:hover {
 @media all and (min-width: 1300px){
 	h2 {
 		width: 100%;
-		font-family: $mgen;
+		font-family: $mgenBold;
 		font-size: 40px !important;
 		color: $blue;
 		text-align: center;
@@ -313,15 +317,27 @@ a:hover {
 		position: relative;
 		z-index: 1000;
 		.title {
-			
-		}
-		.logo {
-			width: 10%;
-			height: 95px;
-			margin: 0px 0px 0px 60px;
+			width: 45%;
+			height: 94px;
+			background: $yellow;
+			font-size: 3.6vw;
+			color: #fff;
+			font-family: $mgenMedium;
+			letter-spacing: 0.1em;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+		.logo {
+			width: 30%;
+			height: 94px;
+			margin: 0px 20px 0px 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 100%;
+			}
 		}
 		.menu-trigger,
 		.menu-trigger span {
@@ -395,7 +411,7 @@ a:hover {
 				li {
 					width: 100%;
 					height: 110px;
-					font-size: 32px;
+					font-size: 6vw;
 					border-bottom: 1px solid $lightGray;
 					display: flex;
 					align-items: center;
@@ -406,14 +422,14 @@ a:hover {
 						&::before {
 							content: "";
 							display: inline-block;
-							margin-right: 20px;
+							margin-right: 10px;
 							background-size: contain;
 							vertical-align: text-bottom;
 						}
 						&::after {
 							content: '';
-							width: 20px;
-							height: 20px;
+							width: 10px;
+							height: 10px;
 							border: 0px;
 							border-top: solid 2px $lightGray;
 							border-right: solid 2px $lightGray;
@@ -421,8 +437,8 @@ a:hover {
 							-webkit-transform: rotate(135deg);
 							transform: rotate(135deg);
 							position: absolute;
-							top: 34%;
-							right: 5%;
+							top: 46%;
+							right: 2%;
 						}
 					}
 					.nav01 {
@@ -1453,7 +1469,7 @@ a:hover {
 		background: $yellow;
 		border-radius: 3px;
 		margin: 0px auto;
-		font-family: $mgen;
+		font-family: $mgenBold;
 		text-align: center;
 		color: #fff;
 		font-size: 3.0vw;
@@ -1556,7 +1572,7 @@ a:hover {
 		margin: 0px auto;
 		h2 {
 			width: 100%;
-			font-family: $mgen;
+			font-family: $mgenBold;
 			font-size: 32px;
 			color: $black;
 			text-align: center;
