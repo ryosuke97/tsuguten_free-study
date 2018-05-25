@@ -1048,226 +1048,410 @@ a:hover {
 /*------------------------------------------------------------------
  Section03 自由研究サポート教室とは
 ------------------------------------------------------------------*/
-.section03 {
-  height: auto;
-  background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
-  margin-top: 110px;
-  padding: 80px 0px;
-  position: relative;
+@media all and (min-width: 769px) {
+  .section03 {
+    height: auto;
+    background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
+    margin-top: 110px;
+    padding: 80px 0px;
+    position: relative;
+  }
+  .section03 .l-text-center {
+    text-align: center;
+  }
+  .section03 h2 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section03 .l-info {
+    width: 77%;
+    margin: 60px auto 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section03 .l-info .l-infoL {
+    width: 47%;
+  }
+  .section03 .l-info .l-infoL .left-img {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .left-img img {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .benefits {
+    width: 99%;
+    height: auto;
+    border: 2px solid #ffb700;
+    margin-top: 85px;
+    position: relative;
+  }
+  .section03 .l-info .l-infoL .benefits h3 {
+    width: 260px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section03 .l-info .l-infoL .benefits h4 {
+    font-size: 1.84vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 55px;
+  }
+  .section03 .l-info .l-infoL .benefits p {
+    width: 84%;
+    font-size: 1.4vw;
+    margin: 30px auto;
+  }
+  .section03 .l-info .l-infoL .benefits p span {
+    font-size: 1.2vw;
+  }
+  .section03 .l-info .l-infoR {
+    width: 47%;
+  }
+  .section03 .l-info .l-infoR dl {
+    width: 100%;
+    font-size: 1.7vw;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .section03 .l-info .l-infoR dl:last-child {
+    margin-bottom: 0;
+  }
+  .section03 .l-info .l-infoR dl dt {
+    color: #fff;
+    width: 24%;
+    height: 40px;
+    margin-right: 4%;
+    background: #2b5db7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03 .l-info .l-infoR dl dd {
+    width: 72%;
+  }
+  .section03 .l-info .l-infoR dl dd span {
+    font-size: 1.4vw;
+  }
 }
-.section03 .l-text-center {
-  text-align: center;
-}
-.section03 h2 {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.section03 .l-info {
-  width: 77%;
-  margin: 60px auto 0px;
-  display: flex;
-  justify-content: space-between;
-}
-.section03 .l-info .l-infoL {
-  width: 47%;
-}
-.section03 .l-info .l-infoL .left-img {
-  width: 100%;
-}
-.section03 .l-info .l-infoL .left-img img {
-  width: 100%;
-}
-.section03 .l-info .l-infoL .benefits {
-  width: 99%;
-  height: auto;
-  border: 2px solid #ffb700;
-  margin-top: 85px;
-  position: relative;
-}
-.section03 .l-info .l-infoL .benefits h3 {
-  width: 260px;
-  height: 50px;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.section03 .l-info .l-infoL .benefits h4 {
-  font-size: 1.84vw;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 55px;
-}
-.section03 .l-info .l-infoL .benefits p {
-  width: 84%;
-  font-size: 1.4vw;
-  margin: 30px auto;
-}
-.section03 .l-info .l-infoL .benefits p span {
-  font-size: 1.2vw;
-}
-.section03 .l-info .l-infoR {
-  width: 47%;
-}
-.section03 .l-info .l-infoR dl {
-  width: 100%;
-  font-size: 1.7vw;
-  display: flex;
-  margin-bottom: 30px;
-}
-.section03 .l-info .l-infoR dl:last-child {
-  margin-bottom: 0;
-}
-.section03 .l-info .l-infoR dl dt {
-  color: #fff;
-  width: 24%;
-  height: 40px;
-  margin-right: 4%;
-  background: #2b5db7;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section03 .l-info .l-infoR dl dd {
-  width: 72%;
-}
-.section03 .l-info .l-infoR dl dd span {
-  font-size: 1.4vw;
-}
-@media all and (min-width: 1300px) {
+@media all and (min-width: 769px) and (min-width: 1300px) {
   .section03 .l-info .l-infoR dl {
     font-size: 22px;
   }
 }
-.section03 .l-info .l-infoR img {
-  width: 100%;
-  margin-top: 50px;
+@media all and (min-width: 769px) {
+  .section03 .l-info .l-infoR img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .section03 .schedule {
+    width: 77%;
+    margin: 80px auto 0px;
+  }
+  .section03 .schedule h3 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .section03 .table {
+    width: 100%;
+    border-right: #b2b2b2 solid 1px;
+  }
+  .section03 .table thead tr {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .section03 .table thead th {
+    background: #2b5db7;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0px;
+    border-right: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table thead th:last-child {
+    border-right: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody tr {
+    width: 100%;
+    height: 80px;
+  }
+  .section03 .table tbody th {
+    height: 80px;
+    font-weight: bold;
+    background: #e0f1fe;
+    border-bottom: #b2b2b2 solid 1px;
+    border-left: #b2b2b2 solid 1px;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03 .table tbody tr:last-child th {
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody td {
+    height: 80px;
+    background: #fff;
+    border-left: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
+    text-align: center;
+  }
+  .section03 .l-center {
+    width: 390px;
+    height: 60px;
+    margin: 60px auto;
+  }
+  .section03 .l-shaped-shape07 {
+    width: 10%;
+    height: 140px;
+    position: absolute;
+    top: 20px;
+    left: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts07.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section03 .l-parts-face {
+    width: 10%;
+    height: 141px;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section03 .l-shaped-shape08 {
+    width: 10%;
+    height: 159px;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts08.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section03 .l-shaped-shape09 {
+    width: 8%;
+    height: 91px;
+    position: absolute;
+    top: 48%;
+    left: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts09.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section03 .l-shaped-shape10 {
+    width: 8%;
+    height: 89px;
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts10.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section03 .schedule {
-  width: 77%;
-  margin: 80px auto 0px;
+@media all and (max-width: 768px) {
+  .section03 {
+    height: auto;
+    background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
+    margin-top: 110px;
+    padding: 80px 0px;
+    position: relative;
+  }
+  .section03 .l-text-center {
+    font-size: 4vw;
+  }
+  .section03 h2 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section03 .l-info {
+    width: 100%;
+    margin: 50px auto 0px;
+  }
+  .section03 .l-info .l-infoL {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .left-img {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .left-img img {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .benefits {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ffb700;
+    margin-top: 85px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .section03 .l-info .l-infoL .benefits h3 {
+    width: 260px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section03 .l-info .l-infoL .benefits h4 {
+    font-size: 5.0vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .section03 .l-info .l-infoL .benefits p {
+    width: 84%;
+    font-size: 4.0vw;
+    margin: 20px auto;
+    line-height: 1.7;
+  }
+  .section03 .l-info .l-infoL .benefits p span {
+    font-size: 3.0vw;
+  }
+  .section03 .l-info .l-infoR {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .section03 .l-info .l-infoR dl {
+    width: 100%;
+    font-size: 5.0vw;
+    margin-bottom: 50px;
+  }
+  .section03 .l-info .l-infoR dl:last-child {
+    margin-bottom: 0;
+  }
+  .section03 .l-info .l-infoR dl dt {
+    color: #fff;
+    width: 24%;
+    height: 40px;
+    margin-right: 4%;
+    background: #2b5db7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03 .l-info .l-infoR dl dd {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .section03 .l-info .l-infoR dl dd span {
+    font-size: 3.0vw;
+  }
+  .section03 .l-info .l-infoR img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .section03 .l-info .l-infoR p {
+    font-size: 3.0vw;
+    line-height: 2.0;
+  }
+  .section03 .schedule {
+    width: 77%;
+    margin: 80px auto 0px;
+  }
+  .section03 .schedule h3 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .section03 .table {
+    width: 100%;
+    border-right: #b2b2b2 solid 1px;
+  }
+  .section03 .table thead tr {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .section03 .table thead th {
+    background: #2b5db7;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0px;
+    border-right: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table thead th:last-child {
+    border-right: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody tr {
+    width: 100%;
+    height: 80px;
+  }
+  .section03 .table tbody th {
+    height: 80px;
+    font-weight: bold;
+    background: #e0f1fe;
+    border-bottom: #b2b2b2 solid 1px;
+    border-left: #b2b2b2 solid 1px;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03 .table tbody tr:last-child th {
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody td {
+    height: 80px;
+    background: #fff;
+    border-left: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
+    text-align: center;
+  }
+  .section03 .l-center {
+    width: 390px;
+    height: 60px;
+    margin: 60px auto;
+  }
+  .section03 .l-parts-face {
+    width: 10%;
+    height: 141px;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section03 .schedule h3 {
-  width: 100%;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.section03 .table {
-  width: 100%;
-  border-right: #b2b2b2 solid 1px;
-}
-.section03 .table thead tr {
-  width: 100%;
-  padding: 15px 0;
-}
-.section03 .table thead th {
-  background: #2b5db7;
-  color: #FFF;
-  text-align: center;
-  padding: 10px 0px;
-  border-right: #b2b2b2 solid 1px;
-  border-bottom: #b2b2b2 solid 1px;
-}
-.section03 .table thead th:last-child {
-  border-right: #b2b2b2 solid 1px;
-}
-.section03 .table tbody tr {
-  width: 100%;
-  height: 80px;
-}
-.section03 .table tbody th {
-  height: 80px;
-  font-weight: bold;
-  background: #e0f1fe;
-  border-bottom: #b2b2b2 solid 1px;
-  border-left: #b2b2b2 solid 1px;
-  vertical-align: top;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section03 .table tbody tr:last-child th {
-  border-bottom: #b2b2b2 solid 1px;
-}
-.section03 .table tbody td {
-  height: 80px;
-  background: #fff;
-  border-left: #b2b2b2 solid 1px;
-  border-bottom: #b2b2b2 solid 1px;
-  text-align: center;
-}
-.section03 .l-center {
-  width: 390px;
-  height: 60px;
-  margin: 60px auto;
-}
-.section03 .l-shaped-shape07 {
-  width: 10%;
-  height: 140px;
-  position: absolute;
-  top: 20px;
-  left: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts07.png") no-repeat center center;
-  background-size: contain;
-}
-.section03 .l-parts-face {
-  width: 10%;
-  height: 141px;
-  position: absolute;
-  top: 20px;
-  right: 5%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
-  background-size: contain;
-}
-.section03 .l-shaped-shape08 {
-  width: 10%;
-  height: 159px;
-  position: absolute;
-  top: 15%;
-  right: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts08.png") no-repeat center center;
-  background-size: contain;
-}
-.section03 .l-shaped-shape09 {
-  width: 8%;
-  height: 91px;
-  position: absolute;
-  top: 48%;
-  left: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts09.png") no-repeat center center;
-  background-size: contain;
-}
-.section03 .l-shaped-shape10 {
-  width: 8%;
-  height: 89px;
-  position: absolute;
-  bottom: 2%;
-  right: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts10.png") no-repeat center center;
-  background-size: contain;
-}
-
 /*------------------------------------------------------------------
  Section04 平和学習ってなに？
 ------------------------------------------------------------------*/
