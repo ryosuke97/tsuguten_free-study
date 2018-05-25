@@ -931,87 +931,143 @@ a:hover {
 /*------------------------------------------------------------------
  Section02 自由研究完成イメージ
 ------------------------------------------------------------------*/
-.section02 {
-	height: auto;
-	padding: 50px 0px;
-	position: relative;
-	h2 {
-		margin-bottom: 50px;
-	}
-	.catch-copy {
-		width: 100%;
-		margin-left: 18%;
-	}
-	.text-content {
-		width: 72%;
-		height: 300px;
-		background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
-		margin-top: 50px;
+// PC
+@media all and (min-width: 769px){
+	.section02 {
+		height: auto;
+		padding: 50px 0px;
 		position: relative;
-	}
-	.text-area {
-		width: 430px;
-		padding-top: 40px;
-		margin-left: 12%;
-	}
-	.complete-img {
-		width: 40%;
-		position: absolute;
-		top: 150px;
-		left: 55%;
-		img {
+		h2 {
+			margin-bottom: 50px;
+		}
+		.catch-copy {
 			width: 100%;
-			max-width: 440px;
+			margin-left: 18%;
+		}
+		.text-content {
+			width: 72%;
+			height: 300px;
+			background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
+			margin-top: 50px;
+			position: relative;
+		}
+		.text-area {
+			width: 430px;
+			padding-top: 40px;
+			margin-left: 12%;
+		}
+		.complete-img {
+			width: 40%;
+			position: absolute;
+			top: 150px;
+			left: 55%;
+			z-index: 10;
+			img {
+				width: 100%;
+				max-width: 440px;
+			}
+		}
+		.l-dl-btn {
+			position: absolute;
+			bottom: -30px;
+			left: 12%;
+			z-index: 10;
+			img {
+				vertical-align: bottom;
+			}
+		}
+		.l-shaped-shape04 {
+			width: 8%;
+			height: 91px;
+			position: absolute;
+			top: -25px;
+			left: 80%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/parts04.png") no-repeat center center;
+			background-size: contain;
+		}
+		.l-shaped-shape05 {
+			width: 8%;
+			height: 93px;
+			position: absolute;
+			top: 20px;
+			left: 5%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/parts05.png") no-repeat center center;
+			background-size: contain;
+		}
+		.l-shaped-shape06 {
+			width: 8%;
+			height: 84px;
+			position: absolute;
+			top: 40%;
+			left: 3%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/parts06.png") no-repeat center center;
+			background-size: contain;
+		}
+		.l-parts-scissors {
+			width: 8%;
+			height: 91px;
+			position: absolute;
+			top: 200px;
+			left: 42%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/icn_scissors.png") no-repeat center center;
+			background-size: contain;
 		}
 	}
-	.l-dl-btn {
-		position: absolute;
-		bottom: -30px;
-		left: 12%;
-		z-index: 10;
-		img {
-			vertical-align: bottom;
+}
+// SP
+@media all and (max-width: 768px){
+	.section02 {
+		height: auto;
+		padding: 50px 0px 0px;
+		position: relative;
+		h2 {
+			margin-bottom: 50px;
 		}
-	}
-	.l-shaped-shape04 {
-		width: 8%;
-		height: 91px;
-		position: absolute;
-		top: -25px;
-		left: 80%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/parts04.png") no-repeat center center;
-		background-size: contain;
-	}
-	.l-shaped-shape05 {
-		width: 8%;
-		height: 93px;
-		position: absolute;
-		top: 20px;
-		left: 5%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/parts05.png") no-repeat center center;
-		background-size: contain;
-	}
-	.l-shaped-shape06 {
-		width: 8%;
-		height: 84px;
-		position: absolute;
-		top: 40%;
-		left: 3%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/parts06.png") no-repeat center center;
-		background-size: contain;
-	}
-	.l-parts-scissors {
-		width: 8%;
-		height: 91px;
-		position: absolute;
-		top: 200px;
-		left: 42%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/icn_scissors.png") no-repeat center center;
-		background-size: contain;
+		.catch-copy {
+			width: 32%;
+			margin: 0px auto;
+			img {
+				width: 100%;
+			}
+		}
+		.text-content {
+			width: 100%;
+			height: auto;
+		}
+		.text-area {
+			width: 100%;
+			font-size: 4vw;
+			padding-top: 40px;
+			h3 {
+				font-size: 5vw;
+			}
+		}
+		.complete-img {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+		.l-dl-btn {
+			margin-top: 50px;
+			img {
+				vertical-align: bottom;
+			}
+		}
+		.l-parts-scissors {
+			width: 12%;
+			height: 200px;
+			position: absolute;
+			top: 160px;
+			right: 16%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/icn_scissors.png") no-repeat center center;
+			background-size: contain;
+		}
 	}
 }
 
