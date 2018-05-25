@@ -38,11 +38,12 @@ body {
 section {
 	width: 100%;
 }
-.wrapper {
-	margin: 0px auto;
-	width: 100%;
-	max-width: 1300px;
-	// overflow: hidden;
+@media all and (min-width: 769px){
+	.wrapper {
+		margin: 0px auto;
+		width: 100%;
+		max-width: 1300px;
+	}
 }
 h1 {
 	width: 100%;
@@ -84,149 +85,283 @@ a:hover {
 	}
 }
 
+@media all and (max-width: 768px){
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
 /*------------------------------------------------------------------
  Util
 ------------------------------------------------------------------*/
 .emphasis {
 	color: #2b5db7;
 }
-.box-s {
-	box-shadow:1px 2px 3px #000;
-	height: 100px;
-	width: 200px;
-	border-radius: 10px;
-	border: 1px solid #999;
-	padding: 20px;
-}
-.link-button {
-	width: 390px;
-	margin-top: 20px;
-	font-size: 20px;
-	text-decoration: none;
-	padding: 15px 0%;
-	border-radius: 50px;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	&:hover {
-		box-shadow: none;
-		transform: translate(0px,2px);
-	}
-	&__elm--dl {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		&::before {
-			content:"";
-			display:inline-block;
-			width:1.2em;
-			height:1.2em;
-			background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
-			background-size:contain;
-			margin-right: 10px;
-		}
-	}
-	&__elm--entry {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		&::before {
-			content:"";
-			display:inline-block;
-			width:1.2em;
-			height:1.2em;
-			background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
-			background-size:contain;
-			margin-right: 20px;
-		}
-		&::after {
-			content:"";
-			display:inline-block;
-			width:1.2em;
-			height:1.2em;
-			background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-			background-size:contain;
-			position: absolute;
-			top: 50%;
-			right: 20px;
-			-webkit-transform: translate(0%,-50%);
-			-moz-transform: translate(0%,-50%);
-			-ms-transform: translate(0%,-50%);
-			-o-transform: translate(0%,-50%);
-			transform: translate(0%,-50%);
-		}
-	}
-	&__elm--staff-entry {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		&::before {
-			content:"";
-			display:inline-block;
-			width:1.2em;
-			height:1.2em;
-			background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
-			background-size:contain;
-			margin-right: 7px;
-		}
-		&::after {
-			content:"";
-			display:inline-block;
-			width:1.3em;
-			height:1.3em;
-			background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-			background-size:contain;
-			margin-left: 7px;
-		}
-	}
-	&__elm--donation {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+@media all and (min-width: 769px){
+	.link-button {
 		width: 390px;
-		margin: 0px auto;
-		&::before {
-			content:"";
-			display:inline-block;
-			width:1.2em;
-			height:1.2em;
-			background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
-			background-size:contain;
-			margin-right: 7px;
+		margin-top: 20px;
+		font-size: 20px;
+		text-decoration: none;
+		padding: 15px 0%;
+		border-radius: 50px;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		&:hover {
+			box-shadow: none;
+			transform: translate(0px,2px);
 		}
-		&::after {
-			content:"";
-			display:inline-block;
-			width:1.3em;
-			height:1.3em;
-			background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-			background-size:contain;
-			position: absolute;
-			top: 50%;
-			right: 20px;
-			-webkit-transform: translate(0%,-50%);
-			-moz-transform: translate(0%,-50%);
-			-ms-transform: translate(0%,-50%);
-			-o-transform: translate(0%,-50%);
-			transform: translate(0%,-50%);
+		&__elm--dl {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			&::before {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+				background-size:contain;
+				margin-right: 10px;
+			}
+		}
+		&__elm--entry {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			&::before {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
+				background-size:contain;
+				margin-right: 20px;
+			}
+			&::after {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+				background-size:contain;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				-webkit-transform: translate(0%,-50%);
+				-moz-transform: translate(0%,-50%);
+				-ms-transform: translate(0%,-50%);
+				-o-transform: translate(0%,-50%);
+				transform: translate(0%,-50%);
+			}
+		}
+		&__elm--staff-entry {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			&::before {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
+				background-size:contain;
+				margin-right: 7px;
+			}
+			&::after {
+				content:"";
+				display:inline-block;
+				width:1.3em;
+				height:1.3em;
+				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+				background-size:contain;
+				margin-left: 7px;
+			}
+		}
+		&__elm--donation {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 390px;
+			margin: 0px auto;
+			&::before {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
+				background-size:contain;
+				margin-right: 7px;
+			}
+			&::after {
+				content:"";
+				display:inline-block;
+				width:1.3em;
+				height:1.3em;
+				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+				background-size:contain;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				-webkit-transform: translate(0%,-50%);
+				-moz-transform: translate(0%,-50%);
+				-ms-transform: translate(0%,-50%);
+				-o-transform: translate(0%,-50%);
+				transform: translate(0%,-50%);
+			}
 		}
 	}
-}
-.button-blue {
-	background: $blue;
-	box-shadow: 0px 5px 2px #113981;
-	:hover {
-		box-shadow: none;
+	.button-blue {
+		background: $blue;
+		box-shadow: 0px 5px 2px #113981;
+		:hover {
+			box-shadow: none;
+		}
+	}
+	.button-yellow {
+		background: $yellow;
+		box-shadow: 0px 5px 2px #c08a00;
 	}
 }
-.button-yellow {
-	background: $yellow;
-	box-shadow: 0px 5px 2px #c08a00;
+// SP
+@media all and (max-width: 768px){
+	.link-button {
+		width: 100%;
+		font-size: 4.6vw;
+		text-decoration: none;
+		margin-top: 30px;
+		padding: 15px 0%;
+		border-radius: 50px;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		&:hover {
+			box-shadow: none;
+			transform: translate(0px,2px);
+		}
+		&__elm--dl {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			&::before {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+				background-size:contain;
+				margin-right: 10px;
+			}
+		}
+		&__elm--entry {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			&::before {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
+				background-size:contain;
+				margin-right: 20px;
+			}
+			&::after {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+				background-size:contain;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				-webkit-transform: translate(0%,-50%);
+				-moz-transform: translate(0%,-50%);
+				-ms-transform: translate(0%,-50%);
+				-o-transform: translate(0%,-50%);
+				transform: translate(0%,-50%);
+			}
+		}
+		&__elm--staff-entry {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			&::before {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
+				background-size:contain;
+				margin-right: 7px;
+			}
+			&::after {
+				content:"";
+				display:inline-block;
+				width:1.3em;
+				height:1.3em;
+				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+				background-size:contain;
+				margin-left: 7px;
+			}
+		}
+		&__elm--donation {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 390px;
+			margin: 0px auto;
+			&::before {
+				content:"";
+				display:inline-block;
+				width:1.2em;
+				height:1.2em;
+				background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
+				background-size:contain;
+				margin-right: 7px;
+			}
+			&::after {
+				content:"";
+				display:inline-block;
+				width:1.3em;
+				height:1.3em;
+				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+				background-size:contain;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				-webkit-transform: translate(0%,-50%);
+				-moz-transform: translate(0%,-50%);
+				-ms-transform: translate(0%,-50%);
+				-o-transform: translate(0%,-50%);
+				transform: translate(0%,-50%);
+			}
+		}
+	}
+	.button-blue {
+		background: $blue;
+		box-shadow: 0px 5px 2px #113981;
+		:hover {
+			box-shadow: none;
+		}
+	}
+	.button-yellow {
+		background: $yellow;
+		box-shadow: 0px 5px 2px #c08a00;
+	}
 }
 
 
@@ -488,21 +623,46 @@ a:hover {
 /*------------------------------------------------------------------
  MV
 ------------------------------------------------------------------*/
+// PC
+@media all and (min-width: 769px){
 	.mv {
-	height: 600px;
-	// height: 85%;
-	position: relative;
-	margin-bottom: 80px;
-	background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
-	background-size: cover;
-	@at-root .mv-content {
-		position: absolute;
-		left: 60px;
-		top: 50px;
-		z-index: 10;
-		button {
-			margin-top: 20px;
+		height: 600px;
+		position: relative;
+		margin-bottom: 80px;
+		background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
+		background-size: cover;
+		@at-root .mv-content {
+			position: absolute;
+			left: 60px;
+			top: 50px;
+			z-index: 10;
 		}
+	}
+	.sp-cv {
+		display: none;
+	}
+}
+// SP
+@media all and (max-width: 768px){
+	.mv {
+		height: 600px;
+		position: relative;
+		background: url("../../../img/2018/kenkyu/img_sp-mv.jpg") center right no-repeat;
+		background-size: cover;
+		@at-root .mv-content {
+			position: absolute;
+			left: 60px;
+			top: 50px;
+			z-index: 10;
+			.link-button {
+				display: none;
+			}
+		}
+	}
+	.sp-cv {
+		width: 100%;
+		height: 250px;
+		padding: 20px 0px 50px;
 	}
 }
 
@@ -595,7 +755,9 @@ a:hover {
 	position: relative;
 	background: #eef8ff;
 	.wrapper {
-		@extend .wrapper;
+		margin: 0px auto;
+		width: 100%;
+		max-width: 1300px;
 		padding: 30px 30px 50px;
 		box-sizing: border-box;
 	}

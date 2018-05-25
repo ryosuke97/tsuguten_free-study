@@ -32,12 +32,13 @@ section {
   width: 100%;
 }
 
-.wrapper, .section01 .wrapper {
-  margin: 0px auto;
-  width: 100%;
-  max-width: 1300px;
+@media all and (min-width: 769px) {
+  .wrapper {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1300px;
+  }
 }
-
 h1 {
   width: 100%;
   font-family: "mgenplus-1m-bold";
@@ -81,6 +82,12 @@ a:hover {
     font-size: 50px !important;
   }
 }
+@media all and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 /*------------------------------------------------------------------
  Util
 ------------------------------------------------------------------*/
@@ -88,148 +95,274 @@ a:hover {
   color: #2b5db7;
 }
 
-.box-s {
-  box-shadow: 1px 2px 3px #000;
-  height: 100px;
-  width: 200px;
-  border-radius: 10px;
-  border: 1px solid #999;
-  padding: 20px;
-}
+@media all and (min-width: 769px) {
+  .link-button {
+    width: 390px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 0%;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .link-button:hover {
+    box-shadow: none;
+    transform: translate(0px, 2px);
+  }
+  .link-button__elm--dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--dl::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+  }
+  .link-button__elm--entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--entry::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+  }
+  .link-button__elm--entry::after {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+  .link-button__elm--staff-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--staff-entry::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+  .link-button__elm--staff-entry::after {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    margin-left: 7px;
+  }
+  .link-button__elm--donation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    margin: 0px auto;
+  }
+  .link-button__elm--donation::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+  .link-button__elm--donation::after {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
 
-.link-button {
-  width: 390px;
-  margin-top: 20px;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 15px 0%;
-  border-radius: 50px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.link-button:hover {
-  box-shadow: none;
-  transform: translate(0px, 2px);
-}
-.link-button__elm--dl {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.link-button__elm--dl::before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
-  background-size: contain;
-  margin-right: 10px;
-}
-.link-button__elm--entry {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.link-button__elm--entry::before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
-  background-size: contain;
-  margin-right: 20px;
-}
-.link-button__elm--entry::after {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
-.link-button__elm--staff-entry {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.link-button__elm--staff-entry::before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
-  background-size: contain;
-  margin-right: 7px;
-}
-.link-button__elm--staff-entry::after {
-  content: "";
-  display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
-  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-  background-size: contain;
-  margin-left: 7px;
-}
-.link-button__elm--donation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 390px;
-  margin: 0px auto;
-}
-.link-button__elm--donation::before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
-  background-size: contain;
-  margin-right: 7px;
-}
-.link-button__elm--donation::after {
-  content: "";
-  display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
-  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
+  .button-blue {
+    background: #2b5db7;
+    box-shadow: 0px 5px 2px #113981;
+  }
+  .button-blue :hover {
+    box-shadow: none;
+  }
 
-.button-blue {
-  background: #2b5db7;
-  box-shadow: 0px 5px 2px #113981;
+  .button-yellow {
+    background: #ffb700;
+    box-shadow: 0px 5px 2px #c08a00;
+  }
 }
-.button-blue :hover {
-  box-shadow: none;
-}
+@media all and (max-width: 768px) {
+  .link-button {
+    width: 100%;
+    font-size: 4.6vw;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 15px 0%;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .link-button:hover {
+    box-shadow: none;
+    transform: translate(0px, 2px);
+  }
+  .link-button__elm--dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--dl::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+  }
+  .link-button__elm--entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--entry::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+  }
+  .link-button__elm--entry::after {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+  .link-button__elm--staff-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--staff-entry::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+  .link-button__elm--staff-entry::after {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    margin-left: 7px;
+  }
+  .link-button__elm--donation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    margin: 0px auto;
+  }
+  .link-button__elm--donation::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+  .link-button__elm--donation::after {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
 
-.button-yellow {
-  background: #ffb700;
-  box-shadow: 0px 5px 2px #c08a00;
-}
+  .button-blue {
+    background: #2b5db7;
+    box-shadow: 0px 5px 2px #113981;
+  }
+  .button-blue :hover {
+    box-shadow: none;
+  }
 
+  .button-yellow {
+    background: #ffb700;
+    box-shadow: 0px 5px 2px #c08a00;
+  }
+}
 /*------------------------------------------------------------------
  Header
 ------------------------------------------------------------------*/
@@ -472,23 +605,48 @@ a:hover {
 /*------------------------------------------------------------------
  MV
 ------------------------------------------------------------------*/
-.mv {
-  height: 600px;
-  position: relative;
-  margin-bottom: 80px;
-  background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
-  background-size: cover;
-}
-.mv-content {
-  position: absolute;
-  left: 60px;
-  top: 50px;
-  z-index: 10;
-}
-.mv-content button {
-  margin-top: 20px;
-}
+@media all and (min-width: 769px) {
+  .mv {
+    height: 600px;
+    position: relative;
+    margin-bottom: 80px;
+    background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
+    background-size: cover;
+  }
+  .mv-content {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    z-index: 10;
+  }
 
+  .sp-cv {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .mv {
+    height: 600px;
+    position: relative;
+    background: url("../../../img/2018/kenkyu/img_sp-mv.jpg") center right no-repeat;
+    background-size: cover;
+  }
+  .mv-content {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    z-index: 10;
+  }
+  .mv-content .link-button {
+    display: none;
+  }
+
+  .sp-cv {
+    width: 100%;
+    height: 250px;
+    padding: 20px 0px 50px;
+  }
+}
 /*------------------------------------------------------------------
  sub-view
 ------------------------------------------------------------------*/
@@ -579,6 +737,9 @@ a:hover {
   background: #eef8ff;
 }
 .section01 .wrapper {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1300px;
   padding: 30px 30px 50px;
   box-sizing: border-box;
 }
