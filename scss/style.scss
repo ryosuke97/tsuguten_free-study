@@ -626,7 +626,7 @@ a:hover {
 // PC
 @media all and (min-width: 769px){
 	.mv {
-		height: 600px;
+		height: 630px;
 		position: relative;
 		margin-bottom: 80px;
 		background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
@@ -680,7 +680,7 @@ a:hover {
 	}
 	.sp-cv {
 		width: 100%;
-		height: 250px;
+		height: 230px;
 		padding: 20px 0px 0px;
 	}
 }
@@ -688,81 +688,129 @@ a:hover {
 /*------------------------------------------------------------------
  sub-view
 ------------------------------------------------------------------*/
-.l-sub-view {
-	width: 100%;
-	padding-bottom: 50px;
-	margin-bottom: 110px;
-	position: relative;
-	.sub-view-text-area {
+// PC
+@media all and (min-width: 769px){
+	.l-sub-view {
 		width: 100%;
-		display: flex;
-		z-index: 10;
-		.left-img {
-			width: 47%;
+		padding-bottom: 50px;
+		margin-bottom: 110px;
+		position: relative;
+		.sub-view-text-area {
+			width: 100%;
+			display: flex;
 			z-index: 10;
-			img {
-				width: 100%;
-				vertical-align: bottom;
+			.left-img {
+				width: 47%;
 				z-index: 10;
+				img {
+					width: 100%;
+					vertical-align: bottom;
+					z-index: 10;
+				}
+			}
+			.sub-view-text {
+				margin-left: 3%;
+				width: 40%;
+				z-index: 10;
+				p {
+					font-size: 20px;
+				}
 			}
 		}
-		.sub-view-text {
-			margin-left: 3%;
-			width: 40%;
-			z-index: 10;
-			p {
-				font-size: 20px;
-			}
-		}
-	}
-	.sub-viewBg {
-		width: 80%;
-		height: 90%;
-		background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
-		position: absolute;
-		bottom: 0px;
-		right: 0px;
-		z-index: 1;
-		.l-sub-view__img {
-			width: 30%;
-			height: 260px;
-			background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
-			background-size: contain;
+		.sub-viewBg {
+			width: 80%;
+			height: 90%;
+			background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
 			position: absolute;
-			bottom: -60px;
-			right: 5%;
-		}
-		@media all and (max-width: 1000px){
+			bottom: 0px;
+			right: 0px;
+			z-index: 1;
 			.l-sub-view__img {
-				width: 26%;
+				width: 30%;
 				height: 260px;
 				background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
 				background-size: contain;
 				position: absolute;
-				bottom: -110px;
-				left: 450px;
+				bottom: -60px;
+				right: 5%;
+			}
+			@media all and (max-width: 1000px){
+				.l-sub-view__img {
+					width: 26%;
+					height: 260px;
+					background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
+					background-size: contain;
+					position: absolute;
+					bottom: -110px;
+					left: 450px;
+				}
 			}
 		}
+		.l-shaped-shape01 {
+			width: 8%;
+			height: 85px;
+			position: absolute;
+			top: 150px;
+			left: 90%;
+			z-index: 10;
+			background: url("../../../img/2018/kenkyu/parts01.png") no-repeat center center;
+			background-size: contain;
+		}
+		.l-shaped-shape02 {
+			width: 10%;
+			height: 143px;
+			position: absolute;
+			top: 96%;
+			left: 5%;
+			z-index: 10;
+			background: url("../../../img/2018/kenkyu/parts02.png") no-repeat center center;
+			background-size: contain;
+		}
 	}
-	.l-shaped-shape01 {
-		width: 8%;
-		height: 85px;
-		position: absolute;
-		top: 150px;
-		left: 90%;
-		z-index: 10;
-		background: url("../../../img/2018/kenkyu/parts01.png") no-repeat center center;
-		background-size: contain;
-	}
-	.l-shaped-shape02 {
-		width: 10%;
-		height: 143px;
-		position: absolute;
-		top: 96%;
-		left: 5%;
-		z-index: 10;
-		background: url("../../../img/2018/kenkyu/parts02.png") no-repeat center center;
-		background-size: contain;
+}
+// SP
+@media all and (max-width: 768px){
+	.l-sub-view {
+		width: 100%;
+		position: relative;
+		.sub-view-text-area {
+			width: 100%;
+			z-index: 10;
+			.left-img {
+				width: 100%;
+				img {
+					width: 100%;
+					vertical-align: bottom;
+				}
+			}
+			.sub-view-text {
+				width: 100%;
+				p {
+					margin: 50px 0px;
+					font-size: 4vw;
+				}
+			}
+		}
+		.sub-viewBg {
+			width: 100%;
+			.l-sub-view__img {
+				width: 100%;
+				// height: 260px;
+				background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
+				background-size: contain;
+				&::before {
+					content: "";
+					display: block;
+					padding-top: 77%;
+				}
+			}
+		}
+		.l-shaped-shape01 {
+			
+		}
+		.l-shaped-shape02 {
+			
+		}
 	}
 }
 
