@@ -1553,7 +1553,6 @@ a:hover {
 					background:#fff;
 					border-left:$lightGray solid 1px;
 					border-bottom:$lightGray solid 1px;
-					text-align: center;
 				}
 			}
 		}
@@ -1576,33 +1575,43 @@ a:hover {
 			justify-content: left;
 			align-items: center;
 			box-sizing: border-box;
+			span {
+				width: 50%;
+				padding: 0% 5%;
+			}
 		}
 		.label-tour {
 			box-sizing: border-box;
-			span {
-				width: 60%;
-			}
 		}
 		.label-tour::before {
 			content: attr(label-tour);
-			width: 40%;
+			width: 30%;
 			height: 100%;
 			background: $blue;
 			color: #fff;
+			display: flex;
+			align-items: center;
+			padding: 0% 5%;
 		}
 		.label-rest::before {
 			content: attr(label-rest);
-			width: 40%;
+			width: 30%;
 			height: 100%;
 			background: $blue;
 			color: #fff;
+			display: flex;
+			align-items: center;
+			padding: 0% 5%;
 		}
 		.label-time::before {
 			content: attr(label-time);
-			width: 40%;
+			width: 30%;
 			height: 80px;
 			background: $blue;
 			color: #fff;
+			display: flex;
+			align-items: center;
+			padding: 0% 5%;
 		}
 		.table tbody td p {
 			padding-left:6em;
