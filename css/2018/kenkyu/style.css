@@ -5,6 +5,8 @@
 @font-face {
   font-family: 'mgenplus-1m-bold';
   src: local("mgenplus-1m-bold"), url("../font/mgenplus-1m-bold.ttf");
+  font-family: 'mgenplus-1m-medium';
+  src: local("mgenplus-1m-medium"), url("mgenplus-1m-medium.ttf");
 }
 /*------------------------------------------------------------------
  Def
@@ -30,13 +32,13 @@ section {
   width: 100%;
 }
 
-.wrapper, .section01 .wrapper {
-  margin: 0px auto;
-  width: 100%;
-  max-width: 1300px;
-  overflow: hidden;
+@media all and (min-width: 769px) {
+  .wrapper {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1300px;
+  }
 }
-
 h1 {
   width: 100%;
   font-family: "mgenplus-1m-bold";
@@ -80,6 +82,29 @@ a:hover {
     font-size: 50px !important;
   }
 }
+@media all and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    width: 100%;
+    font-family: "mgenplus-1m-bold";
+    font-size: 6vw;
+    color: #2b5db7;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #2c2c2c;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px 0px 16px;
+  }
+}
 /*------------------------------------------------------------------
  Util
 ------------------------------------------------------------------*/
@@ -87,277 +112,627 @@ a:hover {
   color: #2b5db7;
 }
 
-.box-s {
-  box-shadow: 1px 2px 3px #000;
-  height: 100px;
-  width: 200px;
-  border-radius: 10px;
-  border: 1px solid #999;
-  padding: 20px;
-}
+@media all and (min-width: 769px) {
+  .link-button {
+    width: 390px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 0%;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .link-button:hover {
+    box-shadow: none;
+    transform: translate(0px, 2px);
+  }
+  .link-button__elm--dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--dl::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+  }
+  .link-button__elm--entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--entry::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+  }
+  .link-button__elm--entry::after {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+  .link-button__elm--staff-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--staff-entry::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+  .link-button__elm--staff-entry::after {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    margin-left: 7px;
+  }
+  .link-button__elm--donation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    margin: 0px auto;
+  }
+  .link-button__elm--donation::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+  .link-button__elm--donation::after {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
 
-.link-button {
-  width: 390px;
-  margin-top: 20px;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 15px 0%;
-  border-radius: 50px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.link-button:hover {
-  box-shadow: none;
-  transform: translate(0px, 2px);
-}
-.link-button__elm--dl {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.link-button__elm--dl::before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
-  background-size: contain;
-  margin-right: 10px;
-}
-.link-button__elm--entry {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.link-button__elm--entry::before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
-  background-size: contain;
-  margin-right: 20px;
-}
-.link-button__elm--entry::after {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
-.link-button__elm--staff-entry {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.link-button__elm--staff-entry::before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
-  background-size: contain;
-  margin-right: 7px;
-}
-.link-button__elm--staff-entry::after {
-  content: "";
-  display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
-  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-  background-size: contain;
-  margin-left: 7px;
-}
-.link-button__elm--donation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 390px;
-  margin: 0px auto;
-}
-.link-button__elm--donation::before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
-  background-size: contain;
-  margin-right: 7px;
-}
-.link-button__elm--donation::after {
-  content: "";
-  display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
-  background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
+  .button-blue {
+    background: #2b5db7;
+    box-shadow: 0px 5px 2px #113981;
+  }
+  .button-blue :hover {
+    box-shadow: none;
+  }
 
-.button-blue {
-  background: #2b5db7;
-  box-shadow: 0px 5px 2px #113981;
+  .button-yellow {
+    background: #ffb700;
+    box-shadow: 0px 5px 2px #c08a00;
+  }
 }
-.button-blue :hover {
-  box-shadow: none;
-}
+@media all and (max-width: 768px) {
+  .link-button {
+    width: 100%;
+    font-size: 4.6vw;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 15px 0%;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .link-button:hover {
+    box-shadow: none;
+    transform: translate(0px, 2px);
+  }
+  .link-button__elm--dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--dl::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+  }
+  .link-button__elm--entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--entry::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+  }
+  .link-button__elm--entry::after {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+  .link-button__elm--staff-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .link-button__elm--staff-entry::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+  .link-button__elm--staff-entry::after {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    margin-left: 7px;
+  }
+  .link-button__elm--donation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    margin: 0px auto;
+  }
+  .link-button__elm--donation::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+  .link-button__elm--donation::after {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
 
-.button-yellow {
-  background: #ffb700;
-  box-shadow: 0px 5px 2px #c08a00;
-}
+  .button-blue {
+    background: #2b5db7;
+    box-shadow: 0px 5px 2px #113981;
+  }
+  .button-blue :hover {
+    box-shadow: none;
+  }
 
+  .button-yellow {
+    background: #ffb700;
+    box-shadow: 0px 5px 2px #c08a00;
+  }
+}
 /*------------------------------------------------------------------
  Header
 ------------------------------------------------------------------*/
-header {
-  width: 100%;
-  height: 94px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media all and (min-width: 769px) {
+  header {
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .title {
+    display: none;
+  }
+  header .logo {
+    width: 10%;
+    height: 95px;
+    margin: 0px 0px 0px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    width: 65%;
+    margin: 0px 60px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul a {
+    color: #2c2c2c;
+    text-decoration: none;
+  }
+  nav ul a::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    background-size: contain;
+    vertical-align: text-bottom;
+  }
+  nav .nav01::before {
+    width: 20px;
+    height: 20px;
+    background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
+  }
+  nav .nav02::before {
+    width: 21px;
+    height: 19px;
+    background: url(../../../img/2018/kenkyu/icn_nav02.png) center center no-repeat;
+  }
+  nav .nav03::before {
+    width: 22px;
+    height: 22px;
+    background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
+  }
+  nav .nav04::before {
+    width: 26px;
+    height: 22px;
+    background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
+  }
 }
-header .logo {
-  width: 10%;
-  height: 95px;
-  margin: 0px 0px 0px 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav {
-  width: 65%;
-  margin: 0px 60px 0px 0px;
-  display: flex;
-  justify-content: space-between;
-}
-nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-nav .nav01, nav .nav02, nav .nav03, nav .nav04 {
-  color: #2c2c2c;
-  text-decoration: none;
-}
-nav .nav01::before, nav .nav02::before, nav .nav03::before, nav .nav04::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-  background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
-  background-size: contain;
-  vertical-align: text-bottom;
-}
-nav .nav02::before {
-  width: 21px;
-  height: 19px;
-  background: url(../../../img/2018/kenkyu/icn_nav02.png) center center no-repeat;
-}
-nav .nav03::before {
-  width: 22px;
-  height: 22px;
-  background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
-}
-nav .nav04::before {
-  width: 26px;
-  height: 22px;
-  background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
-}
+@media all and (max-width: 768px) {
+  .open {
+    transform: translateY(694px);
+  }
 
+  header {
+    width: 100%;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    /* クリックした後の挙動 */
+  }
+  header .title {
+    width: 45%;
+    height: 94px;
+    background: #ffb700;
+    font-size: 3.6vw;
+    color: #fff;
+    font-family: "mgenplus-1m-medium";
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo {
+    width: 30%;
+    height: 94px;
+    margin: 0px 20px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header .menu-trigger,
+  header .menu-trigger span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+  }
+  header .menu-trigger {
+    width: 38px;
+    height: 38px;
+    background: #ffb700;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 25px;
+    right: 12px;
+    z-index: 1000;
+  }
+  header .menu-trigger span {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 0 auto;
+  }
+  header .menu-trigger span:nth-of-type(1) {
+    top: 9px;
+    left: 9px;
+  }
+  header .menu-trigger span:nth-of-type(2) {
+    top: 18px;
+    left: 9px;
+  }
+  header .menu-trigger span:nth-of-type(3) {
+    top: 27px;
+    left: 9px;
+  }
+  header .menu-trigger span {
+    transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+  }
+  header .menuclick1 {
+    top: 18px !important;
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  header .menuclick2 {
+    display: none !important;
+  }
+  header .menuclick3 {
+    top: 18px !important;
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  nav {
+    width: 100%;
+    height: 600px;
+    background: #fff;
+    position: absolute;
+    top: -600px;
+    transition: all .4s;
+    z-index: 100;
+  }
+  nav ul {
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+  }
+  nav ul li {
+    width: 100%;
+    height: 110px;
+    font-size: 6vw;
+    border-bottom: 1px solid #b2b2b2;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  nav ul li a {
+    color: #2c2c2c;
+    text-decoration: none;
+  }
+  nav ul li a::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    background-size: contain;
+    vertical-align: text-bottom;
+  }
+  nav ul li a::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 0px;
+    border-top: solid 2px #b2b2b2;
+    border-right: solid 2px #b2b2b2;
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    top: 46%;
+    right: 2%;
+  }
+  nav ul li .nav01::before {
+    width: 40px;
+    height: 40px;
+    background: url(../../../img/2018/kenkyu/icn_sp_nav01.png) center center no-repeat;
+  }
+  nav ul li .nav02::before {
+    width: 40px;
+    height: 38px;
+    background: url(../../../img/2018/kenkyu/icn_sp_nav02.png) center center no-repeat;
+  }
+  nav ul li .nav03::before {
+    width: 41px;
+    height: 41px;
+    background: url(../../../img/2018/kenkyu/icn_sp_nav03.png) center center no-repeat;
+  }
+  nav ul li .nav04::before {
+    width: 48px;
+    height: 42px;
+    background: url(../../../img/2018/kenkyu/icn_sp_nav04.png) center center no-repeat;
+  }
+}
 /*------------------------------------------------------------------
  MV
 ------------------------------------------------------------------*/
-.mv {
-  height: 600px;
-  position: relative;
-  margin-bottom: 80px;
-  background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
-  background-size: cover;
-}
-.mv-content {
-  position: absolute;
-  left: 60px;
-  top: 50px;
-  z-index: 10;
-}
-.mv-content button {
-  margin-top: 20px;
-}
+@media all and (min-width: 769px) {
+  .mv {
+    height: 630px;
+    position: relative;
+    margin-bottom: 80px;
+    background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
+    background-size: cover;
+  }
+  .mv-content {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    z-index: 10;
+  }
+  .mv .sp-img {
+    display: none;
+  }
 
+  .sp-cv {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .mv {
+    height: 600px;
+    position: relative;
+    background: url("../../../img/2018/kenkyu/img_sp-mv.png") center right no-repeat;
+    background-size: cover;
+  }
+  .mv-content .link-button {
+    display: none;
+  }
+  .mv h1 {
+    width: 73%;
+    height: 200px;
+    margin: 0px auto;
+    padding-top: 30px;
+  }
+  .mv h1 .pc-img {
+    display: none;
+  }
+  .mv h1 .sp-img {
+    width: 100%;
+  }
+  .mv .sp-text {
+    width: 90%;
+    font-family: "mgenplus-1m-medium";
+    font-size: 5vw;
+    color: #222;
+    text-align: center;
+    margin: 260px auto;
+  }
+
+  .sp-cv {
+    width: 100%;
+    height: 230px;
+    padding: 20px 0px 0px;
+  }
+}
 /*------------------------------------------------------------------
  sub-view
 ------------------------------------------------------------------*/
-.l-sub-view {
-  width: 100%;
-  padding-bottom: 50px;
-  margin-bottom: 110px;
-  position: relative;
+@media all and (min-width: 769px) {
+  .l-sub-view {
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 110px;
+    position: relative;
+  }
+  .l-sub-view .sub-view-text-area {
+    width: 100%;
+    display: flex;
+    z-index: 10;
+  }
+  .l-sub-view .sub-view-text-area .left-img {
+    width: 47%;
+    z-index: 10;
+  }
+  .l-sub-view .sub-view-text-area .left-img img {
+    width: 100%;
+    vertical-align: bottom;
+    z-index: 10;
+  }
+  .l-sub-view .sub-view-text-area .sub-view-text {
+    margin-left: 3%;
+    width: 40%;
+    z-index: 10;
+  }
+  .l-sub-view .sub-view-text-area .sub-view-text p {
+    font-size: 20px;
+  }
+  .l-sub-view .sub-viewBg {
+    width: 80%;
+    height: 90%;
+    background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+  }
+  .l-sub-view .sub-viewBg .l-sub-view__img {
+    width: 30%;
+    height: 260px;
+    background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    bottom: -60px;
+    right: 5%;
+  }
 }
-.l-sub-view .sub-view-text-area {
-  width: 100%;
-  display: flex;
-  z-index: 10;
-}
-.l-sub-view .sub-view-text-area .left-img {
-  width: 47%;
-  z-index: 10;
-}
-.l-sub-view .sub-view-text-area .left-img img {
-  width: 100%;
-  vertical-align: bottom;
-  z-index: 10;
-}
-.l-sub-view .sub-view-text-area .sub-view-text {
-  margin-left: 3%;
-  width: 40%;
-  z-index: 10;
-}
-.l-sub-view .sub-view-text-area .sub-view-text p {
-  font-size: 20px;
-}
-.l-sub-view .sub-viewBg {
-  width: 80%;
-  height: 90%;
-  background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  z-index: 1;
-}
-.l-sub-view .sub-viewBg .l-sub-view__img {
-  width: 30%;
-  height: 260px;
-  background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
-  background-size: contain;
-  position: absolute;
-  bottom: -60px;
-  right: 5%;
-}
-@media all and (max-width: 1000px) {
+@media all and (min-width: 769px) and (max-width: 1000px) {
   .l-sub-view .sub-viewBg .l-sub-view__img {
     width: 26%;
     height: 260px;
@@ -368,390 +743,722 @@ nav .nav04::before {
     left: 450px;
   }
 }
-.l-sub-view .l-shaped-shape01 {
-  width: 8%;
-  height: 85px;
-  position: absolute;
-  top: 150px;
-  left: 90%;
-  z-index: 10;
-  background: url("../../../img/2018/kenkyu/parts01.png") no-repeat center center;
-  background-size: contain;
+@media all and (min-width: 769px) {
+  .l-sub-view .l-shaped-shape01 {
+    width: 8%;
+    height: 85px;
+    position: absolute;
+    top: 150px;
+    left: 90%;
+    z-index: 10;
+    background: url("../../../img/2018/kenkyu/parts01.png") no-repeat center center;
+    background-size: contain;
+  }
+  .l-sub-view .l-shaped-shape02 {
+    width: 10%;
+    height: 143px;
+    position: absolute;
+    top: 96%;
+    left: 5%;
+    z-index: 10;
+    background: url("../../../img/2018/kenkyu/parts02.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.l-sub-view .l-shaped-shape02 {
-  width: 10%;
-  height: 143px;
-  position: absolute;
-  top: 96%;
-  left: 5%;
-  z-index: 10;
-  background: url("../../../img/2018/kenkyu/parts02.png") no-repeat center center;
-  background-size: contain;
+@media all and (max-width: 768px) {
+  .l-sub-view {
+    width: 100%;
+    position: relative;
+  }
+  .l-sub-view .sub-view-text-area {
+    width: 100%;
+    z-index: 10;
+  }
+  .l-sub-view .sub-view-text-area .left-img {
+    width: 100%;
+  }
+  .l-sub-view .sub-view-text-area .left-img img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  .l-sub-view .sub-view-text-area .sub-view-text {
+    width: 100%;
+  }
+  .l-sub-view .sub-view-text-area .sub-view-text p {
+    margin: 50px 0px;
+    font-size: 4vw;
+  }
+  .l-sub-view .sub-viewBg {
+    width: 100%;
+  }
+  .l-sub-view .sub-viewBg .l-sub-view__img {
+    width: 100%;
+    background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
+    background-size: contain;
+  }
+  .l-sub-view .sub-viewBg .l-sub-view__img::before {
+    content: "";
+    display: block;
+    padding-top: 77%;
+  }
 }
-
 /*------------------------------------------------------------------
  Section01 自由研究ツールの特徴
 ------------------------------------------------------------------*/
-.section01 {
-  width: 100%;
-  position: relative;
-  background: #eef8ff;
+@media all and (min-width: 769px) {
+  .section01 {
+    width: 100%;
+    position: relative;
+    background: #eef8ff;
+  }
+  .section01 .wrapper {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1300px;
+    padding: 30px 30px 50px;
+    box-sizing: border-box;
+  }
+  .section01 h2 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .featureContent {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0px auto;
+    padding-top: 5%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .featureContent section {
+    width: 22%;
+    font-size: 18px;
+  }
+  .featureContent img {
+    width: 100%;
+  }
+  .featureText {
+    width: 100%;
+  }
+  .section01 .l-shaped-shape03 {
+    width: 10%;
+    height: 130px;
+    position: absolute;
+    top: -25px;
+    left: 87%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts03.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section01 .wrapper {
-  padding: 30px 30px 50px;
-  box-sizing: border-box;
+@media all and (max-width: 768px) {
+  .section01 {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    background: #eef8ff;
+  }
+  .section01 .wrapper {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1300px;
+    padding: 5px 30px 50px;
+    box-sizing: border-box;
+  }
+  .section01 h2 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .featureContent {
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 30px;
+  }
+  .featureContent section {
+    width: 100%;
+    font-size: 18px;
+    margin: 60px auto 0px;
+    padding-bottom: 60px;
+    border-bottom: 2px dotted #b2b2b2;
+  }
+  .featureContent img {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+  }
+  .featureText {
+    width: 100%;
+  }
 }
-.section01 h2 {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.featureContent {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0px auto;
-  padding-top: 5%;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-.featureContent section {
-  width: 22%;
-  font-size: 18px;
-}
-.featureContent img {
-  width: 100%;
-}
-.featureText {
-  width: 100%;
-}
-.section01 .l-shaped-shape03 {
-  width: 10%;
-  height: 130px;
-  position: absolute;
-  top: -25px;
-  left: 87%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts03.png") no-repeat center center;
-  background-size: contain;
-}
-
 /*------------------------------------------------------------------
  Section02 自由研究完成イメージ
 ------------------------------------------------------------------*/
-.section02 {
-  height: auto;
-  padding: 50px 0px;
-  position: relative;
+@media all and (min-width: 769px) {
+  .section02 {
+    height: auto;
+    padding: 50px 0px;
+    position: relative;
+  }
+  .section02 h2 {
+    margin-bottom: 50px;
+  }
+  .section02 .catch-copy {
+    width: 100%;
+    margin-left: 18%;
+  }
+  .section02 .text-content {
+    width: 72%;
+    height: 360px;
+    background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
+    margin-top: 50px;
+    position: relative;
+  }
+  .section02 .text-content h2 {
+    margin-bottom: 50px;
+  }
+  .section02 .text-content .catch-copy {
+    width: 100%;
+    margin-left: 18%;
+  }
+  .section02 .text-content .text-area {
+    width: 430px;
+    padding-top: 40px;
+    margin-left: 12%;
+  }
+  .section02 .text-content .complete-img {
+    width: 40%;
+    position: absolute;
+    top: 150px;
+    left: 55%;
+    z-index: 10;
+  }
+  .section02 .text-content .complete-img img {
+    width: 100%;
+    max-width: 440px;
+  }
+  .section02 .text-content .l-dl-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 12%;
+    z-index: 10;
+  }
+  .section02 .text-content .l-dl-btn img {
+    vertical-align: bottom;
+  }
+  .section02 .text-content .l-shaped-shape04 {
+    width: 8%;
+    height: 91px;
+    position: absolute;
+    top: -25px;
+    left: 80%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts04.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section02 .text-content .l-shaped-shape05 {
+    width: 8%;
+    height: 93px;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts05.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section02 .text-content .l-shaped-shape06 {
+    width: 8%;
+    height: 84px;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts06.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section02 .text-content .l-parts-scissors {
+    width: 8%;
+    height: 91px;
+    position: absolute;
+    top: 200px;
+    left: 42%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/icn_scissors.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section02 h2 {
-  margin-bottom: 50px;
+@media all and (max-width: 768px) {
+  .section02 {
+    height: auto;
+    padding: 50px 0px 0px;
+    position: relative;
+  }
+  .section02 h2 {
+    margin-bottom: 50px;
+  }
+  .section02 .catch-copy {
+    width: 32%;
+    margin: 0px auto;
+  }
+  .section02 .catch-copy img {
+    width: 100%;
+  }
+  .section02 .text-content {
+    width: 100%;
+    height: auto;
+  }
+  .section02 .text-area {
+    width: 100%;
+    font-size: 4vw;
+    padding-top: 40px;
+  }
+  .section02 .text-area h3 {
+    font-size: 5vw;
+  }
+  .section02 .complete-img {
+    width: 100%;
+  }
+  .section02 .complete-img img {
+    width: 100%;
+  }
+  .section02 .l-dl-btn {
+    margin-top: 50px;
+  }
+  .section02 .l-dl-btn img {
+    vertical-align: bottom;
+  }
+  .section02 .l-parts-scissors {
+    width: 12%;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    right: 16%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/icn_scissors.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section02 .catch-copy {
-  width: 100%;
-  margin-left: 18%;
-}
-.section02 .text-content {
-  width: 72%;
-  height: 360px;
-  background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
-  margin-top: 50px;
-  position: relative;
-}
-.section02 .text-area {
-  width: 430px;
-  padding-top: 40px;
-  margin-left: 12%;
-}
-.section02 .complete-img {
-  width: 40%;
-  position: absolute;
-  top: 150px;
-  left: 55%;
-}
-.section02 .complete-img img {
-  width: 100%;
-  max-width: 440px;
-}
-.section02 .l-dl-btn {
-  position: absolute;
-  bottom: 30px;
-  left: 12%;
-  z-index: 10;
-}
-.section02 .l-dl-btn img {
-  vertical-align: bottom;
-}
-.section02 .l-shaped-shape04 {
-  width: 8%;
-  height: 91px;
-  position: absolute;
-  top: -25px;
-  left: 80%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts04.png") no-repeat center center;
-  background-size: contain;
-}
-.section02 .l-shaped-shape05 {
-  width: 8%;
-  height: 93px;
-  position: absolute;
-  top: 20px;
-  left: 5%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts05.png") no-repeat center center;
-  background-size: contain;
-}
-.section02 .l-shaped-shape06 {
-  width: 8%;
-  height: 84px;
-  position: absolute;
-  top: 40%;
-  left: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts06.png") no-repeat center center;
-  background-size: contain;
-}
-.section02 .l-parts-scissors {
-  width: 8%;
-  height: 91px;
-  position: absolute;
-  top: 200px;
-  left: 42%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/icn_scissors.png") no-repeat center center;
-  background-size: contain;
-}
-
 /*------------------------------------------------------------------
  Section03 自由研究サポート教室とは
 ------------------------------------------------------------------*/
-.section03 {
-  height: auto;
-  background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
-  margin-top: 110px;
-  padding: 80px 0px;
-  position: relative;
+@media all and (min-width: 769px) {
+  .section03 {
+    height: auto;
+    background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
+    margin-top: 110px;
+    padding: 80px 0px;
+    position: relative;
+  }
+  .section03 .l-text-center {
+    text-align: center;
+  }
+  .section03 h2 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section03 .l-info {
+    width: 77%;
+    margin: 60px auto 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section03 .l-info .l-infoL {
+    width: 47%;
+  }
+  .section03 .l-info .l-infoL .left-img {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .left-img img {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .benefits {
+    width: 99%;
+    height: auto;
+    border: 2px solid #ffb700;
+    margin-top: 85px;
+    position: relative;
+  }
+  .section03 .l-info .l-infoL .benefits h3 {
+    width: 260px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section03 .l-info .l-infoL .benefits h4 {
+    font-size: 1.84vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 55px;
+  }
+  .section03 .l-info .l-infoL .benefits p {
+    width: 84%;
+    font-size: 1.4vw;
+    margin: 30px auto;
+  }
+  .section03 .l-info .l-infoL .benefits p span {
+    font-size: 1.2vw;
+  }
+  .section03 .l-info .l-infoR {
+    width: 47%;
+  }
+  .section03 .l-info .l-infoR dl {
+    width: 100%;
+    font-size: 1.7vw;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .section03 .l-info .l-infoR dl:last-child {
+    margin-bottom: 0;
+  }
+  .section03 .l-info .l-infoR dl dt {
+    color: #fff;
+    width: 24%;
+    height: 40px;
+    margin-right: 4%;
+    background: #2b5db7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03 .l-info .l-infoR dl dd {
+    width: 72%;
+  }
+  .section03 .l-info .l-infoR dl dd span {
+    font-size: 1.4vw;
+  }
 }
-.section03 .l-text-center {
-  text-align: center;
-}
-.section03 h2 {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.section03 .l-info {
-  width: 77%;
-  margin: 60px auto 0px;
-  display: flex;
-  justify-content: space-between;
-}
-.section03 .l-info .l-infoL {
-  width: 47%;
-}
-.section03 .l-info .l-infoL .left-img {
-  width: 100%;
-}
-.section03 .l-info .l-infoL .left-img img {
-  width: 100%;
-}
-.section03 .l-info .l-infoL .benefits {
-  width: 99%;
-  height: auto;
-  border: 2px solid #ffb700;
-  margin-top: 85px;
-  position: relative;
-}
-.section03 .l-info .l-infoL .benefits h3 {
-  width: 260px;
-  height: 50px;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.section03 .l-info .l-infoL .benefits h4 {
-  font-size: 1.84vw;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 55px;
-}
-.section03 .l-info .l-infoL .benefits p {
-  width: 84%;
-  font-size: 1.4vw;
-  margin: 30px auto;
-}
-.section03 .l-info .l-infoL .benefits p span {
-  font-size: 1.2vw;
-}
-.section03 .l-info .l-infoR {
-  width: 47%;
-}
-.section03 .l-info .l-infoR dl {
-  width: 100%;
-  font-size: 1.7vw;
-  display: flex;
-  margin-bottom: 30px;
-}
-.section03 .l-info .l-infoR dl:last-child {
-  margin-bottom: 0;
-}
-.section03 .l-info .l-infoR dl dt {
-  color: #fff;
-  width: 24%;
-  height: 40px;
-  margin-right: 4%;
-  background: #2b5db7;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section03 .l-info .l-infoR dl dd {
-  width: 72%;
-}
-.section03 .l-info .l-infoR dl dd span {
-  font-size: 1.4vw;
-}
-@media all and (min-width: 1300px) {
+@media all and (min-width: 769px) and (min-width: 1300px) {
   .section03 .l-info .l-infoR dl {
     font-size: 22px;
   }
 }
-.section03 .l-info .l-infoR img {
-  width: 100%;
-  margin-top: 50px;
+@media all and (min-width: 769px) {
+  .section03 .l-info .l-infoR img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .section03 .schedule {
+    width: 77%;
+    margin: 80px auto 0px;
+  }
+  .section03 .schedule h3 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .section03 .table {
+    width: 100%;
+    border-right: #b2b2b2 solid 1px;
+  }
+  .section03 .table thead tr {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .section03 .table thead th {
+    background: #2b5db7;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0px;
+    border-right: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table thead th:last-child {
+    border-right: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody tr {
+    width: 100%;
+    height: 80px;
+  }
+  .section03 .table tbody th {
+    height: 80px;
+    font-weight: bold;
+    background: #e0f1fe;
+    border-bottom: #b2b2b2 solid 1px;
+    border-left: #b2b2b2 solid 1px;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03 .table tbody tr:last-child th {
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody td {
+    height: 80px;
+    background: #fff;
+    border-left: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
+    text-align: center;
+  }
+  .section03 .l-center {
+    width: 390px;
+    height: 60px;
+    margin: 60px auto;
+  }
+  .section03 .l-shaped-shape07 {
+    width: 10%;
+    height: 140px;
+    position: absolute;
+    top: 20px;
+    left: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts07.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section03 .l-parts-face {
+    width: 10%;
+    height: 141px;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section03 .l-shaped-shape08 {
+    width: 10%;
+    height: 159px;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts08.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section03 .l-shaped-shape09 {
+    width: 8%;
+    height: 91px;
+    position: absolute;
+    top: 48%;
+    left: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts09.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section03 .l-shaped-shape10 {
+    width: 8%;
+    height: 89px;
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts10.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section03 .schedule {
-  width: 77%;
-  margin: 80px auto 0px;
+@media all and (max-width: 768px) {
+  .section03 {
+    height: auto;
+    background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
+    margin-top: 110px;
+    padding: 80px 0px;
+    position: relative;
+  }
+  .section03 .l-text-center {
+    font-size: 4vw;
+  }
+  .section03 h2 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section03 .l-info {
+    width: 100%;
+    margin: 50px auto 0px;
+  }
+  .section03 .l-info .l-infoL {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .left-img {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .left-img img {
+    width: 100%;
+  }
+  .section03 .l-info .l-infoL .benefits {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ffb700;
+    margin-top: 85px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .section03 .l-info .l-infoL .benefits h3 {
+    width: 260px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section03 .l-info .l-infoL .benefits h4 {
+    font-size: 5.0vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .section03 .l-info .l-infoL .benefits p {
+    width: 84%;
+    font-size: 4.0vw;
+    margin: 20px auto;
+    line-height: 1.7;
+  }
+  .section03 .l-info .l-infoL .benefits p span {
+    font-size: 3.0vw;
+  }
+  .section03 .l-info .l-infoR {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .section03 .l-info .l-infoR dl {
+    width: 100%;
+    font-size: 5.0vw;
+    margin-bottom: 50px;
+  }
+  .section03 .l-info .l-infoR dl:last-child {
+    margin-bottom: 0;
+  }
+  .section03 .l-info .l-infoR dl dt {
+    color: #fff;
+    width: 24%;
+    height: 40px;
+    margin-right: 4%;
+    background: #2b5db7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03 .l-info .l-infoR dl dd {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .section03 .l-info .l-infoR dl dd span {
+    font-size: 3.0vw;
+  }
+  .section03 .l-info .l-infoR img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .section03 .l-info .l-infoR p {
+    font-size: 3.0vw;
+    line-height: 2.0;
+  }
+  .section03 .schedule {
+    width: 77%;
+    margin: 80px auto 0px;
+  }
+  .section03 .schedule h3 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .section03 .table {
+    width: 100%;
+    border-right: #b2b2b2 solid 1px;
+  }
+  .section03 .table thead tr {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .section03 .table thead th {
+    background: #2b5db7;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0px;
+    border-right: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table thead th:last-child {
+    border-right: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody tr {
+    width: 100%;
+    height: 80px;
+  }
+  .section03 .table tbody th {
+    height: 80px;
+    font-weight: bold;
+    background: #e0f1fe;
+    border-bottom: #b2b2b2 solid 1px;
+    border-left: #b2b2b2 solid 1px;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section03 .table tbody tr:last-child th {
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody td {
+    height: 80px;
+    background: #fff;
+    border-left: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
+    text-align: center;
+  }
+  .section03 .l-center {
+    width: 390px;
+    height: 60px;
+    margin: 60px auto;
+  }
+  .section03 .l-parts-face {
+    width: 10%;
+    height: 141px;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section03 .schedule h3 {
-  width: 100%;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.section03 .table {
-  width: 100%;
-  border-right: #b2b2b2 solid 1px;
-}
-.section03 .table thead tr {
-  width: 100%;
-  padding: 15px 0;
-}
-.section03 .table thead th {
-  background: #2b5db7;
-  color: #FFF;
-  text-align: center;
-  padding: 10px 0px;
-  border-right: #b2b2b2 solid 1px;
-  border-bottom: #b2b2b2 solid 1px;
-}
-.section03 .table thead th:last-child {
-  border-right: #b2b2b2 solid 1px;
-}
-.section03 .table tbody tr {
-  width: 100%;
-  height: 80px;
-}
-.section03 .table tbody th {
-  height: 80px;
-  font-weight: bold;
-  background: #e0f1fe;
-  border-bottom: #b2b2b2 solid 1px;
-  border-left: #b2b2b2 solid 1px;
-  vertical-align: top;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section03 .table tbody tr:last-child th {
-  border-bottom: #b2b2b2 solid 1px;
-}
-.section03 .table tbody td {
-  height: 80px;
-  background: #fff;
-  border-left: #b2b2b2 solid 1px;
-  border-bottom: #b2b2b2 solid 1px;
-  text-align: center;
-}
-.section03 .l-center {
-  width: 390px;
-  height: 60px;
-  margin: 60px auto;
-}
-.section03 .l-shaped-shape07 {
-  width: 10%;
-  height: 140px;
-  position: absolute;
-  top: 20px;
-  left: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts07.png") no-repeat center center;
-  background-size: contain;
-}
-.section03 .l-parts-face {
-  width: 10%;
-  height: 141px;
-  position: absolute;
-  top: 20px;
-  right: 5%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
-  background-size: contain;
-}
-.section03 .l-shaped-shape08 {
-  width: 10%;
-  height: 159px;
-  position: absolute;
-  top: 15%;
-  right: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts08.png") no-repeat center center;
-  background-size: contain;
-}
-.section03 .l-shaped-shape09 {
-  width: 8%;
-  height: 91px;
-  position: absolute;
-  top: 48%;
-  left: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts09.png") no-repeat center center;
-  background-size: contain;
-}
-.section03 .l-shaped-shape10 {
-  width: 8%;
-  height: 89px;
-  position: absolute;
-  bottom: 2%;
-  right: 3%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts10.png") no-repeat center center;
-  background-size: contain;
-}
-
 /*------------------------------------------------------------------
  Section04 平和学習ってなに？
 ------------------------------------------------------------------*/

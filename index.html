@@ -37,9 +37,19 @@
 		<div class="logo">
 			<a href="http://tsuguten.com/"><img src="./img/2018/kenkyu/logo01.png" alt="第三世代が考えるヒロシマ「」継ぐ展"></a>
 		</div>
+		<div class="title">
+			<p>2018年<br>夏休み自由研究ツール</p>
+		</div>
+
+		<div class="menu-trigger">
+			<span class="menu1"></span>
+			<span class="menu2"></span>
+			<span class="menu3"></span>
+		</div>
+
 		<nav>
 			<ul>
-				<li><a class="nav01" href="#">自由研究ツールについて</a></li>
+				<li><a class="nav01" href="#feature">自由研究ツールについて</a></li>
 				<li><a class="nav02" href="#">使い方</a></li>
 				<li><a class="nav03" href="#">サポート教室</a></li>
 				<li><a class="nav04" href="#">サポートスタッフ募集</a></li>
@@ -51,7 +61,19 @@
 		<!-- MV -->
 		<div class="mv">
 			<div class="mv-content">
-				<h1><img src="./img/2018/kenkyu/ttl_pagettl.png" alt="2018年夏休み自由研究ツール ヒロシマを知り、平和について考えてみよう！ 自由研究ツールをダウンロードして企画展に行き、ヒロシマを学ぼう！"></h1>
+				<h1>
+					<img class="pc-img" src="./img/2018/kenkyu/ttl_pagettl.png" alt="2018年夏休み自由研究ツール ヒロシマを知り、平和について考えてみよう！ 自由研究ツールをダウンロードして企画展に行き、ヒロシマを学ぼう！">
+					<img class="sp-img" src="./img/2018/kenkyu/ttl_sp-pagettl.png" alt="ヒロシマを知り、平和について考えてみよう！">
+				</h1>
+				<p class="sp-text">自由研究ツールをダウンロードして企画展に行き、ヒロシマを学ぼう！</p>
+				<a class="link-button button-blue" href="#"><span class="link-button__elm--dl">自由研究ツールをダウンロード</span></a>
+				<a class="link-button button-yellow" href="https://docs.google.com/forms/d/17XEacigOtp0B4Rfaxqsb_M_vniFDjoEoqJbIdVmUme0/edit"><span class="link-button__elm--entry">サポート教室を申し込む</span></a>
+			</div>
+		</div>
+
+		<!-- SP CV -->
+		<div class="sp-cv">
+			<div class="wrapper">
 				<a class="link-button button-blue" href="#"><span class="link-button__elm--dl">自由研究ツールをダウンロード</span></a>
 				<a class="link-button button-yellow" href="https://docs.google.com/forms/d/17XEacigOtp0B4Rfaxqsb_M_vniFDjoEoqJbIdVmUme0/edit"><span class="link-button__elm--entry">サポート教室を申し込む</span></a>
 			</div>
@@ -75,7 +97,7 @@
 		</div>
 
 		<!-- 自由研究ツールの特ちょう -->
-		<section class="section01">
+		<section class="section01" id="feature">
 			<div class="wrapper">
 				<h2>自由研究ツールの特ちょう</h2>
 				<div class="featureContent">
@@ -127,6 +149,7 @@
 			<div class="wrapper">
 				<h2>自由研究完成イメージ</h2>
 				<div class="catch-copy"><img src="./img/2018/kenkyu/subTtl_completeImage.png" alt="自由研究つくる形は自由です"></div>
+				<div class="complete-img"><img src="./img/2018/kenkyu/img_completeImage.png" alt="自由研究完成イメージ"></div>
 				<div class="text-content">
 					<div class="text-area">
 						<h3>タイトル・写真・装飾など、<br>思いのままにつくってね！</h3>
@@ -136,7 +159,7 @@
 						<a class="link-button button-blue" href="#"><span class="link-button__elm--dl">自由研究ツールをダウンロード</span></a>
 					</div>
 				</div>
-				<div class="complete-img"><img src="./img/2018/kenkyu/img_completeImage.png" alt="自由研究完成イメージ"></div>
+				<!-- <div class="complete-img"><img src="./img/2018/kenkyu/img_completeImage.png" alt="自由研究完成イメージ"></div> -->
 				<div class="l-shaped-shape04"></div>
 				<div class="l-shaped-shape05"></div>
 				<div class="l-shaped-shape06"></div>
@@ -190,8 +213,7 @@
 							<dt>参加費</dt>
 							<dd>
 								500円（材料費）<br>
-								<span>※参加費は、参加費当日に<br>
-								イベント会場でお支払いになります。</span>
+								<span>※参加費は、参加費当日にイベント会場でお支払いになります。</span>
 							</dd>
 						</dl>
 						<p>
@@ -579,5 +601,7 @@
 		</div>
 	</footer>
 
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
