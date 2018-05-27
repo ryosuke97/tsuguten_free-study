@@ -931,6 +931,17 @@ a:hover {
     width: 100%;
     margin-left: 18%;
   }
+  .section02 .complete-img {
+    width: 40%;
+    position: absolute;
+    top: 150px;
+    left: 55%;
+    z-index: 10;
+  }
+  .section02 .complete-img img {
+    width: 100%;
+    max-width: 440px;
+  }
   .section02 .text-content {
     width: 72%;
     height: 360px;
@@ -941,25 +952,10 @@ a:hover {
   .section02 .text-content h2 {
     margin-bottom: 50px;
   }
-  .section02 .text-content .catch-copy {
-    width: 100%;
-    margin-left: 18%;
-  }
   .section02 .text-content .text-area {
     width: 430px;
     padding-top: 40px;
     margin-left: 12%;
-  }
-  .section02 .text-content .complete-img {
-    width: 40%;
-    position: absolute;
-    top: 150px;
-    left: 55%;
-    z-index: 10;
-  }
-  .section02 .text-content .complete-img img {
-    width: 100%;
-    max-width: 440px;
   }
   .section02 .text-content .l-dl-btn {
     position: absolute;
@@ -970,7 +966,7 @@ a:hover {
   .section02 .text-content .l-dl-btn img {
     vertical-align: bottom;
   }
-  .section02 .text-content .l-shaped-shape04 {
+  .section02 .l-shaped-shape04 {
     width: 8%;
     height: 91px;
     position: absolute;
@@ -980,7 +976,7 @@ a:hover {
     background: url("../../../img/2018/kenkyu/parts04.png") no-repeat center center;
     background-size: contain;
   }
-  .section02 .text-content .l-shaped-shape05 {
+  .section02 .l-shaped-shape05 {
     width: 8%;
     height: 93px;
     position: absolute;
@@ -990,7 +986,7 @@ a:hover {
     background: url("../../../img/2018/kenkyu/parts05.png") no-repeat center center;
     background-size: contain;
   }
-  .section02 .text-content .l-shaped-shape06 {
+  .section02 .l-shaped-shape06 {
     width: 8%;
     height: 84px;
     position: absolute;
@@ -1000,7 +996,7 @@ a:hover {
     background: url("../../../img/2018/kenkyu/parts06.png") no-repeat center center;
     background-size: contain;
   }
-  .section02 .text-content .l-parts-scissors {
+  .section02 .l-parts-scissors {
     width: 8%;
     height: 91px;
     position: absolute;
