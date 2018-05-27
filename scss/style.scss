@@ -4,7 +4,7 @@
 @font-face {
 	font-family: 'mgenplus-1m-bold';
 	src:local('mgenplus-1m-bold') ,
-		url('mgenplus-1m-bold.ttf');
+		url('../font/mgenplus-1m-bold.ttf');
 }
 
 /*------------------------------------------------------------------
@@ -466,7 +466,7 @@ header {
 	}
 	.text-content {
 		width: 72%;
-		height: 300px;
+		height: 360px;
 		background: url("../../../img/2018/kenkyu/bg01.jpg") repeat;
 		margin-top: 50px;
 		position: relative;
@@ -488,7 +488,7 @@ header {
 	}
 	.l-dl-btn {
 		position: absolute;
-		bottom: -30px;
+		bottom: 30px;
 		left: 12%;
 		z-index: 10;
 		img {
