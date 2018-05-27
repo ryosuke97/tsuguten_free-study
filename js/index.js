@@ -1,4 +1,6 @@
-$(function() {  
+$(function() {
+	// スクロールトップボタンを非表示
+	$('.scroll-top').hide();
 
   /* ハンバーガーボタンのオーバーレイ */
   var overlayFlg = false;
@@ -48,4 +50,18 @@ $('a[href^="#"]').click(function() {
     scrollTop: position
   }, speed, 'swing');
   return false;
+});
+
+$(".scroll-top").click(function () {
+	$('body, html').animate({ scrollTop: 0 }, 500);
+	return false;
+});
+
+ // 先頭に戻るボタンの表示
+ $(window).scroll(function () {
+	if ($(this).scrollTop() > 500 ) {
+			$('.scroll-top').fadeIn();
+	} else {
+			$('.scroll-top').fadeOut();
+	}
 });

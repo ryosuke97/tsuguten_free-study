@@ -378,6 +378,33 @@ a:hover {
 		box-shadow: 0px 5px 2px #c08a00;
 	}
 }
+.scroll-top {
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	border: 1px solid $lightGray;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 1000;
+	span {
+		width: 20px;
+		height: 20px;
+		border: 0px;
+		border-top: solid 2px $lightGray;
+		border-right: solid 2px $lightGray;
+		-ms-transform: rotate(-45deg) translate(-5px,5px);
+		-moz-transform: rotate(-45deg) translate(-5px,5px);
+		-webkit-transform: rotate(-45deg) translate(-5px,5px);
+		-o-transform: rotate(-45deg) translate(-5px,5px);
+		transform: rotate(-45deg) translate(-5px,5px);
+	}
+}
 
 
 /*------------------------------------------------------------------
