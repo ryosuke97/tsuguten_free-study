@@ -818,7 +818,7 @@ a:hover {
     padding: 30px 30px 50px;
     box-sizing: border-box;
   }
-  .section01 h2 {
+  .section01 h2, .section01 .feature-link {
     position: absolute;
     top: 0%;
     left: 50%;
@@ -1066,7 +1066,7 @@ a:hover {
   .section03 .l-text-center {
     text-align: center;
   }
-  .section03 h2 {
+  .section03 h2, .section03 .support-classroom-link {
     position: absolute;
     top: 0px;
     left: 50%;
@@ -1729,7 +1729,7 @@ a:hover {
   background: #e0f1fe;
   position: relative;
 }
-.section07 h2 {
+.section07 h2, .section07 .staff-recruitment-link {
   position: absolute;
   top: 0px;
   left: 50%;
@@ -1740,7 +1740,7 @@ a:hover {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section07 h2 img {
+.section07 h2 img, .section07 .staff-recruitment-link img {
   width: 100%;
 }
 .section07 .b-staff-wanted {

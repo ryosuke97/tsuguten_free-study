@@ -838,7 +838,7 @@ a:hover {
 			padding: 30px 30px 50px;
 			box-sizing: border-box;
 		}
-		h2 {
+		h2,.feature-link {
 			position: absolute;
 			top: 0%;
 			left: 50%;
@@ -1092,7 +1092,7 @@ a:hover {
 		.l-text-center {
 			text-align: center;
 		}
-		h2 {
+		h2,.support-classroom-link {
 			position: absolute;
 			top: 0px;
 			left: 50%;
@@ -1804,7 +1804,7 @@ a:hover {
 	margin-top: 150px;
 	background: $lightBlue;
 	position: relative;
-	h2 {
+	h2,.staff-recruitment-link {
 		position: absolute;
 		top: 0px;
 		left: 50%;
