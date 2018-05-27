@@ -648,6 +648,9 @@ a:hover {
   .mv .sp-img {
     display: none;
   }
+  .mv .sp-text {
+    display: none;
+  }
 
   .sp-cv {
     display: none;

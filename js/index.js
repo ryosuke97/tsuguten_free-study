@@ -37,25 +37,10 @@ $(function() {
 
 });
 
-
-
-// $('a[href^="#"]').click(function() {
-// 	var headerHight = 0; //ヘッダーの高さ
-// 	if ( !$(".fixed-header").is(":visible") ) {// 固定するクラスが見つからない(固定されていない場合は)
-// 			headerHight = $(".nav").height();// スクロール後に固定されるナビの高さをヘッダーの高さにする
-// 	}
-// 	var speed = 800; // スクロールの速度ミリ秒
-// 	var href= $(this).attr("href");// アンカーの値取得
-// 	var target = $(href == "#" || href == "" ? 'html' : href);// 移動先を取得
-// 	var position = target.offset().top-headerHight;// 移動先を数値で取得してヘッダーの高さ分ずらす
-// 	$('body,html').animate({scrollTop:position}, speed, 'easeOutExpo');
-// 	return false;
-// });
-
-
+// ページ内リンク遷移
 $('a[href^="#"]').click(function() {
   // スクロールの速度
-  var speed = 400; // ミリ秒で記述
+  var speed = 400;
   var href = $(this).attr("href");
   var target = $(href == "#" || href == "" ? 'html' : href);
   var position = target.offset().top -30;
