@@ -57,7 +57,7 @@ $(".scroll-top").click(function () {
 	return false;
 });
 
- // 先頭に戻るボタンの表示
+ // スクロールトップボタンの表示設定
  $(window).scroll(function () {
 	if ($(this).scrollTop() > 500 ) {
 			$('.scroll-top').fadeIn();

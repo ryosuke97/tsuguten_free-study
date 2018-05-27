@@ -422,6 +422,7 @@ a:hover {
     top: 0px;
     left: 0px;
     background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     z-index: 10000;
   }
   header .title {
@@ -493,6 +494,7 @@ a:hover {
     top: 0px;
     left: 0px;
     background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     z-index: 10000;
     /* クリックした後の挙動 */
   }
