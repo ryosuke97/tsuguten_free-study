@@ -1035,6 +1035,10 @@ a:hover {
   .section02 h2 {
     margin-bottom: 50px;
   }
+  .section02 h2 .how2use-link {
+    position: absolute;
+    top: -94px;
+  }
   .section02 .catch-copy {
     width: 32%;
     margin: 0px auto;
@@ -1328,6 +1332,10 @@ a:hover {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 10;
+  }
+  .section03 h2 .support-classroom-link {
+    position: absolute;
+    top: -94px;
   }
   .section03 .l-info {
     width: 100%;

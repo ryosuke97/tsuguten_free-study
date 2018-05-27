@@ -1059,6 +1059,10 @@ a:hover {
 		position: relative;
 		h2 {
 			margin-bottom: 50px;
+			.how2use-link {
+				position: absolute;
+				top: -94px;
+			}
 		}
 		.catch-copy {
 			width: 32%;
@@ -1378,6 +1382,10 @@ a:hover {
 			-o-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
 			z-index: 10;
+			.support-classroom-link {
+				position: absolute;
+				top: -94px;
+			}
 		}
 		.l-info {
 			width: 100%;
