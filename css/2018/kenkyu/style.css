@@ -828,7 +828,7 @@ a:hover {
     padding: 30px 30px 50px;
     box-sizing: border-box;
   }
-  .section01 h2, .section01 .feature-link {
+  .section01 h2 {
     position: absolute;
     top: 0%;
     left: 50%;
@@ -838,6 +838,10 @@ a:hover {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 10;
+  }
+  .section01 h2 .feature-link {
+    position: absolute;
+    top: -94px;
   }
   .featureContent {
     width: 100%;
@@ -884,6 +888,7 @@ a:hover {
     box-sizing: border-box;
   }
   .section01 h2 {
+    height: auto;
     position: absolute;
     top: 0%;
     left: 50%;
@@ -893,6 +898,10 @@ a:hover {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 10;
+  }
+  .section01 h2 .feature-link {
+    position: absolute;
+    top: -94px;
   }
   .featureContent {
     width: 100%;
@@ -926,6 +935,11 @@ a:hover {
   }
   .section02 h2 {
     margin-bottom: 50px;
+    position: relative;
+  }
+  .section02 h2 .how2use-link {
+    position: absolute;
+    top: -94px;
   }
   .section02 .catch-copy {
     width: 100%;
@@ -951,6 +965,11 @@ a:hover {
   }
   .section02 .text-content h2 {
     margin-bottom: 50px;
+    position: relative;
+  }
+  .section02 .text-content h2 .how2use {
+    position: absolute;
+    top: -94px;
   }
   .section02 .text-content .text-area {
     width: 430px;
@@ -1072,7 +1091,7 @@ a:hover {
   .section03 .l-text-center {
     text-align: center;
   }
-  .section03 h2, .section03 .support-classroom-link {
+  .section03 h2 {
     position: absolute;
     top: 0px;
     left: 50%;
@@ -1082,6 +1101,10 @@ a:hover {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 10;
+  }
+  .section03 h2 .support-classroom-link {
+    position: absolute;
+    top: -94px;
   }
   .section03 .l-info {
     width: 77%;
@@ -1735,7 +1758,7 @@ a:hover {
   background: #e0f1fe;
   position: relative;
 }
-.section07 h2, .section07 .staff-recruitment-link {
+.section07 h2 {
   position: absolute;
   top: 0px;
   left: 50%;
@@ -1746,8 +1769,12 @@ a:hover {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.section07 h2 img, .section07 .staff-recruitment-link img {
+.section07 h2 img {
   width: 100%;
+}
+.section07 h2 .staff-recruitment-link {
+  position: absolute;
+  top: -94px;
 }
 .section07 .b-staff-wanted {
   width: 77%;

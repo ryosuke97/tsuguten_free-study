@@ -848,7 +848,7 @@ a:hover {
 			padding: 30px 30px 50px;
 			box-sizing: border-box;
 		}
-		h2,.feature-link {
+		h2 {
 			position: absolute;
 			top: 0%;
 			left: 50%;
@@ -858,6 +858,10 @@ a:hover {
 			-o-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
 			z-index: 10;
+			.feature-link {
+				position: absolute;
+				top: -94px;
+			}
 		}
 		@at-root .featureContent {
 			width: 100%;
@@ -905,6 +909,7 @@ a:hover {
 			box-sizing: border-box;
 		}
 		h2 {
+			height: auto;
 			position: absolute;
 			top: 0%;
 			left: 50%;
@@ -914,6 +919,10 @@ a:hover {
 			-o-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
 			z-index: 10;
+			.feature-link {
+				position: absolute;
+				top: -94px;
+			}
 		}
 		@at-root .featureContent {
 			width: 100%;
@@ -949,6 +958,12 @@ a:hover {
 		position: relative;
 		h2 {
 			margin-bottom: 50px;
+			position: relative;
+			.how2use-link {
+				position: absolute;
+				top: -94px;
+			}
+
 		}
 		.catch-copy {
 			width: 100%;
@@ -973,6 +988,11 @@ a:hover {
 			position: relative;
 			h2 {
 				margin-bottom: 50px;
+				position: relative;
+				.how2use {
+					position: absolute;
+					top: -94px;
+				}
 			}
 			.text-area {
 				width: 430px;
@@ -1098,7 +1118,7 @@ a:hover {
 		.l-text-center {
 			text-align: center;
 		}
-		h2,.support-classroom-link {
+		h2 {
 			position: absolute;
 			top: 0px;
 			left: 50%;
@@ -1108,6 +1128,10 @@ a:hover {
 			-o-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
 			z-index: 10;
+			.support-classroom-link {
+				position: absolute;
+				top: -94px;
+			}
 		}
 		.l-info {
 			width: 77%;
@@ -1810,7 +1834,7 @@ a:hover {
 	margin-top: 150px;
 	background: $lightBlue;
 	position: relative;
-	h2,.staff-recruitment-link {
+	h2 {
 		position: absolute;
 		top: 0px;
 		left: 50%;
@@ -1822,6 +1846,10 @@ a:hover {
 		z-index: 10;
 		img {
 			width: 100%;
+		}
+		.staff-recruitment-link {
+			position: absolute;
+			top: -94px;
 		}
 	}
 	.b-staff-wanted {
