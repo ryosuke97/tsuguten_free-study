@@ -2254,132 +2254,235 @@ a:hover {
 /*------------------------------------------------------------------
  Section09 自由研究ツール2018 企画・運営
 ------------------------------------------------------------------*/
-.section09 {
-	padding: 80px 0px;
-	background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
-	position: relative;
-	a {
-		color: $blue;
-	}
-	h2 {
-		font-size: 40px;
-		color: $black;
-	}
-	h3 {
-		margin: 0;
-	}
-	.b-team-list {
-		width: 47%;
-		margin: 40px auto 30px;
-		display: flex;
-		p {
-			width: 20%;
-			margin-right: 10%;
-			text-align: right;
-			font-weight: bold;
-		}
-		ul {
-			width: 73%;
+// PC
+@media all and (min-width: 769px){
+	.section09 {
+		padding: 80px 0px;
+		background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
+		position: relative;
+		a {
 			color: $blue;
-			li {
-				font-size: 18px;
+		}
+		h2 {
+			font-size: 40px;
+			color: $black;
+		}
+		h3 {
+			margin: 0;
+		}
+		.b-team-list {
+			width: 47%;
+			margin: 40px auto 30px;
+			display: flex;
+			p {
+				width: 20%;
+				margin-right: 10%;
+				text-align: right;
+				font-weight: bold;
 			}
-		}
-	}
-	.artist {
-		width: 77%;
-		margin: 100px auto 0px;
-		display: flex;
-		svg{
-			width: 100%;
-			height: 6px;
-			margin-bottom: 5px;
-		}
-		svg line{
-			fill: none;
-			stroke: $blue;
-			stroke-width: 10px;
-			stroke-linecap: round;
-			stroke-dasharray: 0.5px, 30px;
-		}
-		.artist-left {
-			width: 47%;
-			border: $blue solid 1px;
-			border-radius: 3px;
-			background: #fff;
-			margin-right: 5%;
-			padding: 30px 3%;
-			position: relative;
-		}
-		.artist-right {
-			width: 47%;
-			border: $blue solid 1px;
-			border-radius: 3px;
-			background: #fff;
-			padding: 30px 3%;
-			position: relative;
-		}
-		.half-circle-lo__half-circle-mod {
-			-moz-border-radius: 58px 58px 0 0;
-			-webkit-border-radius: 58px 58px 0 0;
-			-o-border-radius: 58px 58px 0 0;
-			-ms-border-radius: 58px 58px 0 0;
-			border-radius: 58px 58px 0 0;
-		}
-		.half-circle-mod{
-			position: absolute;
-			top: -59px;
-			right: 5%;
-			background: #fff;
-			border-top: 1px solid $blue;
-			border-left: 1px solid $blue;
-			border-right: 1px solid $blue;
-			height: 58px;
-			width: 116px;
-			// behavior: url(/PIE.htc);
-			.l-half-circle {
-				position: relative;
-				width: 101px;
-				height: 101px;
-				img {
-					width: 100%;
-					display: block;
-					position: absolute;
-					top: 7px;
-					left: 7px;
+			ul {
+				width: 73%;
+				color: $blue;
+				li {
+					font-size: 18px;
 				}
 			}
 		}
+		.artist {
+			width: 77%;
+			margin: 100px auto 0px;
+			display: flex;
+			svg{
+				width: 100%;
+				height: 6px;
+				margin-bottom: 5px;
+			}
+			svg line{
+				fill: none;
+				stroke: $blue;
+				stroke-width: 10px;
+				stroke-linecap: round;
+				stroke-dasharray: 0.5px, 30px;
+			}
+			.artist-left {
+				width: 47%;
+				border: $blue solid 1px;
+				border-radius: 3px;
+				background: #fff;
+				margin-right: 5%;
+				padding: 30px 3%;
+				position: relative;
+			}
+			.artist-right {
+				width: 47%;
+				border: $blue solid 1px;
+				border-radius: 3px;
+				background: #fff;
+				padding: 30px 3%;
+				position: relative;
+			}
+			.half-circle-lo__half-circle-mod {
+				-moz-border-radius: 58px 58px 0 0;
+				-webkit-border-radius: 58px 58px 0 0;
+				-o-border-radius: 58px 58px 0 0;
+				-ms-border-radius: 58px 58px 0 0;
+				border-radius: 58px 58px 0 0;
+			}
+			.half-circle-mod{
+				position: absolute;
+				top: -59px;
+				right: 5%;
+				background: #fff;
+				border-top: 1px solid $blue;
+				border-left: 1px solid $blue;
+				border-right: 1px solid $blue;
+				height: 58px;
+				width: 116px;
+				// behavior: url(/PIE.htc);
+				.l-half-circle {
+					position: relative;
+					width: 101px;
+					height: 101px;
+					img {
+						width: 100%;
+						display: block;
+						position: absolute;
+						top: 7px;
+						left: 7px;
+					}
+				}
+			}
+		}
+		.l-shaped-shape18 {
+			width: 8%;
+			height: 84px;
+			position: absolute;
+			top: 12%;
+			right: 5%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/parts18.png") no-repeat center center;
+			background-size: contain;
+		}
+		.l-shaped-shape19 {
+			width: 8%;
+			height: 91px;
+			position: absolute;
+			top: 20%;
+			left: 5%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/parts19.png") no-repeat center center;
+			background-size: contain;
+		}
+		.l-shaped-shape20 {
+			width: 8%;
+			height: 84px;
+			position: absolute;
+			bottom: -4%;
+			left: 5%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/parts20.png") no-repeat center center;
+			background-size: contain;
+		}
 	}
-	.l-shaped-shape18 {
-		width: 8%;
-		height: 84px;
-		position: absolute;
-		top: 12%;
-		right: 5%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/parts18.png") no-repeat center center;
-		background-size: contain;
-	}
-	.l-shaped-shape19 {
-		width: 8%;
-		height: 91px;
-		position: absolute;
-		top: 20%;
-		left: 5%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/parts19.png") no-repeat center center;
-		background-size: contain;
-	}
-	.l-shaped-shape20 {
-		width: 8%;
-		height: 84px;
-		position: absolute;
-		bottom: -4%;
-		left: 5%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/parts20.png") no-repeat center center;
-		background-size: contain;
+}
+// SP
+@media all and (max-width: 768px){
+	.section09 {
+		padding: 50px 0px;
+		background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
+		position: relative;
+		a {
+			color: $blue;
+		}
+		h2 {
+			width: 84%;
+			font-size: 6vw;
+			margin: 0px auto;
+			color: $black;
+		}
+		h3 {
+			text-align: left;
+		}
+		.b-team-list {
+			width: 100%;
+			margin: 40px auto 30px;
+			p {
+				width: 100%;
+				font-size: 5vw;
+				font-weight: bold;
+			}
+			ul {
+				width: 100%;
+				color: $blue;
+				li {
+					font-size: 4vw;
+				}
+			}
+		}
+		.artist {
+			width: 100%;
+			margin: 100px auto 0px;
+			svg{
+				width: 100%;
+				height: 6px;
+				margin-bottom: 5px;
+			}
+			svg line{
+				fill: none;
+				stroke: $blue;
+				stroke-width: 10px;
+				stroke-linecap: round;
+				stroke-dasharray: 0.5px, 30px;
+			}
+			.artist-left {
+				width: 90%;
+				border: $blue solid 1px;
+				border-radius: 3px;
+				background: #fff;
+				margin: 0px auto 100px;
+				padding: 30px 5%;
+				position: relative;
+			}
+			.artist-right {
+				width: 90%;
+				border: $blue solid 1px;
+				border-radius: 3px;
+				background: #fff;
+				margin: 0px auto;
+				padding: 30px 5%;
+				position: relative;
+			}
+			.half-circle-lo__half-circle-mod {
+				-moz-border-radius: 58px 58px 0 0;
+				-webkit-border-radius: 58px 58px 0 0;
+				-o-border-radius: 58px 58px 0 0;
+				-ms-border-radius: 58px 58px 0 0;
+				border-radius: 58px 58px 0 0;
+			}
+			.half-circle-mod{
+				position: absolute;
+				top: -59px;
+				right: 5%;
+				background: #fff;
+				border-top: 1px solid $blue;
+				border-left: 1px solid $blue;
+				border-right: 1px solid $blue;
+				height: 58px;
+				width: 116px;
+				.l-half-circle {
+					position: relative;
+					width: 101px;
+					height: 101px;
+					img {
+						width: 100%;
+						display: block;
+						position: absolute;
+						top: 7px;
+						left: 7px;
+					}
+				}
+			}
+		}
 	}
 }
 
