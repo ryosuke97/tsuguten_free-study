@@ -2066,6 +2066,53 @@ a:hover {
     background-size: contain;
   }
 }
+@media all and (max-width: 768px) {
+  .section07 {
+    padding: 80px 0px;
+    margin-top: 100px;
+    background: #e0f1fe;
+    position: relative;
+  }
+  .section07 h2 {
+    width: 84%;
+    font-size: 6vw;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section07 h2 img {
+    width: 100%;
+  }
+  .section07 h2 .staff-recruitment-link {
+    position: absolute;
+    top: -94px;
+  }
+  .section07 .b-staff-wanted {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section07 .b-staff-wanted .left-box {
+    width: 100%;
+  }
+  .section07 .b-staff-wanted .left-box p {
+    font-size: 22px;
+    margin: 40px 0px;
+  }
+  .section07 .b-staff-wanted .right-box {
+    width: 100%;
+  }
+  .section07 .b-staff-wanted .right-box img {
+    width: 100%;
+  }
+}
 /*------------------------------------------------------------------
  Section08 自由研究サポート教室支援のお願い
 ------------------------------------------------------------------*/
