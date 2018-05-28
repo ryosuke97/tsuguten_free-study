@@ -2686,62 +2686,97 @@ a:hover {
 /*------------------------------------------------------------------
  Section12 コンバージョンコンテンツ
 ------------------------------------------------------------------*/
-.section12 {
-	padding: 60px 0px;
-	background: $lightBlue;
-	position: relative;
-	.l-cv-content {
-		width: 100%;
-		max-width: 1300px;
-		margin: 0px auto;
-		h2 {
+// PC
+@media all and (min-width: 769px){
+	.section12 {
+		padding: 60px 0px;
+		background: $lightBlue;
+		position: relative;
+		.l-cv-content {
 			width: 100%;
-			font-family: $mgenBold;
-			font-size: 32px;
-			color: $black;
-			text-align: center;
-			span {
-				font-size: 50px;
+			max-width: 1300px;
+			margin: 0px auto;
+			h2 {
+				width: 100%;
+				font-family: $mgenBold;
+				font-size: 32px;
+				color: $black;
+				text-align: center;
+				span {
+					font-size: 50px;
+				}
+			}
+			ul {
+				width: 100%;
+				margin-top: 40px;
+				display: flex;
+				justify-content: center;
+				li {
+					width: 390px;
+					&:first-child {
+						margin-right: 5px;
+					}
+					&:last-child {
+						margin-left: 5px;
+					}
+					.link-button {
+						width: 100%;
+					}
+				}
 			}
 		}
-		ul {
+		.l-shaped-shape22 {
+			width: 8%;
+			height: 154px;
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/parts22.png") no-repeat center center;
+			background-size: contain;
+		}
+		.l-shaped-shape23 {
+			width: 6%;
+			height: 93px;
+			position: absolute;
+			top: 30%;
+			right: 5%;
+			z-index: 0;
+			background: url("../../../img/2018/kenkyu/parts23.png") no-repeat center center;
+			background-size: contain;
+		}
+	}
+}
+// SP
+@media all and (max-width: 768px){
+	.section12 {
+		padding: 60px 0px;
+		background: $lightBlue;
+		position: relative;
+		.l-cv-content {
 			width: 100%;
-			margin-top: 40px;
-			display: flex;
-			justify-content: center;
-			li {
-				width: 390px;
-				&:first-child {
-					margin-right: 5px;
+			margin: 0px auto;
+			h2 {
+				width: 100%;
+				font-family: $mgenBold;
+				font-size: 4.0vw;
+				color: $black;
+				text-align: center;
+				span {
+					font-size: 7vw;
 				}
-				&:last-child {
-					margin-left: 5px;
-				}
-				.link-button {
+			}
+			ul {
+				width: 100%;
+				margin-top: 40px;
+				li {
 					width: 100%;
+					.link-button {
+						width: 100%;
+					}
 				}
 			}
 		}
-	}
-	.l-shaped-shape22 {
-		width: 8%;
-		height: 154px;
-		position: absolute;
-		top: 10%;
-		left: 5%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/parts22.png") no-repeat center center;
-		background-size: contain;
-	}
-	.l-shaped-shape23 {
-		width: 6%;
-		height: 93px;
-		position: absolute;
-		top: 30%;
-		right: 5%;
-		z-index: 0;
-		background: url("../../../img/2018/kenkyu/parts23.png") no-repeat center center;
-		background-size: contain;
 	}
 }
 
