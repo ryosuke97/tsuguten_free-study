@@ -2413,50 +2413,97 @@ a:hover {
 /*------------------------------------------------------------------
  Section10 第三世代が考える ヒロシマ「  」継ぐ展
 ------------------------------------------------------------------*/
-.section10 {
-  margin-top: 60px;
-  position: relative;
+@media all and (min-width: 769px) {
+  .section10 {
+    margin-top: 60px;
+    position: relative;
+  }
+  .section10 h2 {
+    width: 77%;
+    padding: 10px 0px;
+    background: #ffb700;
+    border-radius: 3px;
+    margin: 0px auto;
+    font-family: "mgenplus-1m-bold";
+    text-align: center;
+    color: #fff;
+    font-size: 3.0vw;
+    letter-spacing: 0.1em;
+  }
+  .section10 .l-samary {
+    width: 77%;
+    margin: 60px auto 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section10 .l-samary .b-img-wrapper {
+    width: 47%;
+  }
+  .section10 .l-samary .b-img-wrapper img {
+    width: 100%;
+  }
+  .section10 .l-samary p {
+    width: 47%;
+    font-size: 1.4vw;
+    line-height: 1.7;
+  }
+  .section10 .l-shaped-shape21 {
+    width: 10%;
+    height: 154px;
+    position: absolute;
+    bottom: -30%;
+    right: 10%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts21.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section10 h2 {
-  width: 77%;
-  padding: 10px 0px;
-  background: #ffb700;
-  border-radius: 3px;
-  margin: 0px auto;
-  font-family: "mgenplus-1m-bold";
-  text-align: center;
-  color: #fff;
-  font-size: 3.0vw;
-  letter-spacing: 0.1em;
+@media all and (max-width: 768px) {
+  .section10 {
+    margin-top: 60px;
+    position: relative;
+  }
+  .section10 h2 {
+    width: 72%;
+    padding: 10px 14%;
+    background: #ffb700;
+    border-radius: 3px;
+    margin: 0px auto;
+    font-family: "mgenplus-1m-bold";
+    text-align: center;
+    color: #fff;
+    font-size: 6.1vw;
+    letter-spacing: 0.1em;
+  }
+  .section10 .l-samary {
+    width: 100%;
+    margin: 30px auto 50px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section10 .l-samary .b-img-wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .section10 .l-samary .b-img-wrapper img {
+    width: 100%;
+  }
+  .section10 .l-samary p {
+    width: 100%;
+    font-size: 4.0vw;
+    line-height: 1.7;
+  }
+  .section10 .l-shaped-shape21 {
+    width: 10%;
+    height: 154px;
+    position: absolute;
+    bottom: -30%;
+    right: 10%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts21.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section10 .l-samary {
-  width: 77%;
-  margin: 60px auto 50px;
-  display: flex;
-  justify-content: space-between;
-}
-.section10 .l-samary .b-img-wrapper {
-  width: 47%;
-}
-.section10 .l-samary .b-img-wrapper img {
-  width: 100%;
-}
-.section10 .l-samary p {
-  width: 47%;
-  font-size: 1.4vw;
-  line-height: 1.7;
-}
-.section10 .l-shaped-shape21 {
-  width: 10%;
-  height: 154px;
-  position: absolute;
-  bottom: -30%;
-  right: 10%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts21.png") no-repeat center center;
-  background-size: contain;
-}
-
 @media all and (min-width: 1300px) {
   .l-samary p {
     font-size: 18px !important;
