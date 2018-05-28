@@ -1699,125 +1699,215 @@ a:hover {
 /*------------------------------------------------------------------
  Section05 参加者の声
 ------------------------------------------------------------------*/
-.section05 {
-  position: relative;
+@media all and (min-width: 769px) {
+  .section05 {
+    position: relative;
+  }
+  .section05 .voice {
+    width: 77%;
+    padding: 90px 0px 40px;
+    background: url("../../../img/2018/kenkyu/bg02.jpg") repeat;
+    margin: 125px auto 0px;
+  }
+  .section05 .voice h2 {
+    width: 450px;
+    height: 90px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section05 .voice .l-voice {
+    width: 88%;
+    height: auto;
+    margin: 0px 6% 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section05 .voice .l-voice .adjust-box {
+    width: 28%;
+    height: auto;
+  }
+  .section05 .voice .l-voice .box-1x1::before {
+    content: "";
+    display: block;
+    padding-top: 0%;
+  }
+  .section05 .voice .l-voice img {
+    width: 100%;
+  }
+  .section05 .voice .l-voice .baloon01 {
+    width: 75%;
+    height: auto;
+    background: url("../../../img/2018/kenkyu/fukidashi01.png") center center no-repeat;
+    background-size: 100% auto;
+  }
+  .section05 .voice .l-voice .baloon01::before {
+    content: "";
+    display: block;
+    padding-top: 9%;
+  }
+  .section05 .voice .l-voice .baloon01 p {
+    width: 88%;
+    height: auto;
+    font-size: 2.0vw;
+    margin: 0 0 0 9.5%;
+  }
+  .section05 .voice .l-voice .baloon02 {
+    width: 75%;
+    height: auto;
+    background: url("../../../img/2018/kenkyu/fukidashi02.png") center center no-repeat;
+    background-size: 100% auto;
+  }
+  .section05 .voice .l-voice .baloon02::before {
+    content: "";
+    display: block;
+    padding-top: 9%;
+  }
+  .section05 .voice .l-voice .baloon02 p {
+    width: 88%;
+    height: auto;
+    font-size: 2.0vw;
+    margin: 0 5% 0 3%;
+  }
+  .section05 .voice .l-voice--reverse {
+    flex-direction: row-reverse;
+  }
+  .section05 .l-shaped-shape11 {
+    width: 12%;
+    height: 121px;
+    position: absolute;
+    top: -2%;
+    left: 5%;
+    z-index: 10;
+    background: url("../../../img/2018/kenkyu/parts11.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section05 .l-shaped-shape12 {
+    width: 8%;
+    height: 91px;
+    position: absolute;
+    top: -2%;
+    right: 5%;
+    z-index: 10;
+    background: url("../../../img/2018/kenkyu/parts12.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section05 .l-shaped-shape13 {
+    width: 8%;
+    height: 150px;
+    position: absolute;
+    bottom: 22%;
+    right: 5%;
+    z-index: 10;
+    background: url("../../../img/2018/kenkyu/parts13.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section05 .l-shaped-shape14 {
+    width: 6%;
+    height: 92px;
+    position: absolute;
+    bottom: 0%;
+    left: 8%;
+    z-index: 10;
+    background: url("../../../img/2018/kenkyu/parts14.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section05 .voice {
-  width: 77%;
-  padding: 90px 0px 40px;
-  background: url("../../../img/2018/kenkyu/bg02.jpg") repeat;
-  margin: 125px auto 0px;
+@media all and (max-width: 768px) {
+  .section05 {
+    position: relative;
+  }
+  .section05 .wrapper {
+    width: 100%;
+  }
+  .section05 .voice {
+    width: 100%;
+    padding: 90px 0px 40px;
+    background: url("../../../img/2018/kenkyu/bg02.jpg") repeat;
+    margin: 125px auto 0px;
+  }
+  .section05 .voice h2 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .section05 .voice h2 img {
+    width: 100%;
+  }
+  .section05 .voice .l-voice {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .section05 .voice .l-voice .adjust-box {
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+  }
+  .section05 .voice .l-voice .box-1x1::before {
+    content: "";
+    display: block;
+    padding-top: 5%;
+  }
+  .section05 .voice .l-voice img {
+    width: 100%;
+  }
+  .section05 .voice .l-voice .baloon01 {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    background: url("../../../img/2018/kenkyu/fukidashi01-sp.png") center center no-repeat;
+    background-size: contain;
+  }
+  .section05 .voice .l-voice .baloon01::before {
+    content: "";
+    display: block;
+    padding-top: 40%;
+  }
+  .section05 .voice .l-voice .baloon01 p {
+    width: 80%;
+    height: auto;
+    font-size: 4.6vw;
+    margin: 10px auto;
+  }
+  .section05 .voice .l-voice .baloon02 {
+    width: 75%;
+    height: auto;
+    background: url("../../../img/2018/kenkyu/fukidashi02-sp.png") center center no-repeat;
+    background-size: 100% auto;
+  }
+  .section05 .voice .l-voice .baloon02::before {
+    content: "";
+    display: block;
+    padding-top: 9%;
+  }
+  .section05 .voice .l-voice .baloon02 p {
+    width: 88%;
+    height: auto;
+    font-size: 2.0vw;
+    margin: 0 5% 0 3%;
+  }
+  .section05 .voice .l-voice--reverse {
+    flex-direction: row-reverse;
+  }
 }
-.section05 .voice h2 {
-  width: 450px;
-  height: 90px;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.section05 .voice .l-voice {
-  width: 88%;
-  height: auto;
-  margin: 0px 6% 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.section05 .voice .l-voice .adjust-box {
-  width: 28%;
-  height: auto;
-}
-.section05 .voice .l-voice .box-1x1::before {
-  content: "";
-  display: block;
-  padding-top: 0%;
-}
-.section05 .voice .l-voice img {
-  width: 100%;
-}
-.section05 .voice .l-voice .baloon01 {
-  width: 75%;
-  height: auto;
-  background: url("../../../img/2018/kenkyu/fukidashi01.png") center center no-repeat;
-  background-size: 100% auto;
-}
-.section05 .voice .l-voice .baloon01::before {
-  content: "";
-  display: block;
-  padding-top: 9%;
-}
-.section05 .voice .l-voice .baloon01 p {
-  width: 88%;
-  height: auto;
-  font-size: 2.0vw;
-  margin: 0 0 0 9.5%;
-}
-.section05 .voice .l-voice .baloon02 {
-  width: 75%;
-  height: auto;
-  background: url("../../../img/2018/kenkyu/fukidashi02.png") center center no-repeat;
-  background-size: 100% auto;
-}
-.section05 .voice .l-voice .baloon02::before {
-  content: "";
-  display: block;
-  padding-top: 9%;
-}
-.section05 .voice .l-voice .baloon02 p {
-  width: 88%;
-  height: auto;
-  font-size: 2.0vw;
-  margin: 0 5% 0 3%;
-}
-.section05 .voice .l-voice--reverse {
-  flex-direction: row-reverse;
-}
-.section05 .l-shaped-shape11 {
-  width: 12%;
-  height: 121px;
-  position: absolute;
-  top: -2%;
-  left: 5%;
-  z-index: 10;
-  background: url("../../../img/2018/kenkyu/parts11.png") no-repeat center center;
-  background-size: contain;
-}
-.section05 .l-shaped-shape12 {
-  width: 8%;
-  height: 91px;
-  position: absolute;
-  top: -2%;
-  right: 5%;
-  z-index: 10;
-  background: url("../../../img/2018/kenkyu/parts12.png") no-repeat center center;
-  background-size: contain;
-}
-.section05 .l-shaped-shape13 {
-  width: 8%;
-  height: 150px;
-  position: absolute;
-  bottom: 22%;
-  right: 5%;
-  z-index: 10;
-  background: url("../../../img/2018/kenkyu/parts13.png") no-repeat center center;
-  background-size: contain;
-}
-.section05 .l-shaped-shape14 {
-  width: 6%;
-  height: 92px;
-  position: absolute;
-  bottom: 0%;
-  left: 8%;
-  z-index: 10;
-  background: url("../../../img/2018/kenkyu/parts14.png") no-repeat center center;
-  background-size: contain;
-}
-
 @media all and (min-width: 1300px) {
   .section05 .baloon01 p, .section05 .baloon02 p {
     font-size: 26px !important;
