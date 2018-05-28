@@ -2493,16 +2493,6 @@ a:hover {
     font-size: 4.0vw;
     line-height: 1.7;
   }
-  .section10 .l-shaped-shape21 {
-    width: 10%;
-    height: 154px;
-    position: absolute;
-    bottom: -30%;
-    right: 10%;
-    z-index: 0;
-    background: url("../../../img/2018/kenkyu/parts21.png") no-repeat center center;
-    background-size: contain;
-  }
 }
 @media all and (min-width: 1300px) {
   .l-samary p {
@@ -2512,47 +2502,95 @@ a:hover {
 /*------------------------------------------------------------------
  Section11 スポンサー
 ------------------------------------------------------------------*/
-.section11 .sponsorship {
-  width: 77%;
-  margin: 0px auto;
-  font-weight: bold;
+@media all and (min-width: 769px) {
+  .section11 .sponsorship {
+    width: 77%;
+    margin: 0px auto;
+    font-weight: bold;
+  }
+  .section11 .sponsorship h2 {
+    font-size: 24px;
+    color: #2c2c2c;
+    font-weight: bold;
+    text-align: left;
+    margin: 30px 0px;
+  }
+  .section11 .l-sponsorlist dl {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .section11 .l-sponsorlist dl dt {
+    width: 10%;
+  }
+  .section11 .l-sponsorlist dl dd {
+    width: 90%;
+  }
+  .section11 .l-sponsorlist dl dd a {
+    color: #2b5db7;
+  }
+  .section11 .l-sponsorlist p a {
+    color: #2b5db7;
+  }
+  .section11 .b-sns {
+    width: 77%;
+    margin: 40px auto 60px;
+  }
+  .section11 .b-sns ul {
+    width: 100%;
+    display: flex;
+  }
+  .section11 .b-sns ul li {
+    margin-right: 40px;
+  }
 }
-.section11 .sponsorship h2 {
-  font-size: 24px;
-  color: #2c2c2c;
-  font-weight: bold;
-  text-align: left;
-  margin: 30px 0px;
+@media all and (max-width: 768px) {
+  .section11 .sponsorship {
+    width: 100%;
+    margin: 0px auto;
+    font-weight: bold;
+  }
+  .section11 .sponsorship img {
+    width: 200px;
+    height: 88px;
+    margin: 0px auto;
+    display: block;
+  }
+  .section11 .sponsorship h2 {
+    font-size: 24px;
+    color: #2c2c2c;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0px;
+  }
+  .section11 .l-sponsorlist dl {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section11 .l-sponsorlist dl dt {
+    width: 100%;
+  }
+  .section11 .l-sponsorlist dl dd {
+    width: 100%;
+  }
+  .section11 .l-sponsorlist dl dd a {
+    color: #2b5db7;
+  }
+  .section11 .l-sponsorlist p a {
+    color: #2b5db7;
+  }
+  .section11 .b-sns {
+    width: 100%;
+    margin: 40px auto 60px;
+  }
+  .section11 .b-sns ul {
+    width: 100%;
+    display: flex;
+  }
+  .section11 .b-sns ul li {
+    margin-right: 30px;
+  }
 }
-.section11 .l-sponsorlist dl {
-  width: 100%;
-  display: flex;
-  margin-bottom: 20px;
-}
-.section11 .l-sponsorlist dl dt {
-  width: 10%;
-}
-.section11 .l-sponsorlist dl dd {
-  width: 90%;
-}
-.section11 .l-sponsorlist dl dd a {
-  color: #2b5db7;
-}
-.section11 .l-sponsorlist p a {
-  color: #2b5db7;
-}
-.section11 .b-sns {
-  width: 77%;
-  margin: 40px auto 60px;
-}
-.section11 .b-sns ul {
-  width: 100%;
-  display: flex;
-}
-.section11 .b-sns ul li {
-  margin-right: 40px;
-}
-
 /*------------------------------------------------------------------
  Section12 コンバージョンコンテンツ
 ------------------------------------------------------------------*/

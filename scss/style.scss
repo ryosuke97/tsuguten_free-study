@@ -2570,16 +2570,6 @@ a:hover {
 				line-height: 1.7;
 			}
 		}
-		.l-shaped-shape21 {
-			width: 10%;
-			height: 154px;
-			position: absolute;
-			bottom: -30%;
-			right: 10%;
-			z-index: 0;
-			background: url("../../../img/2018/kenkyu/parts21.png") no-repeat center center;
-			background-size: contain;
-		}
 	}
 }
 @media all and (min-width: 1300px){
@@ -2593,46 +2583,101 @@ a:hover {
 /*------------------------------------------------------------------
  Section11 スポンサー
 ------------------------------------------------------------------*/
-.section11 {
-	.sponsorship {
-		width: 77%;
-		margin: 0px auto;
-		font-weight: bold;
-		h2 {
-			font-size: 24px;
-			color: $black;
+// PC
+@media all and (min-width: 769px){
+	.section11 {
+		.sponsorship {
+			width: 77%;
+			margin: 0px auto;
 			font-weight: bold;
-			text-align: left;
-			margin: 30px 0px;
-		}
-	}
-	.l-sponsorlist {
-		dl {
-			width: 100%;
-			display: flex;
-			margin-bottom: 20px;
-			dt {
-				width: 10%;
+			h2 {
+				font-size: 24px;
+				color: $black;
+				font-weight: bold;
+				text-align: left;
+				margin: 30px 0px;
 			}
-			dd {
-				width: 90%;
-				a {
-					color: $blue;
+		}
+		.l-sponsorlist {
+			dl {
+				width: 100%;
+				display: flex;
+				margin-bottom: 20px;
+				dt {
+					width: 10%;
+				}
+				dd {
+					width: 90%;
+					a {
+						color: $blue;
+					}
+				}
+			}
+			p a {
+				color: $blue;
+			}
+		}
+		.b-sns {
+			width: 77%;
+			margin: 40px auto 60px;
+			ul {
+				width: 100%;
+				display: flex;
+				li {
+					margin-right: 40px;
 				}
 			}
 		}
-		p a {
-			color: $blue;
-		}
 	}
-	.b-sns {
-		width: 77%;
-		margin: 40px auto 60px;
-		ul {
+}
+// SP
+@media all and (max-width: 768px){
+	.section11 {
+		.sponsorship {
 			width: 100%;
-			display: flex;
-			li {
-				margin-right: 40px;
+			margin: 0px auto;
+			font-weight: bold;
+			img {
+				width: 200px;
+				height: 88px;
+				margin: 0px auto;
+				display: block;
+			}
+			h2 {
+				font-size: 24px;
+				color: $black;
+				font-weight: bold;
+				text-align: center;
+				margin: 30px 0px;
+			}
+		}
+		.l-sponsorlist {
+			dl {
+				width: 100%;
+				margin-bottom: 20px;
+				dt {
+					width: 100%;
+				}
+				dd {
+					width: 100%;
+					a {
+						color: $blue;
+					}
+				}
+			}
+			p a {
+				color: $blue;
+			}
+		}
+		.b-sns {
+			width: 100%;
+			margin: 40px auto 60px;
+			ul {
+				width: 100%;
+				display: flex;
+				li {
+					margin-right: 30px;
+				}
 			}
 		}
 	}
