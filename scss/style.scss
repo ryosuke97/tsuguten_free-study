@@ -1624,10 +1624,10 @@ a:hover {
 			margin: 60px auto;
 		}
 		.l-parts-face {
-			width: 10%;
+			width: 20%;
 			height: 141px;
 			position: absolute;
-			top: 20px;
+			top: 30%;
 			right: 5%;
 			z-index: 0;
 			background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
@@ -1887,7 +1887,7 @@ a:hover {
 		}
 		.voice {
 			width: 100%;
-			padding: 90px 0px 40px;
+			padding: 90px 0px 10px;
 			background: url("../../../img/2018/kenkyu/bg02.jpg") repeat;
 			margin: 125px auto 0px;
 			h2 {
@@ -1907,21 +1907,21 @@ a:hover {
 				}
 			}
 			.l-voice {
-				width: 100%;
+				width: 90%;
 				height: auto;
-				// margin: 0px 6% 10px;
+				padding: 0 5%;
+				margin-bottom: 30px;
 				display: flex;
 				justify-content: space-between;
 				flex-direction: column-reverse;
 				.adjust-box {
 					width: 30%;
 					height: auto;
-					margin-left: 5%;
 				}
 				.box-1x1::before {
 					content: "";
 					display: block;
-					padding-top: 5%;
+					padding-top: 0%;
 				}
 				img {
 					width: 100%;
@@ -1932,39 +1932,35 @@ a:hover {
 					margin: 0px auto;
 					display: flex;
 					background: url("../../../img/2018/kenkyu/fukidashi01-sp.png") center center no-repeat;
-					background-size: contain;
-					&::before {
-						content: "";
-						display: block;
-						padding-top: 40%;
-					}
+					background-size: 100% 100%;
 					p {
-						width: 80%;
+						width: 83%;
 						height: auto;
-						font-size: 4.6vw;
+						padding: 10px 0px 30px;
+						font-size: 3.7vw;
 						margin: 10px auto;
 					}
 				}
 				.baloon02 {
-					width: 75%;
+					width: 100%;
 					height: auto;
+					margin: 0px auto;
 					background: url("../../../img/2018/kenkyu/fukidashi02-sp.png") center center no-repeat;
-					background-size: 100% auto;
-					&::before {
-						content: "";
-						display: block;
-						padding-top: 9%;
-					}
+					background-size: 100% 100%;
 					p {
-						width: 88%;
+						width: 83%;
 						height: auto;
-						font-size: 2.0vw;
-						margin: 0 5% 0 3% ;
+						padding: 10px 0px 30px;
+						font-size: 3.7vw;
+						margin: 10px auto;
 					}
 				}
 			}
 			.l-voice--reverse {
-				flex-direction: row-reverse;
+				flex-direction: column-reverse;
+				.adjust-box {
+					margin-left: auto !important;
+				}
 			}
 		}
 	}

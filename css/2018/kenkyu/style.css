@@ -1571,10 +1571,10 @@ a:hover {
     margin: 60px auto;
   }
   .section03 .l-parts-face {
-    width: 10%;
+    width: 20%;
     height: 141px;
     position: absolute;
-    top: 20px;
+    top: 30%;
     right: 5%;
     z-index: 0;
     background: url("../../../img/2018/kenkyu/icn_square.png") no-repeat center center;
@@ -1828,7 +1828,7 @@ a:hover {
   }
   .section05 .voice {
     width: 100%;
-    padding: 90px 0px 40px;
+    padding: 90px 0px 10px;
     background: url("../../../img/2018/kenkyu/bg02.jpg") repeat;
     margin: 125px auto 0px;
   }
@@ -1849,8 +1849,10 @@ a:hover {
     width: 100%;
   }
   .section05 .voice .l-voice {
-    width: 100%;
+    width: 90%;
     height: auto;
+    padding: 0 5%;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
@@ -1858,12 +1860,11 @@ a:hover {
   .section05 .voice .l-voice .adjust-box {
     width: 30%;
     height: auto;
-    margin-left: 5%;
   }
   .section05 .voice .l-voice .box-1x1::before {
     content: "";
     display: block;
-    padding-top: 5%;
+    padding-top: 0%;
   }
   .section05 .voice .l-voice img {
     width: 100%;
@@ -1874,38 +1875,34 @@ a:hover {
     margin: 0px auto;
     display: flex;
     background: url("../../../img/2018/kenkyu/fukidashi01-sp.png") center center no-repeat;
-    background-size: contain;
-  }
-  .section05 .voice .l-voice .baloon01::before {
-    content: "";
-    display: block;
-    padding-top: 40%;
+    background-size: 100% 100%;
   }
   .section05 .voice .l-voice .baloon01 p {
-    width: 80%;
+    width: 83%;
     height: auto;
-    font-size: 4.6vw;
+    padding: 10px 0px 30px;
+    font-size: 3.7vw;
     margin: 10px auto;
   }
   .section05 .voice .l-voice .baloon02 {
-    width: 75%;
+    width: 100%;
     height: auto;
+    margin: 0px auto;
     background: url("../../../img/2018/kenkyu/fukidashi02-sp.png") center center no-repeat;
-    background-size: 100% auto;
-  }
-  .section05 .voice .l-voice .baloon02::before {
-    content: "";
-    display: block;
-    padding-top: 9%;
+    background-size: 100% 100%;
   }
   .section05 .voice .l-voice .baloon02 p {
-    width: 88%;
+    width: 83%;
     height: auto;
-    font-size: 2.0vw;
-    margin: 0 5% 0 3%;
+    padding: 10px 0px 30px;
+    font-size: 3.7vw;
+    margin: 10px auto;
   }
   .section05 .voice .l-voice--reverse {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+  }
+  .section05 .voice .l-voice--reverse .adjust-box {
+    margin-left: auto !important;
   }
 }
 @media all and (min-width: 1300px) {
