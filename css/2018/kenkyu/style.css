@@ -666,7 +666,7 @@ a:hover {
     height: 630px;
     position: relative;
     margin: 94px 0 80px;
-    background: url("../../../img/2018/kenkyu/bg_mv.png") center right no-repeat;
+    background: url("../../../img/2018/kenkyu/bg_mv.jpg") center right no-repeat;
     background-size: cover;
   }
   .mv-content {
@@ -691,7 +691,7 @@ a:hover {
     height: 600px;
     margin: 94px 0px 0px;
     position: relative;
-    background: url("../../../img/2018/kenkyu/img_sp-mv.png") center right no-repeat;
+    background: url("../../../img/2018/kenkyu/img_sp-mv.jpg") center right no-repeat;
     background-size: cover;
   }
   .mv-content .link-button {
