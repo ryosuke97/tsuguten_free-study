@@ -2116,45 +2116,69 @@ a:hover {
 /*------------------------------------------------------------------
  Section08 自由研究サポート教室支援のお願い
 ------------------------------------------------------------------*/
-.section08 {
-  padding: 80px 0px;
-  position: relative;
+@media all and (min-width: 769px) {
+  .section08 {
+    padding: 80px 0px;
+    position: relative;
+  }
+  .section08 h2, .section08 p {
+    text-align: center;
+  }
+  .section08 p {
+    font-size: 22px;
+    margin-top: 50px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  .section08 .link-button {
+    display: block;
+    width: 390px;
+    margin: 0 auto;
+  }
+  .section08 .l-shaped-shape16 {
+    width: 6%;
+    height: 157px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts16.png") no-repeat center center;
+    background-size: contain;
+  }
+  .section08 .l-shaped-shape17 {
+    width: 10%;
+    height: 99px;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    z-index: 0;
+    background: url("../../../img/2018/kenkyu/parts17.png") no-repeat center center;
+    background-size: contain;
+  }
 }
-.section08 h2, .section08 p {
-  text-align: center;
+@media all and (max-width: 768px) {
+  .section08 {
+    padding: 80px 0px;
+    position: relative;
+  }
+  .section08 h2 {
+    width: 84%;
+    font-size: 6vw;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .section08 p {
+    font-size: 22px;
+    margin-top: 50px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  .section08 .link-button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
-.section08 p {
-  font-size: 22px;
-  margin-top: 50px;
-  line-height: 1.8;
-  margin-bottom: 40px;
-}
-.section08 .link-button {
-  display: block;
-  width: 390px;
-  margin: 0 auto;
-}
-.section08 .l-shaped-shape16 {
-  width: 6%;
-  height: 157px;
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts16.png") no-repeat center center;
-  background-size: contain;
-}
-.section08 .l-shaped-shape17 {
-  width: 10%;
-  height: 99px;
-  position: absolute;
-  top: 70%;
-  right: 5%;
-  z-index: 0;
-  background: url("../../../img/2018/kenkyu/parts17.png") no-repeat center center;
-  background-size: contain;
-}
-
 /*------------------------------------------------------------------
  Section09 自由研究ツール2018 企画・運営
 ------------------------------------------------------------------*/
