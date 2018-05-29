@@ -29,7 +29,6 @@ $(function() {
 	});
 
 	// スケジュールの+ボタン押下時の設定
-	// var scheduleState = [false, false, false, false, false, false, false, false, false];
 	$('.schedule-trigger1').click(function() {
 			$('.schedule1').toggleClass('scheduleClick1');
 			$('#tr1 td').toggleClass('accshow');
@@ -91,6 +90,7 @@ $('a[href^="#"]').click(function() {
   return false;
 });
 
+// スクロールトップボタン押下
 $(".scroll-top").click(function () {
 	$('body, html').animate({ scrollTop: 0 }, 500);
 	return false;
@@ -115,4 +115,5 @@ $(window).scroll(function () {
 			$('.scroll-top').fadeOut();
 		}
 	}
+	console.log($(this).scrollTop());
 });
