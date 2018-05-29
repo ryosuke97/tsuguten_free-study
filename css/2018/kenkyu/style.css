@@ -104,11 +104,11 @@ a:hover {
     text-align: center;
     margin: 24px 0px 16px;
   }
-
-  .wrap {
-    overflow: hidden;
-  }
 }
+.wrap {
+  overflow: hidden;
+}
+
 /*------------------------------------------------------------------
  Util
 ------------------------------------------------------------------*/
@@ -1475,7 +1475,7 @@ a:hover {
     margin-top: 30px;
   }
   .section03 .l-info .l-infoR dl dd span {
-    font-size: 3.0vw;
+    font-size: 4.0vw;
   }
   .section03 .l-info .l-infoR img {
     width: 100%;
@@ -1627,6 +1627,7 @@ a:hover {
   }
   .section03 .table tbody td span {
     width: 50%;
+    font-size: 4.0vw;
     padding: 0% 5%;
   }
   .section03 .label-tour {
@@ -1737,7 +1738,7 @@ a:hover {
   }
   .section04 .text-area h2 {
     width: 100%;
-    font-size: 4vw;
+    font-size: 6vw;
     color: #2c2c2c;
   }
   .section04 .text-area svg {
@@ -1754,7 +1755,7 @@ a:hover {
     stroke-dasharray: 0.5px, 30px;
   }
   .section04 .text-area p {
-    font-size: 3.0vw;
+    font-size: 4.7vw;
     margin-top: 10px;
     line-height: 1.75;
   }

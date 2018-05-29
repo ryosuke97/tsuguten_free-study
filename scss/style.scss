@@ -105,11 +105,10 @@ a:hover {
 		text-align: center;
 		margin: 24px 0px 16px;
 	}
-	.wrap {
-		overflow: hidden;
-	}
 }
-
+.wrap {
+	overflow: hidden;
+}
 /*------------------------------------------------------------------
  Util
 ------------------------------------------------------------------*/
@@ -1321,26 +1320,6 @@ a:hover {
 				}
 			}
 		}
-		// @media screen and (max-width: 768px) {
-		// 	.table thead {
-		// 		display:none;
-		// 	}
-		// 	.table tbody th {
-		// 		display:block;
-		// 	}
-		// 	.table tbody td {
-		// 		display:block;
-		// 	}
-		// 	.table tbody td::before {
-		// 		content: attr(label);
-		// 		float: left;
-		// 		clear:both;
-		// 		font-weight:bold;
-		// 	}
-		// 	.table tbody td p {
-		// 		padding-left:6em;
-		// 	}
-		// }
 		.l-center {
 			width: 390px;
 			height: 60px;
@@ -1517,7 +1496,7 @@ a:hover {
 						width: 100%;
 						margin-top: 30px;
 						span {
-							font-size: 3.0vw;
+							font-size: 4.0vw;
 						}
 					}
 				}
@@ -1567,7 +1546,6 @@ a:hover {
 			tbody {
 				tr {
 					width: 100%;
-					// height: 80px;
 					&:first-child {
 						border-top:$lightGray solid 1px;
 					}
@@ -1576,10 +1554,6 @@ a:hover {
 					border-bottom:$lightGray solid 1px;
 				}
 				td {
-					// height: 80px;
-					// background:#fff;
-					// border-left:$lightGray solid 1px;
-					// border-bottom:$lightGray solid 1px;
 					height: 0;
 					padding: 0;
 					overflow: hidden;
@@ -1657,6 +1631,7 @@ a:hover {
 			box-sizing: border-box;
 			span {
 				width: 50%;
+				font-size: 4.0vw;
 				padding: 0% 5%;
 			}
 		}
@@ -1770,7 +1745,7 @@ a:hover {
 			padding-top: 350px;
 			h2 {
 				width: 100%;
-				font-size: 4vw;
+				font-size: 6vw;
 				color: $black;
 				
 			}
@@ -1788,7 +1763,7 @@ a:hover {
 				stroke-dasharray: 0.5px, 30px;
 			}
 			p {
-				font-size: 3.0vw;
+				font-size: 4.7vw;
 				margin-top: 10px;
 				line-height: 1.75;
 			}
