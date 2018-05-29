@@ -2,6 +2,8 @@ $(function() {
 	// スクロールトップボタンを非表示
 	$('.scroll-top').hide();
 
+	console.log(window.scrollTop);
+
   /* ハンバーガーボタンのオーバーレイ */
   var overlayFlg = false;
   $('.menu-trigger').click(function() {
@@ -57,11 +59,24 @@ $(".scroll-top").click(function () {
 	return false;
 });
 
- // スクロールトップボタンの表示設定
- $(window).scroll(function () {
-	if ($(this).scrollTop() > 500 ) {
+// スクロールトップボタンの表示設定
+$(window).scroll(function () {
+	console.log(window.scrollY);
+	if ($(window).width() >= 769) {
+		if ($(this).scrollTop() > 630 ) {
+			$('header').addClass('header-shadow');
 			$('.scroll-top').fadeIn();
-	} else {
+		} else {
+			$('header').removeClass('header-shadow');
 			$('.scroll-top').fadeOut();
+		}
+	} else {
+		if ($(this).scrollTop() >= 600 ) {
+			$('header').addClass('header-shadow');
+			$('.scroll-top').fadeIn();
+		} else {
+			$('header').removeClass('header-shadow');
+			$('.scroll-top').fadeOut();
+		}
 	}
 });

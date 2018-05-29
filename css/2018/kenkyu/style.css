@@ -112,6 +112,10 @@ a:hover {
   color: #2b5db7;
 }
 
+.header-shadow {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 @media all and (min-width: 769px) {
   .link-button {
     width: 390px;
@@ -422,7 +426,6 @@ a:hover {
     top: 0px;
     left: 0px;
     background: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     z-index: 10000;
   }
   header .title {
@@ -494,7 +497,6 @@ a:hover {
     top: 0px;
     left: 0px;
     background: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     z-index: 10000;
     /* クリックした後の挙動 */
   }

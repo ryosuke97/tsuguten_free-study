@@ -113,6 +113,9 @@ a:hover {
 .emphasis {
 	color: #2b5db7;
 }
+.header-shadow {
+	box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
 @media all and (min-width: 769px){
 	.link-button {
 		width: 390px;
@@ -422,7 +425,7 @@ a:hover {
 		top: 0px;
 		left: 0px;
 		background: #fff;
-		box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+		// box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 		z-index: 10000;
 		.title {
 			display: none;
@@ -502,7 +505,7 @@ a:hover {
 		top: 0px;
 		left: 0px;
 		background: #fff;
-		box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+		// box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 		z-index: 10000;
 		.title {
 			width: 45%;
