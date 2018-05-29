@@ -105,6 +105,9 @@ a:hover {
 		text-align: center;
 		margin: 24px 0px 16px;
 	}
+	.wrap {
+		overflow: hidden;
+	}
 }
 
 /*------------------------------------------------------------------
@@ -1397,15 +1400,24 @@ a:hover {
 }
 // SP
 @media all and (max-width: 768px){
-	/* クリックした後の挙動 */
-	.scheduleClick1 {
-		// top:18px !important;
-		// -o-transform: rotate(90deg);
-		// -moz-transform: rotate(90deg);
-		// -webkit-transform: rotate(90deg);
-		// -ms-transform: rotate(90deg);
-		// transform: rotate(90deg);
+	/* スケジュールをクリックした後の挙動 */
+	.scheduleClick1,
+	.scheduleClick2,
+	.scheduleClick3,
+	.scheduleClick4,
+	.scheduleClick5,
+	.scheduleClick6,
+	.scheduleClick7,
+	.scheduleClick8,
+	.scheduleClick9, {
 		display: none !important;
+	}
+	.accshow {
+		height: 80px !important;
+		opacity: 1.0 !important;
+		background:#fff;
+		border-left:$lightGray solid 1px;
+		border-bottom:$lightGray solid 1px;
 	}
 	.section03 {
 		height: auto;
@@ -1555,7 +1567,7 @@ a:hover {
 			tbody {
 				tr {
 					width: 100%;
-					height: 80px;
+					// height: 80px;
 					&:first-child {
 						border-top:$lightGray solid 1px;
 					}
@@ -1564,10 +1576,15 @@ a:hover {
 					border-bottom:$lightGray solid 1px;
 				}
 				td {
-					height: 80px;
-					background:#fff;
-					border-left:$lightGray solid 1px;
-					border-bottom:$lightGray solid 1px;
+					// height: 80px;
+					// background:#fff;
+					// border-left:$lightGray solid 1px;
+					// border-bottom:$lightGray solid 1px;
+					height: 0;
+					padding: 0;
+					overflow: hidden;
+					opacity: 0;
+					transition: 0.8s;
 				}
 			}
 		}
@@ -1585,7 +1602,15 @@ a:hover {
 			justify-content: left;
 			align-items: center;
 			position: relative;
-			.schedule-trigger {
+			.schedule-trigger1,
+			.schedule-trigger2,
+			.schedule-trigger3,
+			.schedule-trigger4,
+			.schedule-trigger5,
+			.schedule-trigger6,
+			.schedule-trigger7,
+			.schedule-trigger8,
+			.schedule-trigger9, {
 				width: 32px;
 				height: 32px;
 				background: #fff;

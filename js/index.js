@@ -28,18 +28,43 @@ $(function() {
     }
 	});
 
-	var scheduleState = false;
-	$('.schedule-trigger').click(function() {
-		if (scheduleState == false) {
+	// スケジュールの+ボタン押下時の設定
+	// var scheduleState = [false, false, false, false, false, false, false, false, false];
+	$('.schedule-trigger1').click(function() {
 			$('.schedule1').toggleClass('scheduleClick1');
-			scheduleState = true;
-			console.log('クリック1');
-		}
-		else {
-			$('.schedule1').toggleClass('scheduleClick1');
-			scheduleState = false;
-			console.log('クリック2');
-		}
+			$('#tr1 td').toggleClass('accshow');
+	});
+	$('.schedule-trigger2').click(function() {
+			$('.schedule2').toggleClass('scheduleClick2');
+			$('#tr2 td').toggleClass('accshow');
+	});
+	$('.schedule-trigger3').click(function() {
+		$('.schedule3').toggleClass('scheduleClick3');
+		$('#tr3 td').toggleClass('accshow');
+	});
+	$('.schedule-trigger4').click(function() {
+		$('.schedule4').toggleClass('scheduleClick4');
+		$('#tr4 td').toggleClass('accshow');
+	});
+	$('.schedule-trigger5').click(function() {
+		$('.schedule5').toggleClass('scheduleClick5');
+		$('#tr5 td').toggleClass('accshow');
+	});
+	$('.schedule-trigger6').click(function() {
+		$('.schedule6').toggleClass('scheduleClick6');
+		$('#tr6 td').toggleClass('accshow');
+	});
+	$('.schedule-trigger7').click(function() {
+		$('.schedule7').toggleClass('scheduleClick7');
+		$('#tr7 td').toggleClass('accshow');
+	});
+	$('.schedule-trigger8').click(function() {
+		$('.schedule8').toggleClass('scheduleClick8');
+		$('#tr8 td').toggleClass('accshow');
+	});
+	$('.schedule-trigger9').click(function() {
+		$('.schedule9').toggleClass('scheduleClick9');
+		$('#tr9 td').toggleClass('accshow');
 	});
 	
 	// SP_グロナビ内メニュー押下でメニューを非表示にする

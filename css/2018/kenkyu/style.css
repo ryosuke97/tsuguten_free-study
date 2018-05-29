@@ -104,6 +104,10 @@ a:hover {
     text-align: center;
     margin: 24px 0px 16px;
   }
+
+  .wrap {
+    overflow: hidden;
+  }
 }
 /*------------------------------------------------------------------
  Util
@@ -1347,9 +1351,25 @@ a:hover {
   }
 }
 @media all and (max-width: 768px) {
-  /* クリックした後の挙動 */
-  .scheduleClick1 {
+  /* スケジュールをクリックした後の挙動 */
+  .scheduleClick1,
+  .scheduleClick2,
+  .scheduleClick3,
+  .scheduleClick4,
+  .scheduleClick5,
+  .scheduleClick6,
+  .scheduleClick7,
+  .scheduleClick8,
+  .scheduleClick9 {
     display: none !important;
+  }
+
+  .accshow {
+    height: 80px !important;
+    opacity: 1.0 !important;
+    background: #fff;
+    border-left: #b2b2b2 solid 1px;
+    border-bottom: #b2b2b2 solid 1px;
   }
 
   .section03 {
@@ -1499,7 +1519,6 @@ a:hover {
   }
   .section03 .table tbody tr {
     width: 100%;
-    height: 80px;
   }
   .section03 .table tbody tr:first-child {
     border-top: #b2b2b2 solid 1px;
@@ -1508,10 +1527,11 @@ a:hover {
     border-bottom: #b2b2b2 solid 1px;
   }
   .section03 .table tbody td {
-    height: 80px;
-    background: #fff;
-    border-left: #b2b2b2 solid 1px;
-    border-bottom: #b2b2b2 solid 1px;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
   }
   .section03 .table thead {
     display: none;
@@ -1528,7 +1548,15 @@ a:hover {
     align-items: center;
     position: relative;
   }
-  .section03 .table tbody th .schedule-trigger {
+  .section03 .table tbody th .schedule-trigger1,
+  .section03 .table tbody th .schedule-trigger2,
+  .section03 .table tbody th .schedule-trigger3,
+  .section03 .table tbody th .schedule-trigger4,
+  .section03 .table tbody th .schedule-trigger5,
+  .section03 .table tbody th .schedule-trigger6,
+  .section03 .table tbody th .schedule-trigger7,
+  .section03 .table tbody th .schedule-trigger8,
+  .section03 .table tbody th .schedule-trigger9 {
     width: 32px;
     height: 32px;
     background: #fff;
@@ -1538,7 +1566,15 @@ a:hover {
     right: 5%;
     cursor: pointer;
   }
-  .section03 .table tbody th .schedule-trigger span {
+  .section03 .table tbody th .schedule-trigger1 span,
+  .section03 .table tbody th .schedule-trigger2 span,
+  .section03 .table tbody th .schedule-trigger3 span,
+  .section03 .table tbody th .schedule-trigger4 span,
+  .section03 .table tbody th .schedule-trigger5 span,
+  .section03 .table tbody th .schedule-trigger6 span,
+  .section03 .table tbody th .schedule-trigger7 span,
+  .section03 .table tbody th .schedule-trigger8 span,
+  .section03 .table tbody th .schedule-trigger9 span {
     display: block;
     position: absolute;
     left: 0;
@@ -1554,7 +1590,15 @@ a:hover {
     -webkit-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
   }
-  .section03 .table tbody th .schedule-trigger span:nth-of-type(1) {
+  .section03 .table tbody th .schedule-trigger1 span:nth-of-type(1),
+  .section03 .table tbody th .schedule-trigger2 span:nth-of-type(1),
+  .section03 .table tbody th .schedule-trigger3 span:nth-of-type(1),
+  .section03 .table tbody th .schedule-trigger4 span:nth-of-type(1),
+  .section03 .table tbody th .schedule-trigger5 span:nth-of-type(1),
+  .section03 .table tbody th .schedule-trigger6 span:nth-of-type(1),
+  .section03 .table tbody th .schedule-trigger7 span:nth-of-type(1),
+  .section03 .table tbody th .schedule-trigger8 span:nth-of-type(1),
+  .section03 .table tbody th .schedule-trigger9 span:nth-of-type(1) {
     top: 16px;
     left: 8px;
     -o-transform: rotate(90deg);
@@ -1563,7 +1607,15 @@ a:hover {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
   }
-  .section03 .table tbody th .schedule-trigger span:nth-of-type(2) {
+  .section03 .table tbody th .schedule-trigger1 span:nth-of-type(2),
+  .section03 .table tbody th .schedule-trigger2 span:nth-of-type(2),
+  .section03 .table tbody th .schedule-trigger3 span:nth-of-type(2),
+  .section03 .table tbody th .schedule-trigger4 span:nth-of-type(2),
+  .section03 .table tbody th .schedule-trigger5 span:nth-of-type(2),
+  .section03 .table tbody th .schedule-trigger6 span:nth-of-type(2),
+  .section03 .table tbody th .schedule-trigger7 span:nth-of-type(2),
+  .section03 .table tbody th .schedule-trigger8 span:nth-of-type(2),
+  .section03 .table tbody th .schedule-trigger9 span:nth-of-type(2) {
     top: 16px;
     left: 8px;
   }
