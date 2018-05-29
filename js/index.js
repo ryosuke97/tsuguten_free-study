@@ -27,6 +27,20 @@ $(function() {
 			overlayFlg = false;
     }
 	});
+
+	var scheduleState = false;
+	$('.schedule-trigger').click(function() {
+		if (scheduleState == false) {
+			$('.schedule1').toggleClass('scheduleClick1');
+			scheduleState = true;
+			console.log('クリック1');
+		}
+		else {
+			$('.schedule1').toggleClass('scheduleClick1');
+			scheduleState = false;
+			console.log('クリック2');
+		}
+	});
 	
 	// SP_グロナビ内メニュー押下でメニューを非表示にする
 	$('nav a').click(function() {

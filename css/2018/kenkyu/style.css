@@ -1347,6 +1347,11 @@ a:hover {
   }
 }
 @media all and (max-width: 768px) {
+  /* クリックした後の挙動 */
+  .scheduleClick1 {
+    display: none !important;
+  }
+
   .section03 {
     height: auto;
     background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
@@ -1479,6 +1484,7 @@ a:hover {
   .section03 .table thead tr {
     width: 100%;
     padding: 15px 0;
+    position: relative;
   }
   .section03 .table thead th {
     background: #2b5db7;
@@ -1520,6 +1526,46 @@ a:hover {
     display: flex;
     justify-content: left;
     align-items: center;
+    position: relative;
+  }
+  .section03 .table tbody th .schedule-trigger {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    cursor: pointer;
+  }
+  .section03 .table tbody th .schedule-trigger span {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 50%;
+    height: 2px;
+    background-color: #b2b2b2;
+    border-radius: 2px;
+    margin: 0 auto;
+    transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+  }
+  .section03 .table tbody th .schedule-trigger span:nth-of-type(1) {
+    top: 16px;
+    left: 8px;
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .section03 .table tbody th .schedule-trigger span:nth-of-type(2) {
+    top: 16px;
+    left: 8px;
   }
   .section03 .table tbody td {
     display: flex;
