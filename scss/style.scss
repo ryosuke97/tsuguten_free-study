@@ -782,6 +782,7 @@ a:hover {
 				z-index: 10;
 				p {
 					font-size: 20px;
+					line-height: 2;
 				}
 			}
 		}
@@ -799,7 +800,7 @@ a:hover {
 				background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
 				background-size: contain;
 				position: absolute;
-				bottom: -60px;
+				bottom: -75px;
 				right: 5%;
 			}
 			@media all and (max-width: 1000px){
@@ -809,7 +810,7 @@ a:hover {
 					background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
 					background-size: contain;
 					position: absolute;
-					bottom: -110px;
+					bottom: -120px;
 					left: 450px;
 				}
 			}
@@ -855,8 +856,9 @@ a:hover {
 			.sub-view-text {
 				width: 100%;
 				p {
-					margin: 50px 0px;
 					font-size: 4vw;
+					line-height: 2;
+					margin: 50px 0px;
 				}
 			}
 		}

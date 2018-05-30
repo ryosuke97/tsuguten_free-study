@@ -768,6 +768,7 @@ a:hover {
   }
   .l-sub-view .sub-view-text-area .sub-view-text p {
     font-size: 20px;
+    line-height: 2;
   }
   .l-sub-view .sub-viewBg {
     width: 80%;
@@ -784,7 +785,7 @@ a:hover {
     background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
     background-size: contain;
     position: absolute;
-    bottom: -60px;
+    bottom: -75px;
     right: 5%;
   }
 }
@@ -795,7 +796,7 @@ a:hover {
     background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
     background-size: contain;
     position: absolute;
-    bottom: -110px;
+    bottom: -120px;
     left: 450px;
   }
 }
@@ -842,8 +843,9 @@ a:hover {
     width: 100%;
   }
   .l-sub-view .sub-view-text-area .sub-view-text p {
-    margin: 50px 0px;
     font-size: 4vw;
+    line-height: 2;
+    margin: 50px 0px;
   }
   .l-sub-view .sub-viewBg {
     width: 100%;
