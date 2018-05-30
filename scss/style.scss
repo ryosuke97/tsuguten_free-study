@@ -838,7 +838,7 @@ a:hover {
 	.l-sub-view {
 		width: 100%;
 		position: relative;
-		margin-top: 220px;
+		padding-top: 45%;
 		.sub-view-text-area {
 			width: 100%;
 			z-index: 10;
@@ -1571,7 +1571,7 @@ a:hover {
 			display:none;
 		}
 		.table tbody th {
-			height: 50px;
+			height: 70px;
 			padding: 0px 5%;
 			font-weight: bold;
 			background:$lightBlue;
@@ -1590,12 +1590,12 @@ a:hover {
 			.schedule-trigger7,
 			.schedule-trigger8,
 			.schedule-trigger9, {
-				width: 32px;
-				height: 32px;
+				width: 35px;
+				height: 35px;
 				background: #fff;
 				border-radius: 15px;
 				position: absolute;
-				top: 10px;
+				top: 17px;
 				right: 5%;
 				cursor: pointer;
 				span {
@@ -1636,8 +1636,13 @@ a:hover {
 			box-sizing: border-box;
 			span {
 				width: 50%;
-				font-size: 4.0vw;
+				font-size: 17px;
 				padding: 0% 5%;
+			}
+			@media all and (max-width: 420px){
+				span {
+					font-size: 14px;
+				}
 			}
 		}
 		.label-tour {
@@ -2085,7 +2090,7 @@ a:hover {
 			width: 6%;
 			height: 92px;
 			position: absolute;
-			bottom: -20%;
+			bottom: -15%;
 			right: 8%;
 			z-index: 10;
 			background: url("../../../img/2018/kenkyu/parts15.png") no-repeat center center;
