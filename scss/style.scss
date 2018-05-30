@@ -1551,6 +1551,7 @@ a:hover {
 			tbody {
 				tr {
 					width: 100%;
+					display: unset;
 					&:first-child {
 						border-top:$lightGray solid 1px;
 					}

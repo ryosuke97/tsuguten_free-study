@@ -1524,6 +1524,7 @@ a:hover {
   }
   .section03 .table tbody tr {
     width: 100%;
+    display: unset;
   }
   .section03 .table tbody tr:first-child {
     border-top: #b2b2b2 solid 1px;
