@@ -729,6 +729,7 @@ a:hover {
     color: #222;
     text-align: center;
     margin: 260px auto 70px;
+    text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.5);
   }
 
   .sp-cv {
@@ -2643,21 +2644,21 @@ a:hover {
     text-align: left;
     margin: 30px 0px;
   }
-  .section11 .l-sponsorlist dl {
+  .section11 .sponsorlist dl {
     width: 100%;
     display: flex;
     margin-bottom: 20px;
   }
-  .section11 .l-sponsorlist dl dt {
+  .section11 .sponsorlist dl dt {
     width: 10%;
   }
-  .section11 .l-sponsorlist dl dd {
+  .section11 .sponsorlist dl dd {
     width: 90%;
   }
-  .section11 .l-sponsorlist dl dd a {
+  .section11 .sponsorlist dl dd a {
     color: #2b5db7;
   }
-  .section11 .l-sponsorlist p a {
+  .section11 .sponsorlist p a {
     color: #2b5db7;
   }
   .section11 .b-sns {
@@ -2691,20 +2692,20 @@ a:hover {
     text-align: center;
     margin: 30px 0px;
   }
-  .section11 .l-sponsorlist dl {
+  .section11 .sponsorlist dl {
     width: 100%;
     margin-bottom: 20px;
   }
-  .section11 .l-sponsorlist dl dt {
+  .section11 .sponsorlist dl dt {
     width: 100%;
   }
-  .section11 .l-sponsorlist dl dd {
+  .section11 .sponsorlist dl dd {
     width: 100%;
   }
-  .section11 .l-sponsorlist dl dd a {
+  .section11 .sponsorlist dl dd a {
     color: #2b5db7;
   }
-  .section11 .l-sponsorlist p a {
+  .section11 .sponsorlist p a {
     color: #2b5db7;
   }
   .section11 .b-sns {
