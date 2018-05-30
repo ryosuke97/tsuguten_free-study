@@ -57,6 +57,7 @@ h2 {
 	width: 100%;
 	font-family: $mgenBold;
 	font-size: 50px;
+	font-weight: bold;
 	color: $blue;
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -686,7 +687,7 @@ a:hover {
 		height: 630px;
 		position: relative;
 		margin: 94px 0 80px;
-		background: url("../../../img/2018/kenkyu/bg_mv.jpg") center right no-repeat;
+		background: url("../../../img/2018/kenkyu/img_mv.png") center right no-repeat;
 		background-size: cover;
 		@at-root .mv-content {
 			position: absolute;
@@ -1735,7 +1736,7 @@ a:hover {
 	.section04 {
 		width: 100%;
 		height: 300px;
-		margin-bottom: 400px;
+		margin-bottom: 420px;
 		background: url("../../../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
 		background-size: cover;
 		position: relative;
@@ -1750,7 +1751,7 @@ a:hover {
 				
 			}
 			svg{
-				width: 50%;
+				width: 70%;
 				height: 6px;
 				margin: 0px auto;
 				display: block;
@@ -1763,7 +1764,7 @@ a:hover {
 				stroke-dasharray: 0.5px, 30px;
 			}
 			p {
-				font-size: 4.7vw;
+				font-size: 18px;
 				margin-top: 10px;
 				line-height: 1.75;
 			}
