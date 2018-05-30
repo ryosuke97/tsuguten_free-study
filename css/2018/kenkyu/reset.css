@@ -69,6 +69,9 @@ html{
 	font-style:normal;
 	font-weight:normal;
 	}
+	tr {
+		display: unset;
+	}
 	ol,
 	ul {
 	list-style:none;
