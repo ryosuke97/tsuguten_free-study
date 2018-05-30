@@ -2069,6 +2069,9 @@ a:hover {
     margin-top: 50px;
     margin-bottom: 30px;
   }
+  .sp-learning-img {
+    display: none;
+  }
   .section06 .bg {
     width: 77%;
     height: 350px;
