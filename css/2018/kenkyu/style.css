@@ -702,7 +702,10 @@ a:hover {
     background-size: cover;
   }
   .mv-content .link-button {
-    display: none;
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0px auto 20px;
   }
   .mv h1 {
     width: 73%;
@@ -722,7 +725,7 @@ a:hover {
     font-size: 5vw;
     color: #222;
     text-align: center;
-    margin: 260px auto;
+    margin: 260px auto 70px;
   }
 
   .sp-cv {
@@ -819,6 +822,7 @@ a:hover {
   .l-sub-view {
     width: 100%;
     position: relative;
+    margin-top: 220px;
   }
   .l-sub-view .sub-view-text-area {
     width: 100%;
