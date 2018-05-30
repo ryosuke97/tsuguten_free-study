@@ -455,6 +455,9 @@ a:hover {
     display: flex;
     justify-content: space-between;
   }
+  nav ul li {
+    display: flex;
+  }
   nav ul a {
     color: #2c2c2c;
     text-decoration: none;
@@ -1647,7 +1650,7 @@ a:hover {
     box-sizing: border-box;
   }
   .section03 .label-tour::before {
-    content: attr(label-tour);
+    content: "展示ツアー";
     width: 30%;
     height: 100%;
     background: #2b5db7;
@@ -1657,7 +1660,7 @@ a:hover {
     padding: 0% 5%;
   }
   .section03 .label-rest::before {
-    content: attr(label-rest);
+    content: "休けい";
     width: 30%;
     height: 100%;
     background: #2b5db7;
@@ -1667,7 +1670,7 @@ a:hover {
     padding: 0% 5%;
   }
   .section03 .label-time::before {
-    content: attr(label-time);
+    content: "サポート教室";
     width: 30%;
     height: 80px;
     background: #2b5db7;

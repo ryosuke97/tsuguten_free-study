@@ -449,6 +449,10 @@ a:hover {
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
+				li {
+					display: flex;
+
+				}
 				a {
 					color: $black;
 					text-decoration: none;
@@ -1649,7 +1653,7 @@ a:hover {
 			box-sizing: border-box;
 		}
 		.label-tour::before {
-			content: attr(label-tour);
+			content: "展示ツアー";
 			width: 30%;
 			height: 100%;
 			background: $blue;
@@ -1659,7 +1663,7 @@ a:hover {
 			padding: 0% 5%;
 		}
 		.label-rest::before {
-			content: attr(label-rest);
+			content: "休けい";
 			width: 30%;
 			height: 100%;
 			background: $blue;
@@ -1669,7 +1673,7 @@ a:hover {
 			padding: 0% 5%;
 		}
 		.label-time::before {
-			content: attr(label-time);
+			content: "サポート教室";
 			width: 30%;
 			height: 80px;
 			background: $blue;
