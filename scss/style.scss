@@ -1859,13 +1859,13 @@ a:hover {
 					&::before {
 						content: "";
 						display: block;
-						padding-top: 9%;
+						padding-top: 10%;
 					}
 					p {
 						width: 88%;
 						height: auto;
 						font-size: 2.0vw;
-						margin: 0 0 0 9.5%;
+						margin: 0 0 0 10.5%;
 					}
 				}
 				.baloon02 {
@@ -1876,13 +1876,13 @@ a:hover {
 					&::before {
 						content: "";
 						display: block;
-						padding-top: 9%;
+						padding-top: 10%;
 					}
 					p {
 						width: 88%;
 						height: auto;
 						font-size: 2.0vw;
-						margin: 0 5% 0 3% ;
+						margin: 0 5% 0 4% ;
 					}
 				}
 			}
@@ -1991,7 +1991,7 @@ a:hover {
 						width: 83%;
 						height: auto;
 						padding: 10px 0px 30px;
-						font-size: 3.7vw;
+						font-size: 3.0vw;
 						margin: 10px auto;
 					}
 				}
@@ -2005,7 +2005,7 @@ a:hover {
 						width: 83%;
 						height: auto;
 						padding: 10px 0px 30px;
-						font-size: 3.7vw;
+						font-size: 3.0vw;
 						margin: 10px auto;
 					}
 				}
@@ -2733,6 +2733,13 @@ a:hover {
 					margin-right: 30px;
 				}
 			}
+		}
+	}
+}
+@media all and (min-width: 1300px){
+	.sponsorship {
+		h2 {
+			font-size: 24px !important;
 		}
 	}
 }

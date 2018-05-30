@@ -1852,13 +1852,13 @@ a:hover {
   .section05 .voice .l-voice .baloon01::before {
     content: "";
     display: block;
-    padding-top: 9%;
+    padding-top: 10%;
   }
   .section05 .voice .l-voice .baloon01 p {
     width: 88%;
     height: auto;
     font-size: 2.0vw;
-    margin: 0 0 0 9.5%;
+    margin: 0 0 0 10.5%;
   }
   .section05 .voice .l-voice .baloon02 {
     width: 75%;
@@ -1869,13 +1869,13 @@ a:hover {
   .section05 .voice .l-voice .baloon02::before {
     content: "";
     display: block;
-    padding-top: 9%;
+    padding-top: 10%;
   }
   .section05 .voice .l-voice .baloon02 p {
     width: 88%;
     height: auto;
     font-size: 2.0vw;
-    margin: 0 5% 0 3%;
+    margin: 0 5% 0 4%;
   }
   .section05 .voice .l-voice--reverse {
     flex-direction: row-reverse;
@@ -1983,7 +1983,7 @@ a:hover {
     width: 83%;
     height: auto;
     padding: 10px 0px 30px;
-    font-size: 3.7vw;
+    font-size: 3.0vw;
     margin: 10px auto;
   }
   .section05 .voice .l-voice .baloon02 {
@@ -1997,7 +1997,7 @@ a:hover {
     width: 83%;
     height: auto;
     padding: 10px 0px 30px;
-    font-size: 3.7vw;
+    font-size: 3.0vw;
     margin: 10px auto;
   }
   .section05 .voice .l-voice--reverse {
@@ -2691,6 +2691,11 @@ a:hover {
   }
   .section11 .b-sns ul li {
     margin-right: 30px;
+  }
+}
+@media all and (min-width: 1300px) {
+  .sponsorship h2 {
+    font-size: 24px !important;
   }
 }
 /*------------------------------------------------------------------
