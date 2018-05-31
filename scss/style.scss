@@ -622,6 +622,7 @@ img {
 			background: #fff;
 			position: absolute;
 			top: -600px;
+			left: 0px;
 			transition: all .8s;
 			z-index: 100;
 			ul {
@@ -816,7 +817,8 @@ img {
 			font-family: $mgenMedium;
 			font-size: 24px;
 			color: #222;
-			text-shadow: 2px 1px 1px rgba(255,255,255,0.5);
+			text-shadow: 0 2px 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, -2px 0 0 #fff, 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, -2px -2px 0 #fff;
+
 		}
 	}
 	.sp-cv {
@@ -858,7 +860,7 @@ img {
 			color: #222;
 			text-align: center;
 			margin: 260px auto 70px;
-			text-shadow: 2px 1px 1px rgba(255,255,255,0.5);
+			text-shadow: 0 2px 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, -2px 0 0 #fff, 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, -2px -2px 0 #fff;
 		}
 	}
 	.sp-cv {
