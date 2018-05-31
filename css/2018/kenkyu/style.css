@@ -71,7 +71,7 @@ a:hover {
 }
 
 img {
-  height: auto;
+  max-width: 100%;
 }
 
 @media all and (max-width: 768px) {
@@ -1944,6 +1944,9 @@ img {
     width: 28%;
     height: auto;
   }
+  .section05 .voice .l-voice .adjust-box img {
+    width: 100%;
+  }
   .section05 .voice .l-voice .box-1x1::before {
     content: "";
     display: block;
@@ -2126,6 +2129,9 @@ img {
     height: auto;
     margin-right: 4%;
     position: relative;
+  }
+  .section06 .entry-content .left-box img {
+    width: 100%;
   }
   .section06 .entry-content .right-box {
     width: 56%;

@@ -74,7 +74,7 @@ a:hover {
 	text-decoration: none;
 }
 img {
-	height: auto;
+	max-width: 100%;
 }
 
 @media all and (max-width: 768px){
@@ -1950,6 +1950,9 @@ img {
 				.adjust-box {
 					width: 28%;
 					height: auto;
+					img {
+						width: 100%;
+					}
 				}
 				.box-1x1::before {
 					content: "";
@@ -2137,6 +2140,9 @@ img {
 				height: auto;
 				margin-right: 4%;
 				position: relative;
+				img {
+					width: 100%;
+				}
 			}
 			.right-box {
 				width: 56%;
