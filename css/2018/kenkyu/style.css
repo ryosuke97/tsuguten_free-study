@@ -96,6 +96,9 @@ a:hover {
   overflow: hidden;
 }
 
+/*------------------------------------------------------------------
+ Loader
+------------------------------------------------------------------*/
 #loader-bg {
   display: none;
   position: fixed;
@@ -625,6 +628,7 @@ a:hover {
     position: relative;
   }
   nav ul li a {
+    width: 100%;
     color: #2c2c2c;
     text-decoration: none;
   }

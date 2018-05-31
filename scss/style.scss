@@ -110,6 +110,9 @@ a:hover {
 .wrap {
 	overflow: hidden;
 }
+/*------------------------------------------------------------------
+ Loader
+------------------------------------------------------------------*/
 #loader-bg {
   display: none;
   position: fixed;
@@ -636,6 +639,7 @@ a:hover {
 					align-items: center;
 					position: relative;
 					a {
+						width: 100%;
 						color: $black;
 						text-decoration: none;
 						&::before {
