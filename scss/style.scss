@@ -1073,7 +1073,6 @@ img {
 				border-bottom: 2px dotted $lightGray;
 			}
 			img {
-				width: 80%;
 				display: block;
 				margin: 0px auto;
 			}
@@ -1220,7 +1219,7 @@ img {
 			}
 		}
 		.complete-img {
-			width: 100%;
+			text-align: center;
 		}
 		.l-dl-btn {
 			margin-top: 50px;
@@ -1529,7 +1528,7 @@ img {
 			.l-infoL {
 				width: 100%;
 				.left-img {
-					width: 100%;
+					text-align: center;
 				}
 				.benefits {
 					width: 100%;
@@ -1570,7 +1569,7 @@ img {
 				}
 			}
 			.l-infoR {
-				width: 100%;
+				text-align: center;
 				margin-top: 50px;
 				dl {
 					width: 100%;
@@ -2190,7 +2189,7 @@ img {
 					text-align: center;
 				}
 				.sp-learning-img {
-					width: 100%;
+					text-align: center;
 				}
 				p {
 					width: 100%;
@@ -2292,7 +2291,7 @@ img {
 				}
 			}
 			.right-box {
-				width: 100%;
+				text-align: center;
 			}
 		}
 	}
@@ -2679,7 +2678,7 @@ img {
 			display: flex;
 			flex-direction: column-reverse;
 			.b-img-wrapper {
-				width: 100%;
+				text-align: center;
 				margin-top: 20px;
 			}
 			p {

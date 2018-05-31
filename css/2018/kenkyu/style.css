@@ -1055,7 +1055,6 @@ img {
     border-bottom: 2px dotted #b2b2b2;
   }
   .feature-content img {
-    width: 80%;
     display: block;
     margin: 0px auto;
   }
@@ -1197,7 +1196,7 @@ img {
     font-size: 4.6vw;
   }
   .section02 .complete-img {
-    width: 100%;
+    text-align: center;
   }
   .section02 .l-dl-btn {
     margin-top: 50px;
@@ -1505,7 +1504,7 @@ img {
     width: 100%;
   }
   .section03 .l-info .l-infoL .left-img {
-    width: 100%;
+    text-align: center;
   }
   .section03 .l-info .l-infoL .benefits {
     width: 100%;
@@ -1545,7 +1544,7 @@ img {
     font-size: 3.0vw;
   }
   .section03 .l-info .l-infoR {
-    width: 100%;
+    text-align: center;
     margin-top: 50px;
   }
   .section03 .l-info .l-infoR dl {
@@ -2182,7 +2181,7 @@ img {
     text-align: center;
   }
   .section06 .entry-content .right-box .sp-learning-img {
-    width: 100%;
+    text-align: center;
   }
   .section06 .entry-content .right-box p {
     width: 100%;
@@ -2281,7 +2280,7 @@ img {
     margin: 40px 0px;
   }
   .section07 .b-staff-wanted .right-box {
-    width: 100%;
+    text-align: center;
   }
 }
 /*------------------------------------------------------------------
@@ -2659,7 +2658,7 @@ img {
     flex-direction: column-reverse;
   }
   .section10 .l-samary .b-img-wrapper {
-    width: 100%;
+    text-align: center;
     margin-top: 20px;
   }
   .section10 .l-samary p {
