@@ -69,20 +69,6 @@ a:hover {
   text-decoration: none;
 }
 
-@media all and (min-width: 1300px) {
-  h2 {
-    width: 100%;
-    font-family: "mgenplus-1m-bold";
-    font-size: 40px !important;
-    color: #2b5db7;
-    text-align: center;
-    letter-spacing: 0.1em;
-  }
-
-  .section03 h2 {
-    font-size: 50px !important;
-  }
-}
 @media all and (max-width: 768px) {
   .wrapper {
     width: 90%;
@@ -119,6 +105,13 @@ a:hover {
 
 .header-shadow {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+  transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
 }
 
 @media all and (min-width: 769px) {
@@ -1208,25 +1201,26 @@ a:hover {
     z-index: 10;
   }
   .section03 .l-info .l-infoL .benefits h4 {
-    font-size: 1.84vw;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin-top: 55px;
   }
   .section03 .l-info .l-infoL .benefits p {
     width: 84%;
-    font-size: 1.4vw;
+    font-size: 16px;
+    line-height: 2.0;
     margin: 30px auto;
   }
   .section03 .l-info .l-infoL .benefits p span {
-    font-size: 1.2vw;
+    font-size: 14px;
   }
   .section03 .l-info .l-infoR {
     width: 47%;
   }
   .section03 .l-info .l-infoR dl {
     width: 100%;
-    font-size: 1.7vw;
+    font-size: 20px;
     display: flex;
     margin-bottom: 30px;
   }
@@ -1235,7 +1229,7 @@ a:hover {
   }
   .section03 .l-info .l-infoR dl dt {
     color: #fff;
-    width: 24%;
+    width: 120px;
     height: 40px;
     margin-right: 4%;
     background: #2b5db7;
@@ -1248,12 +1242,12 @@ a:hover {
     width: 72%;
   }
   .section03 .l-info .l-infoR dl dd span {
-    font-size: 1.4vw;
+    font-size: 16px;
   }
 }
 @media all and (min-width: 769px) and (min-width: 1300px) {
   .section03 .l-info .l-infoR dl {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media all and (min-width: 769px) {
@@ -1261,13 +1255,16 @@ a:hover {
     width: 100%;
     margin-top: 50px;
   }
+  .section03 .l-info .l-infoR p {
+    font-size: 16px;
+  }
   .section03 .schedule {
     width: 77%;
     margin: 80px auto 0px;
   }
   .section03 .schedule h3 {
     width: 100%;
-    font-size: 40px;
+    font-size: 34px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
@@ -1282,6 +1279,7 @@ a:hover {
   }
   .section03 .table thead th {
     background: #2b5db7;
+    font-size: 16px;
     color: #FFF;
     text-align: center;
     padding: 10px 0px;
@@ -1297,6 +1295,7 @@ a:hover {
   }
   .section03 .table tbody th {
     height: 80px;
+    font-size: 16px;
     font-weight: bold;
     background: #e0f1fe;
     border-bottom: #b2b2b2 solid 1px;
@@ -1311,6 +1310,7 @@ a:hover {
   }
   .section03 .table tbody td {
     height: 80px;
+    font-size: 16px;
     background: #fff;
     border-left: #b2b2b2 solid 1px;
     border-bottom: #b2b2b2 solid 1px;
@@ -1707,8 +1707,8 @@ a:hover {
     position: relative;
   }
   .section04 .text-area {
-    width: 42%;
-    padding: 2%;
+    width: 420px;
+    padding: 2% 4%;
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 80px;
@@ -1716,7 +1716,7 @@ a:hover {
   }
   .section04 .text-area h2 {
     width: 100%;
-    font-size: 4vw;
+    font-size: 34px;
     color: #2c2c2c;
   }
   .section04 .text-area svg {
@@ -1875,7 +1875,7 @@ a:hover {
   .section05 .voice .l-voice .baloon01 p {
     width: 88%;
     height: auto;
-    font-size: 2.0vw;
+    font-size: 24px;
     margin: 0 0 0 10.5%;
   }
   .section05 .voice .l-voice .baloon02 {
@@ -1892,7 +1892,7 @@ a:hover {
   .section05 .voice .l-voice .baloon02 p {
     width: 88%;
     height: auto;
-    font-size: 2.0vw;
+    font-size: 24px;
     margin: 0 5% 0 4%;
   }
   .section05 .voice .l-voice--reverse {
@@ -2026,11 +2026,6 @@ a:hover {
     margin-left: auto !important;
   }
 }
-@media all and (min-width: 1300px) {
-  .section05 .baloon01 p, .section05 .baloon02 p {
-    font-size: 26px !important;
-  }
-}
 /*------------------------------------------------------------------
  Section06 自由研究サポート教室に参加しよう！
 ------------------------------------------------------------------*/
@@ -2060,12 +2055,11 @@ a:hover {
   .section06 .entry-content .right-box h2 {
     width: 100%;
     max-width: 600px;
-    font-size: 40px;
     text-align: left;
   }
   .section06 .entry-content .right-box p {
     width: 100%;
-    font-size: 22px;
+    font-size: 20px;
     max-width: 600px;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -2170,7 +2164,7 @@ a:hover {
     margin-right: 4%;
   }
   .section07 .b-staff-wanted .left-box p {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 40px;
   }
   .section07 .b-staff-wanted .right-box {
@@ -2249,7 +2243,7 @@ a:hover {
     text-align: center;
   }
   .section08 p {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 50px;
     line-height: 1.8;
     margin-bottom: 40px;
@@ -2316,7 +2310,7 @@ a:hover {
     color: #2b5db7;
   }
   .section09 h2 {
-    font-size: 40px;
+    font-size: 34px;
     color: #2c2c2c;
   }
   .section09 h3 {
@@ -2328,22 +2322,25 @@ a:hover {
     display: flex;
   }
   .section09 .b-team-list p {
-    width: 20%;
+    width: 25%;
     margin-right: 10%;
+    font-size: 20px;
     text-align: right;
     font-weight: bold;
   }
   .section09 .b-team-list ul {
     width: 73%;
+    font-size: 20px;
     color: #2b5db7;
-  }
-  .section09 .b-team-list ul li {
-    font-size: 18px;
   }
   .section09 .artist {
     width: 77%;
     margin: 100px auto 0px;
     display: flex;
+  }
+  .section09 .artist p {
+    font-size: 16px;
+    line-height: 1.7;
   }
   .section09 .artist svg {
     width: 100%;
@@ -2560,7 +2557,6 @@ a:hover {
     font-family: "mgenplus-1m-bold";
     text-align: center;
     color: #fff;
-    font-size: 3.0vw;
     letter-spacing: 0.1em;
   }
   .section10 .l-samary {
@@ -2577,7 +2573,7 @@ a:hover {
   }
   .section10 .l-samary p {
     width: 47%;
-    font-size: 1.4vw;
+    font-size: 16px;
     line-height: 1.7;
   }
   .section10 .l-shaped-shape21 {
@@ -2625,11 +2621,6 @@ a:hover {
     width: 100%;
     font-size: 4.0vw;
     line-height: 1.7;
-  }
-}
-@media all and (min-width: 1300px) {
-  .l-samary p {
-    font-size: 18px !important;
   }
 }
 /*------------------------------------------------------------------
@@ -2755,16 +2746,16 @@ a:hover {
   .section12 .l-cv-content h2 {
     width: 100%;
     font-family: "mgenplus-1m-bold";
-    font-size: 32px;
+    font-size: 24px;
     color: #2c2c2c;
     text-align: center;
   }
   .section12 .l-cv-content h2 span {
-    font-size: 50px;
+    font-size: 34px;
   }
   .section12 .l-cv-content ul {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
   }
@@ -2784,7 +2775,7 @@ a:hover {
     width: 8%;
     height: 154px;
     position: absolute;
-    top: 10%;
+    top: 25%;
     left: 5%;
     z-index: 0;
     background: url("../../../img/2018/kenkyu/parts22.png") no-repeat center center;
