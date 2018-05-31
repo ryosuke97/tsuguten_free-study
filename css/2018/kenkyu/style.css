@@ -519,7 +519,7 @@ a:hover {
   header .menu-trigger,
   header .menu-trigger span {
     display: inline-block;
-    transition: all .4s;
+    transition: all .8s;
     box-sizing: border-box;
   }
   header .menu-trigger {
@@ -586,21 +586,20 @@ a:hover {
   }
   nav {
     width: 100%;
-    height: 500px;
+    height: 330px;
     background: #fff;
     position: absolute;
     top: -600px;
-    transition: all .4s;
+    transition: all .8s;
     z-index: 100;
   }
   nav ul {
     width: 90%;
-    height: 600px;
     margin: 0 auto;
   }
   nav ul li {
     width: 100%;
-    height: 110px;
+    height: 70px;
     font-size: 18px;
     border-bottom: 1px solid #b2b2b2;
     display: flex;
