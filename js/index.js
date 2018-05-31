@@ -117,3 +117,19 @@ $(window).scroll(function () {
 	}
 	console.log($(this).scrollTop());
 });
+
+// スクロールでコンテンツのフェードイン
+$(window).on('load',function(){
+	$(window).scroll(function (){
+		$('.fade-in').each(function(){
+			var POS = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > POS - windowHeight + windowHeight/5){
+				$(this).css("opacity","1" );
+			} else {
+				$(this).css("opacity","0" );
+			}
+		});
+	});
+});
