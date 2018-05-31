@@ -1722,6 +1722,9 @@ img {
 		}
 		.label-tour {
 			box-sizing: border-box;
+			br {
+				display: none;
+			}
 		}
 		.label-tour::before {
 			content: "展示ツアー";

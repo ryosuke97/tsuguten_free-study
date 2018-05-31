@@ -1721,6 +1721,9 @@ img {
   .section03 .label-tour {
     box-sizing: border-box;
   }
+  .section03 .label-tour br {
+    display: none;
+  }
   .section03 .label-tour::before {
     content: "展示ツアー";
     width: 30%;
