@@ -7,7 +7,7 @@
 	url('../font/mgenplus-1m-bold.ttf');
 	font-family: 'mgenplus-1m-medium';
 	src:local('mgenplus-1m-medium'),
-		url('mgenplus-1m-medium.ttf')
+	url('mgenplus-1m-medium.ttf')
 }
 
 /*------------------------------------------------------------------
@@ -32,6 +32,7 @@ html {
 	color: $black;;
 }
 body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
 	width: 100%;
 	border-spacing: 0vh;
 }
@@ -72,18 +73,8 @@ h3 {
 a:hover {
 	text-decoration: none;
 }
-@media all and (min-width: 1300px){
-	// h2 {
-	// 	width: 100%;
-	// 	font-family: $mgenBold;
-	// 	font-size: 40px !important;
-	// 	color: $blue;
-	// 	text-align: center;
-	// 	letter-spacing: 0.1em;
-	// }
-	// .section03 h2 {
-	// 	font-size: 50px !important;
-	// }
+img {
+	height: auto;
 }
 
 @media all and (max-width: 768px){
@@ -121,20 +112,24 @@ a:hover {
   top: 0px;
   left: 0px;
   background: #fff;
-  z-index: 1;
+  z-index: 10000;
 }
 #loader {
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
+	width: 120px;
+  margin-top: -39px;
+  margin-left: -60px;
   text-align: center;
-  color: #fff;
-  z-index: 2;
+  color: $black;
+	z-index: 11000;
+	p {
+		font-size: 14px;
+		color: #666;
+		letter-spacing: 0.1em;
+	}
 }
 /*------------------------------------------------------------------
  Util
@@ -469,6 +464,9 @@ a:hover {
 			justify-content: center;
 			align-items: center;
 		}
+		.menu-trigger {
+			display: none !important;
+		}
 		@at-root nav {
 			width: 65%;
 			margin: 0px 60px 0px 0px;
@@ -533,9 +531,10 @@ a:hover {
 	}
 	header {
 		width: 100%;
-		height: 94px;
+		height: 60px;
 		display: flex;
 		align-items: center;
+		padding: 5px 5%;
 		position: fixed;
 		top: 0px;
 		left: 0px;
@@ -543,13 +542,12 @@ a:hover {
 		z-index: 10000;
 		.logo {
 			width: 30%;
-			height: 94px;
-			margin: 0px 10px 0px 10px;
+			height: 60px;
 			display: flex;
-			justify-content: center;
+			justify-content: space-between;
 			align-items: center;
 			img {
-				width: 100%;
+				width: 80%;
 			}
 		}
 		.menu-trigger,
@@ -567,7 +565,7 @@ a:hover {
 			justify-content: center;
 			align-items: center;
 			position: fixed;
-			top: 25px;
+			top: 18px;
 			right: 12px;
 			z-index: 1000;
 		}
@@ -701,6 +699,80 @@ a:hover {
 		}
 	}
 }
+// 
+@media all and (min-width: 768px){
+	header {
+		width: 100%;
+		height: 96px;
+		display: flex;
+		align-items: center;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background: #fff;
+		z-index: 10000;
+		.logo {
+			width: 30%;
+			height: 96px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			img {
+				width: 80%;
+			}
+		}
+		// .menu-trigger,
+		// .menu-trigger span {
+		// 	display: inline-block;
+		// 	transition: all .8s;
+		// 	box-sizing: border-box;
+		// }
+		.menu-trigger {
+			width: 38px;
+			height: 38px;
+			background: $yellow;
+			border-radius: 19px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			top: 32px;
+			right: 12px;
+			z-index: 1000;
+		}
+		.menu-trigger span {
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+			width: 50%;
+			height: 2px;
+			background-color: #fff;
+			border-radius: 2px;
+			margin: 0 auto;
+		}
+		.menu-trigger span:nth-of-type(1) {
+			top: 9px;
+			left: 9px
+		}
+		.menu-trigger span:nth-of-type(2) {
+			top: 18px;
+			left: 9px
+		}
+		.menu-trigger span:nth-of-type(3) {
+			top: 27px;
+			left: 9px
+		}
+		.menu-trigger span {
+			transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-webkit-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out;
+		}
+	}
+}
+// 
 @media all and (min-width: 769px){
 	.title {
 		display: none;
@@ -709,9 +781,9 @@ a:hover {
 @media all and (max-width: 768px){
 	.title {
 		width: 45%;
-		height: 94px;
+		height: 60px;
 		background: $yellow;
-		font-size: 3.6vw;
+		font-size: 3.1vw;
 		color: #fff;
 		font-family: $mgenMedium;
 		letter-spacing: 0.1em;
@@ -752,7 +824,7 @@ a:hover {
 @media all and (max-width: 768px){
 	.mv {
 		height: 600px;
-		margin: 94px 0px 0px;
+		margin: 60px 0px 0px;
 		position: relative;
 		background: url("../../../img/2018/kenkyu/img_sp-mv.jpg") center right no-repeat;
 		background-size: cover;
@@ -840,7 +912,7 @@ a:hover {
 				background: url("../../../img/2018/kenkyu/img_lead02.jpg") no-repeat center center;
 				background-size: contain;
 				position: absolute;
-				bottom: -75px;
+				bottom: -80px;
 				right: 5%;
 			}
 			@media all and (max-width: 1000px){
@@ -889,7 +961,6 @@ a:hover {
 			.left-img {
 				width: 100%;
 				img {
-					width: 100%;
 					vertical-align: bottom;
 				}
 			}
@@ -960,9 +1031,6 @@ a:hover {
 			section {
 				width: 22%;
 				font-size: 20px;
-			}
-			img {
-				width: 100%;
 			}
 			@at-root .featureText {
 				width: 100%;
@@ -1062,7 +1130,6 @@ a:hover {
 			left: 55%;
 			z-index: 10;
 			img {
-				width: 100%;
 				max-width: 440px;
 			}
 		}
@@ -1156,9 +1223,6 @@ a:hover {
 		.catch-copy {
 			width: 32%;
 			margin: 0px auto;
-			img {
-				width: 100%;
-			}
 		}
 		.text-content {
 			width: 100%;
@@ -1174,9 +1238,6 @@ a:hover {
 		}
 		.complete-img {
 			width: 100%;
-			img {
-				width: 100%;
-			}
 		}
 		.l-dl-btn {
 			margin-top: 50px;
@@ -1311,7 +1372,6 @@ a:hover {
 					}
 				}
 				img {
-					width: 100%;
 					margin-top: 50px;
 				}
 				p {
@@ -1490,9 +1550,6 @@ a:hover {
 				width: 100%;
 				.left-img {
 					width: 100%;
-					img {
-						width: 100%;
-					}
 				}
 				.benefits {
 					width: 100%;
@@ -1562,7 +1619,6 @@ a:hover {
 					}
 				}
 				img {
-					width: 100%;
 					margin-top: 50px;
 				}
 				p {
@@ -1900,9 +1956,6 @@ a:hover {
 					display: block;
 					padding-top: 0%;
 				}
-				img {
-					width: 100%;
-				}
 				.baloon01 {
 					width: 75%;
 					height: auto;
@@ -1911,12 +1964,12 @@ a:hover {
 					&::before {
 						content: "";
 						display: block;
-						padding-top: 10%;
+						padding-top: 9%;
 					}
 					p {
 						width: 88%;
 						height: auto;
-						font-size: 24px;
+						font-size: 20px;
 						margin: 0 0 0 10.5%;
 					}
 				}
@@ -1933,7 +1986,7 @@ a:hover {
 					p {
 						width: 88%;
 						height: auto;
-						font-size: 24px;
+						font-size: 20px;
 						margin: 0 5% 0 4% ;
 					}
 				}
@@ -2009,9 +2062,6 @@ a:hover {
 				-o-transform: translate(-50%,-50%);
 				transform: translate(-50%,-50%);
 				z-index: 10;
-				img {
-					width: 100%;
-				}
 			}
 			.l-voice {
 				width: 90%;
@@ -2029,9 +2079,6 @@ a:hover {
 					content: "";
 					display: block;
 					padding-top: 0%;
-				}
-				img {
-					width: 100%;
 				}
 				.baloon01 {
 					width: 100%;
@@ -2090,9 +2137,6 @@ a:hover {
 				height: auto;
 				margin-right: 4%;
 				position: relative;
-				img {
-					width: 100%;
-				}
 			}
 			.right-box {
 				width: 56%;
@@ -2146,9 +2190,6 @@ a:hover {
 			display: flex;
 			.left-box {
 				display: none;
-				img {
-					width: 100%;
-				}
 			}
 			.right-box {
 				width: 100%;
@@ -2161,9 +2202,6 @@ a:hover {
 				}
 				.sp-learning-img {
 					width: 100%;
-					img {
-						width: 100%;
-					}
 				}
 				p {
 					width: 100%;
@@ -2195,9 +2233,6 @@ a:hover {
 			-o-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
 			z-index: 10;
-			img {
-				width: 100%;
-			}
 			.staff-recruitment-link {
 				position: absolute;
 				top: -94px;
@@ -2217,9 +2252,6 @@ a:hover {
 			}
 			.right-box {
 				width: 48%;
-				img {
-					width: 100%;
-				}
 			}
 		}
 		.l-parts-shirt {
@@ -2253,9 +2285,6 @@ a:hover {
 			-o-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
 			z-index: 10;
-			img {
-				width: 100%;
-			}
 			.staff-recruitment-link {
 				position: absolute;
 				top: -94px;
@@ -2275,9 +2304,6 @@ a:hover {
 			}
 			.right-box {
 				width: 100%;
-				img {
-					width: 100%;
-				}
 			}
 		}
 	}
@@ -2447,7 +2473,6 @@ a:hover {
 					width: 101px;
 					height: 101px;
 					img {
-						width: 100%;
 						display: block;
 						position: absolute;
 						top: 7px;
@@ -2586,7 +2611,6 @@ a:hover {
 					width: 101px;
 					height: 101px;
 					img {
-						width: 100%;
 						display: block;
 						position: absolute;
 						top: 7px;
@@ -2624,9 +2648,6 @@ a:hover {
 			justify-content: space-between;
 			.b-img-wrapper {
 				width: 47%;
-				img {
-					width: 100%;
-				}
 			}
 			p {
 				width: 47%;
@@ -2671,9 +2692,6 @@ a:hover {
 			.b-img-wrapper {
 				width: 100%;
 				margin-top: 20px;
-				img {
-					width: 100%;
-				}
 			}
 			p {
 				width: 100%;
