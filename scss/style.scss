@@ -556,15 +556,15 @@ img {
 			box-sizing: border-box;
 		}
 		.menu-trigger {
-			width: 38px;
-			height: 38px;
+			width: 48px;
+			height: 48px;
 			background: $yellow;
-			border-radius: 19px;
+			border-radius: 50%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			position: fixed;
-			top: 18px;
+			top: 13px;
 			right: 12px;
 			z-index: 1000;
 		}
@@ -580,16 +580,16 @@ img {
 			margin: 0 auto;
 		}
 		.menu-trigger span:nth-of-type(1) {
-			top: 9px;
-			left: 9px
+			top: 14px;
+			left: 12px
 		}
 		.menu-trigger span:nth-of-type(2) {
-			top: 18px;
-			left: 9px
+			top: 23px;
+			left: 12px
 		}
 		.menu-trigger span:nth-of-type(3) {
-			top: 27px;
-			left: 9px
+			top: 32px;
+			left: 12px
 		}
 		.menu-trigger span {
 			transition: all 0.2s ease-out;
@@ -721,12 +721,12 @@ img {
 				width: 80%;
 			}
 		}
-		// .menu-trigger,
-		// .menu-trigger span {
-		// 	display: inline-block;
-		// 	transition: all .8s;
-		// 	box-sizing: border-box;
-		// }
+		.menu-trigger,
+		.menu-trigger span {
+			display: inline-block;
+			transition: all .8s;
+			box-sizing: border-box;
+		}
 		.menu-trigger {
 			width: 38px;
 			height: 38px;
@@ -772,26 +772,6 @@ img {
 		}
 	}
 }
-// 
-@media all and (min-width: 769px){
-	.title {
-		display: none;
-	}
-}
-@media all and (max-width: 768px){
-	.title {
-		width: 45%;
-		height: 60px;
-		background: $yellow;
-		font-size: 3.1vw;
-		color: #fff;
-		font-family: $mgenMedium;
-		letter-spacing: 0.1em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-}
 /*------------------------------------------------------------------
  MV
 ------------------------------------------------------------------*/
@@ -813,7 +793,6 @@ img {
 			display: none;
 		}
 		.sp-text {
-			width: 55%;
 			font-family: $mgenMedium;
 			font-size: 24px;
 			color: #222;
@@ -842,12 +821,12 @@ img {
 			}
 		}
 		h1 {
-			width: 73%;
-			height: 200px;
-			margin: 0px auto;
+			max-width: 68%;
+			text-align: center;
+			margin: 0 auto;
 			padding-top: 30px;
 			.pc-img {
-				display: none;
+				// display: none;
 			}
 			.sp-img {
 				width: 100%;
