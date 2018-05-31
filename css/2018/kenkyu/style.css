@@ -51,7 +51,7 @@ h1 {
 h2 {
   width: 100%;
   font-family: "mgenplus-1m-bold";
-  font-size: 50px;
+  font-size: 34px;
   font-weight: bold;
   color: #2b5db7;
   text-align: center;
@@ -99,7 +99,7 @@ a:hover {
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 4.6vw;
     color: #2c2c2c;
     font-weight: bold;
     text-align: center;
@@ -732,7 +732,7 @@ a:hover {
   .mv .sp-text {
     width: 90%;
     font-family: "mgenplus-1m-medium";
-    font-size: 5vw;
+    font-size: 4.6vw;
     color: #222;
     text-align: center;
     margin: 260px auto 70px;
@@ -851,7 +851,7 @@ a:hover {
     width: 100%;
   }
   .l-sub-view .sub-view-text-area .sub-view-text p {
-    font-size: 4vw;
+    font-size: 4.0vw;
     line-height: 2;
     margin: 50px 0px;
   }
@@ -900,7 +900,7 @@ a:hover {
     position: absolute;
     top: -94px;
   }
-  .featureContent {
+  .feature-content {
     width: 100%;
     max-width: 1300px;
     margin: 0px auto;
@@ -909,11 +909,11 @@ a:hover {
     display: flex;
     justify-content: space-between;
   }
-  .featureContent section {
+  .feature-content section {
     width: 22%;
-    font-size: 18px;
+    font-size: 20px;
   }
-  .featureContent img {
+  .feature-content img {
     width: 100%;
   }
   .featureText {
@@ -960,19 +960,19 @@ a:hover {
     position: absolute;
     top: -94px;
   }
-  .featureContent {
+  .feature-content {
     width: 100%;
     margin: 0px auto;
     padding-bottom: 30px;
   }
-  .featureContent section {
+  .feature-content section {
     width: 100%;
-    font-size: 18px;
+    font-size: 4.0vw;
     margin: 60px auto 0px;
     padding-bottom: 60px;
     border-bottom: 2px dotted #b2b2b2;
   }
-  .featureContent img {
+  .feature-content img {
     width: 80%;
     display: block;
     margin: 0px auto;
@@ -1033,9 +1033,12 @@ a:hover {
     padding-top: 40px;
     margin-left: 12%;
   }
+  .section02 .text-content .text-area p {
+    font-size: 20px;
+  }
   .section02 .text-content .l-dl-btn {
     position: absolute;
-    bottom: 30px;
+    bottom: 5px;
     left: 12%;
     z-index: 10;
   }
@@ -1090,7 +1093,7 @@ a:hover {
     position: relative;
   }
   .section02 h2 {
-    margin-bottom: 50px;
+    margin-bottom: 4.6vw;
   }
   .section02 h2 .how2use-link {
     position: absolute;
@@ -1109,11 +1112,11 @@ a:hover {
   }
   .section02 .text-area {
     width: 100%;
-    font-size: 4vw;
+    font-size: 4.0vw;
     padding-top: 40px;
   }
   .section02 .text-area h3 {
-    font-size: 5vw;
+    font-size: 4.6vw;
   }
   .section02 .complete-img {
     width: 100%;
@@ -1150,6 +1153,7 @@ a:hover {
     position: relative;
   }
   .section03 .l-text-center {
+    font-size: 20px;
     text-align: center;
   }
   .section03 h2 {
@@ -1451,7 +1455,7 @@ a:hover {
     z-index: 10;
   }
   .section03 .l-info .l-infoL .benefits h4 {
-    font-size: 5.0vw;
+    font-size: 4.6vw;
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
@@ -1471,7 +1475,7 @@ a:hover {
   }
   .section03 .l-info .l-infoR dl {
     width: 100%;
-    font-size: 5.0vw;
+    font-size: 4.6vw;
     margin-bottom: 50px;
   }
   .section03 .l-info .l-infoR dl:last-child {
@@ -1519,21 +1523,8 @@ a:hover {
     border-top: #b2b2b2 solid 1px;
     border-right: #b2b2b2 solid 1px;
   }
-  .section03 .table thead tr {
-    width: 100%;
-    padding: 15px 0;
-    position: relative;
-  }
-  .section03 .table thead th {
-    background: #2b5db7;
-    color: #FFF;
-    text-align: center;
-    padding: 10px 0px;
-    border-right: #b2b2b2 solid 1px;
-    border-bottom: #b2b2b2 solid 1px;
-  }
-  .section03 .table thead th:last-child {
-    border-right: #b2b2b2 solid 1px;
+  .section03 .table thead {
+    display: none;
   }
   .section03 .table tbody tr {
     width: 100%;
@@ -1541,19 +1532,6 @@ a:hover {
   }
   .section03 .table tbody tr:first-child {
     border-top: #b2b2b2 solid 1px;
-  }
-  .section03 .table tbody tr:last-child th {
-    border-bottom: #b2b2b2 solid 1px;
-  }
-  .section03 .table tbody td {
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.8s;
-  }
-  .section03 .table thead {
-    display: none;
   }
   .section03 .table tbody th {
     height: 70px;
@@ -1637,6 +1615,16 @@ a:hover {
   .section03 .table tbody th .schedule-trigger9 span:nth-of-type(2) {
     top: 16px;
     left: 8px;
+  }
+  .section03 .table tbody tr:last-child th {
+    border-bottom: #b2b2b2 solid 1px;
+  }
+  .section03 .table tbody td {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
   }
   .section03 .table tbody td {
     display: flex;
@@ -1780,14 +1768,14 @@ a:hover {
     stroke-dasharray: 0.5px, 30px;
   }
   .section04 .text-area p {
-    font-size: 4.2vw;
+    font-size: 4.0vw;
     margin-top: 20px;
     line-height: 1.75;
   }
 }
 @media all and (max-width: 768px) and (min-width: 600px) {
   .section04 .text-area p {
-    font-size: 4.2vw;
+    font-size: 4.0vw;
   }
 }
 
@@ -1954,7 +1942,7 @@ a:hover {
 @media all and (max-width: 768px) {
   .section05 {
     position: relative;
-    padding-top: 75%;
+    padding-top: 70%;
   }
   .section05 .wrapper {
     width: 100%;
@@ -1969,7 +1957,7 @@ a:hover {
     width: 50%;
     height: auto;
     position: absolute;
-    top: 30%;
+    top: 28%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -2014,7 +2002,7 @@ a:hover {
     width: 83%;
     height: auto;
     padding: 10px 0px 30px;
-    font-size: 3.0vw;
+    font-size: 4.0vw;
     margin: 10px auto;
   }
   .section05 .voice .l-voice .baloon02 {
@@ -2028,7 +2016,7 @@ a:hover {
     width: 83%;
     height: auto;
     padding: 10px 0px 30px;
-    font-size: 3.0vw;
+    font-size: 4.0vw;
     margin: 10px auto;
   }
   .section05 .voice .l-voice--reverse {
@@ -2139,7 +2127,7 @@ a:hover {
   }
   .section06 .entry-content .right-box p {
     width: 100%;
-    font-size: 22px;
+    font-size: 4.0vw;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -2239,7 +2227,7 @@ a:hover {
     width: 100%;
   }
   .section07 .b-staff-wanted .left-box p {
-    font-size: 22px;
+    font-size: 4.0vw;
     margin: 40px 0px;
   }
   .section07 .b-staff-wanted .right-box {
@@ -2304,9 +2292,9 @@ a:hover {
     margin: 0px auto;
   }
   .section08 p {
-    font-size: 22px;
+    font-size: 4.0vw;
     margin-top: 50px;
-    line-height: 1.8;
+    line-height: 2.0;
     margin-bottom: 40px;
   }
   .section08 .link-button {
@@ -2471,15 +2459,16 @@ a:hover {
   }
   .section09 .b-team-list p {
     width: 100%;
-    font-size: 5vw;
+    font-size: 4.6vw;
     font-weight: bold;
   }
   .section09 .b-team-list ul {
     width: 100%;
     color: #2b5db7;
+    margin-top: 10px;
   }
   .section09 .b-team-list ul li {
-    font-size: 4vw;
+    font-size: 4.0vw;
   }
   .section09 .artist {
     width: 100%;
@@ -2506,6 +2495,10 @@ a:hover {
     padding: 30px 5%;
     position: relative;
   }
+  .section09 .artist .artist-left p {
+    font-size: 4.0vw;
+    line-height: 2.0;
+  }
   .section09 .artist .artist-right {
     width: 90%;
     border: #2b5db7 solid 1px;
@@ -2514,6 +2507,10 @@ a:hover {
     margin: 0px auto;
     padding: 30px 5%;
     position: relative;
+  }
+  .section09 .artist .artist-right p {
+    font-size: 4.0vw;
+    line-height: 2.0;
   }
   .section09 .artist .half-circle-lo__half-circle-mod {
     -moz-border-radius: 58px 58px 0 0;
@@ -2600,15 +2597,15 @@ a:hover {
     position: relative;
   }
   .section10 h2 {
-    width: 72%;
-    padding: 10px 14%;
+    width: 66%;
+    padding: 10px 17%;
     background: #ffb700;
     border-radius: 3px;
     margin: 0px auto;
     font-family: "mgenplus-1m-bold";
     text-align: center;
     color: #fff;
-    font-size: 6.1vw;
+    font-size: 4.0vw;
     letter-spacing: 0.1em;
   }
   .section10 .l-samary {
@@ -2693,7 +2690,7 @@ a:hover {
     display: block;
   }
   .section11 .sponsorship h2 {
-    font-size: 24px;
+    font-size: 4.6vw;
     color: #2c2c2c;
     font-weight: bold;
     text-align: center;
@@ -2702,6 +2699,8 @@ a:hover {
   .section11 .sponsorlist dl {
     width: 100%;
     margin-bottom: 20px;
+    font-size: 4.0vw;
+    line-height: 2.0;
   }
   .section11 .sponsorlist dl dt {
     width: 100%;
@@ -2713,6 +2712,13 @@ a:hover {
     color: #2b5db7;
   }
   .section11 .sponsorlist p a {
+    color: #2b5db7;
+  }
+  .section11 p {
+    font-size: 4.0vw;
+    margin-top: 40px;
+  }
+  .section11 p a {
     color: #2b5db7;
   }
   .section11 .b-sns {
@@ -2813,7 +2819,7 @@ a:hover {
     text-align: center;
   }
   .section12 .l-cv-content h2 span {
-    font-size: 7vw;
+    font-size: 6.0vw;
   }
   .section12 .l-cv-content ul {
     width: 100%;

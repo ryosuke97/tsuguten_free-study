@@ -56,7 +56,7 @@ h1 {
 h2 {
 	width: 100%;
 	font-family: $mgenBold;
-	font-size: 50px;
+	font-size: 34px;
 	font-weight: bold;
 	color: $blue;
 	text-align: center;
@@ -100,7 +100,7 @@ a:hover {
 		letter-spacing: 0.1em;
 	}
 	h3 {
-		font-size: 24px;
+		font-size: 4.6vw;
 		color: $black;
 		font-weight: bold;
 		text-align: center;
@@ -746,7 +746,7 @@ a:hover {
 		.sp-text {
 			width: 90%;
 			font-family: $mgenMedium;
-			font-size: 5vw;
+			font-size: 4.6vw;
 			color: #222;
 			text-align: center;
 			margin: 260px auto 70px;
@@ -863,7 +863,7 @@ a:hover {
 			.sub-view-text {
 				width: 100%;
 				p {
-					font-size: 4vw;
+					font-size: 4.0vw;
 					line-height: 2;
 					margin: 50px 0px;
 				}
@@ -916,7 +916,7 @@ a:hover {
 				top: -94px;
 			}
 		}
-		@at-root .featureContent {
+		@at-root .feature-content {
 			width: 100%;
 			max-width: 1300px;
 			margin: 0px auto;
@@ -926,7 +926,7 @@ a:hover {
 			justify-content: space-between;
 			section {
 				width: 22%;
-				font-size: 18px;
+				font-size: 20px;
 			}
 			img {
 				width: 100%;
@@ -977,13 +977,13 @@ a:hover {
 				top: -94px;
 			}
 		}
-		@at-root .featureContent {
+		@at-root .feature-content {
 			width: 100%;
 			margin: 0px auto;
 			padding-bottom: 30px;
 			section {
 				width: 100%;
-				font-size: 18px;
+				font-size: 4.0vw;
 				margin: 60px auto 0px;
 				padding-bottom: 60px;
 				border-bottom: 2px dotted $lightGray;
@@ -1051,10 +1051,13 @@ a:hover {
 				width: 430px;
 				padding-top: 40px;
 				margin-left: 12%;
+				p {
+					font-size: 20px;
+				}
 			}
 			.l-dl-btn {
 				position: absolute;
-				bottom: 30px;
+				bottom: 5px;
 				left: 12%;
 				z-index: 10;
 				img {
@@ -1111,7 +1114,7 @@ a:hover {
 		padding: 50px 0px 0px;
 		position: relative;
 		h2 {
-			margin-bottom: 50px;
+			margin-bottom: 4.6vw;
 			.how2use-link {
 				position: absolute;
 				top: -94px;
@@ -1130,10 +1133,10 @@ a:hover {
 		}
 		.text-area {
 			width: 100%;
-			font-size: 4vw;
+			font-size: 4.0vw;
 			padding-top: 40px;
 			h3 {
-				font-size: 5vw;
+				font-size: 4.6vw;
 			}
 		}
 		.complete-img {
@@ -1173,6 +1176,7 @@ a:hover {
 		padding: 80px 0px;
 		position: relative;
 		.l-text-center {
+			font-size: 20px;
 			text-align: center;
 		}
 		h2 {
@@ -1472,7 +1476,7 @@ a:hover {
 						z-index: 10;
 					}
 					h4 {
-						font-size: 5.0vw;
+						font-size: 4.6vw;
 						font-weight: bold;
 						text-align: center;
 						margin-top: 50px;
@@ -1493,7 +1497,7 @@ a:hover {
 				margin-top: 50px;
 				dl {
 					width: 100%;
-					font-size: 5.0vw;
+					font-size: 4.6vw;
 					margin-bottom: 50px;
 					&:last-child {
 						margin-bottom: 0;
@@ -1543,22 +1547,7 @@ a:hover {
 			border-top:$lightGray solid 1px;
 			border-right: $lightGray solid 1px;
 			thead {
-				tr {
-					width: 100%;
-					padding: 15px 0;
-					position: relative;
-				}
-				th {
-					background:$blue;
-					color:#FFF;
-					text-align: center;
-					padding:10px 0px;
-					border-right:$lightGray solid 1px;
-					border-bottom:$lightGray solid 1px;
-					&:last-child {
-						border-right:$lightGray solid 1px;
-					}
-				}
+				display:none;
 			}
 			tbody {
 				tr {
@@ -1566,6 +1555,65 @@ a:hover {
 					display: unset;
 					&:first-child {
 						border-top:$lightGray solid 1px;
+					}
+				}
+				th {
+					height: 70px;
+					padding: 0px 5%;
+					font-weight: bold;
+					background:$lightBlue;
+					border-bottom:$lightGray solid 1px;
+					border-left:$lightGray solid 1px;
+					display: flex;
+					justify-content: left;
+					align-items: center;
+					position: relative;
+					.schedule-trigger1,
+					.schedule-trigger2,
+					.schedule-trigger3,
+					.schedule-trigger4,
+					.schedule-trigger5,
+					.schedule-trigger6,
+					.schedule-trigger7,
+					.schedule-trigger8,
+					.schedule-trigger9, {
+						width: 35px;
+						height: 35px;
+						background: #fff;
+						border-radius: 15px;
+						position: absolute;
+						top: 17px;
+						right: 5%;
+						cursor: pointer;
+						span {
+							display: block;
+							position: absolute;
+							left: 0;
+							bottom: 0px;
+							width: 50%;
+							height: 2px;
+							background-color: $lightGray;
+							border-radius: 2px;
+							margin: 0 auto;
+							transition: all 0.2s ease-out;
+							-o-transition: all 0.2s ease-out;
+							-moz-transition: all 0.2s ease-out;
+							-webkit-transition: all 0.2s ease-out;
+							-ms-transition: all 0.2s ease-out;
+						}
+						span:nth-of-type(1) {
+							top: 16px;
+							left: 8px;
+							-o-transform: rotate(90deg);
+							-moz-transform: rotate(90deg);
+							-webkit-transform: rotate(90deg);
+							-ms-transform: rotate(90deg);
+							transform: rotate(90deg);
+						}
+						span:nth-of-type(2) {
+							top: 16px;
+							left: 8px;
+						}
 					}
 				}
 				tr:last-child th {
@@ -1577,68 +1625,6 @@ a:hover {
 					overflow: hidden;
 					opacity: 0;
 					transition: 0.8s;
-				}
-			}
-		}
-		.table thead {
-			display:none;
-		}
-		.table tbody th {
-			height: 70px;
-			padding: 0px 5%;
-			font-weight: bold;
-			background:$lightBlue;
-			border-bottom:$lightGray solid 1px;
-			border-left:$lightGray solid 1px;
-			display: flex;
-			justify-content: left;
-			align-items: center;
-			position: relative;
-			.schedule-trigger1,
-			.schedule-trigger2,
-			.schedule-trigger3,
-			.schedule-trigger4,
-			.schedule-trigger5,
-			.schedule-trigger6,
-			.schedule-trigger7,
-			.schedule-trigger8,
-			.schedule-trigger9, {
-				width: 35px;
-				height: 35px;
-				background: #fff;
-				border-radius: 15px;
-				position: absolute;
-				top: 17px;
-				right: 5%;
-				cursor: pointer;
-				span {
-					display: block;
-					position: absolute;
-					left: 0;
-					bottom: 0px;
-					width: 50%;
-					height: 2px;
-					background-color: $lightGray;
-					border-radius: 2px;
-					margin: 0 auto;
-					transition: all 0.2s ease-out;
-					-o-transition: all 0.2s ease-out;
-					-moz-transition: all 0.2s ease-out;
-					-webkit-transition: all 0.2s ease-out;
-					-ms-transition: all 0.2s ease-out;
-				}
-				span:nth-of-type(1) {
-					top: 16px;
-					left: 8px;
-					-o-transform: rotate(90deg);
-					-moz-transform: rotate(90deg);
-					-webkit-transform: rotate(90deg);
-					-ms-transform: rotate(90deg);
-					transform: rotate(90deg);
-				}
-				span:nth-of-type(2) {
-					top: 16px;
-					left: 8px;
 				}
 			}
 		}
@@ -1785,13 +1771,13 @@ a:hover {
 				stroke-dasharray: 0.5px, 30px;
 			}
 			p {
-				font-size: 4.2vw;
+				font-size: 4.0vw;
 				margin-top: 20px;
 				line-height: 1.75;
 			}
 			@media all and (min-width: 600px){
 				p {
-					font-size: 4.2vw;
+					font-size: 4.0vw;
 				}
 			}
 		}
@@ -1962,7 +1948,7 @@ a:hover {
 @media all and (max-width: 768px){
 	.section05 {
 		position: relative;
-		padding-top: 75%;
+		padding-top: 70%;
 		.wrapper {
 			width: 100%;
 		}
@@ -1975,7 +1961,7 @@ a:hover {
 				width: 50%;
 				height: auto;
 				position: absolute;
-				top: 30%;
+				top: 28%;
 				left: 50%;
 				-webkit-transform: translate(-50%,-50%);
 				-moz-transform: translate(-50%,-50%);
@@ -2018,7 +2004,7 @@ a:hover {
 						width: 83%;
 						height: auto;
 						padding: 10px 0px 30px;
-						font-size: 3.0vw;
+						font-size: 4.0vw;
 						margin: 10px auto;
 					}
 				}
@@ -2032,7 +2018,7 @@ a:hover {
 						width: 83%;
 						height: auto;
 						padding: 10px 0px 30px;
-						font-size: 3.0vw;
+						font-size: 4.0vw;
 						margin: 10px auto;
 					}
 				}
@@ -2151,7 +2137,7 @@ a:hover {
 				}
 				p {
 					width: 100%;
-					font-size: 22px;
+					font-size: 4.0vw;
 					margin-top: 30px;
 					margin-bottom: 30px;
 				}
@@ -2253,7 +2239,7 @@ a:hover {
 			.left-box {
 				width: 100%;
 				p {
-					font-size: 22px;
+					font-size: 4.0vw;
 					margin: 40px 0px;
 				}
 			}
@@ -2322,9 +2308,9 @@ a:hover {
 			margin: 0px auto;
 		}
 		p {
-			font-size: 22px;
+			font-size: 4.0vw;
 			margin-top: 50px;
-			line-height: 1.8;
+			line-height: 2.0;
 			margin-bottom: 40px;
 		}
 		.link-button {
@@ -2492,14 +2478,15 @@ a:hover {
 			margin: 40px auto 30px;
 			p {
 				width: 100%;
-				font-size: 5vw;
+				font-size: 4.6vw;
 				font-weight: bold;
 			}
 			ul {
 				width: 100%;
 				color: $blue;
+				margin-top: 10px;
 				li {
-					font-size: 4vw;
+					font-size: 4.0vw;
 				}
 			}
 		}
@@ -2526,6 +2513,10 @@ a:hover {
 				margin: 0px auto 100px;
 				padding: 30px 5%;
 				position: relative;
+				p {
+					font-size: 4.0vw;
+					line-height: 2.0;
+				}
 			}
 			.artist-right {
 				width: 90%;
@@ -2535,6 +2526,10 @@ a:hover {
 				margin: 0px auto;
 				padding: 30px 5%;
 				position: relative;
+				p {
+					font-size: 4.0vw;
+					line-height: 2.0;
+				}
 			}
 			.half-circle-lo__half-circle-mod {
 				-moz-border-radius: 58px 58px 0 0;
@@ -2625,15 +2620,15 @@ a:hover {
 		margin-top: 60px;
 		position: relative;
 		h2 {
-			width: 72%;
-			padding: 10px 14%;
+			width: 66%;
+			padding: 10px 17%;
 			background: $yellow;
 			border-radius: 3px;
 			margin: 0px auto;
 			font-family: $mgenBold;
 			text-align: center;
 			color: #fff;
-			font-size: 6.1vw;
+			font-size: 4.0vw;
 			letter-spacing: 0.1em;
 		}
 		.l-samary {
@@ -2728,7 +2723,7 @@ a:hover {
 				display: block;
 			}
 			h2 {
-				font-size: 24px;
+				font-size: 4.6vw;
 				color: $black;
 				font-weight: bold;
 				text-align: center;
@@ -2739,6 +2734,8 @@ a:hover {
 			dl {
 				width: 100%;
 				margin-bottom: 20px;
+				font-size: 4.0vw;
+				line-height: 2.0;
 				dt {
 					width: 100%;
 				}
@@ -2750,6 +2747,13 @@ a:hover {
 				}
 			}
 			p a {
+				color: $blue;
+			}
+		}
+		p {
+			font-size: 4.0vw;
+			margin-top: 40px;
+			a{
 				color: $blue;
 			}
 		}
@@ -2854,7 +2858,7 @@ a:hover {
 				color: $black;
 				text-align: center;
 				span {
-					font-size: 7vw;
+					font-size: 6.0vw;
 				}
 			}
 			ul {
