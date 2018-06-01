@@ -146,6 +146,7 @@ $(window).on('load',function(){
 	});
 });
 
+// ローディング
 $(function() {
   var h = $(window).height(); 
   $('#wrap').css('display','none');
