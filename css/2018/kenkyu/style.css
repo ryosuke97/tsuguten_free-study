@@ -2766,6 +2766,9 @@ img {
  Section11 スポンサー
 ------------------------------------------------------------------*/
 @media all and (min-width: 769px) {
+  .section11 {
+    margin-top: 20px;
+  }
   .section11 .sponsorship {
     width: 77%;
     margin: 0px auto;
@@ -2808,6 +2811,9 @@ img {
   }
 }
 @media all and (max-width: 768px) {
+  .section11 {
+    margin-top: 50px;
+  }
   .section11 .sponsorship {
     width: 100%;
     margin: 0px auto;
