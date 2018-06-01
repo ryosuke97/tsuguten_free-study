@@ -20,6 +20,7 @@ html{
 	- Fails on FF.
 	*/
 	body,
+	header,
 	div,
 	dl,
 	dt,
@@ -46,6 +47,7 @@ html{
 	td {
 	margin:0;
 	padding:0;
+	box-sizing: border-box;
 	}
 	table {
 	border-spacing:0;
