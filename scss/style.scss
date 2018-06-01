@@ -143,15 +143,20 @@ img {
 	width: 300px;
 	display: inline-block;
 	position: relative;
-	height: 50px;/*リボンの高さ*/
-	line-height: 50px;/*リボンの高さ*/
+	height: 50px;
+	line-height: 50px;
 	vertical-align: middle;
 	text-align: center;
-	padding: 0 30px;/*横の大きさ*/
-	font-size: 20px;/*文字の大きさ*/
-	background: $blue;/*塗りつぶし色*/
-	color: #FFF;/*文字色*/
+	padding: 0 30px;
+	font-size: 20px;
+	color: #FFF;
 	box-sizing: border-box;
+}
+.ribbon-blue {
+	background: $blue;
+}
+.ribbon-yellow {
+	background: $yellow;
 }
 .ribbon:before, .ribbon:after{
 	position: absolute;
@@ -1872,7 +1877,7 @@ img {
 		position: relative;
 		.text-area {
 			width: 90%;
-			margin: 0px auto 300px;
+			margin: 0px auto;
 			padding-top: 350px;
 			h2 {
 				width: 100%;
@@ -2078,10 +2083,11 @@ img {
 			width: 100%;
 			padding: 90px 0px 10px;
 			background: url("../../../img/2018/kenkyu/bg02.jpg") repeat;
-			margin: 125px auto 0px;
+			// margin: 125px auto 0px;
+			position: relative;
 			h2 {
 				position: absolute;
-				top: 25%;
+				top: 0%;
 				left: 50%;
 				-webkit-transform: translate(-50%,-50%);
 				-moz-transform: translate(-50%,-50%);
