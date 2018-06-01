@@ -2165,12 +2165,36 @@ img {
 					width: 100%;
 					height: auto;
 					margin: 0px auto;
-					background: url("../../../img/2018/kenkyu/fukidashi02-sp.png") center center no-repeat;
-					background-size: 100% 100%;
+					// background: url("../../../img/2018/kenkyu/fukidashi02-sp.png") center center no-repeat;
+					// background-size: 100% 100%;
+					position: relative;
+					border: 1px solid $yellow;
+					border-radius: 5px;
+					background-color: #fff;
+					&::before,
+					&::after {
+						position: absolute;
+						left: 65%;
+						top: 100%;
+						border: solid transparent;
+						content: '';
+						height: 0;
+						width: 0;
+						border-top: 20px solid $yellow;
+						border-left: 25px solid transparent;
+					}
+					&::before {
+						border-top-color: $yellow;
+    				margin-left: -15px;
+					}
+					&::after {
+						border-top-color: #fff;
+						margin: -2px 0 0 -15.5px;
+					}
 					p {
 						width: 83%;
 						height: auto;
-						padding: 10px 0px 30px;
+						padding: 10px 0px 10px;
 						// font-size: 4.0vw;
 						margin: 10px auto;
 					}
