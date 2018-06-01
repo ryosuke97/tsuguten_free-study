@@ -655,20 +655,6 @@ img {
 							background-size: contain;
 							vertical-align: text-bottom;
 						}
-						&::after {
-							content: '';
-							width: 10px;
-							height: 10px;
-							border: 0px;
-							border-top: solid 2px $lightGray;
-							border-right: solid 2px $lightGray;
-							-ms-transform: rotate(135deg);
-							-webkit-transform: rotate(135deg);
-							transform: rotate(135deg);
-							position: absolute;
-							top: 35%;
-							right: 2%;
-						}
 					}
 					.nav01 {
 						&::before {
