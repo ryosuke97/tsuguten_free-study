@@ -82,14 +82,12 @@ img {
   h2 {
     width: 100%;
     font-family: "mgenplus-1m-bold";
-    font-size: 6vw;
     color: #2b5db7;
     text-align: center;
     letter-spacing: 0.1em;
   }
 
   h3 {
-    font-size: 4.6vw;
     color: #2c2c2c;
     font-weight: bold;
     text-align: center;
@@ -287,7 +285,6 @@ img {
 @media all and (max-width: 768px) {
   .link-button {
     width: 100%;
-    font-size: 4.6vw;
     text-decoration: none;
     margin-top: 30px;
     padding: 15px 0%;
@@ -521,7 +518,7 @@ img {
 }
 @media all and (max-width: 945px) {
   .open {
-    transform: translateY(694px);
+    transform: translateY(660px);
     z-index: 100 !important;
   }
 
@@ -563,7 +560,7 @@ img {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 13px;
+    top: 6px;
     right: 12px;
     z-index: 1000;
   }
@@ -627,13 +624,14 @@ img {
     z-index: 100;
   }
   nav ul {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0px auto;
   }
   nav ul li {
-    width: 100%;
+    width: 90%;
     height: 70px;
     font-size: 18px;
+    margin: 0px auto;
     border-bottom: 1px solid #b2b2b2;
     display: flex;
     align-items: center;
@@ -693,7 +691,7 @@ img {
 @media all and (min-width: 768px) {
   header {
     width: 100%;
-    height: 96px;
+    height: 60px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -704,7 +702,7 @@ img {
   }
   header .logo {
     width: 30%;
-    height: 96px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -719,15 +717,15 @@ img {
     box-sizing: border-box;
   }
   header .menu-trigger {
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
     background: #ffb700;
-    border-radius: 19px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 32px;
+    top: 6px;
     right: 12px;
     z-index: 1000;
   }
@@ -743,16 +741,16 @@ img {
     margin: 0 auto;
   }
   header .menu-trigger span:nth-of-type(1) {
-    top: 9px;
-    left: 9px;
+    top: 14px;
+    left: 12px;
   }
   header .menu-trigger span:nth-of-type(2) {
-    top: 18px;
-    left: 9px;
+    top: 23px;
+    left: 12px;
   }
   header .menu-trigger span:nth-of-type(3) {
-    top: 27px;
-    left: 9px;
+    top: 32px;
+    left: 12px;
   }
   header .menu-trigger span {
     transition: all 0.2s ease-out;
@@ -769,7 +767,7 @@ img {
   .mv {
     height: 630px;
     position: relative;
-    margin: 94px 0 80px;
+    margin: 60px 0 80px;
     background: url("../../../img/2018/kenkyu/img_mv.png") center right no-repeat;
     background-size: cover;
   }
@@ -819,7 +817,6 @@ img {
   .mv .sp-text {
     width: 90%;
     font-family: "mgenplus-1m-medium";
-    font-size: 4.6vw;
     color: #222;
     text-align: center;
     margin: 260px auto 70px;
@@ -936,7 +933,6 @@ img {
     width: 100%;
   }
   .l-sub-view .sub-view-text-area .sub-view-text p {
-    font-size: 4.0vw;
     line-height: 2;
     margin: 50px 0px;
   }
@@ -1049,7 +1045,6 @@ img {
   }
   .feature-content section {
     width: 100%;
-    font-size: 4.0vw;
     margin: 60px auto 0px;
     padding-bottom: 60px;
     border-bottom: 2px dotted #b2b2b2;
@@ -1172,9 +1167,6 @@ img {
     padding: 50px 0px 0px;
     position: relative;
   }
-  .section02 h2 {
-    margin-bottom: 4.6vw;
-  }
   .section02 h2 .how2use-link {
     position: absolute;
     top: -94px;
@@ -1189,11 +1181,7 @@ img {
   }
   .section02 .text-area {
     width: 100%;
-    font-size: 4.0vw;
     padding-top: 40px;
-  }
-  .section02 .text-area h3 {
-    font-size: 4.6vw;
   }
   .section02 .complete-img {
     text-align: center;
@@ -1478,9 +1466,6 @@ img {
     padding: 80px 0px;
     position: relative;
   }
-  .section03 .l-text-center {
-    font-size: 4vw;
-  }
   .section03 h2 {
     position: absolute;
     top: 0px;
@@ -1529,27 +1514,20 @@ img {
     z-index: 10;
   }
   .section03 .l-info .l-infoL .benefits h4 {
-    font-size: 4.6vw;
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
   }
   .section03 .l-info .l-infoL .benefits p {
     width: 84%;
-    font-size: 4.0vw;
     margin: 20px auto;
     line-height: 1.7;
   }
-  .section03 .l-info .l-infoL .benefits p span {
-    font-size: 3.0vw;
-  }
   .section03 .l-info .l-infoR {
-    text-align: center;
     margin-top: 50px;
   }
   .section03 .l-info .l-infoR dl {
     width: 100%;
-    font-size: 4.6vw;
     margin-bottom: 50px;
   }
   .section03 .l-info .l-infoR dl:last-child {
@@ -1570,14 +1548,11 @@ img {
     width: 100%;
     margin-top: 30px;
   }
-  .section03 .l-info .l-infoR dl dd span {
-    font-size: 4.0vw;
-  }
   .section03 .l-info .l-infoR img {
+    width: 100%;
     margin-top: 50px;
   }
   .section03 .l-info .l-infoR p {
-    font-size: 3.0vw;
     line-height: 2.0;
   }
   .section03 .schedule {
@@ -1586,7 +1561,6 @@ img {
   }
   .section03 .schedule h3 {
     width: 100%;
-    font-size: 6.0vw;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
@@ -1827,7 +1801,6 @@ img {
   }
   .section04 .text-area h2 {
     width: 100%;
-    font-size: 6vw;
     color: #2c2c2c;
   }
   .section04 .text-area svg {
@@ -1844,17 +1817,10 @@ img {
     stroke-dasharray: 0.5px, 30px;
   }
   .section04 .text-area p {
-    font-size: 4.0vw;
     margin-top: 20px;
     line-height: 1.75;
   }
 }
-@media all and (max-width: 768px) and (min-width: 600px) {
-  .section04 .text-area p {
-    font-size: 4.0vw;
-  }
-}
-
 @media all and (min-width: 1300px) {
   .section04 {
     height: 600px;
@@ -2072,7 +2038,6 @@ img {
     width: 83%;
     height: auto;
     padding: 10px 0px 30px;
-    font-size: 4.0vw;
     margin: 10px auto;
   }
   .section05 .voice .l-voice .baloon02 {
@@ -2086,7 +2051,6 @@ img {
     width: 83%;
     height: auto;
     padding: 10px 0px 30px;
-    font-size: 4.0vw;
     margin: 10px auto;
   }
   .section05 .voice .l-voice--reverse {
@@ -2176,7 +2140,6 @@ img {
   }
   .section06 .entry-content .right-box h2 {
     width: 84%;
-    font-size: 6vw;
     margin: 0px auto 50px;
     text-align: center;
   }
@@ -2185,7 +2148,6 @@ img {
   }
   .section06 .entry-content .right-box p {
     width: 100%;
-    font-size: 4.0vw;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -2251,7 +2213,6 @@ img {
   }
   .section07 h2 {
     width: 84%;
-    font-size: 6vw;
     position: absolute;
     top: 0px;
     left: 50%;
@@ -2276,7 +2237,6 @@ img {
     width: 100%;
   }
   .section07 .b-staff-wanted .left-box p {
-    font-size: 4.0vw;
     margin: 40px 0px;
   }
   .section07 .b-staff-wanted .right-box {
@@ -2333,12 +2293,10 @@ img {
   }
   .section08 h2 {
     width: 84%;
-    font-size: 6vw;
     text-align: center;
     margin: 0px auto;
   }
   .section08 p {
-    font-size: 4.0vw;
     margin-top: 50px;
     line-height: 2.0;
     margin-bottom: 40px;
@@ -2494,7 +2452,6 @@ img {
   }
   .section09 h2 {
     width: 84%;
-    font-size: 6vw;
     margin: 0px auto;
     color: #2c2c2c;
   }
@@ -2507,16 +2464,12 @@ img {
   }
   .section09 .b-team-list p {
     width: 100%;
-    font-size: 4.6vw;
     font-weight: bold;
   }
   .section09 .b-team-list ul {
     width: 100%;
     color: #2b5db7;
     margin-top: 10px;
-  }
-  .section09 .b-team-list ul li {
-    font-size: 4.0vw;
   }
   .section09 .artist {
     width: 100%;
@@ -2544,7 +2497,6 @@ img {
     position: relative;
   }
   .section09 .artist .artist-left p {
-    font-size: 4.0vw;
     line-height: 2.0;
   }
   .section09 .artist .artist-right {
@@ -2557,7 +2509,6 @@ img {
     position: relative;
   }
   .section09 .artist .artist-right p {
-    font-size: 4.0vw;
     line-height: 2.0;
   }
   .section09 .artist .half-circle-lo__half-circle-mod {
@@ -2640,20 +2591,17 @@ img {
     position: relative;
   }
   .section10 h2 {
-    width: 66%;
+    margin: 30px auto 50px;
     padding: 10px 17%;
     background: #ffb700;
     border-radius: 3px;
-    margin: 0px auto;
     font-family: "mgenplus-1m-bold";
     text-align: center;
     color: #fff;
-    font-size: 4.0vw;
     letter-spacing: 0.1em;
   }
   .section10 .l-samary {
     width: 100%;
-    margin: 30px auto 50px;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -2663,7 +2611,6 @@ img {
   }
   .section10 .l-samary p {
     width: 100%;
-    font-size: 4.0vw;
     line-height: 1.7;
   }
 }
@@ -2725,7 +2672,6 @@ img {
     display: block;
   }
   .section11 .sponsorship h2 {
-    font-size: 4.6vw;
     color: #2c2c2c;
     font-weight: bold;
     text-align: center;
@@ -2734,7 +2680,6 @@ img {
   .section11 .sponsorlist dl {
     width: 100%;
     margin-bottom: 20px;
-    font-size: 4.0vw;
     line-height: 2.0;
   }
   .section11 .sponsorlist dl dt {
@@ -2750,7 +2695,6 @@ img {
     color: #2b5db7;
   }
   .section11 p {
-    font-size: 4.0vw;
     margin-top: 40px;
   }
   .section11 p a {
@@ -2849,12 +2793,8 @@ img {
   .section12 .l-cv-content h2 {
     width: 100%;
     font-family: "mgenplus-1m-bold";
-    font-size: 4.0vw;
     color: #2c2c2c;
     text-align: center;
-  }
-  .section12 .l-cv-content h2 span {
-    font-size: 6.0vw;
   }
   .section12 .l-cv-content ul {
     width: 100%;
