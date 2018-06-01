@@ -140,10 +140,14 @@ img {
 	box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 .fade-in {
-  transition: opacity 0.7s;
-  -moz-transition: opacity 0.7s;
-  -webkit-transition: opacity 0.7s;
-  -o-transition: opacity 0.7s;
+  transition: opacity 1.0s;
+  -moz-transition: opacity 1.0s;
+  -webkit-transition: opacity 1.0s;
+  -o-transition: opacity 1.0s;
+  transition: transform 0.7s;
+  -moz-transition: transform 0.7s;
+  -webkit-transition: transform 0.7s;
+  -o-transition: transform 0.7s;
 }
 @media all and (min-width: 769px){
 	.link-button {
@@ -662,7 +666,7 @@ img {
 							-webkit-transform: rotate(135deg);
 							transform: rotate(135deg);
 							position: absolute;
-							top: 46%;
+							top: 35%;
 							right: 2%;
 						}
 					}
@@ -814,12 +818,18 @@ img {
 // SP
 @media all and (max-width: 768px){
 	.mv {
-		height: 600px;
+		// height: 600px;
 		margin: 60px 0px 0px;
 		position: relative;
 		background: url("../../../img/2018/kenkyu/img_sp-mv.jpg") center right no-repeat;
 		background-size: cover;
 		@at-root .mv-content {
+			.b-link-button {
+				width: 100%;
+				position: absolute;
+				bottom: -180px;
+				left: 0px;
+			}
 			.link-button {
 				display: block;
 				width: 90%;
@@ -832,9 +842,6 @@ img {
 			text-align: center;
 			margin: 0 auto;
 			padding-top: 30px;
-			.pc-img {
-				// display: none;
-			}
 			.sp-img {
 				width: 100%;
 			}
@@ -842,17 +849,20 @@ img {
 		.sp-text {
 			width: 90%;
 			font-family: $mgenMedium;
-			// font-size: 4.6vw;
+			font-size: 18px;
 			color: #222;
 			text-align: center;
-			margin: 260px auto 70px;
 			text-shadow: 0 2px 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, -2px 0 0 #fff, 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, -2px -2px 0 #fff;
+			// margin: 260px auto 70px;
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			-moz-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
 		}
-	}
-	.sp-cv {
-		width: 100%;
-		height: 230px;
-		padding: 20px 0px 0px;
 	}
 }
 
@@ -944,7 +954,7 @@ img {
 	.l-sub-view {
 		width: 100%;
 		position: relative;
-		padding-top: 45%;
+		padding-top: 200px;
 		.sub-view-text-area {
 			width: 100%;
 			z-index: 10;
@@ -2635,6 +2645,9 @@ img {
 			text-align: center;
 			color: #fff;
 			letter-spacing: 0.1em;
+			br {
+				display: none;
+			}
 		}
 		.l-samary {
 			width: 77%;

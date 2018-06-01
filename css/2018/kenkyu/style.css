@@ -142,10 +142,14 @@ img {
 }
 
 .fade-in {
-  transition: opacity 0.7s;
-  -moz-transition: opacity 0.7s;
-  -webkit-transition: opacity 0.7s;
-  -o-transition: opacity 0.7s;
+  transition: opacity 1.0s;
+  -moz-transition: opacity 1.0s;
+  -webkit-transition: opacity 1.0s;
+  -o-transition: opacity 1.0s;
+  transition: transform 0.7s;
+  -moz-transition: transform 0.7s;
+  -webkit-transition: transform 0.7s;
+  -o-transition: transform 0.7s;
 }
 
 @media all and (min-width: 769px) {
@@ -663,7 +667,7 @@ img {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     position: absolute;
-    top: 46%;
+    top: 35%;
     right: 2%;
   }
   nav ul li .nav01::before {
@@ -797,11 +801,16 @@ img {
 }
 @media all and (max-width: 768px) {
   .mv {
-    height: 600px;
     margin: 60px 0px 0px;
     position: relative;
     background: url("../../../img/2018/kenkyu/img_sp-mv.jpg") center right no-repeat;
     background-size: cover;
+  }
+  .mv-content .b-link-button {
+    width: 100%;
+    position: absolute;
+    bottom: -180px;
+    left: 0px;
   }
   .mv-content .link-button {
     display: block;
@@ -821,16 +830,18 @@ img {
   .mv .sp-text {
     width: 90%;
     font-family: "mgenplus-1m-medium";
+    font-size: 18px;
     color: #222;
     text-align: center;
-    margin: 260px auto 70px;
     text-shadow: 0 2px 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, -2px 0 0 #fff, 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, -2px -2px 0 #fff;
-  }
-
-  .sp-cv {
-    width: 100%;
-    height: 230px;
-    padding: 20px 0px 0px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 /*------------------------------------------------------------------
@@ -921,7 +932,7 @@ img {
   .l-sub-view {
     width: 100%;
     position: relative;
-    padding-top: 45%;
+    padding-top: 200px;
   }
   .l-sub-view .sub-view-text-area {
     width: 100%;
@@ -2563,6 +2574,9 @@ img {
     text-align: center;
     color: #fff;
     letter-spacing: 0.1em;
+  }
+  .section10 h2 br {
+    display: none;
   }
   .section10 .l-samary {
     width: 77%;
