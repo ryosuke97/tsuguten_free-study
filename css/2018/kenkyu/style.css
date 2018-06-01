@@ -842,6 +842,7 @@ img {
     position: absolute;
     bottom: -180px;
     left: 0px;
+    z-index: 10;
   }
   .mv-content .link-button {
     display: block;
@@ -1040,6 +1041,10 @@ img {
     width: 22%;
     font-size: 20px;
   }
+  .feature-content section img {
+    max-width: 212px;
+    width: 100%;
+  }
   .featureText {
     width: 100%;
   }
@@ -1098,6 +1103,8 @@ img {
   .feature-content img {
     display: block;
     margin: 0px auto;
+    max-width: 212px;
+    width: 100%;
   }
   .featureText {
     width: 100%;
