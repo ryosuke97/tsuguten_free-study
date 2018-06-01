@@ -1993,13 +1993,16 @@ img {
 				.baloon01 {
 					width: 75%;
 					height: auto;
-					background: url("../../../img/2018/kenkyu/fukidashi01.png") center center no-repeat;
-					background-size: 100% auto;
-					&::before {
-						content: "";
-						display: block;
-						padding-top: 9%;
-					}
+					position: relative;
+					border: 1px solid #000000;
+					background-color: #FFFFFF;
+					// background: url("../../../img/2018/kenkyu/fukidashi01.png") center center no-repeat;
+					// background-size: 100% auto;
+					// &::before {
+					// 	content: "";
+					// 	display: block;
+					// 	padding-top: 9%;
+					// }
 					p {
 						width: 88%;
 						height: auto;
@@ -2107,6 +2110,7 @@ img {
 				.adjust-box {
 					width: 30%;
 					height: auto;
+					margin-top: 20px;
 				}
 				.box-1x1::before {
 					content: "";
@@ -2118,14 +2122,43 @@ img {
 					height: auto;
 					margin: 0px auto;
 					display: flex;
-					background: url("../../../img/2018/kenkyu/fukidashi01-sp.png") center center no-repeat;
-					background-size: 100% 100%;
+					// background: url("../../../img/2018/kenkyu/fukidashi01-sp.png") center center no-repeat;
+					// background-size: 100% 100%;
+					position: relative;
+					border: 1px solid $yellow;
+					border-radius: 5px;
+					background-color: #fff;
+					&::before,
+					&::after {
+						position: absolute;
+						left: 35%;
+						top: 100%;
+						border: solid transparent;
+						content: '';
+						height: 0;
+						width: 0;
+						border-top: 20px solid $yellow;
+						border-right: 25px solid transparent;
+					}
+					&::before {
+						border-top-color: $yellow;
+    				margin-left: -15px;
+					}
+					&::after {
+						border-top-color: #fff;
+						margin: -2px 0 0 -14.5px;
+					}
 					p {
-						width: 83%;
+						width: 90%;
 						height: auto;
-						padding: 10px 0px 30px;
+						padding: 10px 0px 10px;
 						// font-size: 4.0vw;
 						margin: 10px auto;
+					}
+					img {
+						max-width: 100%;
+						display: block;
+						margin-top: 20px;
 					}
 				}
 				.baloon02 {
