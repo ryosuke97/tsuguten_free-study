@@ -1938,6 +1938,9 @@ img {
     transform: translate(-50%, -50%);
     z-index: 10;
   }
+  .section05 .voice .l-voice--reverse .adjust-box {
+    text-align: right;
+  }
   .section05 .voice .l-voice {
     width: 88%;
     height: auto;
@@ -1997,21 +2000,41 @@ img {
     padding: 20px 0px;
   }
   .section05 .voice .l-voice .baloon02 {
-    width: 75%;
+    width: 90%;
     height: auto;
-    background: url("../../../img/2018/kenkyu/fukidashi02.png") center center no-repeat;
-    background-size: 100% auto;
+    border: 1px solid #ffb700;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+  }
+  .section05 .voice .l-voice .baloon02::before, .section05 .voice .l-voice .baloon02::after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
   }
   .section05 .voice .l-voice .baloon02::before {
-    content: "";
-    display: block;
-    padding-top: 10%;
+    border-color: rgba(44, 44, 44, 0);
+    border-left-color: #ffb700;
+    border-width: 21px;
+    margin-top: -21px;
+  }
+  .section05 .voice .l-voice .baloon02::after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #fff;
+    border-width: 20px;
+    margin-top: -20px;
   }
   .section05 .voice .l-voice .baloon02 p {
-    width: 88%;
+    width: 90%;
     height: auto;
     font-size: 20px;
-    margin: 0 5% 0 4%;
+    margin: 0px auto 0px;
+    padding: 20px 0px;
   }
   .section05 .voice .l-voice--reverse {
     flex-direction: row-reverse;

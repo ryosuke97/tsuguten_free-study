@@ -1972,6 +1972,11 @@ img {
 				transform: translate(-50%,-50%);
 				z-index: 10;
 			}
+			.l-voice--reverse {
+				.adjust-box {
+					text-align: right;
+				}
+			}
 			.l-voice {
 				width: 88%;
 				height: auto;
@@ -2031,20 +2036,41 @@ img {
 					}
 				}
 				.baloon02 {
-					width: 75%;
+					width: 90%;
 					height: auto;
-					background: url("../../../img/2018/kenkyu/fukidashi02.png") center center no-repeat;
-					background-size: 100% auto;
-					&::before {
+					border: 1px solid $yellow;
+					border-radius: 5px;
+					background-color: #fff;
+					position: relative;
+					&::before,
+					&::after {
+						left: 100%;
+						top: 50%;
+						border: solid transparent;
 						content: "";
-						display: block;
-						padding-top: 10%;
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+					}
+					&::before {
+						border-color: rgba(44, 44, 44, 0);
+						border-left-color: $yellow;
+						border-width: 21px;
+						margin-top: -21px;
+					}
+					&::after {
+						border-color: rgba(255, 255, 255, 0);
+						border-left-color: #fff;
+						border-width: 20px;
+						margin-top: -20px;
 					}
 					p {
-						width: 88%;
+						width: 90%;
 						height: auto;
 						font-size: 20px;
-						margin: 0 5% 0 4% ;
+						margin: 0px auto 0px;
+						padding: 20px 0px;
 					}
 				}
 			}
