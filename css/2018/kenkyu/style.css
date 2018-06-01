@@ -495,10 +495,8 @@ img {
     background-size: contain;
     vertical-align: text-bottom;
   }
-  nav .nav01::before {
-    width: 20px;
-    height: 20px;
-    background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
+  nav .nav01 {
+    display: none;
   }
   nav .nav02::before {
     width: 21px;
@@ -507,13 +505,18 @@ img {
   }
   nav .nav03::before {
     width: 22px;
-    height: 22px;
+    height: 19px;
     background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
   }
   nav .nav04::before {
-    width: 26px;
+    width: 22px;
     height: 22px;
     background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
+  }
+  nav .nav05::before {
+    width: 26px;
+    height: 22px;
+    background: url(../../../img/2018/kenkyu/icn_nav05.png) center center no-repeat;
   }
 }
 @media all and (max-width: 945px) {
@@ -615,7 +618,7 @@ img {
   }
   nav {
     width: 100%;
-    height: 330px;
+    height: 380px;
     background: #fff;
     position: absolute;
     top: -600px;
@@ -665,27 +668,28 @@ img {
   }
   nav ul li .nav01::before {
     width: 24px;
-    height: 24px;
-    background: url(../../../img/2018/kenkyu/icn_sp_nav01.png) center center no-repeat;
-    background-size: contain;
+    height: 21px;
+    background: url(../../../img/2018/kenkyu/icn_nav01.png) center center no-repeat;
   }
   nav ul li .nav02::before {
-    width: 24px;
-    height: 22px;
-    background: url(../../../img/2018/kenkyu/icn_sp_nav02.png) center center no-repeat;
-    background-size: contain;
+    width: 21px;
+    height: 19px;
+    background: url(../../../img/2018/kenkyu/icn_nav02.png) center center no-repeat;
   }
   nav ul li .nav03::before {
-    width: 25px;
-    height: 25px;
-    background: url(../../../img/2018/kenkyu/icn_sp_nav03.png) center center no-repeat;
-    background-size: contain;
+    width: 22px;
+    height: 19px;
+    background: url(../../../img/2018/kenkyu/icn_nav03.png) center center no-repeat;
   }
   nav ul li .nav04::before {
-    width: 30px;
-    height: 24px;
-    background: url(../../../img/2018/kenkyu/icn_sp_nav04.png) center center no-repeat;
-    background-size: contain;
+    width: 22px;
+    height: 22px;
+    background: url(../../../img/2018/kenkyu/icn_nav04.png) center center no-repeat;
+  }
+  nav ul li .nav05::before {
+    width: 26px;
+    height: 22px;
+    background: url(../../../img/2018/kenkyu/icn_nav05.png) center center no-repeat;
   }
 }
 @media all and (min-width: 768px) {
