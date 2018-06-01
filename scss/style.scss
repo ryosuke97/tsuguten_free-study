@@ -56,7 +56,7 @@ h1 {
 h2 {
 	width: 100%;
 	font-family: $mgenBold;
-	font-size: 34px;
+	font-size: 24px;
 	font-weight: bold;
 	color: $blue;
 	text-align: center;
@@ -84,17 +84,23 @@ img {
 	h2 {
 		width: 100%;
 		font-family: $mgenBold;
-		// font-size: 6vw;
 		color: $blue;
 		text-align: center;
 		letter-spacing: 0.1em;
 	}
 	h3 {
-		// font-size: 4.6vw;
 		color: $black;
 		font-weight: bold;
 		text-align: center;
 		margin: 24px 0px 16px;
+	}
+}
+@media all and (max-width: 415px){
+	h2 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 20px;
 	}
 }
 .wrap {
@@ -167,14 +173,14 @@ img {
 }
 .ribbon:before{
 	top: 0;
-	left: 0;
+	left: -1px;
 	border-width: 25px 0px 25px 15px;
 	border-color: transparent transparent transparent #fff;
 	border-style: solid;
 }
 .ribbon:after{
 	top: 0;
-	right: 0;
+	right: -1px;
 	border-width: 25px 15px 25px 0px;
 	border-color: transparent #fff transparent transparent;
 	border-style: solid;
@@ -189,146 +195,141 @@ img {
   -webkit-transition: transform 0.7s;
   -o-transition: transform 0.7s;
 }
-@media all and (min-width: 769px){
-	.link-button {
-		width: 390px;
-		margin-top: 20px;
-		font-size: 20px;
-		text-decoration: none;
-		padding: 15px 0%;
-		border-radius: 50px;
-		color: #fff;
+.link-button {
+	margin-top: 20px;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 50px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&:hover {
+		box-shadow: none;
+		transform: translate(0px,2px);
+	}
+	&__elm--dl {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		position: relative;
-		&:hover {
-			box-shadow: none;
-			transform: translate(0px,2px);
-		}
-		&__elm--dl {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			&::before {
-				content:"";
-				display:inline-block;
-				width:1.2em;
-				height:1.2em;
-				background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
-				background-size:contain;
-				margin-right: 10px;
-			}
-		}
-		&__elm--entry {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			&::before {
-				content:"";
-				display:inline-block;
-				width:1.2em;
-				height:1.2em;
-				background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
-				background-size:contain;
-				margin-right: 20px;
-			}
-			&::after {
-				content:"";
-				display:inline-block;
-				width:1.2em;
-				height:1.2em;
-				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-				background-size:contain;
-				position: absolute;
-				top: 50%;
-				right: 20px;
-				-webkit-transform: translate(0%,-50%);
-				-moz-transform: translate(0%,-50%);
-				-ms-transform: translate(0%,-50%);
-				-o-transform: translate(0%,-50%);
-				transform: translate(0%,-50%);
-			}
-		}
-		&__elm--staff-entry {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			&::before {
-				content:"";
-				display:inline-block;
-				width:1.2em;
-				height:1.2em;
-				background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
-				background-size:contain;
-				margin-right: 7px;
-			}
-			&::after {
-				content:"";
-				display:inline-block;
-				width:1.3em;
-				height:1.3em;
-				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-				background-size:contain;
-				margin-left: 7px;
-			}
-		}
-		&__elm--donation {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 390px;
-			margin: 0px auto;
-			&::before {
-				content:"";
-				display:inline-block;
-				width:1.2em;
-				height:1.2em;
-				background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
-				background-size:contain;
-				margin-right: 7px;
-			}
-			&::after {
-				content:"";
-				display:inline-block;
-				width:1.3em;
-				height:1.3em;
-				background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
-				background-size:contain;
-				position: absolute;
-				top: 50%;
-				right: 20px;
-				-webkit-transform: translate(0%,-50%);
-				-moz-transform: translate(0%,-50%);
-				-ms-transform: translate(0%,-50%);
-				-o-transform: translate(0%,-50%);
-				transform: translate(0%,-50%);
-			}
+		width: 100%;
+		&::before {
+			content:"";
+			display:inline-block;
+			width:1.2em;
+			height:1.2em;
+			background: url("../../../img/2018/kenkyu/icn_dl.png") no-repeat;
+			background-size:contain;
+			margin-right: px;
 		}
 	}
-	.button-blue {
-		background: $blue;
-		box-shadow: 0px 5px 2px #113981;
-		:hover {
-			box-shadow: none;
+	&__elm--entry {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		&::before {
+			content:"";
+			display:inline-block;
+			width:1.2em;
+			height:1.2em;
+			background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
+			background-size:contain;
+			margin-right: 7px;
+		}
+		&::after {
+			content:"";
+			display:inline-block;
+			width:1.2em;
+			height:1.2em;
+			background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+			background-size:contain;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			-webkit-transform: translate(0%,-50%);
+			-moz-transform: translate(0%,-50%);
+			-ms-transform: translate(0%,-50%);
+			-o-transform: translate(0%,-50%);
+			transform: translate(0%,-50%);
 		}
 	}
-	.button-yellow {
-		background: $yellow;
-		box-shadow: 0px 5px 2px #c08a00;
+	&__elm--staff-entry {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		&::before {
+			content:"";
+			display:inline-block;
+			width:1.2em;
+			height:1.2em;
+			background: url("../../../img/2018/kenkyu/icn_t-shirt.png") no-repeat;
+			background-size:contain;
+			margin-right: 7px;
+		}
+		&::after {
+			content:"";
+			display:inline-block;
+			width:1.3em;
+			height:1.3em;
+			background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+			background-size:contain;
+			margin-left: 7px;
+		}
 	}
+	&__elm--donation {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px auto;
+		&::before {
+			content:"";
+			display:inline-block;
+			width:1.2em;
+			height:1.2em;
+			background: url("../../../img/2018/kenkyu/icn_clover.png") no-repeat;
+			background-size:contain;
+			margin-right: 7px;
+		}
+		&::after {
+			content:"";
+			display:inline-block;
+			width:1.3em;
+			height:1.3em;
+			background: url("../../../img/2018/kenkyu/icn_arrow.png") no-repeat;
+			background-size:contain;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			-webkit-transform: translate(0%,-50%);
+			-moz-transform: translate(0%,-50%);
+			-ms-transform: translate(0%,-50%);
+			-o-transform: translate(0%,-50%);
+			transform: translate(0%,-50%);
+		}
+	}
+}
+.button-blue {
+	background: $blue;
+	box-shadow: 0px 5px 2px #113981;
+	:hover {
+		box-shadow: none;
+	}
+}
+.button-yellow {
+	background: $yellow;
+	box-shadow: 0px 5px 2px #c08a00;
 }
 // SP
 @media all and (max-width: 768px){
 	.link-button {
-		width: 100%;
-		// font-size: 4.6vw;
+		width: auto;
 		text-decoration: none;
 		margin-top: 30px;
-		padding: 15px 0%;
+		padding: 15px;
 		border-radius: 50px;
 		color: #fff;
 		display: flex;
@@ -366,7 +367,7 @@ img {
 				height:1.2em;
 				background: url("../../../img/2018/kenkyu/icn_white-face.png") no-repeat;
 				background-size:contain;
-				margin-right: 20px;
+				margin-right: 7px;
 			}
 			&::after {
 				content:"";
@@ -413,7 +414,6 @@ img {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: 390px;
 			margin: 0px auto;
 			&::before {
 				content:"";
@@ -844,7 +844,7 @@ img {
 // SP
 @media all and (max-width: 768px){
 	.mv {
-		height: 92vh;
+		height: 71vh;
 		margin: 60px 0px 0px;
 		position: relative;
 		background: url("../../../img/2018/kenkyu/img_sp-mv.jpg") center right no-repeat;
@@ -865,30 +865,29 @@ img {
 			}
 		}
 		h1 {
-			max-width: 68%;
+			max-width: 80%;
 			text-align: center;
 			margin: 0 auto;
-			padding-top: 30px;
+			padding-top: 26px;
 			.sp-img {
 				width: 100%;
 			}
 		}
 		.sp-text {
-			width: 90%;
+			width: 86%;
 			font-family: $mgenMedium;
-			font-size: 18px;
+			font-size: 17px;
 			color: #222;
 			text-align: center;
 			text-shadow: 0 2px 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, -2px 0 0 #fff, 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, -2px -2px 0 #fff;
-			// margin: 260px auto 70px;
-			position: absolute;
-			bottom: 20px;
-			left: 50%;
-			-webkit-transform: translate(-50%,-50%);
-			-moz-transform: translate(-50%,-50%);
-			-ms-transform: translate(-50%,-50%);
-			-o-transform: translate(-50%,-50%);
-			transform: translate(-50%,-50%);
+			margin: 0px auto;
+		}
+	}
+}
+@media all and (max-width: 355px){
+	.sp-text {
+		br {
+			display: none;
 		}
 	}
 }
@@ -994,7 +993,6 @@ img {
 			.sub-view-text {
 				width: 100%;
 				p {
-					// font-size: 4.0vw;
 					line-height: 2;
 					margin: 50px 0px;
 				}
@@ -1115,7 +1113,6 @@ img {
 			padding-bottom: 30px;
 			section {
 				width: 100%;
-				// font-size: 4.0vw;
 				margin: 60px auto 0px;
 				padding-bottom: 60px;
 				border-bottom: 2px dotted $lightGray;
@@ -1161,9 +1158,6 @@ img {
 			top: 150px;
 			left: 55%;
 			z-index: 10;
-			img {
-				max-width: 440px;
-			}
 		}
 		.text-content {
 			width: 72%;
@@ -1246,7 +1240,6 @@ img {
 		padding: 50px 0px 0px;
 		position: relative;
 		h2 {
-			// margin-bottom: 4.6vw;
 			.how2use-link {
 				position: absolute;
 				top: -94px;
@@ -1262,10 +1255,8 @@ img {
 		}
 		.text-area {
 			width: 100%;
-			// font-size: 4.0vw;
 			padding-top: 40px;
 			h3 {
-				// font-size: 4.6vw;
 			}
 		}
 		.complete-img {
@@ -1552,11 +1543,9 @@ img {
 		height: auto;
 		background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
 		margin-top: 110px;
-		padding: 80px 0px;
+		padding: 80px 0px 20px 0px;
 		position: relative;
-		.l-text-center {
-			// font-size: 4vw;
-		}
+		box-sizing: border-box;
 		h2 {
 			position: absolute;
 			top: 0px;
@@ -1602,19 +1591,14 @@ img {
 						z-index: 10;
 					}
 					h4 {
-						// font-size: 4.6vw;
 						font-weight: bold;
 						text-align: center;
 						margin-top: 50px;
 					}
 					p {
 						width: 84%;
-						// font-size: 4.0vw;
 						margin: 20px auto;
 						line-height: 1.7;
-						span {
-							// font-size: 3.0vw;
-						}
 					}
 				}
 			}
@@ -1622,14 +1606,13 @@ img {
 				margin-top: 50px;
 				dl {
 					width: 100%;
-					// font-size: 4.6vw;
-					margin-bottom: 50px;
+					margin-bottom: 32px;
 					&:last-child {
 						margin-bottom: 0;
 					}
 					dt {
 						color: #fff;
-						width: 24%;
+						width: 100%;
 						height: 40px;
 						margin-right: 4%;
 						background: $blue;
@@ -1642,7 +1625,6 @@ img {
 						width: 100%;
 						margin-top: 30px;
 						span {
-							// font-size: 4.0vw;
 						}
 					}
 				}
@@ -1651,7 +1633,6 @@ img {
 					margin-top: 50px;
 				}
 				p {
-					// font-size: 3.0vw;
 					line-height: 2.0;
 				}
 			}
@@ -1661,7 +1642,6 @@ img {
 			margin: 80px auto 0px;
 			h3 {
 				width: 100%;
-				// font-size: 6.0vw;
 				font-weight: bold;
 				text-align: center;
 				margin-bottom: 40px;
@@ -1825,6 +1805,7 @@ img {
 		}
 	}
 }
+
 /*------------------------------------------------------------------
  Section04 平和学習ってなに？
 ------------------------------------------------------------------*/
@@ -1871,17 +1852,15 @@ img {
 @media all and (max-width: 768px){
 	.section04 {
 		width: 100%;
-		height: 300px;
-		background: url("../../../img/2018/kenkyu/img_peaceLearning.jpg") center center no-repeat;
-		background-size: cover;
+		background: url("../../../img/2018/kenkyu/img_peaceLearning.jpg") center top no-repeat;
+		background-size: contain;
 		position: relative;
 		.text-area {
 			width: 90%;
 			margin: 0px auto;
-			padding-top: 350px;
+			padding: 56% 0 95px 0;
 			h2 {
 				width: 100%;
-				// font-size: 6vw;
 				color: $black;
 				
 			}
@@ -1899,13 +1878,11 @@ img {
 				stroke-dasharray: 0.5px, 30px;
 			}
 			p {
-				// font-size: 4.0vw;
 				margin-top: 20px;
 				line-height: 1.75;
 			}
 			@media all and (min-width: 600px){
 				p {
-					// font-size: 4.0vw;
 				}
 			}
 		}
@@ -1980,7 +1957,7 @@ img {
 			.l-voice {
 				width: 88%;
 				height: auto;
-				margin: 0px 6% 10px;
+				margin: 0px 6% 40px;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
@@ -2124,7 +2101,6 @@ img {
 @media all and (max-width: 768px){
 	.section05 {
 		position: relative;
-		padding-top: 70%;
 		.wrapper {
 			width: 100%;
 		}
@@ -2144,18 +2120,24 @@ img {
 				transform: translate(-50%,-50%);
 				z-index: 10;
 			}
+			.l-voice--reverse {
+				.adjust-box {
+					text-align: right;
+				}
+			}
 			.l-voice {
-				width: 90%;
+				width: 88%;
 				height: auto;
-				padding: 0px 5%;
-				margin: 0px auto 30px;
+				margin: 0px 6% 40px;
 				display: flex;
 				justify-content: space-between;
-				flex-direction: column-reverse;
+				align-items: center;
 				.adjust-box {
 					width: 30%;
 					height: auto;
-					margin-top: 20px;
+					img {
+						width: 80%;
+					}
 				}
 				.box-1x1::before {
 					content: "";
@@ -2163,87 +2145,85 @@ img {
 					padding-top: 0%;
 				}
 				.baloon01 {
-					width: 100%;
+					width: 90%;
 					height: auto;
-					margin: 0px auto;
-					display: flex;
-					position: relative;
 					border: 1px solid $yellow;
 					border-radius: 5px;
 					background-color: #fff;
+					position: relative;
+					border: 1px solid $yellow;
 					&::before,
 					&::after {
-						position: absolute;
-						left: 35%;
-						top: 100%;
+						right: 100%;
+						top: 50%;
 						border: solid transparent;
-						content: '';
+						content: "";
 						height: 0;
 						width: 0;
-						border-top: 20px solid $yellow;
-						border-right: 25px solid transparent;
+						position: absolute;
+						pointer-events: none;
 					}
 					&::before {
-						border-top-color: $yellow;
-    				margin-left: -15px;
+						border-color: rgba(44, 44, 44, 0);
+						border-right-color: $yellow;
+						border-width: 15px;
+						margin-top: -21px;
 					}
 					&::after {
-						border-top-color: #fff;
-						margin: -2px 0 0 -14.5px;
+						border-color: rgba(255, 255, 255, 0);
+						border-right-color: #fff;
+						border-width: 14px;
+						margin-top: -20px;
 					}
 					p {
 						width: 90%;
 						height: auto;
-						padding: 10px 0px 10px;
-						margin: 10px auto;
-					}
-					img {
-						max-width: 100%;
-						display: block;
-						margin-top: 20px;
+						font-size: 16px;
+						margin: 0px auto 0px;
+						padding: 20px 0px;
 					}
 				}
 				.baloon02 {
-					width: 100%;
+					width: 90%;
 					height: auto;
-					margin: 0px auto;
-					position: relative;
 					border: 1px solid $yellow;
 					border-radius: 5px;
 					background-color: #fff;
+					position: relative;
 					&::before,
 					&::after {
-						position: absolute;
-						left: 65%;
-						top: 100%;
+						left: 100%;
+						top: 50%;
 						border: solid transparent;
-						content: '';
+						content: "";
 						height: 0;
 						width: 0;
-						border-top: 20px solid $yellow;
-						border-left: 25px solid transparent;
+						position: absolute;
+						pointer-events: none;
 					}
 					&::before {
-						border-top-color: $yellow;
-    				margin-left: -15px;
+						border-color: rgba(44, 44, 44, 0);
+						border-left-color: $yellow;
+						border-width: 15px;
+						margin-top: -21px;
 					}
 					&::after {
-						border-top-color: #fff;
-						margin: -2px 0 0 -15.5px;
+						border-color: rgba(255, 255, 255, 0);
+						border-left-color: #fff;
+						border-width: 14px;
+						margin-top: -20px;
 					}
 					p {
-						width: 83%;
+						width: 90%;
 						height: auto;
-						padding: 10px 0px 10px;
-						margin: 10px auto;
+						font-size: 16px;
+						margin: 0px auto 0px;
+						padding: 20px 0px;
 					}
 				}
 			}
 			.l-voice--reverse {
-				flex-direction: column-reverse;
-				.adjust-box {
-					margin-left: auto !important;
-				}
+				flex-direction: row-reverse;
 			}
 		}
 	}
@@ -2277,6 +2257,9 @@ img {
 					width: 100%;
 					max-width: 600px;
 					text-align: left;
+					br {
+						display: none;
+					}
 				}
 				p {
 					width: 100%;
@@ -2327,8 +2310,6 @@ img {
 				width: 100%;
 				position: relative;
 				h2 {
-					width: 84%;
-					// font-size: 6vw;
 					margin: 0px auto 50px;
 					text-align: center;
 				}
@@ -2337,7 +2318,6 @@ img {
 				}
 				p {
 					width: 100%;
-					// font-size: 4.0vw;
 					margin-top: 30px;
 					margin-bottom: 30px;
 				}
@@ -2365,6 +2345,9 @@ img {
 			-o-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
 			z-index: 10;
+			br {
+				display: none;
+			}
 			.staff-recruitment-link {
 				position: absolute;
 				top: -94px;
@@ -2406,8 +2389,6 @@ img {
 		background: $lightBlue;
 		position: relative;
 		h2 {
-			width: 84%;
-			// font-size: 6vw;
 			position: absolute;
 			top: 0px;
 			left: 50%;
@@ -2430,12 +2411,25 @@ img {
 			.left-box {
 				width: 100%;
 				p {
-					// font-size: 4.0vw;
 					margin: 40px 0px;
 				}
 			}
 			.right-box {
 				text-align: center;
+			}
+		}
+		.link-button {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+@media all and (max-width: 440px){
+	.section07 {
+		.link-button {
+			br {
+				display: block;
 			}
 		}
 	}
@@ -2491,20 +2485,16 @@ img {
 		position: relative;
 		h2 {
 			width: 84%;
-			// font-size: 6vw;
 			text-align: center;
 			margin: 0px auto;
 		}
 		p {
-			// font-size: 4.0vw;
 			margin-top: 50px;
 			line-height: 2.0;
 			margin-bottom: 40px;
 		}
 		.link-button {
 			display: block;
-			width: 100%;
-			margin: 0 auto;
 		}
 	}
 }
@@ -2591,7 +2581,7 @@ img {
 			}
 			.half-circle-mod{
 				position: absolute;
-				top: -59px;
+				top: -58px;
 				right: 5%;
 				background: #fff;
 				border-top: 1px solid $blue;
@@ -2651,12 +2641,12 @@ img {
 		padding: 50px 0px;
 		background: url("../../../img/2018/kenkyu/bg04.jpg") repeat;
 		position: relative;
+		box-sizing: border-box;
 		a {
 			color: $blue;
 		}
 		h2 {
 			width: 84%;
-			// font-size: 6vw;
 			margin: 0px auto;
 			color: $black;
 		}
@@ -2668,7 +2658,6 @@ img {
 			margin: 40px auto 30px;
 			p {
 				width: 100%;
-				// font-size: 4.6vw;
 				font-weight: bold;
 			}
 			ul {
@@ -2676,7 +2665,6 @@ img {
 				color: $blue;
 				margin-top: 10px;
 				li {
-					// font-size: 4.0vw;
 				}
 			}
 		}
@@ -2704,7 +2692,6 @@ img {
 				padding: 30px 5%;
 				position: relative;
 				p {
-					// font-size: 4.0vw;
 					line-height: 2.0;
 				}
 			}
@@ -2717,7 +2704,6 @@ img {
 				padding: 30px 5%;
 				position: relative;
 				p {
-					// font-size: 4.0vw;
 					line-height: 2.0;
 				}
 			}
@@ -2730,7 +2716,7 @@ img {
 			}
 			.half-circle-mod{
 				position: absolute;
-				top: -59px;
+				top: -58px;
 				right: 5%;
 				background: #fff;
 				border-top: 1px solid $blue;
@@ -2765,6 +2751,7 @@ img {
 		h2 {
 			width: 77%;
 			padding: 10px 0px;
+			font-size: 26px;
 			background: $yellow;
 			border-radius: 3px;
 			margin: 0px auto;
@@ -2808,15 +2795,17 @@ img {
 		margin-top: 60px;
 		position: relative;
 		h2 {
-			margin: 30px auto 50px;
-			padding: 10px 17%;
+			margin: 30px auto;
+			padding: 10px;
 			background: $yellow;
 			border-radius: 3px;
 			font-family: $mgenBold;
 			text-align: center;
 			color: #fff;
-			// font-size: 4.0vw;
 			letter-spacing: 0.1em;
+			br {
+				display: block;
+			}
 		}
 		.l-samary {
 			width: 100%;
@@ -2828,13 +2817,11 @@ img {
 			}
 			p {
 				width: 100%;
-				// font-size: 4.0vw;
 				line-height: 1.7;
 			}
 		}
 	}
 }
-
 /*------------------------------------------------------------------
  Section11 スポンサー
 ------------------------------------------------------------------*/
@@ -2877,10 +2864,10 @@ img {
 			width: 77%;
 			margin: 40px auto 60px;
 			ul {
-				width: 100%;
-				display: flex;
+				text-align: center;
 				li {
-					margin-right: 40px;
+					margin: 15px;
+					display: inline;
 				}
 			}
 		}
@@ -2901,7 +2888,7 @@ img {
 				display: block;
 			}
 			h2 {
-				// font-size: 4.6vw;
+				font-size: 17px;
 				color: $black;
 				font-weight: bold;
 				text-align: center;
@@ -2912,7 +2899,6 @@ img {
 			dl {
 				width: 100%;
 				margin-bottom: 20px;
-				// font-size: 4.0vw;
 				line-height: 2.0;
 				dt {
 					width: 100%;
@@ -2929,7 +2915,6 @@ img {
 			}
 		}
 		p {
-			// font-size: 4.0vw;
 			margin-top: 40px;
 			a{
 				color: $blue;
@@ -2939,10 +2924,10 @@ img {
 			width: 100%;
 			margin: 40px auto 60px;
 			ul {
-				width: 100%;
-				display: flex;
+				text-align: center;
 				li {
-					margin-right: 30px;
+					margin: 15px;
+					display: inline;
 				}
 			}
 		}
@@ -2981,20 +2966,12 @@ img {
 			}
 			ul {
 				width: 100%;
-				margin-top: 10px;
+				max-width: 845px;
+				margin: 0px auto;
 				display: flex;
-				justify-content: center;
+				justify-content: space-between;
 				li {
-					width: 390px;
-					&:first-child {
-						margin-right: 5px;
-					}
-					&:last-child {
-						margin-left: 5px;
-					}
-					.link-button {
-						width: 100%;
-					}
+					width: 48%;
 				}
 			}
 		}
@@ -3031,22 +3008,17 @@ img {
 			margin: 0px auto;
 			h2 {
 				width: 100%;
+				font-size: 14px;
 				font-family: $mgenBold;
-				// font-size: 4.0vw;
 				color: $black;
 				text-align: center;
-				span {
-					// font-size: 6.0vw;
-				}
 			}
 			ul {
 				width: 100%;
 				margin-top: 40px;
 				li {
 					width: 100%;
-					.link-button {
-						width: 100%;
-					}
+					font-size: 16px;
 				}
 			}
 		}
